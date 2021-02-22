@@ -1,2 +1,5 @@
 # bad-code
-Buggy code snippets posted by discord users looking for help
+
+Mess of broken/fixed code from discord users asking for programming help.
+
+I've hoarded them here; maybe someday i'll turn them into a FAQ of sorts.
