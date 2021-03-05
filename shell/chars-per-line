@@ -1,0 +1,3 @@
+#!/bin/bash
+
+awk '/ba/ {print length}' myfile.txt
