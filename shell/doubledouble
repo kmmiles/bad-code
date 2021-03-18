@@ -1,0 +1,11 @@
+#!/bin/bash
+
+argcount() { echo $#; }
+
+foobar="foo bar"
+echo "hello $foobar"
+echo "hello "$foobar""
+
+argcount "$foobar"
+argcount ""$foobar""
+argcount $foobar

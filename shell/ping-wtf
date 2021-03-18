@@ -1,0 +1,40 @@
+#!/bin/bash
+
+ping-gen() {
+  # $1: ip
+  # $2: number of packets to send
+
+  while [ true ]; do
+    echo -e "$(date)\ntitle\n$(ping -c "$2" "$1" | tail -1 | awk '{ print $4 }' | tr '/' '\n')"
+    sleep 1
+  done
+  # example output:
+  # date
+  # title
+  # 0.714
+  # 1.349
+  # 1.985
+  # 0.636
+}
+
+ping-parse() {
+  # $1: function
+  while read stanza; do
+    # take specific line number (e.g. 0.714) from stanza
+    # pass specific line to function
+    "$1" "$stanza"
+  done < /dev/stdin
+}
+
+# example output: date|title|0.714|1.349|1.985|0.636
+
+# d="$(echo "$stanza" | cut -d\| -f 1)"
+
+
+
+
+my-func() {
+  echo "$1"
+}
+
+ping-gen "$1" 2 | ping-parse my-func

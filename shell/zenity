@@ -1,0 +1,35 @@
+#!/bin/bash
+
+data() {
+  cat << EOF
+            "Splatoon"
+            "Captain Toad: Treasure Tracker"
+            "MARIO KART 8"
+            "Mario vs. Donkey Kong - Tipping Stars"
+            "Minecraft: Super Mario Edition"
+            "PAPER MARIO Color Splash"
+            "SUPER MARIO 3D WORLD"
+            "The Legend of Zelda - Breath of the Wild"
+            "THE LEGEND OF ZELDA - The Wind Waker HD"
+            "Yoshi's Woolly World"
+EOF
+}
+
+# convert `data` to bash array with each element preceeded by "FALSE"
+arr=()
+OLDIFS=$IFS
+IFS=$'\n'
+for v in $(data); do
+  arr+=("FALSE")
+  arr+=("$(echo "$v" | xargs)")
+done
+IFS=$OLDIFS
+
+# display $arr in zenity radio list
+zenity \
+  --list \
+  --text "Select your game" \
+  --radiolist \
+  --column "Pick" \
+  --column "Game" \
+  "${arr[@]}"

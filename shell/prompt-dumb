@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while true; do
+  read -rp "y or n: " user_ans
+
+  if (( "$user_ans" == "y" )); then
+    echo "Run some apt commands and break"
+    break
+  elif (( "$user_ans" == "n" )); then
+    echo "Break time"
+    break
+  else
+    echo "only enter y or n"
+    continue
+  fi
+done

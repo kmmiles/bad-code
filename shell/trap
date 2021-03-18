@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -euo pipefail
+#handle_trap() {
+#  local s
+#  #s=$?
+#  echo "$0: Error on line $LINENO: $BASH_COMMAND"
+#  #exit $s
+#}
+
+hello() {
+  local s
+}
+trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+
+IFS=$'\n\t'
+
+false

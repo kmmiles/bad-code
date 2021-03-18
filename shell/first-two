@@ -1,0 +1,7 @@
+#!/bin/bash
+
+str="myfile.py: 23: def my_function(items: list):"
+printf "%s\t%s\t%s\n" \
+  "$(echo "$str" | cut -d: -f 1)" \
+  "$(echo "$str" | cut -d: -f 2 | xargs)" \
+  "$(echo "$str" | cut -d: -f 3- | xargs)"

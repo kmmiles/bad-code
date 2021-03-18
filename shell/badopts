@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+if [[ "$1" == "-b" ]]; then
+  backup
+elif [[ "$1" == "-r" ]]; then
+  restore
+else
+  echo "Please specify what to do! | -b = backup | -r = restore |"
+fi
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in "${BASH_SOURCE[@]}"; do
+   echo "$i"
+done
+
+echo "h ${BASH_SOURCE[0]}"
+echo "j ${BASH_SOURCE[1]}"
+#echo "k ${BASH_SOURCE[2]}"

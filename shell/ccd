@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ccd() { cd "$@" && clear; }
+export -f ccd
