@@ -1,5 +1,5 @@
 # bad-code
 
-Mess of broken/fixed code from discord users asking for programming help.
+random code from discord users asking for programming help.
 
-I've hoarded them here; maybe someday i'll turn them into a FAQ of sorts.
+some is fixed, some isn't. i've just hoarded it all here, for no apparent reason.
