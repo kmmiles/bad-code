@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Joshua Baker (2144386)">
+        <title>Form 3</title>
+        <link rel="stylesheet" href="style8.css">
+    </head>
+    <h2>Customer Complaints</h2>
+        <div class="container">
+            <form action="https://formspree.io/link" method="post">
+                <input name="first name" type="text" placeholder="Your First Name"><br>
+                <input name="last name" type="text" placeholder="Your Last Name"><br>
+                <input name="address" type="text" placeholder="Your Full Adress"><br>
+                <input name="communication method" type="checkbox" id="phone number" value="phone number">
+                <label for="phone number">Phone Number <input name="phone number input" type="text" placeholder="Your Phone Number"></label>
+                <input name="communication method" type="checkbox" id="email address" value="email address">
+                <label for="email address">Email Address</label><input name="email input" type="text" placeholder="Your Email"><br>
+                <input name="subject" type="text" placeholder="Subject"><br>
+                <b><textarea name="msg" placeholder="Body" style="height:200px"></textarea>
+                <input type="submit" value="Submit">  <input type="reset" value="Reset">
+            </form>
+        </div>
+    </h2>
+</html>

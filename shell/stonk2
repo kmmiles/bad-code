@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+#STOCK="AAPL"
+#QUOTE="$(curl -s https://finance.yahoo.com/quote/$STOCK)"
+QUOTE=$(cat ./AAPL.htm)
+PREMARKET="$(echo $QUOTE | grep -Po 'data-reactid="37">\K[^<][0-9.]+')"
+echo "PREMARKET: $PREMARKET"
+
+if [ -z $PREMARKET ]; then
+    echo $QUOTE | grep -Po 'data-reactid="32">\K[^<][0-9.]+'
+else
+    echo $PREMARKET
+fi

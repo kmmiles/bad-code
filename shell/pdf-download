@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#URL = http://someURL/docs/         # website which have the PDFs, ofc
+#seq -f "0-HC%.0f-0" 1 1 50 |       # navigating though the diffrent URL paths
+#  xargs -n 1 -P 8 -I@ {{ [         # prossess/download 8 files at a time
+#    $(curl -s -L -I http://alsaedy.online/v/@ |         #get file info
+#    gawk -v IGNORECASE=1 '/^Content-Length/ { print $2 }') -gt 20480 #compare size
+#  ] && wget $URL@; } || wget -L -O @.pdf -P ~/SavedPDFs/ $URL@} # if ok, save! 
+
+#seq -f "0-HC%.0f-0" 1 1 50 | \
+#  xargs -n 1 -P 8 -I@ echo
+
+
+
+download() {
+  fetch_size() {
+    curl -s -L -I "$1" | \
+      gawk -v IGNORECASE=1 '/^Content-Length/ { print $2 }'
+  }
+
+  base_url=http://alsaedy.online/v
+  dest_dir="$HOME"/SavedPDFs
+  base_name="${1:-}"
+  url="${base_url}/${base_name}"
+
+  if [[ -n "$url" ]]; then
+    mkdir -p "$dest_dir"
+    file_size=$(fetch_size "$url")
+    if [[ $file_size -gt 20480 ]]; then
+      wget "${url}"
+    else
+      wget -L -O "${url}.pdf" -P "$dest_dir"
+      wget -L -O 
+    fi
+    echo "url: $url"
+    echo "file_size: $file_size"
+  fi
+
+#  $(curl -s -L -I http://alsaedy.online/v/@ |         #get file info
+}
+export -f download
+
+seq -f "0-HC%.0f-0" 1 1 50 | \
+  xargs -n 1 -P 8 -I@ bash -c 'download @'

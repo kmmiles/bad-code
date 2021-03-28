@@ -15,21 +15,17 @@ data() {
 EOF
 }
 
-# convert `data` to bash array with each element preceeded by "FALSE"
-arr=()
-OLDIFS=$IFS
-IFS=$'\n'
-for v in $(data); do
-  arr+=("FALSE")
-  arr+=("$(echo "$v" | xargs)")
-done
-IFS=$OLDIFS
+data_massaged() {
+  while IFS=$'\n' read -r v; do
+    printf "%s\n%s\n" "FALSE" "$(echo "$v" | xargs)"
+  done <<< "$(data)"
+}
 
-# display $arr in zenity radio list
+mapfile -t < <(data_massaged)
 zenity \
   --list \
   --text "Select your game" \
   --radiolist \
   --column "Pick" \
   --column "Game" \
-  "${arr[@]}"
+  "${MAPFILE[@]}"

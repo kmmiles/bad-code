@@ -1,0 +1,7 @@
+#!/bin/bash
+
+myvar=$(echo "Hello, World" | tee /dev/fd/2)
+
+echo "myvar: $myvar"
+
+
