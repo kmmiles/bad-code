@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true; do
+  read -rsn1 pressed_key
+  echo "hello \"$pressed_key\""
+  sleep 1
+done

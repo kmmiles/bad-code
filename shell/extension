@@ -1,0 +1,4 @@
+#!/bin/bash
+
+file="$HOME/foo/bar/howdy.exe"
+echo "${file#*.}"

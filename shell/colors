@@ -1,0 +1,14 @@
+#!/bin/bash
+
+log()     { printf "%s%s%s\n" "${normal}" "${*}" "${normal}" ; }
+logerr()  { printf "%s%s%s\n" "${normal}${bold}${red}" "$*" "${normal}" ; }
+logok()   { printf "%s%s%s\n" "${normal}${bold}${green}" "$*" "${normal}" ; }
+
+bold=$(tput bold)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+normal=$(tput sgr0)
+
+logerr "Something bad happened"
+logok "But it's okay"
+log "${bold}${red}foo${green}bar"

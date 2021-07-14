@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# - you need a list of things to run
+# - iterate that list
+#   - if there are less then $max_proc processes currently running
+#     - execute a process, save it's pid, add to array
+
+#max_proc=4
+
+jobs=()
+
+
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+answer=$(((RANDOM % 100) + 1))
+guess=
+guesses=1
+
+until [[ "$guess" == "$answer" ]]; do
+  read -rp "Ik heb een getal tussen de 1 en 100 in mijn hoofd, wat gok je? " guess
+  if [[ $guess -gt $answer ]]; then
+    printf "Too high!\n"
+  elif [[ $guess -lt $answer ]]; then
+    printf "Too low!\n"
+  else
+    break
+  fi
+  guesses=$((guesses+1))
+done
+
+echo "Goed gedaan! Je hebt het juiste nummer in $guesses geraden"

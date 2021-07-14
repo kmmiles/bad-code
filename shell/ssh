@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ssh kmmiles@localhost tar -cf - ~/Pictures > /tmp/Pictures.tar
+
+

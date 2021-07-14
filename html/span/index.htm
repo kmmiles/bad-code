@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>L-system</title>
+</head>
+<body>
+    <span id="string"></span><br>
+    <br>
+    <button onclick='Lsystem.advance()'>Advance</button>
+    <script>
+        
+        const Lsystem = {
+            string: "f",
+            update: function() {
+                document.querySelector("#string").innerHTML = this.string;
+            },
+            advance: function() { // production rules
+                this.string = this.string.replace(/f/g, "![+f][-f]");
+                this.update();
+            },
+        }
+
+        document.body.onload = (() => {
+          Lsystem.update();
+        })
+    </script>
+</body>
+</html>

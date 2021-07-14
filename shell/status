@@ -1,0 +1,24 @@
+#!/bin/bash
+
+status_msg()  { msg="$1" ; printf '%s' "$msg" ; }
+status_ok()   { printf "%$(msglen)s\\n" "[${bold}${green} OK ${normal}]" ; }
+status_fail() { printf "%$(msglen)s\\n" "[${bold}${red}FAIL${normal}]" ; }
+msglen()      { printf "%s\n" "$(($(tput cols)-${#msg}))" ; }
+
+bold=$(tput bold)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+normal=$(tput sgr0)
+msg=
+
+status_msg "Doing something..."
+sleep 1
+status_ok
+
+status_msg "Doing another thing..."
+sleep 1
+status_ok
+
+status_msg "Doing something risky..."
+sleep 1
+status_fail

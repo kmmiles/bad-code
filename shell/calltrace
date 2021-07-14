@@ -1,0 +1,20 @@
+#!/bin/bash
+
+function calltrace() {
+   local i=${1:0} size=${#BASH_SOURCE[@]}
+   #((i<size)) && echo "STACKTRACE"
+   for ((; i < size-1; i++)) ;do  ## -1 to exclude main()
+      ((frame=${#BASH_SOURCE[@]}-i-2 ))
+      echo "[$frame] ${BASH_SOURCE[$i]:-}:${BASH_LINENO[$i]} ${FUNCNAME[$i+1]}()"
+   done
+}
+
+function fun() {
+  calltrace "$@"
+}
+
+fun "$@"
+
+
+
+

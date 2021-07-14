@@ -1,0 +1,28 @@
+#!/bin/bash
+
+db_host="foo"
+db_port="foo"
+db_user="foo"
+db_password="foo"
+db_name="foo"
+
+dateList=(
+  "2021-5-19"
+  "2021-5-20"
+  "2021-5-21"
+  "2021-5-22"
+  "2021-5-23"
+)
+
+sql=()
+for date in "${dateList[@]}"; do
+  sql+=("DELETE FROM OLD_TABLE WHERE creation_date = \"$date\";")
+done
+
+mysql \
+  -h "${db_host}" \
+  -P "${db_port}" \
+  -u "${db_user}" \
+  -p "${db_password}" \
+  -D "${db_name}" \
+  -e "${sql[*]}"

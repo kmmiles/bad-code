@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#find / -type d |  while read -r dir; do
+#  printf "%s: %s file(s)\n" "$dir" "$(find "$dir" -type f | wc -l)"
+#done
+
+#find / -type d -exec printf "%s: %s file(s)\n" "{}" "$(find "{}" -type f | wc -l)" \;
+
+#find ~ -type d -exec bash 'printf "%s: %s file(s)\n" "{}" "$(find "{}" -type f | wc -l)"' \;
+
+#for dir in $(find -type d); do
+#    echo $dir && ls -1 $dir | wc -l
+#done
+
+find / -type d -execdir sh -c 'echo {} ; $(ls -1 {} | wc -l)' \;
+
+find / -type d -exec sh -c 'printf "%s: %s file(s)\n" "$1" "$(find "$1" -type f | wc -l)"' _ {} \;

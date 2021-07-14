@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for dev in $(lspci | grep -i ethernet | awk '{print $1}'); do
+  basename "$(udevadm info -e | grep "DEVPATH=.*$dev/net" | awk '{print $2}')"
+done

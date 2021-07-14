@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ping_domain() { /bin/ping -q -4 -c 1 "$1" > /dev/null 2>&1; }
+
+IP=("8.8.2.4" "8.8.8.8" "liambonney.co.uk")
+MAX_RETRY=3
+for val in "${IP[@]}"; do
+  retry_count=1
+  until [[ $retry_count -gt "$MAX_RETRY" ]]; do
+    echo "pinging $val"
+    if ping_domain "$val"; then
+      echo "$val: success."
+      break
+    else
+      echo "$val: failed ($retry_count of $MAX_RETRY)"
+      ((retry_count++))
+    fi
+  done
+done

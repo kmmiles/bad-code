@@ -1,0 +1,47 @@
+#!/bin/bash
+
+mapfile -t home_dirs < <(find "$HOME" -mindepth 1 -maxdepth 1 -type d)
+for dir in "${home_dirs[@]}"; do
+  echo "dir: $dir"
+done
+
+exit 1
+
+read -rp "Are you sure you wanna? " answer
+if [[ "${answer,,}" == "yes" ]]; then
+  echo "yes"
+else
+  echo "no"
+fi
+
+exit 1
+
+echo -n "Are you sure you wanna go to $ENTER? "
+read -r ANSWER
+
+exit 1
+ 
+HOME=/home/toty
+x=0
+i=0
+CONTENT="$(cd $HOME && /bin/ls -d */ | cut -d " " -f1)"
+arr=("${CONTENT}")
+for dir in "${arr[@]}"; do
+    echo "${arr[x]}"
+    ((x++))
+done
+echo -n "Where do you wanna go? "
+read -r ENTER
+echo -n "Are you sure you wanna go to $ENTER? "
+read -r ANSWER
+if [ "${ANSWER}" == "yes" ] || [ "${ANSWER}" == "YES" ]; then
+    for dir in "${arr[@]}"; do
+        if [ "$ENTER" == "${arr[i]}" ]; then
+            cd $HOME && cd "${arr[i]}"
+            exit 1
+        fi
+        ((i++))
+    done
+else
+    echo "Right, we stay here"
+fi

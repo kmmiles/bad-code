@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#find ~ -type d -name "water" -exec echo "$(dirname {})" \;
+#find ~ -type d -exec echo "$(dirname {})" \;
+
+find ~+ -type d | \
+  while read -r d; do
+    echo "cp -R $d $(dirname "$d")"
+  done

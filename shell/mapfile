@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mapfile -t MYARR < mapfile.txt
+for i in "${MYARR[@]}"; do
+  echo "i: ${i}"
+done
+

@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#set -e
+
+src_path=/home/sources
+
+handle_gcc() {
+  gcc_url="git://gcc.gnu.org/git/gcc.git"
+  gcc_src_path="$src_path/gcc"
+
+  if [[ ! -d "$gcc_src_path" ]]; then
+    git clone --depth 1 --verbose "$gcc_url" 
+  fi
+
+  cd "$gcc_src_path" && \
+    ./configure --disable-multilib && \
+    make --jobs=4 && \
+    make install --jobs=4 && \
+    rm -rf "$gcc_src_path"
+}
+
+if [[ ${1} == "install" ]]; then
+  if [[ ! -d "$src_path" ]]; then
+    doas mkdir --verbose "$src_path"
+    doas chown --recursive --verbose ephnel:ephnel "$src_path"
+  fi
+
+  case "$2" in
+    "gcc")
+      handle_gcc ;;
+    *)
+      printf "Package not found."
+      exit 1
+  esac
+else
+  printf "Please choose a valid operation. Valid operation are: install"
+fi
+
+if rmdir "$src_path"; then
+  printf "Pruned empty directory: %s\n" "$src_path"
+fi

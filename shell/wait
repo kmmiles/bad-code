@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -m
+
+sleep 10 &
+process_id=$!
+echo "PID: $process_id"
+echo "Calling wait $process_id"
+wait $process_id
+echo "Exit status: $?"

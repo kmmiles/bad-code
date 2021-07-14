@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#ps -p 157041 -o etime
+
+ps -C msedge -o etime,pid

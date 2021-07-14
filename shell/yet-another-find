@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -vuex
+
+read -r -p "Filename to modify: " FILENAME
+read -r -p "Parameter to modify: " PARAMETER 
+read -r -p "New value: " NEWVALUE
+
+f
+
+for VARIABLE in "$HOME"/testfiles*/*
+do
+    re="${HOME}/testfiles*/${FILENAME}"
+    if [[ "${VARIABLE}" == "${re}" ]]
+    then
+        sed -i -e "s/.*/\'${PARAMETER}'=${NEWVALUE}/g" "${FILENAME}"
+        break
+    fi
+done

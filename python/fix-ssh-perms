@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import grp
+import os
+from os import path
+import pwd
+import shutil
+
+env = os.environ
+
+uid = env.get('SUDO_UID', os.getuid())
+gid = env.get('SUDO_GID', os.getgid())
+
+pwd_entry = pwd.getpwuid(uid)
+grp_entry = grp.getgrgid(gid)
+
+home = pwd_entry.pw_dir
+dotssh = path.join(home, '.ssh')
+
+shutil.chown(dotssh, uid, gid)
+os.chmod(dotssh, 0o700)
+for file in os.listdir(dotssh):
+    shutil.chown(dotssh, uid, gid)
+    os.chmod(dotssh, 0o600)

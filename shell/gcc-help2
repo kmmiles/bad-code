@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+savecols=$COLUMNS;
+stty cols 300;
+gcc --help=warnings | tail -n +2 | awk '{print "\x27"$1"\x27,"}';
+stty cols $savecols;

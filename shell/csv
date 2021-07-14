@@ -1,0 +1,4 @@
+#!/bin/bash
+
+printf '%s\n%s\n%s\n%s\n' "foo" "bar" "this" "that" | \
+  paste -sd ',' 

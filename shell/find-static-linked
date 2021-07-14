@@ -1,0 +1,38 @@
+#!/bin/bash
+
+static_count() {
+  find "$1"/ -xdev -print0 2> /dev/null | \
+    xargs -0 file -b 2> /dev/null | \
+    grep -c "statically linked"
+}
+
+if [[ -z "$*" ]]; then
+  printf "Usage: %s <dir...>\n" "$(basename "$0")"
+  exit 1
+fi
+
+least_count=0
+least_dir=
+most_count=0
+most_dir=
+
+for dir in "$@"; do
+  if [[ -d "$dir" ]]; then
+    count=$(static_count "$dir")
+    if [[ -z "$most_dir" || "$count" -gt "$most_count" ]]; then
+      most_count="$count"
+      most_dir="$dir"
+    elif [[ -z "$least_dir" || "$count" -lt "$least_count" ]]; then
+      least_count="$count"
+      least_dir="$dir"
+    fi
+  fi
+done
+
+if [[ -n "$most_dir" ]]; then
+  printf "Most statically linked binaries: %s (%s)\n" "$most_dir" "$most_count"
+fi
+
+if [[ -n "$least_dir" ]]; then
+  printf "Least statically linked binaries: %s (%s)\n" "$least_dir" "$least_count"
+fi

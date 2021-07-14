@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sql="insert into foobar SELECT * from foobar;"
+echo "sql: $sql"

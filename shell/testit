@@ -1,0 +1,2 @@
+#./find-static-linked-most /usr/sbin /usr/bin /usr/local/bin /usr/libexec
+./find-static-linked-least /usr/sbin /usr/bin /usr/local/bin /usr/libexec

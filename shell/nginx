@@ -1,0 +1,8 @@
+#!/bin/bash
+
+{
+  nginx -v
+  pwd
+  bash --version
+} > nginxVersion.env 2>&1
+

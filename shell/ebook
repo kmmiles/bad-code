@@ -1,0 +1,32 @@
+#!/bin/bash
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") <article> [chop]
+
+Fetch wikipedia page, convert to text, and do dumb shit to it.
+EOF
+}
+
+delete=false
+while getopts 'd' flag; do
+  case "${flag}" in
+    d) delete=true ;;
+    *) usage ; exit 1 ;; 
+  esac
+done
+shift $((OPTIND-1))
+
+dir="${1:-}"
+if [[ -z "$dir" ]]; then
+  usage
+  exit 1
+fi
+
+find "$dir" -type f -name "*.epub" | \
+  while read -r file; do
+    ebook-convert "$file" "${file%.epub}.mobi"
+    if $delete; then
+      rm -f "$file"
+    fi
+  done

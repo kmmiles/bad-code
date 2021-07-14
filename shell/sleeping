@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#for pid in $(ps h -eo s,pid | awk '{ if ($1 == "S") print $2; }'); do
+#  echo "sleeping: $pid"
+#done
+
+for pid in $(pgrep -r S); do
+  echo "$pid"
+done

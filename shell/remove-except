@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# let's say i have 3 folders
+# f1 f2 f3
+# how can i type something like this
+# rm -rf * (if name is not f1)
+
+
+mkdir -p foobar/f1 foobar/f2 foobar/f3
+find ./foobar -mindepth 1 -not -name 'f1' # -delete

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+group="Origin Genres Website Labels members"
+star="radius circumference Color Mass Volume Named Eccentricity Orbital Synodic"
+geo="Motto Religion National Capital Driving ISO electricity "
+com="Original Developer Operating Platform Type License"
+
+
+target_word="group"
+list_ob=$(echo "group star geo com game" | sort)
+for i in $list_ob; do
+  if [[ "$target_word" == "$i" ]]; then
+    echo "It's a match. Do some shit"
+  fi
+done
+
+
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+gcc_warnings() {
+  gcc --help=warnings | \
+    tail -n +2 | \
+    cut -d' ' -f 3 | \
+    xargs | \
+    tr '\n' ' '
+}
+
+readarray -d ' ' -t < <(gcc_warnings)
+array_size=$((${#MAPFILE[@]}-1))
+for (( i=0; i <= "$array_size"; i++)); do
+  printf '"%s"' "${MAPFILE[$i]}"
+  if [[ "$i" -lt "$array_size" ]]; then
+    printf ','
+  fi
+done
+printf '\n'

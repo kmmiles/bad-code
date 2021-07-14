@@ -1,0 +1,20 @@
+When closing a shell all running jobs will recieve a SIGHUP, causing them to exit.
+You can use `nohup` to avoid that, here's an example:
+
+`bigsleep.py`
+```python
+import time
+
+while (True):
+    print("Big sleep.")
+    time.sleep(1)
+```
+
+`wrapper`
+```bash
+#!/bin/bash
+
+nohup pipenv run python ./bigsleep.py > /dev/null 2>&1 &
+```
+
+

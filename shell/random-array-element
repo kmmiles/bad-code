@@ -1,0 +1,20 @@
+#!/bin/bash
+
+random_element() {
+  arr=("${@}")
+  printf "%s" "${arr["$((RANDOM % ${#arr[@]}))"]}"
+}
+
+backgrounds=(
+  "$HOME/Pictures/background-1.jpg"
+  "$HOME/Pictures/background-2.jpg"
+  "$HOME/Pictures/background-3.jpg"
+  "$HOME/Pictures/background-4.jpg"
+  "$HOME/Pictures/background-5.jpg"
+)
+
+background=$(random_element "${backgrounds[@]}")
+printf "Change background to %s\n" "$background"
+
+
+

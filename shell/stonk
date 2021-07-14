@@ -1,9 +1,0 @@
-#!/bin/bash
-website=$(curl -s https://finance.yahoo.com/quote/GME)
-mclose=$(echo "$website" | grep -Po 'data-reactid="37">\K[^<]+' | head -n 1)
-
-if [[ $mclose =~ ^[+-]?[0-9]+\.?[0-9]*$ ]]; then
-  echo "$mclose"
-else
-  echo "$website" | grep -Po 'data-reactid="32">\K[^<]+' | head -n 1
-fi

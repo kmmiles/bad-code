@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ _root=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd .. && pwd)
+compilercommand="x86_64-w64-mingw32-g++"
+archivecommand="x86_64-w64-mingw32-ar"
+for f in "${_root}"/build-libs/*.sh; do
+  if ! "${f}" "${compilercommand}" "${archivecommand}"; then
+    printf "Failed to build: %s %s %s\n" "${f}" "${compilercommand}" "${archivecommand}"
+    exit 1
+  fi
+done

@@ -1,0 +1,63 @@
+#!/bin/bash
+
+#MOUSE_STRING="mouse"
+DEVICE_STRING="logitech"
+
+get_device() {
+  xinput --list | \
+    grep -i -m 1 "$1" | \
+    grep -o 'id=[0-9]\+' | \
+    grep -o '[0-9]\+'
+}
+
+get_state() {
+  xinput --query-state "$1" | \
+    grep 'button\[' | \
+    sort
+}
+
+device_id=$(get_device "$DEVICE_STRING")
+if [[ -z "$device_id" ]]; then
+  printf "Failed to find device: %s\n" "$DEVICE_STRING"
+  exit 1
+fi
+
+printf "Watching device id: %s\n" "$device_id"
+
+while true; do
+  state1=$(get_state "$device_id")
+  state2=$(get_state "$device_id")
+  state=$(comm -13 <(echo "$state1") <(echo "$state2") | xargs)
+  if [[ -n "$state" ]]; then
+    printf "Mouse event: %s\n" "$state"
+  fi
+done
+
+#while true; do
+#  while [[ $(get_state "$device_id") == "button[1]=down" ]]; do
+#    echo "hello"
+#  done
+#done
+
+
+
+
+
+
+
+exit 1
+STATE1=$(get_state "$device_id")
+while true; do
+  STATE2=$(get_state "$device_id")
+  STATE=$(comm -13 <(echo "$STATE1") <(echo "$STATE2") | xargs)
+  STATE1=$STATE2
+  if [[ -n "$STATE" ]]; then
+    printf "Mouse event: %s\n" "$STATE"
+  fi
+
+  if [[ "$STATE" == "button[1]=down" ]]; then
+    echo "Cool, we got button down"
+    #xdotool click --delay 100 1
+    xdotool click 1
+  fi
+done

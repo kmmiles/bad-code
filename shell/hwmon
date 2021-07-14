@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for n in /sys/class/hwmon/hwmon*/name; do
+  echo "n: $n"
+  if [[ $(< "$n") == coretemp ]]; then
+    CPUHWMON="$n"
+    echo "CPUHWMON=$CPUHWMON"
+  fi
+done

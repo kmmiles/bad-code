@@ -1,0 +1,19 @@
+#!/bin/bash
+
+net=192.168.12
+
+function print_hostnames() {
+  hostnames=$(nslookup "$1" | \
+    awk -F "=" '{ print $2 }' | \
+    sed 's/^[ t]*//' | \
+    sed '/^$/d' | \
+    sed 's/.$//' \
+  )
+  for hostname in $hostnames; do
+    echo "[$1] $hostname"
+  done
+}
+
+for x in $(seq 254); do
+  print_hostnames "${net}.${x}"
+done

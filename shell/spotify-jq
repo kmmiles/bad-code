@@ -1,0 +1,17 @@
+#!/bin/bash
+
+curl -X "GET" \
+ "https://api.spotify.com/v1/me/player/recently-played?""limit=50""&before=$((timestamp -1))"\
+ -H "Accept: application/json"\
+ -H "Content-Type: application/json"\
+ -H "Authorization: Bearer $token" | \
+jq '.items[].track | .id, .played_on' | (
+        read -r id
+        read -r played_on
+        id="${id##\"}"
+        id="${id%%\"}"
+        played_on="${played_on##\"}"
+        played_on="${played_on%%\"}"
+        echo "new id: $id"
+        timestamp="$(date --date="$played_on" "+%s")"
+  )

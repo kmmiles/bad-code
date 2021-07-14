@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -rp "Enter a full filepath: " filepath
+if [[ -x "$filepath" ]]; then
+  printf "File is executable: %s\n" "$filepath" 
+else
+  chmod +x "$filepath"
+fi

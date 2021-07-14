@@ -1,0 +1,15 @@
+#!/bin/bash
+
+array=(
+  "doc"
+  "cheap"
+  "socks"
+  "sand"
+  "bag"
+  "willing"
+  "time"
+  "o"
+  "doc"
+)
+
+echo "${array[@]/${array[5]/}}"

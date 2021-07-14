@@ -1,0 +1,9 @@
+#!/bin/bash
+
+readarray -t home_dirs < <(find "$HOME" -mindepth 1 -maxdepth 1 -type d)
+for dir in "${home_dirs[@]}"; do
+  echo "dir: $dir"
+done
+
+
+

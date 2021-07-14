@@ -1,0 +1,39 @@
+#!/bin/bash
+
+click_repeat=20
+click_delay=0
+device_name=elan
+
+get_device() {
+  xinput --list | \
+    grep -i -m 1 "$1" | \
+    grep -o 'id=[0-9]\+' | \
+    grep -o '[0-9]\+'
+}
+
+device_id=$(get_device "$device_name")
+if [[ -z "$device_id" ]]; then
+  printf "Failed to find device: %s\n" "$DEVICE_STRING"
+  exit 1
+fi
+
+printf "Watching device id: %s\n" "$device_id"
+while true; do
+  states=$(xinput --query-state "$device_id" | grep -E 'button\[[0-9]\]')
+  for state in $states; do
+    button_state=$(echo "$state" | cut -d'=' -f 2)
+    if [[ "$button_state" == "down" ]]; then
+      button_id=$(echo "$state" | awk -F'[][]' '{print $2}')
+      echo "Turbo charging $button_id!"
+      xdotool click --repeat "$click_repeat" "$button_id"
+      #xdotool mouseup "$button_id"
+      #xdotool click --clearmodifiers --delay "$click_delay" "$button_id"
+      #echo "Turbo charging $button_id!"
+      #xdotool click --delay 100 1
+#      for (( x=0 ; x < click_amount ; x++ )); do
+#        echo "Turbo charging $button_id!"
+#        xdotool click --delay $click_delay 1
+#      done
+    fi
+  done
+done

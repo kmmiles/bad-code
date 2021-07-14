@@ -1,0 +1,9 @@
+#!/bin/bash
+
+curl \
+  -X PUT \
+  --user ADMIN:KYLIN \
+  -H "Content-Type: application/json;charset=utf-8" \
+  -w '\n' \
+  -d '{"cubeName": "kylin_sales_cube_clone", "project": "learn_kylin", "cubeDescData":'"$(curl --user ADMIN:KYLIN  -H "Content-Type: application/json;charset=utf-8" -w '\n' http://localhost:7070/kylin/api/cube_desc/kylin_sales_cube_clone | jq 'first | (.measures[] | select(.name == "STDDEV_PRICE") | .function.expression) |= "STDDEV_SUM" | tostring')"'}' \
+  http://localhost:7070/kylin/api/cubes

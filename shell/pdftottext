@@ -1,0 +1,5 @@
+#!/bin/bash
+
+Input="$HOME/Downloads/sample.pdf"
+text="$(pdftotext "$Input" -)"
+echo "$text"

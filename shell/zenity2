@@ -1,0 +1,14 @@
+#!/bin/bash
+
+games=(
+  "FALSE" "foo"
+  "FALSE" "bar"
+)
+
+zenity \
+  --list \
+  --text "Select your game" \
+  --radiolist \
+  --column "Pick" \
+  --column "Game" \
+  "${games[@]}"

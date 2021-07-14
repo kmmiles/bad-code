@@ -1,0 +1,23 @@
+#!/bin/bash
+
+mail="foo"
+cfKey="bara"
+escEXP="bar"
+
+targetFilter="foo"
+print_data() {
+  cat <<EOF
+{
+  "id": "$targetFilter",
+  "paused": false,
+  "description": "Update Firewall Socket",
+  "expression": "(ip.geoip.country eq \"AL\")"
+}
+EOF
+}
+
+curl -X PUT \
+     -H "X-Auth-Email: $mail" \
+     -H "X-Auth-Key: $cfKey" \
+     -H "Content-Type: application/json" \
+     -d "$(print_data)"

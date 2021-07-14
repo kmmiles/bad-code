@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#KEY_ID=$(xinput --list | grep -m 6 'Keyboard' | grep 'keyboard' | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+')
+KEY_ID=15
+
+while true; do
+    #Set 'g' key as the "on" key-press
+    #xinput test "$KEY_ID" to get the key press
+STATE=$(xinput --query-state "$KEY_ID" | grep 'key\[42\]' | cut -d '=' -f 2)
+if [[ $STATE = 'down' ]] ; then
+    STATEON='down'
+    break
+fi
+done
+
+while true; do
+    if [[ "$STATEON" = "down" ]]; then
+        #Set 'x' key as the "off" key-press
+    STATEOFF=$(xinput --query-state "$KEY_ID" | grep 'key\[53\]' | cut -d '=' -f 2)
+    xdotool click --delay 100 1
+        if [[ "$STATEOFF" = "down" ]]; then
+            break
+        fi    
+    fi 
+done

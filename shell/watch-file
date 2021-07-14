@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file="./file.txt"
+while inotifywait -q -e close_write "$file" >/dev/null; do
+  #last_line="$(tail -n 1 "$file")"
+  echo "Yes, $file changed"
+done
+
+

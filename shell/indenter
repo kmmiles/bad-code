@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# vars
+new_file=$1
+if [ "$newfile" == "" ]; then
+    new_file='tmp.sh'
+fi
+
+template_file='bash_templates'        # <<<<<< ADD PATH HERE
+templates=$(echo "$(cat $template_file | grep '_')" | grep '#_' | sed 's/[0-9]//g' | awk '{print $2}' | grep "_")
+
+# loops
+for tem in $templates
+do
+    ((i++))
+    printf "$i $tem\n"
+    saved+=($tem)
+done
+read choice
+
+[ "$choice" == "exit" ] && exit
+second_chosen=$(cat $template_file | grep "#_ " | grep ${saved[$choice]})
+tw=$((choice-=1))
+chosen=$(cat $template_file | grep "#_ " | grep ${saved[$tw]})
+all_lines=$(wc -l $template_file | awk '{print $1}')
+
+while read line; do
+    ((num_lines+=1))
+    if [ "$line" == "$chosen" ]; then
+        top_lines=$num_lines
+    fi
+    if [ "$line" == "$second_chosen" ]; then
+        bottom_lines=$num_lines
+    fi
+done < $template_file
+
+while read line; do
+    ((count+=1))
+    if [[ $top_lines -le $count ]] && [[ $bottom_lines -gt $count ]]; then
+        echo $line >> $new_file
+    fi
+done < $template_file

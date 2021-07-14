@@ -1,0 +1,44 @@
+#!/bin/bash
+
+list_all_users() {
+  getent passwd | cut -d':' -f 1
+}
+
+list_users() {
+  awk -F: '/\/home/ && ($3 >= 1000) {printf "%s\n",$1}' /etc/passwd
+}
+
+list_real_users() {
+  for x in $(getent passwd); do
+    name=$(echo "$x" | cut -d':' -f 1)
+    shell=$(echo "$x" | cut -d':' -f 7)
+
+    if [[ -n "$shell" && "$shell" != "/usr/sbin/nologin" && "$shell" != "/bin/false" ]]; then
+      echo "name: $name"
+      echo "shell: $shell"
+    fi
+
+  done
+}
+
+list_logins_today() {
+  last -s today | \
+    grep -ve reboot | \
+    head -n -2 | \
+    awk '{ k[$1$5$6]+=1; a[$1$5$6]=$1"-"$5"-"$6"-"$7  } END { for ( i in k ) { split(a[i],s,"-");print s[1]": "k[i]" logins today"  } }' | \
+    sort -d
+}
+
+list_real_users
+
+exit 1
+
+logins_today=$(list_logins_today)
+for x in $(list_all_users); do
+  if ! echo "$logins_today" | grep "$x"; then
+    echo "$x: 0 logins today"
+  fi
+done
+
+
+

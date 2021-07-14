@@ -1,0 +1,39 @@
+#!/bin/bash
+
+cowtext() {
+  cat << EOF
+Choose which theme you want to install for your gnome desktop
+
+[1] Gnome light theme
+[2] Gnome dark theme
+[3] Gnome customized dark theme
+[4] Gnome customized light theme
+[5] Windows theme
+[6] Mac Os Theme
+EOF
+}
+
+install_theme() {
+  theme="${1:-}"
+  if [[ -n "$theme" ]]; then
+    gsettings set org.gnome.shell disable-user-extensions false
+    gsettings set org.gnome.shell.extensions.user-theme name "$theme"
+    gsettings set org.gnome.desktop.interface gtk-theme "$theme"
+    gsettings set org.gnome.desktop.interface icon-theme "$theme"
+  fi
+}
+
+cowtext | cowsay -ns
+read -rp "type your choice: " choice
+case "$choice" in
+  1)
+    install_theme "Adwaita"
+    ;;
+  2)
+    install_theme "Adwaita-dark"
+    ;;
+  *)
+    printf "Invalid choice: %s\n" "$choice"
+    exit 1
+    ;;
+esac

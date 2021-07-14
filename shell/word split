@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $(pgrep -xc "$(basename $0)") -gt 1 ]]; then
+  printf "Already running.\n"
+  exit 1
+fi
+
+sleep 100

@@ -1,0 +1,16 @@
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1.deps.json
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1.runtimeconfig.json
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1.runtimeconfig.dev.json
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1.dll
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/ref/sample1.dll
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Debug/net5.0/sample1.pdb
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.csprojAssemblyReference.cache
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.GeneratedMSBuildEditorConfig.editorconfig
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.AssemblyInfoInputs.cache
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.AssemblyInfo.cs
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.csproj.CoreCompileInputs.cache
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.dll
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/ref/sample1.dll
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.pdb
+/home/kmmiles/.local/src/bad-code/dotnet/sample1/obj/Debug/net5.0/sample1.genruntimeconfig.cache

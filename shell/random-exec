@@ -1,0 +1,18 @@
+#!/bin/bash
+
+random_element() {
+  arr=("${@}")
+  printf "%s" "${arr["$((RANDOM % ${#arr[@]}))"]}"
+}
+
+foobar() {
+  echo "hello foobar"
+}
+
+cmds=(
+  "ls -l"
+  "foobar"
+)
+
+cmd=$(random_element "${cmds[@]}")
+eval "$cmd"

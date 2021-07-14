@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in {2..354}
+do
+    if [[ ${i} == 350 ]]
+    then
+        continue
+    else
+        printf "'$(gcc --help=warnings | cut --delimiter=$'\n' --fields=${i} | cut --delimiter=' ' --fields=3)',\n"
+    fi
+done

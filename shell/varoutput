@@ -1,0 +1,4 @@
+#!/bin/bash
+
+value=$(echo "UUID=59f8e90d-e407-4844-ad9b-22b62a94197f" | cut -d'=' -f 2)
+printf "%s\n" "$value"

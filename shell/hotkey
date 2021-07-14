@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+./infinite-read &
+pid=$$
+echo "infinite-read spawn with pid $pid"
+
+echo "hotkey going to sleep"
+sleep 100000

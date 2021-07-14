@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in {a..c}.pdf; do
+  echo "file: $file"
+done

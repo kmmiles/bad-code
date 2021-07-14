@@ -1,0 +1,67 @@
+#!/bin/bash
+
+unset FOO
+echo -n "orig: with variable unset: "
+if [[ ${FOO} && ${FOO-x} ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=
+echo -n "orig: with variable set to zero length: "
+if [[ ${FOO} && ${FOO-x} ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=" "
+echo -n "orig: with variable set to whitespace: "
+if [[ ${FOO} && ${FOO-x} ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=bar
+echo -n "orig: with variable set to non-zero length: "
+if [[ ${FOO} && ${FOO-x} ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+##################3
+
+unset FOO
+echo -n "new: with variable unset: "
+if [[ -n "${FOO}" ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=
+echo -n "new: with variable set to zero length: "
+if [[ -n "${FOO}" ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=" "
+echo -n "new: with variable set to whitespace: "
+if [[ -n "${FOO}" ]]; then
+  echo "true"
+else
+  echo "false"
+fi
+
+FOO=bar
+echo -n "new: with variable set to non-zero length: "
+if [[ -n "${FOO}" ]]; then
+  echo "true"
+else
+  echo "false"
+fi

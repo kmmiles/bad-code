@@ -1,0 +1,6 @@
+foo@bar
+this@that
+bar@foo
+here@there
+this@line with spaces in it
+that@line with space and (these) (too)

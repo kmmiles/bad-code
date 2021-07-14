@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+uid=${SUDO_UID:-$(id -u)}
+gid=${SUDO_GID:-$(id -g)}
+user=$(id -nu "$uid")
+group=$(id -ng "$gid")
+home=$(getent passwd "$user" | cut -d: -f6)
+
+set -x
+chown -R "$user:$group" "$home"/.ssh
+chmod u=rwx "$home"/.ssh
+chmod -R go-rwx "$home"/.ssh/

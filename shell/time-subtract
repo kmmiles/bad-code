@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-StartTime=$(date +%s)
-sleep 5
-StopTime=$(date +%s)
+start_time=$(date +%s)
+sleep 3
+end_time=$(date +%s)
 
-ElapsedTime=$(echo "$(($StopTime - $StartTime))")
-
-echo "ElapsedTime: $ElapsedTime"
+elapsed=$((end_time - start_time))
+printf "elapsed: %s\n" "$elapsed"

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+foobar=
+if [[ -z "$foobar" ]]; then
+  echo "foobar is empty"
+fi

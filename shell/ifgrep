@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ps aux | grep bash; then
+  echo "Yes, it matched."
+else
+  echo "No, it didn't match."
+fi

@@ -1,0 +1,28 @@
+#!/bin/bash
+ 
+Hostname=$(hostname)
+Package=$(apt list --installed 2>/dev/null)
+Last_Version=$(apt list --all-versions 2> /dev/null)
+
+packages=$(apt -q list --installed 2> /dev/null | tail -n+2)
+
+echo "Hostname: $Hostname"
+echo "Package: $Package"
+echo "Last_Version: $Last_Version"
+
+ 
+#table=("$Hostname" "$Package"  "$Last_Version")
+#printf -v csvrow '%s,' "${table[@]}"
+#echo "$csvrow"
+#echo "${table[@]}"
+
+
+So the dumb answer is: `printf -v csvrow '%s,' "${table[@]}"`
+
+That will print an array, comma delimited.
+
+But if you look at your data, it's not quite right. You've got hostname there, which is fine,
+but "Package" is not a single value, rather the entire list of packages.
+
+What would help is to think of what your ideal output would look like. With that I could help
+you write the script.

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+myfun() {
+  printf "Hello, world"
+}
+
+printf "%s\n" "$(myfun)"
+

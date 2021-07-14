@@ -1,0 +1,6 @@
+#!/bin/bash
+
+foo="bar"
+printf "foo: %s\n" "$foo"
+printf "foo: %s\n" '$foo'
+printf "foo: %s\n" ''"$foo"''

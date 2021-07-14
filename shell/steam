@@ -1,0 +1,6 @@
+#!/bin/bash
+
+STEAMROOT="$(cd "${0%/*}" && echo "$PWD")"
+STEAMDATA="$STEAMROOT"
+
+echo "STEAMDATA: $STEAMDATA"

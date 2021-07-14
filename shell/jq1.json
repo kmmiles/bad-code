@@ -1,0 +1,16 @@
+{
+  "other_shit": "is here",
+  "measures": [
+    {
+      "name": "STDDEV_PRICE",
+      "function": {
+        "expression": "SUM",
+        "parameter": {
+          "type": "column",
+          "value": "KYLIN_SALES.PRICE"
+        },
+        "returntype": "decimal(19,4)"
+      }
+    }
+  ]
+}

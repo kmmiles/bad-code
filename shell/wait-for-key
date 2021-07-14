@@ -1,0 +1,14 @@
+#!/bin/bash
+
+wait_for_key() {
+  local pressed_key key
+  key="${1:-x}"
+
+  until [[ "${pressed_key,,}" == "${key,,}" ]]; do
+    read -rsn1 pressed_key
+  done
+}
+
+wait_for_key "x"
+
+echo "cool"

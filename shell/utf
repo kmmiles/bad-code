@@ -1,3 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo $'\u0965'
+echo $'\U0001f602'
+
+# 1F385 1F3FF
+echo $'\U01f385 \U01f3ff'
+echo $'\U01f3851f3ff'

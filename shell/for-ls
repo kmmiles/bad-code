@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# XXX: Don't do this
 for i in ls; do
   if [[ -x $i ]] && [[ -h $i ]]; then
     echo $i; 

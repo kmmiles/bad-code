@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+PACKAGE=$1
+if [[ -z "$PACKAGE" ]]; then
+  printf "Usage: %s <PACKAGE>\n" "$(basename "$0")"
+  exit 1
+fi
+
+cd /tmp
+git clone http://aur.archlinux.org/"${PACKAGE}"
+cd "$PACKAGE"
+makepkg -sif
+echo "DONE!"
+#rm -rf /tmp/${PACKAGE}

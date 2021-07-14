@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat jq1.json | \
+  jq '(first | .measures[] | select(.name == "STDDEV_PRICE") | .function.expression) |= "STDDEV"'
+
+
+

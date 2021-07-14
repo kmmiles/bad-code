@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo type your choice :
+read -r Theme_to_install
+
+function install_gnome_light_theme() {
+  echo "disabling pre-installed extensions"
+  gsettings set org.gnome.shell disable-user-extensions false
+  echo "Changing themes"
+  gsettings set org.gnome.shell.extensions.user-theme name "Adwaita"
+  gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"
+  gsettings set org.gnome.desktop.interface icon-theme "Adwaita"
+}
+
+install_gnome_dark_theme() {
+  echo "disabling pre-install extensions"
+  gsettings set org.gnome.shell disable-user-extensions false
+  echo "Changing Themes"
+  gsettings set org.gnome.shell.extensions.user-theme name "Adwaita-dark"
+  gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+  gsettings set org.gnome.desktop.interface icon-theme "Adwaita-dark"
+}
+
+if [[ "$Theme_to_install" == 1 ]]; then
+  echo "installing Gnome light theme"
+  install_gnome_light_theme
+elif [[ "$Theme_to_install" == 2 ]]; then
+  echo "installing Gnome dark theme"
+  install_gnome_dark_theme
+fi 

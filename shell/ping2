@@ -1,0 +1,13 @@
+#!/bin/bash
+
+IP=("8.8.2.4" "8.8.8.8" "liambonney.co.uk")
+ping_domain() { /bin/ping -q -4 -c 1 "$1" > /dev/null 2>&1; }
+
+for val in "${IP[@]}"; do
+  echo "pinging $val"
+  while ! ping_domain "$val"; do
+    echo "retrying $val"
+  done
+  echo "$val success"
+  break
+done

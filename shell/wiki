@@ -1,0 +1,61 @@
+#!/bin/bash
+
+group="Origin Genres Website Labels members"
+star="radius circumference Color Mass Volume Named Eccentricity Orbital Synodic"
+geo="Motto Religion National Capital Driving ISO electricity "
+com="Original Developer Operating Platform Type License"
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") <article_name> [pattern_type]
+
+Fetch wikipedia page, convert to text, and optionally search for patterns.
+EOF
+}
+
+fetch_wiki_text() {
+  local word
+  word=${1:-}
+
+  if [[ -n "$word" ]]; then
+    curl -s "https://en.wikipedia.org/wiki/$word" | \
+      html2text | \
+      sed '/ Contents /q;p' | \
+      sed '$!N; /^\(.*\)\n\1$/!P; D' 
+  fi
+}
+
+search_patterns() {
+  local wt
+  wt="$(cat -)"
+
+  printf "\033[36m"
+  for i in $@; do
+    str=$(echo "$wt" | grep -i "$i")
+    if [[ -n "$str" ]]; then
+      printf '%s\n' "${str}"
+    fi
+  done
+  printf "\033[0m"
+
+}
+
+article=${1:-}
+if [[ -z "$article" ]]; then
+  usage
+  exit 1
+fi
+article=${article// /_}
+article=${article^^}
+pattern_type=${2:-}
+
+if ! wiki_text=$(fetch_wiki_text "$article"); then
+  printf "Failed to fetch wiki text for %s\n" "$article"
+  exit 1
+fi
+
+if [[ -n "$pattern_type" ]]; then
+  echo "$wiki_text" | search_patterns "${!pattern_type}"
+else 
+  echo "$wiki_text"
+fi

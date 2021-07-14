@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#set -x
+
+aws () {
+  _aws=$(command -v "aws")
+  if [[ -z "$_aws" ]]; then
+    printf "aws not found in \$PATH\n"
+    return 1
+  fi
+
+  prog="${1:-}"
+  if [[ -z "$prog" ]]; then
+    printf "Usage: aws <command>\n"
+    return 1
+  fi
+
+  if [[ "$prog" != "s3" ]]; then
+    shift
+    "$_aws" "$prog" "$@"
+  else
+    printf "Skipping 's3' command...\n"
+  fi
+}
+
+aws foo bar
