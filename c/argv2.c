@@ -5,6 +5,7 @@ int main(int argc, char *argv[]) {
   char *source = argv[1];
   char *dest = argv[2];
 
+  printf("argc: %d\n", argc);
   if (!source || !dest) {
     fprintf(stderr, "Usage: %s <source> <destination>\n", prog);
     return(1);

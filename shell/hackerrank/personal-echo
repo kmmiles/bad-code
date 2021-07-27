@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -r name
+printf "Welcome %s\n" "$name"

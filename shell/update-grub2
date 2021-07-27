@@ -1,0 +1,7 @@
+#!/bin/bash
+
+config_file="/etc/default/grub"
+key="GRUB_CMDLINE_LINUX_DEFAULT"
+value="mykernelshit"
+sed "s/\($key*= *\).*/\1$value/" $config_file
+

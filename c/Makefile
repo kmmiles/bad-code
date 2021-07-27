@@ -1,5 +1,6 @@
 CC=clang
-CFLAGS=-g
+#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -g
+CFLAGS=-Wall -g
 DIRS=obj bin
 OBJDIR=obj
 BINDIR=bin

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+marco() {
+  pwd > /tmp/directory.txt
+}
+
+polo() {
+  cd $(cat /tmp/directory.txt)
+}
+
+echo "Only this prints - The remaining functions do not work"
+
+marco
+polo
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+variable="foobar"
+if [[ "$variable" == "\$6\$longstring" ]]; then
+  echo "Yep"
+else
+  echo "Nope"
+fi

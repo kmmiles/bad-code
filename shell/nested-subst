@@ -1,0 +1,12 @@
+#!/bin/bash
+
+FOLDER="/this/that"
+
+MNT="${FOLDER:1}"
+MNT="${MNT//\//_}"
+
+
+echo "MNT: $MNT"
+echo "==============="
+FOLDER="/this/that"
+echo "MNT: ${${FOLDER:1}//\//_}"

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -r x
+read -r y
+
+if (( x < y )); then
+  printf "X is less than Y\n"
+elif (( x > y )); then
+  printf "X is greater than Y\n"
+elif (( x == y )); then
+  printf "X is equal to Y\n"
+fi

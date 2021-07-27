@@ -1,0 +1,16 @@
+#!/bin/bash
+
+config_file="/etc/default/grub"
+key="GRUB_CMDLINE_LINUX_DEFAULT"
+value="mykernelshit"
+
+tmp_file="/tmp/$(basename "$config_file").$RANDOM"
+if [[ -f "$config_file" ]]; then
+  cp -v "$config_file" "${config_file}.backup.$(date '+%s')"
+  grep -v "$key" "$config_file" > "$tmp_file"
+else
+  touch "$tmp_file"
+fi
+
+printf "%s=\"%s\"\n" "$key" "$value" >> "$tmp_file"
+mv -fv "$tmp_file" "$config_file"

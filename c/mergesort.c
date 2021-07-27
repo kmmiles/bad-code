@@ -18,7 +18,7 @@ int main()
         unSortedHeapArray[i] = unSortedArray[i];
     }
 
-    int* sortedArray = MergeSort(unSortedHeapArray, arraySize);
+//    int* sortedArray = MergeSort(unSortedHeapArray, arraySize);
 }
 
 int* MergeTwoArrays(int array1[], int arr1Size, int array2[], int arr2Size)

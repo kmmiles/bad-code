@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import random
+
+firstname = ["Silly", "Fat", "Handsome", "Bright", "Foolish", "Stupid", "Intelligent", "Soft", "Clear", "Shiny", "Dark", "Checkered", "Smooth", "Broken", "Communicative", "Small", "Big", "Large", "Short", "Dumb", "Green", "Blue", "Red", "Yellow", "Orange", "Dotted", "Patterned", "Slow", "Fast"
+]
+
+secondname = ["Mom", "Dad", "Dog", "Market", "Sausage", "Cookie", "Day", "Night", "Star", "Phone", "Computer"]
+
+while True:
+    choice = int(input("Type 0 for a random username, 1 to stop."))
+    if choice == 0:
+        print(random.choice(firstname) + random.choice(secondname))
+    elif choice == 1:
+        sys.exit()

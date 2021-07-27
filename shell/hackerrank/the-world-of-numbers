@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -r x
+read -r y
+
+sum=$(( x + y ))
+diff=$(( x - y ))
+prod=$(( x * y ))
+quot=$(( x / y ))
+
+printf "%s\n%s\n%s\n%s\n" "$sum" "$diff" "$prod" "$quot"
