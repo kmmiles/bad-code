@@ -1,6 +1,8 @@
 CC=clang
-#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -g
+#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g -Wstringop-overflow
 CFLAGS=-Wall -g
+#CFLAGS=-Weverything
+LIBS=-lm -lcriterion
 DIRS=obj bin
 OBJDIR=obj
 BINDIR=bin
@@ -23,10 +25,10 @@ bins: $(BINS)
 objs: $(OBJS)
 
 $(BINDIR)/%: $(OBJDIR)/%.o
-	  $(CC) -o $@ $<
+	  $(CC) -o $@ $< $(LIBS)
 
 $(BINDIR)/mouse-events: $(OBJDIR)/mouse-events.o
-	  $(CC) -o $@ $< -lX11
+	  $(CC) -o $@ $< $(LIBS) -lX11
 
 $(OBJDIR)/%.o: %.c
 	  $(CC) -c -o $@ $< $(CFLAGS)

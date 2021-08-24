@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#val="$(find ./pictures -mindepth 1 -printf '"%p "')"
+#IFS=$_IFS
+#set -x
+#xgettext -o tok.pot $val
+
+#echo "val: $val"
+#xgettext -o tok.pot $(find ./pictures -mindepth 1 -printf '%p ')
+
+#find ~/Code/bad-code/c -name \*.c -o -name \*.cpp -o -name \*.h -o -name \*.qml
+
+#xgettext -o tok.pot -f <(find ./pictures -type f)
+
+#set -x
+#find ~/Code/bad-code/c -name \*.c
+#xgettext -o tok.pot -f <(find ~/Code/bad-code/c -name \*.c)
+
+#find ~/Code/bad-code/c -name \*.c | \
+#  xargs xgettext -L C 
+
+find ./gettext_examples -name \*.cxx | \
+  xgettext -o smoke.pot -f -

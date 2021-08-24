@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# is current cpu usage over the treshold $1?
+# - requires mpstat from the `sysstat` package
+# - takes a sample (up to 2) each second in attempt to be more accurate
+cpu_usage_over() {
+  threshold_percent=${1:-99}
+  usage_percent=$(mpstat 1 2 | awk 'END{print 100-$NF}')
+  awk "BEGIN {exit !($usage_percent >= $threshold_percent)}" &> /dev/null
+}
+
+if cpu_usage_over 50; then
+  printf "Threshold reached!\n"
+  # do some special things
+else
+  printf "Treshold not reached, doing nothing.\n"
+fi
+

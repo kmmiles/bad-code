@@ -1,0 +1,8 @@
+#!/bin/bash
+
+PAGER="cat" strace man ~/Documents/zshzle.1 2> strace.log
+
+# PAGER="cat" strace man /mynfs/manpage.1 2> strace-nfs.log
+# PAGER="cat" strace man /mylocal/manpage.1 2> strace-local.log
+
+#PAGER="cat" strace man ~/opt/exa/man/exa.1 2> /tmp/strace-nfs.log

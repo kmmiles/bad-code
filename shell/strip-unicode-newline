@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo -e "\xe8\x90" > unicode.dat
+sed -ze "s/\xe8\x90//" unicode.dat > unicode2.dat

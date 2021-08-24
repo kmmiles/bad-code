@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<test>  
+  <string>FOO_BAR</string>  
+  <string>FOO&#95;BAR</string>  
+  <string>FOO&lowbar;BAR</string>  
+</test>  

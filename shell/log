@@ -1,0 +1,7 @@
+#!/bin/bash
+
+error() {
+  printf "%sError%s: %s%s" "${RED}" "${RESET}" "${1}" "${2:-$'\n'}"
+}
+
+error "test" "this"

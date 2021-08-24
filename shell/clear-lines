@@ -1,0 +1,16 @@
+#!/bin/bash
+
+clear_lines() {
+  local lines cur_row tresh_row
+  lines=$1
+  read -rsdR -p $'\E[6n' pos
+  cur_row=$(echo "${pos#*[}" | cut -d';' -f 1)
+  tresh_row=$((cur_row - (lines + 2)))
+  if ((tresh_row > 0)); then
+    tput cup $tresh_row 0 && tput ed
+  else
+    clear -x
+  fi
+}
+
+clear_lines "$1"

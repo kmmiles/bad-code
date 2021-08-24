@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -r expression
+awk "BEGIN {printf \"%.3f\n\", $expression}"

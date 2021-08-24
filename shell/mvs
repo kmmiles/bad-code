@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function mvs() {
+        i=1
+        if [[ $# -ge 2 ]]; then
+                for x in "$@"; do
+                        mv "$x" "${@: -1}"
+
+                        ((i=i+1))
+                        if [[ $i -eq $# ]]; then return 0; fi
+                done
+        elif [[ $# -eq 1 ]]; then
+                while read p; do
+                        mv "$p" "$0"
+                done < "${1:-/dev/stdin}"
+        else
+                echo "At least 1 argument is required."
+
+                return 1
+        fi
+
+}

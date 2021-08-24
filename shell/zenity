@@ -16,7 +16,7 @@ EOF
 }
 
 data_massaged() {
-  while IFS=$'\n' read -r v; do
+  while read -r v; do
     printf "%s\n%s\n" "FALSE" "$(echo "$v" | xargs)"
   done <<< "$(data)"
 }

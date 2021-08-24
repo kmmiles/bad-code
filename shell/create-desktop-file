@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+read -r -p "Provide a name for your application (e.g. 'myapp'): " appname 
+if (( $(id -u) == 0 )); then
+  desktop_file="/usr/share/application/$appname.desktop"
+else
+  desktop_file="$HOME/.local/share/application/$appname.desktop"
+fi
+
+mkdir -p "$(dirname "$desktop_file")"
+cat << EOF > "$desktop_file"
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/path/to/yourapp
+Name=$appname
+Comment=Description of YourApp
+Icon=/path/to/yourapp.png
+EOF
+
+printf "succesfully wrote to %s\n" "$desktop_file"

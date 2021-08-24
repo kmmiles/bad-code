@@ -1,0 +1,5 @@
+#!/bin/bash
+
+haystack="foo bar this that"
+needle="foo "
+echo "${haystack#$needle}"

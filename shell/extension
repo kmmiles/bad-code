@@ -1,4 +1,13 @@
 #!/bin/bash
 
-file="$HOME/foo/bar/howdy.exe"
-echo "${file#*.}"
+file="$HOME/foo/bar/howdy.old"
+file="$HOME/foo/bar/howdy"
+
+if [[ "${file#*.}" != "old" ]]; then
+  echo "doesn't have extension"
+fi
+
+#file="$HOME/foo/bar/howdy"
+#echo "${file#*.}"
+
+

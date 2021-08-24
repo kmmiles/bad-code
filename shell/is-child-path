@@ -1,0 +1,71 @@
+#!/bin/bash
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") [OPTIONS] <CHILD-PATH> <PARENT-PATH>
+
+Return true if <CHILD-PATH> is a descendant of <PARENT-PATH>.
+
+OPTIONS
+
+-e    Fail if paths do not exist
+-s    Follow symbolic links (implies -e)
+
+EXAMPLES
+
+true:   \`$(basename "$0") "/home/foo/bar" "/home/foo"\`
+true:   \`$(basename "$0") "/home/foo/bar" "/home"\`
+true:   \`$(basename "$0") "/home/foo/bar" "/"\`
+false:  \`$(basename "$0") "/home/foo/bar" "/dev"\`
+EOF
+}
+
+paths_must_exist=false
+follow_symlinks=false
+while getopts 'es' flag; do
+  case "${flag}" in
+    e)
+      paths_must_exist=true
+      ;;
+    s) 
+      follow_symlinks=true
+      paths_must_exist=true
+      ;;
+    *) usage ; exit 1 ;; 
+  esac
+done
+shift $((OPTIND-1))
+
+if (( $# != 2 )); then
+  usage
+  exit 1
+fi
+
+child_path="$1"
+if $paths_must_exist && [[ ! -a "$child_path" ]]; then
+  >&2 printf "No such file or directory: %s\n" "$child_path"
+  exit 1
+fi
+
+parent_path="$2"
+if $paths_must_exist && [[ ! -a "$parent_path" ]]; then
+  >&2 printf "No such file or directory: %s\n" "$child_path"
+  exit 1
+fi
+
+if $follow_symlinks; then
+  child_path="$(realpath "$child_path")"
+  parent_path="$(realpath "$parent_path")"
+fi
+
+child_tmp="$child_path"
+until [[ "$child_tmp" == "/" ]]; do
+  child_tmp=$(dirname "$child_tmp")
+  if [[ "$child_tmp" == "$parent_path" ]]; then
+    printf "%s is a child of %s\n" "${child_path}" "${parent_path}"
+    exit 0
+  fi
+done
+
+printf "%s is *not* a child of %s\n" "${child_path}" "${parent_path}"
+exit 1

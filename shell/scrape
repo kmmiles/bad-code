@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+url=https://blog.feedspot.com/linux_rss_feeds/
+tempfile=$(mktemp)
+curl -sA "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0" -o "$tempfile" "$url"
+#tempfile="./scrapeme.html"
+grep "href=\"#" "$tempfile" | while read -r line; do
+  bookmark=$(echo "$line" | cut -d'=' -f 2 | cut -d'>' -f 1 | cut -d'#' -f 2 | cut -d'"' -f 1)
+  title=$(echo "$line" | cut -d'>' -f 3 | cut -d'<' -f 1 | sed 's/  RSS Feed//g')
+  url=$(grep -A 1 "id=\"$bookmark\"" "$tempfile" | awk -F'<strong>RSS Feed</strong>' '{print $2}' | awk -F'<a href="' '{print $2}' | cut -d'"' -f 1 | xargs)
+  printf "%s;%s\n" "$title" "$url"
+done
+rm -f "$tempfile"

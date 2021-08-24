@@ -1,0 +1,4 @@
+#echo -e "GET / HTTP/1.0\r\n" | openssl s_client -connect github.com:443 -ign_eof
+#-CAfile PCA-3G5.pem -ign_eof
+openssl s_client -connect github.com:443 -ign_eof
+

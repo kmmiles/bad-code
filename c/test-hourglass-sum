@@ -1,0 +1,3 @@
+#!/bin/bash
+
+make && OUTPUT_PATH=/dev/stdout ./bin/hourglass-sum < hourglass-sum.txt

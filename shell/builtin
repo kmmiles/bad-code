@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+which time
+which \time

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+strace -s 16384 -p 414 2>&1 | stdbuf -oL grep "Process" >> test.log
+#| grep "Process" > test.log
+
+#| grep -oP '"\K[^"\047]+(?=["\047])' #> test.log  
+

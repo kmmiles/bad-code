@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function lines_between() {
+  local start="${1:-}"
+  local end="${2:-}"
+  local file="${3:-/dev/stdin}"
+
+  if [[ -z "$start" || -z "$end" ]]; then
+    return 1
+  fi
+
+  sed -n \
+    "/$start/,/$end/{/$start/!{/$end/!p}}" \
+    "$file"
+}
+
+# pass filename
+lines_between "Foo" "Bar" "lines.txt"
+
+# or read from stdin
+lines_between "Foo" "Bar" < lines.txt

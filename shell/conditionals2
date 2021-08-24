@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -r x
+read -r y
+read -r z
+
+if (( x == y && x == z )); then
+  printf "EQUILATERAL\n"
+elif (( x == y || x == z || y == z)); then
+  printf "ISOSCELES\n"
+else
+  printf "SCALENE\n"
+fi

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+chkpath() { command -v "$1" &> /dev/null; }
+
+fetch() {
+  local url
+  url="$1"
+
+  if [[ -z "$url" ]]; then
+    return 1
+  fi
+
+  type curl > /dev/null
+
+
+  # system curl
+  # curl -L 
+  # system wget
+  # busybox wget
+}
+
+favored() {
+  for x in "${@}"; do
+  done
+
+}
+
+#set -x
+if ! chkpath "foobar"; then
+  echo "no foobar"
+fi
+
+if ! chkpath "curl"; then
+  echo "no curl"
+fi
+
+chkpath "curl"    && has_curl=true    || has_curl=false
+chkpath "wget"    && has_wget=true    || has_wget=false
+chkpath "busybox" && has_busybox=true || has_busybox=false
+
+if $has_curl; then
+  echo "yes, curl"
+fi
+
+if $has_wget; then
+  echo "yes, wget"
+fi
+
+if $has_busybox; then
+  echo "yes, busybox"
+fi
+
+

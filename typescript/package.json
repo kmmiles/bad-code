@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ternary": "ts-node -sT bin/ternary.ts"
+    "ternary": "ts-node -sT bin/ternary.ts",
+    "async": "ts-node -sT bin/async.ts",
+    "reverse-linked-list": "ts-node -sT bin/reverse-linked-list.ts"
   },
   "author": "",
   "license": "ISC",

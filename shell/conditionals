@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -rn 1 char
+if [[ "${char}" == [Yy] ]]; then
+  printf "YES\n"
+elif [[ "${char}" == [Nn] ]]; then
+  printf "NO\n"
+fi

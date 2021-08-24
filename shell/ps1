@@ -1,0 +1,9 @@
+#!/bin/bash
+
+normal=$(tput sgr0)
+red="$normal$(tput setaf 1)"
+green="$normal$(tput setaf 2)"
+yellow="$normal$(tput setaf 3)"
+
+#PS1="\$(if [[ \$? == 0 ]]; then echo \"╭╴\[$green\]\w\[\e[00m\]\n╰─→ \"; elif [[ \$? == 1 ]]; then echo \"\[$red\]╭╴\[\e[00m\]\[$green\]\w\[\e[00m\]\[$red\]\n╰─→ \[\e[00m\]\"; else echo \"\[$yellow\]╭╴\[\e[00m\]\[$green\]\w\[\e[00m\]\[\e[33m\]\n╰─→ \[\e[00m\]\"; fi)"
+PS1="\$(rc=\$?; if [[ \$rc == 0 ]]; then echo \"╭╴\[\e[32m\]\w\[\e[00m\]\n╰─→ \"; elif [[ \$rc == 1 ]]; then echo \"\[\e[31m\]╭╴\[\e[00m\]\[\e[32m\]\w\[\e[00m\]\[\e[31m\]\n╰─→ \[\e[00m\]\"; else echo \"\[\e[33m\]╭╴\[\e[00m\]\[\e[32m\]\w\[\e[00m\]\[\e[33m\]\n╰─→ \[\e[00m\]\"; fi)"

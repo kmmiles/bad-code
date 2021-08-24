@@ -15,6 +15,3 @@ backgrounds=(
 
 background=$(random_element "${backgrounds[@]}")
 printf "Change background to %s\n" "$background"
-
-
-

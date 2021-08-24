@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ -x /bin/ls && -x /bin/rm ]]; then
+  echo "yep"
+fi
+

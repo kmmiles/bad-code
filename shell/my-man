@@ -1,0 +1,4 @@
+#!/bin/bash
+
+groff -mandoc -Tascii filepath.1 
+
