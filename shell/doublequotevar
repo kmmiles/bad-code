@@ -1,0 +1,9 @@
+#!/bin/bash
+
+foo="\"foo\""
+
+echo $foo
+
+if [ "$foo" == "foo" ]; then
+  echo "yes, it's foo"
+fi

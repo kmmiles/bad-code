@@ -1,0 +1,790 @@
+./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+++ curl -X POST -H 'Content-type: application/json' --data '{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+++ curl -X POST -H '\''Content-type: application/json'\'' --data '\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+++ curl -X POST -H '\''\'\'''\''Content-type: application/json'\''\'\'''\'' --data '\''\'\'''\''{"text":"./return-value: line 15: pdk: command not found
+./return-value: line 15: pdk: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\''\'\'''\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}'\'' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
++ trap on_failure ERR
++ pdk bundle install
++ trap on_failure ERR
++ pdk bundle install
+./return-value: line 16: pdk: command not found
+./return-value: line 16: pdk: command not found
+++ on_failure
+++ ret=127
+++ on_failure
+++ ret=127
++++ cat logfile
++++ cat logfile"}' https://foo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  0  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo
+curl: (6) Could not resolve host: foo
+++ exit 127
+++ exit 127
+{"text":"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  0  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127"}
+{"text":"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n++ curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n++ curl -X POST -H '\\''Content-type: application/json'\\'' --data '\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n++ curl -X POST -H '\\''\\'\\'''\\''Content-type: application/json'\\''\\'\\'''\\'' --data '\\''\\'\\'''\\''{\"text\":\"./return-value: line 15: pdk: command not found\n./return-value: line 15: pdk: command not found\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\''\\'\\'''\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}'\\'' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n+ trap on_failure ERR\n+ pdk bundle install\n+ trap on_failure ERR\n+ pdk bundle install\n./return-value: line 16: pdk: command not found\n./return-value: line 16: pdk: command not found\n++ on_failure\n++ ret=127\n++ on_failure\n++ ret=127\n+++ cat logfile\n+++ cat logfile\"}' https://foo\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  0  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\ncurl: (6) Could not resolve host: foo\n++ exit 127\n++ exit 127\n{\"text\":\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n++ curl -X POST -H 'Content-type: application/json' --data '{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n++ curl -X POST -H '\\\\''Content-type: application/json'\\\\'' --data '\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n++ curl -X POST -H '\\\\''\\\\'\\\\'''\\\\''Content-type: application/json'\\\\''\\\\'\\\\'''\\\\'' --data '\\\\''\\\\'\\\\'''\\\\''{\\\"text\\\":\\\"./return-value: line 15: pdk: command not found\\n./return-value: line 15: pdk: command not found\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\''\\\\'\\\\'''\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}'\\\\'' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\\n+ trap on_failure ERR\\n+ pdk bundle install\\n+ trap on_failure ERR\\n+ pdk bundle install\\n./return-value: line 16: pdk: command not found\\n./return-value: line 16: pdk: command not found\\n++ on_failure\\n++ ret=127\\n++ on_failure\\n++ ret=127\\n+++ cat logfile\\n+++ cat logfile\\\"}' https://foo\\n  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\\n                                 Dload  0  Upload   Total   Spent    Left  Speed\\n\\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: foo\\ncurl: (6) Could not resolve host: foo\\n++ exit 127\\n++ exit 127\"}"}

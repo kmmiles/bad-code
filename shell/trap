@@ -8,11 +8,22 @@ set -euo pipefail
 #  #exit $s
 #}
 
-hello() {
-  local s
+#hello() {
+#  local s
+#}
+#trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+#IFS=$'\n\t'
+#false
+
+handle_term() {
+  echo "Ouch, caught SIGTERM!"
 }
-trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
 
-IFS=$'\n\t'
+handle_int() {
+  echo "Ouch, caught SIGINT!"
+}
 
-false
+trap handle_term TERM
+trap handle_int INT
+
+sleep 100

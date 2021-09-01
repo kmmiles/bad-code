@@ -1,0 +1,18 @@
+#!/bin/bash
+
+exec 1> >(tee -a logfile) 2> >(tee -a logfile)
+
+log2json() { jo text="$(cat logfile)" ; }
+
+on_failure() {
+    ret=$?
+    curl -X POST \
+      -H 'Content-type: application/json' \
+      --data "$(log2json)" \
+      https://foo
+    exit $ret
+}
+
+trap 'on_failure' ERR
+pdk bundle install
+pdk bundle exec rake syntax:templates
