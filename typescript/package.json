@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ternary": "ts-node -sT bin/ternary.ts",
     "async": "ts-node -sT bin/async.ts",
+    "diablo": "ts-node -sT bin/diablo.ts",
     "reverse-linked-list": "ts-node -sT bin/reverse-linked-list.ts"
   },
   "author": "",

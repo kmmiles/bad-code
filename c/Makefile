@@ -1,8 +1,9 @@
 CC=clang
 #CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g -Wstringop-overflow
-CFLAGS=-Wall -g
+#CFLAGS=-Wall -g
 #CFLAGS=-Weverything
-LIBS=-lm -lcriterion
+LIBS=-lm 
+#-lcriterion
 DIRS=obj bin
 OBJDIR=obj
 BINDIR=bin
