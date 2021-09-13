@@ -1,0 +1,22 @@
+#!/bin/bash
+ 
+# Define environment variables
+MAX_BRIGHTNESS=100
+MIN_BRIGHTNESS=20
+BRIGHTNESS_STEPS=10
+ 
+brightUp() {
+  cur=$(xbacklight -get)
+  if (( cur >= MAX_BRIGHTNESS )); then 
+    echo "Brightness is already at maximum"
+  elif (( cur + BRIGHTNESS_STEPS >= MAX_BRIGHTNESS )); then
+    xbacklight -set 100
+    echo "Brightness has been set to 100"
+  elif (( cur + BRIGHTNESS_STEPS < MAX_BRIGHTNESS )); then
+    xbacklight -inc 10
+    echo "Brightness has been incremented"
+  fi
+}
+
+brightUp
+

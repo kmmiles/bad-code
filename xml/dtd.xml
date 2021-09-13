@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<!DOCTYPE coche [
+<!ELEMENT coche (marca, modelo, matricula, potencia, plazas, numeroPlazas)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT plazas (#PCDATA)>
+<!ELEMENT numeroPlazas (#PCDATA)>
+]>
+
+<coche>
+  <modelo>foo</modelo>
+</coche>

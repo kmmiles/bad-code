@@ -1,0 +1,22 @@
+#!/bin/bash
+
+date_format="%Y%m%d_%H%M%S"
+srcdir="/tmp/x"
+destdir="/tmp/minecraft-backups"
+#srcdir="/home/pi/minecraftserver/world"
+#destdir="/home/pi/MineCraftBackups"
+
+set -e
+
+if [[ ! -d "$srcdir" ]]; then
+  >&2 printf "Source directory does not exist: %s\n" "$srcdir"
+  exit 1
+fi
+
+dest="$destdir/$(date "+${date_format}").tar.gz"
+mkdir -p "$destdir"
+tar \
+  -C "$(dirname "$srcdir")" \
+  -czf "$dest" \
+  "$(basename "$srcdir")"
+printf "Backup created: %s\n" "$dest"

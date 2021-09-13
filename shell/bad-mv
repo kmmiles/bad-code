@@ -1,0 +1,21 @@
+#!/bin/bash
+
+move_files() {
+  files="/tmp/*.dat"
+  dest="/tmp/x"
+
+  now=$(date +'%m/%d/%Y - %H:%M')
+  for file in $files; do
+    if [[ -f "$file" ]]; then
+      printf "[%s] Moving %s to %s\n" "$now" "$file" "$dest"
+      mv "$file" "$dest"
+    else
+      printf "[%s] No matching files\n" "$now"
+    fi
+  done
+}
+
+while true; do
+  move_files
+  sleep 15
+done

@@ -1,0 +1,41 @@
+#!/bin/bash
+
+view_strings() {
+  clear
+  echo "Which database would you like to explore? (passwd, group, shadow)"
+  if [[ "$database" == "passwd" ]]; then
+    clear
+    echo ""
+    echo "Which key would you like to use?"
+    read -r key
+    echo ""
+    getent "$database" "$key"
+  else
+    clear
+    echo haha
+  fi
+}
+
+view_strings
+
+
+read -r database
+
+# if / elif
+if [[ "$database" == "passwd" ]]; then
+  echo "passwd"
+elif [[ "$database" == "group" ]]; then
+  echo "group"
+fi
+
+# case switch
+case "$database" in
+  passwd)
+    echo "passwd"
+    ;;
+  group)
+    echo "group"
+    ;;
+esac
+
+

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+menu_db() {
+  whiptail --menu \
+    "Which database would you like to explore?" \
+    20 \
+    50 \
+    5 \
+    passwd "" \
+    group "" \
+    shadow "" \
+    3>&1 1>&2 2>&3
+}
+
+input_key() {
+  whiptail --inputbox \
+    "key for $1" \
+    10 \
+    30 \
+    3>&1 1>&2 2>&3
+}
+
+text_getent() {
+  file="$(mktemp)"
+  getent "$db" > "$file"
+  whiptail --textbox \
+    --scrolltext \
+    text.txt \
+    40 \
+    80
+  rm -f "$file"
+}
+
+if db="$(menu_db)"; then
+  key=$(input_key "$db")
+  text_getent "$db" "$key"
+  #echo "main_selection: $db"
+  #echo "key: $key"
+fi
+
+
+

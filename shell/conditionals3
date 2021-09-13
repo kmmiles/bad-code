@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if false; then
+  echo "this won't happen"
+fi
+
+if ! false; then
+  echo "this will happen"
+fi
+
+
+if [ $CI == true ] ; then
+    # Check if the image with the latest git commit already exists
+    echo "checking if the image with the latest git commit already exists"
+    IMAGE_META="$( aws ecr describe-images --repository-name=${APPLICATION} --image-ids=imageTag=${VERSION} )"
+    if [[ $? == 0 ]]; then
+        #IMAGE_TAGS="$( echo ${IMAGE_META} | jq '.imageDetails[0].imageTags[0]' -r )"
+        echo "the latest image $IMAGE_REPO/${APPLICATION}:$VERSION already exists"
+        exit 0
+    fi
+fi

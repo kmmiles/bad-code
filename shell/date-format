@@ -1,0 +1,8 @@
+#!/bin/bash
+
+backup_name=$(date '+%H:%M-%d-%m-%y').tar.gz
+echo "backup_name: $backup_name"
+
+# or even more readable filename
+backup_name=$(date '+%Y%m%d_%H%M%S').tar.gz
+echo "backup_name: $backup_name"

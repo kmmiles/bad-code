@@ -1,0 +1,30 @@
+#!/bin/bash
+
+view_strings() {
+  dbs=(
+    'passwd'
+    'group'
+    'shadow'
+  )
+
+  while true; do
+    PS3="Which database would you like to explore? "
+    select db in "${dbs[@]}"; do
+      case "$REPLY" in
+        1 | 2 | 3)
+          read -rp "Which key would you like to use for the database $db: " key
+          if [[ -n "$key" ]]; then
+            getent "$db" "$key"
+          else
+            getent "$db"
+          fi
+          break
+          ;;
+        *)
+          ;;
+      esac
+    done
+  done
+}
+
+view_strings
