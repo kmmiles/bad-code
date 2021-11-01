@@ -1,5 +1,0 @@
-/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Release/net5.0/publish/sample1
-/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Release/net5.0/publish/sample1.dll
-/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Release/net5.0/publish/sample1.deps.json
-/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Release/net5.0/publish/sample1.runtimeconfig.json
-/home/kmmiles/.local/src/bad-code/dotnet/sample1/bin/Release/net5.0/publish/sample1.pdb

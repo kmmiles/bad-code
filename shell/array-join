@@ -1,0 +1,44 @@
+#!/bin/bash
+
+data() {
+  cat << EOF
+apple
+banana
+orange
+Strawberry
+lime
+EOF
+}
+
+array::join() {
+  # array should be a standard, newline delimited string
+  local array=()
+  IFS=$'\n' readarray -t array <<<"$1"
+  # specify a delimiter to join the array with
+  local delimiter="${2:-,}"
+  local string
+  for ((i=0;i<${#array[@]};i++)); do
+    if (( i > 0 )); then
+      string="${string}${delimiter}${array[$i]}"
+    else
+      string="${array[$i]}"
+    fi
+  done
+  printf "%s\n" "${string}"
+}
+
+function join_by { local d=${1-} f=${2-}; if shift 2; then printf %s "$f" "${@/#/$d}"; fi; }
+
+array::join2() {
+  local array=()
+  IFS=$'\n' readarray -t array <<<"$1"
+  local delim=${2-,}
+  string=$(printf "%s" "${array[@]/#/$delim}")
+  printf "%s\n" "${string:1}"
+}
+
+array::join2 "$(data)"
+
+
+#array::join "$(data)" "-"
+#join_by "-" "foo" "bar" "this"

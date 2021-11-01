@@ -1,0 +1,13 @@
+[Unit]
+Description=progname
+
+[Service]
+ExecStart=/path/to/prog
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1s
+Unit=app.jobs-send.service
+
+[Install]
+WantedBy=multi-user.target

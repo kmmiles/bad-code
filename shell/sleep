@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "sleeeeep" > /proc/$$/comm
+sleep 100

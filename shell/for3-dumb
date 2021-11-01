@@ -1,0 +1,18 @@
+#!/bin/bash
+
+[[ -z "$CC"       ]]  && CC=gcc
+[[ -z "$CFLAGS"   ]]  && CFLAGS="-Wall -Werror"
+[[ -z "$SUFFIXES" ]]  && SUFFIXES='.c'
+[[ -z "$VERBOSE"  ]]  && VERBOSE=0
+
+set -e
+for suf in $SUFFIXES; do
+  find . -type f \( -name "*$suf" \) |
+    while read -r file; do
+      srcfile=$(basename "$file")
+      binfile=${srcfile%%.*}
+      (( VERBOSE == 1 )) && set -x
+      $CC "$CFLAGS" -o "$binfile" "$srcfile"
+      set +x
+    done
+done

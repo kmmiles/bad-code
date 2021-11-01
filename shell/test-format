@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+
+./format.sh csv '' ';' 'DN;SSH Key;Full Name;Shell;UID Number;User ID;Home Directory;Email;Primary Group' 'uid=McTest, ou=people, dc=internal, dc=example dc=com;ssh-rsa this-is-filler-to-get-the-right-number-of-characters-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;Test McTesterFace;/bin/bash;10001;McTest;/home/net/McTest;McTest@example.com;10001'

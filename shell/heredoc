@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+print_header() {
+  cat /dev/stdin foo.txt << EOF
+"""
+$USER
+CS288 005
+$(date +"%m/%d/%Y %I:%M %p")
+"""
+EOF
+}
+
+print_header
+
+const sql = `select * from donuts where type = ? and flavor = ? `;
+query(sql, [type, flavor])

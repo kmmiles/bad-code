@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SUFFIXES='.C .cc .cpp'
+
+for suffix in $SUFFIXES; do
+  echo "suffix: $suffix"
+done

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+main() {
+  local pid
+  local x=${1:-10}
+
+  while true; do
+    if [[ -n "$pid" && -d /proc/"$pid" ]]; then
+      printf "killing %s\n" "$pid"
+      kill "$pid"
+    fi
+
+    nohup /bin/sleep 20 &> every-10-seconds.log &
+    pid=$!
+    printf "new process started: %s\n" "$pid"
+
+    printf "sleeping for %s seconds\n" "$x"
+    sleep "$x"
+  done
+}
+
+main "$@"

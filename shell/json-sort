@@ -1,0 +1,5 @@
+#!/bin/bash
+
+curl "https://aur.archlinux.org/rpc/?v=5&type=search&arg=foobar" | \
+  jq .results | \
+  jq 'sort_by(-.Popularity)'

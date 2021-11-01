@@ -1,0 +1,36 @@
+#!/bin/bash
+
+SUFFIXES='.C .c .cpp'
+if [[ -z "$SUFFIXES" ]]; then
+  SUFFIXES='.c'
+fi
+
+for file in *; do
+  if [[ ! -f "$file" ]]; then
+    continue
+  fi
+
+  fullname=$(basename "$file")
+  filename=${file%%.*}
+  ext="${file##*.}"
+  for suf in $SUFFIXES; do
+    if [[ "$suf" == ".$ext" ]]; then
+      if [[ -z "$CC" ]]; then
+        CC=gcc
+      fi
+      if [[ -z "$CFLAGS" ]]; then
+        CFLAGS="-Wall -Werror"
+      fi
+      if [[ -z "$VERBOSE" ]]; then
+        VERBOSE=0
+      fi
+      if [[ $VERBOSE -eq 1 ]]; then
+        echo "$CC $CFLAGS -o $filename $fullname"
+      fi
+      if $CC "$CFLAGS" -o "$filename" "$fullname"; then
+        exit 1
+      fi
+      break
+    fi
+  done
+done

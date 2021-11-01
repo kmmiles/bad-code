@@ -1,0 +1,6 @@
+#!/bin/bash
+
+regex="^-x( )\w+\.tar"
+if [[ "$*" =~ $regex ]]; then
+  echo "regex matches"
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+main() {
+  printf "waiting..."
+  for ((i = 0; i < 100; i++)); do
+    if ((i % 4 == 0)); then
+      printf "\b\b\b   \b\b\b"
+    else
+      printf "."
+    fi
+    sleep 1
+  done
+}
+main "$@"

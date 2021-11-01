@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -f hello.txt hello-symlink.txt
+echo "hello world" > hello.txt
+ln -sf hello.txt hello-symlink.txt
+cat hello-symlink.txt
+
+

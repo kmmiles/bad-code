@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# `$#` stores the number of arguments passed
+# the following tests if two or more arguments were passed
+if (( $# >= 2 )); then
+  printf "two or more arguments were passed\n"
+else
+  printf "less then two arguments were passed\n"
+fi
+
+# arguments can be accessed by number and assigned to variables
+# the following assigns the first and second arguments to variables
+foo="$1"
+bar="$2"
+
+# `-n` tests if a variable length is not zero
+if [[ -n "$foo" ]]; then
+  printf "first argument was passed: %s\n" "$foo"
+else
+  printf "first argument was NOT passed\n"
+fi
+
+# `-z` tests if a variable length is zero
+if [[ -z "$bar" ]]; then
+  printf "second argument was NOT passed\n"
+else
+  printf "second argument was passed: %s\n" "$bar"
+fi
+

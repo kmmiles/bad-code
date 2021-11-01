@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -x
+
+trash() {
+  mkdir -p ~/Trash && mv -nf "$@" ~/Trash
+}
+
+trash "$@"
+
+

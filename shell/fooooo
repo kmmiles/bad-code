@@ -1,3 +1,0 @@
-
-for %%i in (*.mkv) do NVEncC --vpp-colorspace hdr2sdr=hable,source_peak=4000 -i "%%i" -o "-" | ffmpeg -i pipe:0 -c:v libx264 -crf 18 "out2%%~ni.mp4"
-

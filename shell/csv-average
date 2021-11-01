@@ -1,0 +1,3 @@
+#!/bin/bash
+
+awk -F',' '{ total += $6 } END { print total / NR }' < csv-average.txt

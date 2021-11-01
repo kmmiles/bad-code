@@ -1,0 +1,25 @@
+#!/bin/bash
+
+dothis() {
+  echo "do this"
+  return 1
+}
+
+dothat() {
+  echo "do that"
+  return 0
+}
+
+foo="bar"
+
+echo "== if/else =="
+if [[ "$foo" == "bar" ]]; then
+  dothis
+else
+  dothat
+fi
+
+echo ""
+
+echo "== && || =="
+[[ "$foo" == "bar" ]] && dothis || dothat

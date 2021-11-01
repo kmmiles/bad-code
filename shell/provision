@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo apt --no-install-recommends -y install \
+  sudo \
+  bash \
+  man-db \
+  manpages \
+  ca-certificates \
+  ssh \
+  apt-transport-https \
+  apt-file \
+  rsync \
+  git \
+  curl \
+  vim

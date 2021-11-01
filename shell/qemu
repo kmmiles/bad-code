@@ -1,0 +1,71 @@
+#!/bin/bash
+
+####################################################################################################################
+# Original Author: Chloe Carpenter
+#
+# Role of script: Install Virt-Manager Complete Edition
+#
+# Source doc: https://discovery.endeavouros.com/applications/how-to-install-virt-manager-complete-edition/2021/09/
+####################################################################################################################
+
+###########################################
+# Handle trap function for error handling
+###########################################
+
+handle_trap() {
+  local s=$?
+  echo "$0: line ${BASH_LINENO[0]}: $BASH_COMMAND"
+  exit $s
+}
+
+trap handle_trap ERR
+
+#################################################
+# Install all necessary components for KVM/QEMU
+#
+# Enable libvirtd.service immediately
+#
+# Check the status of libvirtd.service
+#
+# Modify libvirtd.conf via sed
+#
+# Add $USER to libvirt group
+#
+# Add $USER to /etc/libvirt/qemu.conf
+#################################################
+
+
+
+
+
+
+#qemu_conf=/etc/libvirt/qemu.conf
+#libvirtd_conf=/etc/libvirt/libvirtd.conf
+
+qemu_conf="./qemu.conf"
+libvirtd_conf="./libvirtd.conf"
+
+sed -i "s/#?unix_sock_group.*/unix_sock_group = \"libvirt\"/g" "$libvirtd_conf"
+sed -i "s/#?unix_dock_rw_perms.*/unix_dock_rw_perms = \"0770\"/g" "$libvirtd_conf"
+
+sed -i "s/#user = \"root\"/user = \"root\"/g" "$qemu_conf"
+sed -i "s/#group = \"root\"/group = \"libvirt\"/g" "$qemu_conf"
+
+exit 0
+
+pacman -S --noconfirm \
+  virt-manager \
+  qemu \
+  libvirt \
+  edk2-ovmf \
+  dnsmasq \
+  vde2 \
+  bridge-utils \
+  openbsd-netcat \
+  iptables-nft \
+  dmidecode
+
+
+usermod -a -G libvirt "$USER"
+systemctl enable --now libvirtd.service
+systemctl status libvirtd.service
