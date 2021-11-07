@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# mkdir "foo" && cd "foo" || echo "failed to make directory foo"
+
+if mkdir foo; then
+  cd "foo"
+else
+  echo "failed to make directory"
+fi
+
+if mkdir foo || cd foo; then
+  echo "failed to make directory"  
+fi
+
+

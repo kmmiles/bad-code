@@ -1,0 +1,17 @@
+#!/bin/bash
+
+time=`date`
+torrentname=$1
+
+if ! screen -list | grep -q "AutoUpload"; then
+  screen -dmS AutoUpload bash -c "echo '========== Upload Started =========='; gclone copy \"/home/nickname/torrents/deluge\" \"GDrive:{ID}\" -P --drive-acknowledge-abuse; echo '========== Upload Completed @ $time =========='; echo 'Upload triggered by $torrentname'; bash"
+else
+  screen -dr AutoUpload bash -c "echo '========== Upload Started =========='; gclone copy \"/home/nickname/torrents/deluge\" \"GDrive:{ID}\" -P --drive-acknowledge-abuse; echo '========== Upload Completed @ $time =========='; echo 'Upload triggered by $torrentname'; bash"
+fi
+
+start_upload() {
+  echo "========== Upload Started =========="
+  gclone copy "$HOME/torrents/deluge" "GDrive:{ID}" -P --drive-acknowledge-abuse
+  echo "========== Upload Completed @ $time =========="
+  echo "Upload triggered by $torrentname"
+}

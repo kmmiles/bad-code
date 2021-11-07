@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true; do
+  /bin/ping -c 1 8.8.8.8
+  echo -en "\r"
+  sleep 1
+done

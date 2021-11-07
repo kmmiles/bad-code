@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if (( $# != 4 )); then
+  printf "%s <RSS_URL> <WEBHOOK_URL> <USERNAME> <AVATAR_URL>\n" "$0"
+  exit 1
+fi
+
+rss_url="$1"
+webhook_url="$2"
+username="$3"
+avatar_url="$4"
+
+rsstail -i 3 -u "$rss_url" -n 0 | while read -r text; do
+  ./discord.sh \
+    --webhook-url="$webhook_url" \
+    --username "$username" \
+    --avatar "$avatar_url" \
+    --text "$text"
+done

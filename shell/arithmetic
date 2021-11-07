@@ -1,4 +1,13 @@
 #!/bin/bash
 
-read -r expression
-awk "BEGIN {printf \"%.3f\n\", $expression}"
+#read -r expression
+#awk "BEGIN {printf \"%.3f\n\", $expression}"
+
+myvar=0
+for i in 1 2 3 4 5; do
+  ((myvar+=1))
+  echo "hello $myvar"
+done
+
+
+
