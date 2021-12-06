@@ -18,7 +18,7 @@ warn()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
 info()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
 onerr() { local s=$?; err "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
 
-# is-subdir <needle> <haystack>
+# is-subdir <haystack> <needle>
 is-subdir() {
   local haystack="${1:-}"
   local needle="${2:-}"
