@@ -19,8 +19,6 @@ info()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
 onerr() { local s=$?; err "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
 
 # is-subdir <needle> <haystack>
-#
-# paths don't need to exist
 is-subdir() {
   local haystack="${1:-}"
   local needle="${2:-}"
