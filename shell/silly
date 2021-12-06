@@ -1,0 +1,44 @@
+#!/bin/bash
+
+txt=$1
+if [[ ! -f "${txt}" ]]; then
+    echo "Usage: $(basename "$0") <FILE>"
+    exit 1
+fi
+
+if ! make word_search; then
+    echo "failed to build word_search"
+    exit 1
+fi
+
+pin1=(he she it they)
+pin2=(is was were)
+pin3=(a to the there)
+
+sum=0
+sumempty=0
+sumfull=0
+sum1=0
+
+outdir="$HOME/Desktop/result"
+mkdir -p "$outdir"
+for i in {0..3}; do
+    for j in {0..2}; do
+        for k in {0..3}; do
+            outfile="$outdir/out_${pin1[$i]}_${pin2[$j]}_${pin3[$k]}.txt" 
+            ./word_search "$txt" "${pin1[$i]}" "${pin2[$j]}" "${pin3[$k]}" > "$outfile"
+
+            if [[ ! -s "$outfile" ]]; then
+                sumempty=$((sumempty + 1 ))
+            else
+                sumfull=$((sumfull + 1 ))
+            fi
+            sum=$((sum + 1))
+        done
+    done
+done
+    
+echo "$sum files generated"
+echo "$sumempty files were empty"
+echo "$sumfull files contain something"
+echo "$sum1 files in lines"

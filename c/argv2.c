@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
   printf("argc: %d\n", argc);
   if (!source || !dest) {
     fprintf(stderr, "Usage: %s <source> <destination>\n", prog);
-    return(1);
+    return (1);
   }
 
   printf("source = %s\ndestination = %s\n", source, dest);

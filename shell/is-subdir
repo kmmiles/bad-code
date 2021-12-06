@@ -1,0 +1,68 @@
+#!/bin/bash
+###############################################################################
+set -euo pipefail
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") <HAYSTACK> <NEEDLE>
+
+Returns true if <NEEDLE> is a subdirectory of <HAYSTACK>.
+
+OPTIONS
+  -e  Canonicalize paths. All paths must exist and symlinks are followed.
+EOF
+}
+
+err()   { 2>&1 printf "%s%s%s\n" "$(tput setaf 1)" "$@" "$(tput sgr0)"; }
+warn()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
+info()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
+onerr() { local s=$?; err "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
+
+# is-subdir <needle> <haystack>
+#
+# paths don't need to exist
+is-subdir() {
+  local haystack="${1:-}"
+  local needle="${2:-}"
+  local child_tmp="$needle"
+
+  until [[ "$child_tmp" == "/" ]]; do
+    child_tmp=$(dirname "$child_tmp")
+    if [[ "$child_tmp" == "$haystack" ]]; then
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+canon=false
+while getopts 'e' flag; do
+  case "${flag}" in
+    e)
+      canon=true
+      ;;
+    *) usage ; exit 1 ;; 
+  esac
+done
+
+shift $((OPTIND-1))
+if (( $# != 2 )); then
+  usage
+  exit 1
+fi
+
+haystack="${1:-}"
+needle="${2-}"
+
+if $canon; then
+  haystack="$(realpath -e "$haystack")"
+  needle="$(realpath -e "$needle")"
+fi
+
+if ! is-subdir "$haystack" "$needle"; then
+  warn "$needle is *not* a subdirectory of $haystack"
+  exit 1
+fi
+
+info "$needle is a subdirectory of $haystack"

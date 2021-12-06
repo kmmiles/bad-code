@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#foo="415"
+#echo "415 415 415" | sed "s/$foo/$foo++/g"
+
+foo="potato"
+
+echo "one potato two potato" | awk -v foo="$foo" '{ gsub(foo, "banana") }1'

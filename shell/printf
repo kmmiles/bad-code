@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sum=1
+i=1
+arrival_time=(1 2 3)
+burst_time_array=(1 2 3)
+
+printf "\nProcess[%d]\t\t%d\t\t %d\t\t\t %d" \
+  "$((i + 1))" \
+  "${burst_time_array[i]}" \
+  "$((sum - arrival_time[i]))" \
+  "$((sum - arrival_time[i] - burst_time_array[i]))"

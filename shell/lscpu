@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if lscpu | grep -q 'GenuineIntel'; then
+    cpu_model="intel-ucode"
+else
+    cpu_model="amd-ucode"
+fi
+printf 'Your CPU is %s\n' "$cpu_model"

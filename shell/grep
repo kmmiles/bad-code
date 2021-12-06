@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fetchfrom="Total: 465.8 GB    Used: 23.5 GB    Free: 441.6 GB"
+value=$(echo "${fetchfrom#*"Free: "}" | cut -d' ' -f 1)
+printf "Value: \"%s\"\n" "$value"

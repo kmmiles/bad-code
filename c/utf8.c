@@ -17,10 +17,10 @@ int main(void) {
 
   while (fgets(buf, SIZE, fp)) {
     char *x = strstr(buf, "∮ E⋅da = Q,  n → ∞");
-    if(x) {
+    if (x) {
       printf("I found cool formula: %s\n", x);
     }
-    //printf("%s", buf);
+    // printf("%s", buf);
   }
 
   fclose(fp);

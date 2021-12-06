@@ -1,0 +1,27 @@
+#!/bin/bash
+
+usage() {
+  cat <<EOF
+Usage: $0 <DIR>
+
+Counts lines of all files in <DIR>
+EOF
+}
+
+DIR=$1
+if [[ -z "$DIR" ]]; then
+  usage
+  exit 1
+fi
+
+if [[ ! -d "$DIR" ]]; then
+  printf "No such directory: %s\n" "$DIR"
+  exit 1
+fi
+
+total_count=0
+while read -r file; do
+  current_count=$(wc -l "$file" | cut -d' ' -f 1)
+  total_count=$((total_count + current_count))
+done < <(find "$DIR" -type f)
+echo "total_count: $total_count"

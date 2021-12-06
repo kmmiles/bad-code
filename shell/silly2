@@ -1,0 +1,14 @@
+#!/bin/bash
+
+size=3
+wait_time=(1 2 3)
+burst_time_array=(1 2 3)
+
+for i in $size; do
+  ((wait_time[i]=0))
+  for j in $i; do
+    ((wait_time[i] += burst_time_array[j]))
+    ((total += wait_time[i]))
+    echo "${wait_time[@]}"
+  done
+done

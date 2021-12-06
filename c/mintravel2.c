@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <stdbool.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef enum location {
   gym = (1u << 0),
@@ -18,14 +18,14 @@ typedef enum location {
 */
 
 void print_blocks(unsigned int *blocks, size_t size) {
-  for(int i=0; i <= size-1; i++) {
+  for (int i = 0; i <= size - 1; i++) {
     unsigned int n = blocks[i];
     printf("blocks[%d] = ", i);
     while (n) {
       if (n & 1)
-          printf("1");
+        printf("1");
       else
-          printf("0");
+        printf("0");
       n >>= 1;
     }
     printf("\n");
@@ -44,7 +44,6 @@ int main(void) {
   blocks[4] = school | store;
 
   print_blocks(blocks, sizeof(blocks) / sizeof(unsigned int));
-
 }
 
 #if 0

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+a="hello"
+b="hell*"
+
+if [[ $a == $b ]]; then
+  echo "match"
+else
+  echo "no match"
+fi
+

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void increment(int *ptr) {
-  ++(*ptr);   // works 
+  ++(*ptr);   // works
   (*ptr)++;   // also works
   *ptr += 1;  // yes, i too work
 }

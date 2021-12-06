@@ -1,0 +1,8 @@
+#!/bin/bash
+
+file="foo.jpg"
+
+if [[ ${file,,} =~ *.@(heic|jpg|jpeg|mov|mp4|mpeg) ]]; then
+  echo "hello"
+fi
+

@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <stdint.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #if 0
 void write_uint32(stream *s, u_int32_t val) {
@@ -19,17 +19,15 @@ typedef struct stream_t {
 } stream;
 
 int main(void) {
-
   uint32_t val = 1525934176;
 
   stream mystream;
   mystream.buff = calloc(10, sizeof(uint8_t));
   mystream.buff[4] = (val >> 24);
-//  printf("hello %u\n", mystream.buff[4]);
-
+  //  printf("hello %u\n", mystream.buff[4]);
 
   free(mystream.buff);
 
-//  printf("hello world: %u\n", val);
-//  printf("hello world: %u\n", (val & 0x00FF0000) >> 16);
+  //  printf("hello world: %u\n", val);
+  //  printf("hello world: %u\n", (val & 0x00FF0000) >> 16);
 }

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mult()
+{
+    for a in 1 2 3 4 5 6 7 8 9 10; do
+        product=$((1 * a))
+        printf "%d x %d = %d \n" "${1}" $a $product
+    done
+}
+
+read -rp "Enter a number: " num1
+mult "$num1"

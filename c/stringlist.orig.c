@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
 #include <string.h>
+#include <strings.h>
 
 #define INITIAL_THRESHOLD 1
 
@@ -22,11 +22,11 @@ StringList newStringList(size_t threshold) {
 }
 
 int appendStringList(StringList sl, const char *string) {
-  if(!string) {
-    return(1);
+  if (!string) {
+    return (1);
   }
 
-  if((sl->size + 1) == sl->threshold) {
+  if ((sl->size + 1) == sl->threshold) {
     sl->threshold *= 2;
     printf("sl->threshold: %lu\n", sl->threshold);
     sl->list = realloc(sl->list, sl->threshold * sizeof(char *));
@@ -35,27 +35,25 @@ int appendStringList(StringList sl, const char *string) {
   sl->list[sl->size] = strdup(string);
   sl->size++;
 
-  return(0);
+  return (0);
 }
 
 int destroyStringList(StringList sl) {
-  if(sl) {
+  if (sl) {
     free(sl);
   }
-  return(0);
+  return (0);
 }
 
 int printStringList(StringList sl) {
-
-  for(int i=0; i <= (sl->size-1); i++) {
+  for (int i = 0; i <= (sl->size - 1); i++) {
     printf("list[%d] = %s\n", i, sl->list[i]);
   }
 
-  return(0);
+  return (0);
 }
 
 int main(void) {
-
   StringList myStringList = newStringList(1);
   appendStringList(myStringList, "hello");
   appendStringList(myStringList, "world");
@@ -73,6 +71,5 @@ int main(void) {
   printStringList(myStringList);
   destroyStringList(myStringList);
 
-
-  return(0);
+  return (0);
 }

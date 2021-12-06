@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dir=$1
+
+if [[ -z "$dir" ]]; then
+  printf "Usage %s <DIR>\n" "$0"
+  exit 1
+fi
+
+if [[ ! -d "$dir" ]]; then
+  printf "No such directory: %s\n" "$dir"
+  exit 1
+fi
+
+wc -l "$dir"/* 2> /dev/null | tail -n 1 | awk '{print $1}'

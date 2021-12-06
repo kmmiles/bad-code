@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if ! foo; then
+  echo "foo failed"
+  exit 1
+fi
+
+#set -euo pipefail
+#foo

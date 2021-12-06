@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+
+echo "this: ${@}"
+echo "that: ${@[(r)-r]}"
+
+
+
+#string="helloworld"
+#printf "string: %s\n" "${string[2]}"

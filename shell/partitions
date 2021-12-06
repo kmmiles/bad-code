@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pathToFile=/dev/sda
+
+parts=$(lsblk $pathToFile | grep sda | grep part | wc -l)
+echo "parts: $parts"
+for (( i=1; i<=parts; i++ )); do
+  echo -e "d\n\n\nw" 
+done

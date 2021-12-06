@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# with double brackets, bash does not perform pathname expansion.
+# the following tests if the lhs string begins with "hell".
+printf "double bracket * match: "
+if [[ "hello" == hell* ]]; then
+  printf "match.\n"
+fi
+
+# with single brackets, bash attempts to expand the glob.
+# if there are files in the CWD that being with `hell` it will result
+# in a "too many arguments" error.
+printf "single bracket * match: "
+if [ "hello" == hell* ]; then
+  printf "match.\n"
+fi

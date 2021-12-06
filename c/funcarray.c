@@ -5,7 +5,7 @@ typedef struct {
 } v2;
 
 void testit(v2 simplex[3]) {
-  for(size_t i=0; i < 3; i++) {
+  for (size_t i = 0; i < 3; i++) {
     printf("simplex[%lu].x = %f\n", i, simplex[i].x);
   }
 }

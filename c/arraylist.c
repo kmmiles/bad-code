@@ -67,7 +67,7 @@ void stringListPrint(StringList sl) {
   }
 }
 
-//char *stringListToString(StringList sl, char *delim) {}
+// char *stringListToString(StringList sl, char *delim) {}
 
 int main(void) {
   StringList myStringList = stringListNew();

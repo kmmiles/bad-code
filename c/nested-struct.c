@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 struct numbers {
   uint8_t s_a;
@@ -44,5 +44,5 @@ int main(void) {
   printf("size of b: %lu\n", sizeof(b));
   printf("size of a: %lu\n", sizeof(a));
 
-  return(0);
+  return (0);
 }

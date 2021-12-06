@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find ./spaces -iname '*math*' | while read -r file; do
+  echo "file: $file"
+done

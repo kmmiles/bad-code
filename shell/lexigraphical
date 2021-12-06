@@ -1,0 +1,13 @@
+#!/bin/bash
+
+lhs=aaa
+rhs=zzz
+
+if [[ $lhs < $rhs ]]; then
+  echo "rhs is greater"
+fi
+
+if [ $lhs \< $rhs ]; then
+  echo "rhs is greater"
+fi
+

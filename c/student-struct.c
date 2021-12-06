@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-
   struct Subject {
     char name[25];
     char grade;
@@ -15,11 +14,8 @@ int main(void) {
     struct Subject subjects[20];
   };
 
-  
   struct Student student;
   memset(&student, 0, sizeof(student));
 
   printf("%lu\n", sizeof(student.subjects) / sizeof(struct Subject));
-
-
 }

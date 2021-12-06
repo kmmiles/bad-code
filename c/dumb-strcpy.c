@@ -5,7 +5,7 @@
 #define HELLO "HELLO"
 
 void fillString(char *str, size_t size) {
-  if(str && size) {
+  if (str && size) {
     strncpy(str, "Hello, world", size - 1);
   }
 }
@@ -13,16 +13,13 @@ void fillString(char *str, size_t size) {
 void copyString(char *str) {
   char *tmp = malloc(100);
   strcat(tmp, "HELLO");
-  strcpy(str,tmp);
+  strcpy(str, tmp);
   free(tmp);
-
 }
 
-char * getHello(void) {
-  return strdup("Hello, world");
-}
+char *getHello(void) { return strdup("Hello, world"); }
 
-int main () {
+int main() {
   printf("%s\n", HELLO);
   exit(0);
 
@@ -42,4 +39,3 @@ int main () {
   printf("%s\n", result);
   */
 }
-

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+usage() {
+  cat <<EOF
+Usage: $0 [OPTIONS]
+
+does something neat
+
+OPTIONS
+
+-v                  Verbose outut
+-h                  This message
+EOF
+}
+
+print_verbose() {
+  if $verbose; then
+    printf "%s\n" "$@"  
+  fi
+}
+
+verbose=false
+while getopts 'v' flag; do
+  case "${flag}" in
+    v)
+      verbose=true
+      ;;
+    *) usage ; exit 1 ;; 
+  esac
+done
+
+print_verbose "going to some stuff here"
