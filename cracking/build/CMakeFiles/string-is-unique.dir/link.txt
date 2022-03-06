@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/string-is-unique.dir/src/string-is-unique.c.o -o string-is-unique 

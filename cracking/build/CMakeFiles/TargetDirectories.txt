@@ -1,5 +1,0 @@
-/home/kmmiles/Code/bad-code/cracking/build/CMakeFiles/rebuild_cache.dir
-/home/kmmiles/Code/bad-code/cracking/build/CMakeFiles/edit_cache.dir
-/home/kmmiles/Code/bad-code/cracking/build/CMakeFiles/string-urlify.dir
-/home/kmmiles/Code/bad-code/cracking/build/CMakeFiles/string-is-unique.dir
-/home/kmmiles/Code/bad-code/cracking/build/CMakeFiles/string-is-permutation.dir
