@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while getopts "i:o:" flag; do
+  case "$flag" in
+    i) input="$OPTARG" ;;
+    o) output="$OPTARG" ;;
+    *) printf "fuuuuuu\n" ; exit 1 ;;
+  esac
+done
+
+printf "input=%s\n" "$input"
+printf "output=%s\n" "$output"

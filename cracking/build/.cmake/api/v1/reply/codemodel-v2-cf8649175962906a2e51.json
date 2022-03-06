@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cracking",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "string-is-permutation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-string-is-permutation-Debug-6bbd55ec6a93407bb3c8.json",
+					"name" : "string-is-permutation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "string-is-unique::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-string-is-unique-Debug-2024ff26daa4844779d6.json",
+					"name" : "string-is-unique",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "string-urlify::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-string-urlify-Debug-4b5ee1ba0f7503cde8c7.json",
+					"name" : "string-urlify",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kmmiles/Code/bad-code/cracking/build",
+		"source" : "/home/kmmiles/Code/bad-code/cracking"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

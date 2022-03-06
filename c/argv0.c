@@ -2,5 +2,5 @@
 #include <string.h>
 
 int main(int argc, char **argv) {
-  printf("argv[0]: %s\n", argv[0]);
+  printf("#args=%d\nargv[0]: %s\n", argc, argv[0]);
 }

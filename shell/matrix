@@ -1,0 +1,54 @@
+#!/bin/bash
+
+read -a arr1 -rp "Please enter your values separated by a space: "
+read -rp "Enter row: " row1
+read -rp "Enter column: " col1
+
+read -a arr2 -rp "Please enter your values separated by a space: "
+read -rp "Enter row: " row2
+read -rp "Enter column: " col2
+                     
+for((x=0; x<row1; x++)); do
+  for((y=0; y<col1; y++)); do
+    i=$((x*col1+y))
+  done
+done
+
+for((x=0; x<row2; x++)); do
+  for((y=0; y<col2; y++)); do
+    i=$((x*col2+y))
+  done
+done
+
+matrix3=()
+for((x=0; x<row1; x++)); do
+  for((y=0; y<col2; y++)); do
+    for((z=0; z<row1; z++)); do
+      indx1=$((x*row1+z))
+      indx2=$((z*col2+y))
+      result=$((result+arr1[indx1] * arr2[indx2]))
+      matrix3+=("$result")
+    done
+  done
+done
+
+echo "Multiplication of two matrix"
+for((x=0; x<row1; x++)); do
+  for((y=0; y<col2; y++)); do
+    i=$((x*col2+y))
+    echo -n "${matrix3[i]} "
+  done
+  echo
+done
+
+unset matrix3
+
+#$ cat m1 1 2 3 4 5 6 7 8 
+#$ cat m2 1 2 3 4 5 6 7 8 
+#$ ./matrix dims m1 2 4 
+#$ cat m2 | ./matrix dims 4 2 
+#$ ./matrix add m1 m1 2 4 6 8 10 12 14 16 
+#$ ./matrix add m2 m2 2 4 6 8 10 12 14 16 
+#$ ./matrix mean m1 3 4 5 6 
+#$ ./matrix transpose m1 1 5 2 6 3 7 4 8 
+#$ ./matrix multiply m1 m2 50 60 114 140

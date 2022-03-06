@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SSH_PATH="~/.ssh"
+SSH_KEYNAME="test"
+
+echo "$SSH_PATH/$SSH_KEYNAME"

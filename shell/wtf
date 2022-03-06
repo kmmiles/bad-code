@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dir=$(dirname "$spacelessName")
+mkdir -p "$dir"
+mv -v "$1" "$spacelessName"
+
+
+
+

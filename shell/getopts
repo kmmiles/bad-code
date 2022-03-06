@@ -1,0 +1,17 @@
+#!/bin/sh
+
+aflag=false
+bflag=false
+file=
+while getopts 'abf:' flag; do
+  case "${flag}" in
+    a) aflag=true ;;
+    b) bflag=true ;;
+    f) file="${OPTARG}" ;;
+    *) error "Unexpected option ${flag}" ;;
+  esac
+done
+
+printf "aflag: %s\n" "$aflag"
+printf "bflag: %s\n" "$bflag"
+printf "file: %s\n" "$file"

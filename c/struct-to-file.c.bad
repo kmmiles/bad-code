@@ -1,0 +1,41 @@
+struct user_data
+{
+    char fname[name_len];
+    char lname[name_len];
+    int age;
+    char email[email_len];
+    char p_lname[name_len];
+    char p_fname[name_len];
+};
+
+struct tid
+{
+    int id;
+    struct user_data usr;
+};
+
+void add_user(){
+    FILE *file;
+    struct tid user_data;
+    file = fopen("users.dat","w");
+    while(1){
+        printf("\nFirst Name: ");
+        scanf ("%s", user_data.usr.fname);
+        if (strcmp(user_data.usr.fname, "stop") == 0) menu();
+
+        printf("Last Name: ");
+        scanf ("%s", user_data.usr.lname);
+        printf("Age: ");
+        scanf ("%d", &user_data.usr.age);
+        
+        if(user_data.usr.age < 18){
+            printf("Protector First Name: ");
+            scanf ("%s", user_data.usr.p_fname);
+            printf("Protector Last Name: ");
+            scanf ("%s", user_data.usr.p_lname);  
+    }
+        printf("Email: ");
+        scanf ("%s", user_data.usr.email);
+    }
+    fwrite (&user_data, sizeof(struct tid), 1, file);
+}

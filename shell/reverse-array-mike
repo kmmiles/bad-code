@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -x
+
+rev() {
+  if [[ $# -gt 0 ]]; then
+    local arg=$1
+    shift
+    rev "$@"
+    echo "$arg"
+  fi
+}
+
+rev "$@"

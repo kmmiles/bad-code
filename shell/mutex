@@ -6,13 +6,3 @@ if [[ $(pgrep -c "$(basename "$0")") -gt 1 ]]; then
 fi
 
 sleep 1000
-
-foo=
-
-Command substition `$()` replaces the command with it's output. Omitting the quotes around `$0` results in:
-
-```bash
-basename myscriptname
-```
-
-Which is not correct because `myscriptname` is vulernable to word splitting. To be fair, it's pretty unlikely for a script to have spaces in it's name. But `shellcheck` complains and I obey.

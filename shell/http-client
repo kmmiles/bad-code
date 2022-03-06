@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function http_client() {
+  DEFAULT_CURL_ARGS="-sSL"
+  if [[ $# -eq 4 ]]; # A get request with headers, saving response headers and response body to a location other than stdout
+  then
+    declare -a header_args=()
+    readarray -d ',' -t headers < <(printf "%s" "$4")
+    for h in "${headers[@]}"; do
+      header_args+=("-D")
+      header_args+=("$h")
+    done
+
+    curl ${DEFAULT_CURL_ARGS} "$1" \
+      -D "$2" \
+      -o "$3" \
+      "${header_args[@]}"
+  else
+    echo "Invalid number of arguments!"
+  fi
+}
+
+http_client "www.google.com" "./http-client.dump" "./http-client.out" "X-First-Name: Joe,X-Last-Name: Blow"

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+host=localhost
+port=1234
+timeout_secs=10
+
+printf "connecting to %s:%s with a timeout of %s seconds..." "$host" "$port" "$timeout_secs"
+if ! nc -z -w "$timeout_secs" "$host" "$port"; then
+  printf "failed.\nrestarting thing...\n"
+  # TODO: command to restart service goes here
+else
+  printf "success.\ndoing nothing\n"
+fi
+

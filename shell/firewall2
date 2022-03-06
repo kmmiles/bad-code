@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# Installing dependencies
+sudo apt install curl ipset gnupg nload htop tcpdump -y
+
+clear
+echo When installing openvpn, you MUST use UDP and should use port 1194. 
+echo And for DNS, you should select option 1. This is to prevent issues.
+echo
+echo Please wait 5 seconds until the script continues.
+sleep 5
+clear
+wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
+clear
+read -rp "Please enter your home IP address: " home_ip
+clear
+read -rp "Please enter the port your servers SSH port: " ssh_port
+clear
+read -rp "Please enter your server's IP address (IP being used for openvpn): " main_ip
+clear
+read -rp "Please enter the port openvpn is running on: " openvpn_port
+clear
+read -rp "Please enter the Failover IP address: " failover_ip
+clear
+read -rp "Please enter your server's correct interface: " interface
+
+# Clearing all previous iptables (This prevents any issues being encountered).
+
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -t raw -P PREROUTING ACCEPT
+iptables -t mangle -P PREROUTING ACCEPT
+iptables -F
+iptables -t nat -F
+iptables -t mangle -F
+iptables -t raw -F
+iptables -X
+iptables -t nat -X
+iptables -t mangle -X
+iptables -t raw -X
+iptables -Z
+iptables -t nat -Z
+iptables -t mangle -Z
+iptables -t raw -Z
+
+# Accepting legitimate traffic and blocking malicious traffic.
+
+iptables -t raw -A PREROUTING -p udp -m string --algo bm --string "TSource Engine Query" -j DROP
+iptables -t raw -A PREROUTING -f -j DROP
+iptables -t mangle -A PREROUTING -m conntrack --ctstate INVALID -j DROP
+iptables -t mangle -A PREROUTING -p tcp ! --syn -m conntrack --ctstate NEW -j DROP
+iptables -t mangle -A PREROUTING -p tcp -m conntrack --ctstate NEW -m tcpmss ! --mss 536:65535 -j DROP
+iptables -t mangle -A PREROUTING -p udp -m multiport --sports 1194,2303,41794,2362,11211,53413,17,1900,10001,389,137,5351,502 -j DROP
+iptables -t mangle -A PREROUTING -p udp -m multiport --sports 3283,37810,7001,17185,3072,3702,32414,177,6881,5683 -j DROP
+iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+iptables -A INPUT -d "$main_ip/32" -p udp -m conntrack --ctstate NEW -m comment --comment "openvpn bpf" -m bpf --bytecode "17,48 0 0 0,84 0 0 240,21 0 13 64,48 0 0 9,21 0 11 17,40 0 0 6,69 9 0 8191,177 0 0 0,80 0 0 8,21 0 6 56,128 0 0 0,21 0 4 82,72 0 0 0,53 0 2 40000,37 1 0 65535,6 0 0 65535,6 0 0 0" --dport "$openvpn_port" -j ACCEPT
+iptables -A INPUT -d "$main_ip/32" -p tcp -m conntrack --ctstate NEW -m comment --comment "ssh" -s "$home_ip/32" --dport "$ssh_port" -j ACCEPT
+iptables -A INPUT -i tun+ -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A FORWARD -i tun+ -j ACCEPT
+iptables -A FORWARD -o tun+ -j ACCEPT
+iptables -A OUTPUT -m conntrack --ctstate INVALID -j DROP
+
+# Changing default policy to 'DROP'.
+iptables -P INPUT DROP
+iptables -P FORWARD DROP
+
+# Kernel settings to help handle some attacks.
+/sbin/sysctl -w net.ipv4.icmp_ignore_bogus_error_responses=1 > /dev/null
+/sbin/sysctl -w net.ipv4.icmp_echo_ignore_broadcasts=1 > /dev/null
+/sbin/sysctl -w net.ipv4.conf.default.rp_filter=1 > /dev/null
+/sbin/sysctl -w net.ipv4.icmp_echo_ignore_all=1 > /dev/null
+/sbin/sysctl -w net.ipv4.conf.all.rp_filter=1 > /dev/null
+/sbin/sysctl -w net/ipv4/tcp_timestamps=1 > /dev/null
+/sbin/sysctl -w net.ipv4.tcp_syncookies=1 > /dev/null
+
+# Routing traffic to failover IP's.
+iptables -A POSTROUTING -t nat -s 10.8.0.0/24 -p udp --dport 53 -j SNAT --to-source "$main_ip"
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -p udp -j SNAT --to-source "$failover_ip"
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -p tcp -j SNAT --to-source "$main_ip"
+iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o "$interface" -j MASQUERADE
+
+# Letting us know the firewall has being applied.
+clear
+echo The server side firewall has now being applied!

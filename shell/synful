@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for (( i=0; i<5; i++ )) # issue
+do
+  printf 'attempt #%s\n' "$((i + 1))"
+done
+

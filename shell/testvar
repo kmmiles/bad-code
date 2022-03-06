@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#if [[ "${TEST:-}" == "development" ]]; then
+#  echo "test is alive"
+#fi
+
+if [ "$TEST" == "development" ]; then
+  echo "test is alive"
+fi

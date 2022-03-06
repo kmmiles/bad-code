@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -rp "Zadaj cislo: " cislo1
+read -rp "Zadaj cislo: " cislo2
+read -rp "Zadaj cislo: " cislo3
+
+float_regex='^[+-]?[0-9]+\.[0-9]+$'
+if [[ $cislo1 =~ $float_regex || $cislo2 =~ $float_regex || $cislo3 =~ $float_regex ]]; then
+  echo "zadaj cele cislo"
+  exit 1
+fi
+
+if ((cislo1 > cislo2)) && ((cislo1 > cislo3)) && ((cislo2 > cislo3)); then   
+  echo "$cislo1, $cislo2, $cislo3"
+elif ((cislo1 > cislo2)) && ((cislo1 > cislo3)) && ((cislo3 > cislo2)); then
+  echo "$cislo1, $cislo3, $cislo2"
+elif ((cislo2 > cislo1)) && ((cislo2 > cislo3)) && ((cislo1 > cislo3)); then   
+  echo "$cislo2, $cislo1, $cislo3"
+elif ((cislo2 > cislo1)) && ((cislo2 > cislo3)) && ((cislo3 > cislo1)); then   
+  echo "$cislo2, $cislo3, $cislo1"
+elif ((cislo3 > cislo1)) && ((cislo3 > cislo2)) && ((cislo1 > cislo2)); then
+  echo "$cislo3, $cislo1, $cislo2"
+elif ((cislo3 > cislo1)) && ((cislo3 > cislo2)) && ((cislo2 > cislo1)); then
+  echo "$cislo3, $cislo2, $cislo1"
+fi
+
+#printf "%s\n%s\n%s\n" "$cislo1" "$cislo2" "$cislo3" | sort -n

@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# consider the example: myprogram one two
+#
+# $0 = name of program (myprogram)
+# $1 = first argument (one)
+# $2 = second argument (two)
+# ...
+
+# it's good to assign the arguments to well named variables
+progname="$0"
+seconds="$1"
+
+# we should check which arguments were passed to the script.
+# if a required argument wasn't passed, we should print a "usage" message and exit.
+if [[ -z "$seconds" ]]; then
+  printf "Usage: %s <seconds>\n" "$progname"
+  exit 1
+fi
+
+printf "sleeping for %s seconds\n" "$seconds"
+sleep "$seconds"

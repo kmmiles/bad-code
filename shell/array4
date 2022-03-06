@@ -1,0 +1,30 @@
+#!/bin/zsh
+
+#TEST=(foo bar); bash -c "echo ${TEST[*]}"
+#TEST=(foo bar); sudo --preserve-env=TEST -i bash -c 'echo ${TEST[*]}; echo $USER'
+
+# this is really strange and smells like an XY...but you could do the expansion in the parent shell. :shrug:
+#the question as it is has a simple solution, but i suspect there's some XY involved.
+
+#TEST=(foo bar); sudo su root -c "echo ${TEST[*]}"
+#my_array=(foo bar)
+#x=$(declare -p my_array)
+#sudo su root -c 'eval $x; echo $x'
+
+
+#TEST=(foo bar)
+#declare -p TEST | cut -d " " -f 3-
+#TEST="$(declare -p TEST | cut -d " " -f 3-)"; sudo bash -c "eval ${TEST[@]}"
+
+#TEST=(foo bar); sudo -i bash -c "echo ${TEST[*]}"
+#TEST=(foo bar); sudo -i bash -c "echo ${TEST[*]}"
+#TEST=(foo bar); sudo -i bash -c "myarr=(${TEST[*]}); echo \${myarr[@]}"
+
+TEST=(pkg1 pkg2)
+
+sudo -i \
+  echo ${TEST[@]}
+#sudo su root -s /bin/zsh -lc "echo ${TEST[*]}"
+
+usermod -a -G sambashare myusername
+

@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+set -k
+ARRAY=(
+'element1'  # this is element 1
+'element2'  # this is element 2
+)
+echo "${ARRAY[*]}"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#IFS=',' read -a array < <(echo 'one,two,three')
+readarray -d ',' array < <(echo 'one,two,three')
+echo "${array[*]}"

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+wait_for_file() {
+  local file="${1:-}"
+  local sleep_time="${2:-5}"
+
+  if [[ -z "$file" ]] || [[ ! -f "$file" ]]; then
+    2>&1 printf "No such file: %s\n" "$file"
+    return 1
+  fi
+
+  for((i=1;i<=10;i++)) {
+    if ! fuser "$file" >/dev/null 2>&1; then
+      2>&1 printf "file is ready: %s\n" "$file"
+      return 0
+    else
+      2>&1 printf "file is in use, waiting: %s\n" "$file"
+      sleep "$sleep_time"
+    fi
+  }
+
+  2>&1 printf "timeout waiting for file: %s\n" "$file"
+}
+#wait_for_file "./file.txt"
+
+
+#file="./file.txt"
+#((max_attempts=2))
+#((attempts=0))
+#while fuser "$file" >/dev/null 2>&1 && (( attempts < max_attempts )); do
+#  2>&1 printf "dpkg is locked, waiting (%s of %s): %s\n" "$((attempts+1))" "$max_attempts" "$file"
+#  ((attempts++))
+#  sleep 5
+#done
+
+###############################################################################
+# if `file` is opened by another process, sleep for `sleep_secs` and retry, up to `attempts` number of times.
+file="./file.txt"; attempts=0; max_attempts=12; sleep_secs=5; while fuser "$file" >/dev/null 2>&1 && (( attempts < max_attempts )); do   2>&1 printf "dpkg locked, sleeping for %s seconds (%s of %s): %s\n" "$sleep_secs" "$((attempts+1))" "$max_attempts" "$file";   ((attempts++));   sleep "$sleep_secs"; done
+###############################################################################

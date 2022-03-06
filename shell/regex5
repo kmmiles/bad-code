@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#printf "0x0    Shared Registers Quadrant 0_0x00    C0\n" | \
+#  grep -E "$regex"
+#
+#exit 1
+
+#regex='0x([0-9A-Fa-f]+)\s+([A-Za-z[:space:]]+)'
+#regex='0x([0-9A-Fa-f]+)\s+([A-Za-z[:space:]]+)([0-9]?)_0x([0-9A-Fa-f]+)\s+([0-9A-Fa-f]+)'
+#printf "0x0    Shared Registers Quadrant 0_0x00    C0\n" | grep -Eo "$regex"
+#exit 1
+
+    #echo "x: ${#BASH_REMATCH[@]}"
+    #printf 'match: %s\n' "${BASH_REMATCH[@]}"
+
+regex='0x([0-9A-Fa-f]+)\s+([A-Za-z[:blank:]]+)([0-9]?)_0x([0-9A-Fa-f]+)[[:blank:]]+([0-9A-Fa-f]+)'
+while read -r p || [ -n "$p" ]; do
+  if [[ "${p}" =~ ${regex} ]]; then
+    printf 'match: %s\n' "${BASH_REMATCH[@]}"
+    #for index in "${!BASH_REMATCH[@]}"; do
+    #done
+  fi
+  printf '\n'
+done < foo.cfg

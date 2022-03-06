@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mkdir -p \
+  cruft/Library \
+  cruft/Temp \
+  cruft/Logs \
+  cruft/node_modules \
+  cruft/__pycache__
+
+find ./cruft -type d \
+  -name "Library" -o \
+  -name "Temp" -o \
+  -name "Logs" -o \
+  -name "node_modules" -o \
+  -name "__pycache__" | \
+while read -r dir; do
+ echo "rm -rf $dir" 
+done

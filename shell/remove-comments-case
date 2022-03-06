@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while read -r line; do
+  case $line in
+    \#*)
+      echo "comment: $line"
+      ;;
+    *)
+      echo "no-comment: $line" 
+      ;;
+esac
+done < commentfile.txt
+
+#grep -v '^#' commentfile.txt

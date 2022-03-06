@@ -1,0 +1,5 @@
+#!/bin/bash
+
+username="me"
+
+logger -t AD-Accounts -p info -- "${username} expiration set to $(TZ='America/Vancouver' date --date=\"${EXPIRE_STUDENT_ACCOUNTS} day\" \"+%Y-%B-%d\")"

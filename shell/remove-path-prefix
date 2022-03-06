@@ -1,0 +1,11 @@
+#!/bin/bash
+
+base="src"
+
+while read -r file; do
+  newpath="${file#*${base}}"
+  if [[ "$newpath" != "$file" ]]; then
+    newpath="${base}${newpath}"
+    echo "newpath: $newpath"
+  fi
+done < compiled.txt

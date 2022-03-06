@@ -1,0 +1,9 @@
+#!/bin/bash
+
+fzf_vim_pages() {
+  readarray -t files < <(fzf -m)
+  nvim -p "${files[@]}"
+}
+
+set -x
+fzf_vim_pages

@@ -1,8 +1,9 @@
 #!/bin/bash
 
+# clear the last n lines of the terminal screen.
 clear_lines() {
-  local lines cur_row tresh_row
-  lines=$1
+  local pos lines cur_row tresh_row
+  lines=${1:-10}
   read -rsdR -p $'\E[6n' pos
   cur_row=$(echo "${pos#*[}" | cut -d';' -f 1)
   tresh_row=$((cur_row - (lines + 2)))

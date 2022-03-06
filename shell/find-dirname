@@ -1,0 +1,13 @@
+#!/bin/bash
+
+find ./pictures -type f | while read -r file; do
+  echo "file: $file"
+  echo "dir: $(dirname "$file")"
+done
+
+find ./pictures -type f -exec dirname {} \;
+
+
+#true && echo "it worked" || echo "it failed"
+#false && echo "it worked" || echo "it failed"
+

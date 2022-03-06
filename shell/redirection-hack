@@ -1,0 +1,3 @@
+#!/bin/bash
+
+printf 'hello\nworld\nthese\nare\nlines\n' | tee hello.txt | wc -l

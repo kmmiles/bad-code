@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#printf 'fixing ownership and permissions of %s...' "$HOME" && \
+#  set -x; \
+#  name="$(id -un)" && \
+#  [[ -n "$name" ]]  && \
+#  sudo chown -cR "$name":"$name" "$HOME" && \
+#  sudo find "$HOME" -type d -exec chmod -c 0770 "{}" \; && \
+#  sudo find "$HOME" -type f -exec chmod -c 0660 "{}" \; && \
+#  printf 'all done.'
+
+
+fix_home_perms() {
+  local name
+  name="$(id -un)"
+
+  if [[ -z "$name" || -z "$HOME" ]]; then
+    return 1
+  fi
+
+  printf 'fixing perms of %s\n' "$HOME"
+  find "$HOME" -type d,f | while read -r dirent; do
+    sudo chown -cR "$name":"$name" "$dirent" || return 1
+#    if [[ -f "$dirent" ]]; then
+#      sudo chmod -c 0660 "$dirent" || return 1
+#    else
+#      printf '%s...\n' "$dirent"
+#      sudo chmod -c 0770 "$dirent" || return 1
+#    fi
+  done
+}
+
+fix_home_perms

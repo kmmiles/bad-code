@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+while ! timeout -v --preserve-status 5 sleep 2; do
+  echo "failed to run, retrying"
+done
+echo "command succesfully ran"

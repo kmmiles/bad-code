@@ -1,0 +1,17 @@
+#!/bin/bash
+
+a=10
+b=20
+
+bool1=false
+bool2=false
+
+(( a == b )) && bool1=true
+(( a != b )) && bool2=true
+
+printf 'bool1: %s\n' "$bool1"
+printf 'bool2: %s\n' "$bool2"
+
+if $bool2; then
+  printf 'indeed...it is true.\n'
+fi

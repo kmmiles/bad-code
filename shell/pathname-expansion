@@ -3,8 +3,10 @@
 # with double brackets, bash does not perform pathname expansion.
 # the following tests if the lhs string begins with "hell".
 printf "double bracket * match: "
-if [[ "hello" == hell* ]]; then
+if [[ "hello" == "hell*" ]]; then
   printf "match.\n"
+else
+  printf "doesn't match.\n"
 fi
 
 # with single brackets, bash attempts to expand the glob.
@@ -13,4 +15,6 @@ fi
 printf "single bracket * match: "
 if [ "hello" == hell* ]; then
   printf "match.\n"
+else
+  printf "doesn't match.\n"
 fi

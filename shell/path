@@ -1,8 +1,10 @@
 #!/bin/bash
 
-#prog_path=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-#prog_name=$(basename "$0)
+path=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-echo "BASH_SOURCE[0]: ${BASH_SOURCE[0]}"
+"$path"/dirscript.sh
 
-echo "readlink -f \$0: $(readlink -f "$0")"
+#echo "path: $path"
+
+#echo "BASH_SOURCE[0]: ${BASH_SOURCE[0]}"
+#echo "readlink -f \$0: $(readlink -f "$0")"

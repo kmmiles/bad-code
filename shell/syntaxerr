@@ -1,0 +1,11 @@
+#!/bin/bash
+
+local pkg
+    for thingy in "$@" do
+        if pkg="$(find /pkgsrc -name "$thingy")"; then
+        echo "Found $thingy at $pkg."
+        echo "Package(s) to install: $@"
+        echo "Go ahead and install? (Y/n)"
+        read confirm
+        fi
+    done

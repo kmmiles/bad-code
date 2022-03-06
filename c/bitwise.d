@@ -1,0 +1,1 @@
+bitwise.o: bitwise.c

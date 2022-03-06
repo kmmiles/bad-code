@@ -1,0 +1,6 @@
+#!/bin/bash
+
+myvar="hello"
+sed -i "1i $myvar" test.txt
+
+

@@ -1,0 +1,11 @@
+Ft. Campbell,KY
+Aberdeen,MD
+Ft. Campbell,KY
+West Point,NY
+Ft. Hood,TX
+Ft. Hood,TX
+Ithaca,NY
+Ft. Polk,LA
+Huntsville,AL
+Yuma,AZ
+foobar

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -x
+
+argc=$#
+argv=("$@")
+for (( idx=argc-1; idx >= 0; idx-- )); do
+  printf '%s\n' "${argv[$idx]}"
+done

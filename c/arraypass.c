@@ -4,6 +4,8 @@ void myfunc(int *bar, int len) {
   for (int i = 0; i <= len; i++) {
     printf("i: %d\n", i);
   }
+
+  *bar = 1;
 }
 
 int main(void) {

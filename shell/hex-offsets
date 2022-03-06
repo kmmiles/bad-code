@@ -1,0 +1,10 @@
+#!/bin/bash
+foo=5
+
+for offset in {0..$((${#startOffsets[@]}-1))}; do
+    echo $offset   
+    start=${startOffsets[offset]}
+    end=${endOffsets[offset]}
+    range=$((start-end))
+    echo $range
+done

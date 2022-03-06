@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo $(($(($(cat hits.txt)))+1))
+echo $(($(cat hits.txt) + 1))
+#echo $(($(<hits.txt) + 1))
+

@@ -4,9 +4,9 @@ set -e
 
 read -r -p "Provide a name for your application (e.g. 'myapp'): " appname 
 if (( $(id -u) == 0 )); then
-  desktop_file="/usr/share/application/$appname.desktop"
+  desktop_file="/usr/share/applications/$appname.desktop"
 else
-  desktop_file="$HOME/.local/share/application/$appname.desktop"
+  desktop_file="$HOME/.local/share/applications/$appname.desktop"
 fi
 
 mkdir -p "$(dirname "$desktop_file")"

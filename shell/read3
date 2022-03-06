@@ -1,0 +1,13 @@
+#!/bin/bash
+
+until (( "number" > 0 )); do
+  read -rp "Please enter a number: " number
+done
+
+if (( number >= 1000000 )); then
+  printf "%s is greater then or equal to 1 million\n" "$number"
+elif (( number <= 100 )); then
+  printf "%s is less then or equal to 100\n" "$number"
+else
+  printf "%s is between 100 and 1 million\n" "$number"
+fi

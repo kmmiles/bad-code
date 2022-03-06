@@ -1,0 +1,180 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
+#include "uthash.h"
+#include<pthread.h>
+
+#define STR_MAX_LEN 31
+#define LINE_MAX 100
+#define MAX_ENTRIES 67000000
+// MY DOCUMENTATION IDENTIFIES ALL SOURCES USED AND ASSISTANCE RECEIVED
+// IN COMPLETING THIS ASSIGNMENT.
+// Justin Nguyen
+
+/* 
+Hanson, Troy D. and Arthur O'Dwyer. "uthash User Guide." February 2021, https://troydhanson.github.io/uthash/userguide.html#_a_complete_example. 
+I adapted the complete example in order to utilize the HASH_SORT and the HASH_ADD_STR functions. West Point, NY. 21 NOV 2021.
+*/
+
+pthread_mutex_t mutex;
+
+/*error handling function: prints out error message*/
+int print_error(char *msg) {
+    fprintf(stderr, "%s\n", msg);
+    exit(2);
+}
+
+// struct ting {
+//     char x[STR_MAX_LEN]; //holds the string of the location
+
+// };
+
+// struct ting *createting(char *place){
+//     struct ting *myting = malloc(sizeof(struct ting));
+//     strncpy(myting-> x, place, STR_MAX_LEN);
+//     return myting;
+// }
+
+struct my_struct { //hash table
+    char location[STR_MAX_LEN];//key
+    int amount;
+    UT_hash_handle hh;
+};
+
+struct t_arg {//thread arguments
+    long id; //thread id
+    long numthreads; //number of threads
+    // struct ting **place; //pointer to array to be sorted
+    char **place;
+    int length; //length of  array to be sorted
+};
+
+//helper for the sorting function
+struct my_struct *s, *city = NULL;
+int amount_sort(struct my_struct *a, struct my_struct *b){
+    return (b->amount - a->amount);
+}
+//sorts the hash table by value, greatest to least
+void hash_sort_by_amount(){
+    HASH_SORT(city,amount_sort);
+}
+
+//prints out top n locations from the hashtable
+void hash_print(int n){
+    struct my_struct *s;
+    s = city;
+    int i;
+    for (i = 0;i < n; i++){
+        if (s!=NULL){
+            printf("%s %d\n", s->location, s->amount);
+            s = (struct my_struct*)(s->hh.next);
+        }
+    }
+}
+
+//should add to hashtable 
+void *probing(void *args){
+    struct t_arg *myargs = (struct t_arg *)args;
+    long myid = myargs->id;
+    long nthreads = myargs->numthreads;
+    long length = myargs->length;
+    // struct ting **array = myargs->place;
+    char **array = myargs -> place;
+
+    //assign work to the array
+    long chunk = length / nthreads; //nominal chunk size
+    long start = myid * chunk;
+    long end = (myid + 1) * chunk;
+    if (myid == nthreads - 1) {
+        end = length;
+    }
+    // char *val;
+    long i;
+    pthread_mutex_lock(&mutex);
+    for (i = start; i<end; i++){
+        // val = array[i]->x;
+        // HASH_FIND_STR(city, array[i]->x, s);
+        HASH_FIND_STR(city,array[i],s);
+        if (s!=NULL){
+            s->amount += 1;
+        } 
+        else {
+            s = (struct my_struct*)malloc(sizeof *s);
+            // strncpy(s->location,array[i]->x,STR_MAX_LEN);
+            strncpy(s->location,array[i],STR_MAX_LEN);
+            s->amount = 1;
+            HASH_ADD_STR(city, location, s);
+        }
+    }
+    pthread_mutex_unlock(&mutex);
+    return NULL;
+}
+
+
+int main(int argc, char *argv[]){ //argv[0] = ./pr4_p, argv[1] = filename, argv[2] = number of top cities, argv[3] = number of threads, argv[4] = 1 for print 0 to not print
+    int t;
+    int nthreads; //number of threads
+    pthread_t *thread_array; //pointer to future thread array
+    int ret;
+
+    if (argc!=5) print_error("Usage: usage: ./pr4_p [file] [n] [t] [p]\n");
+    if (atoi(argv[2]) < 1) print_error("You need to enter a valid integer for n that is greater than 0.\n");
+    int n = atoi(argv[2]);
+    if (atoi(argv[3])<1) print_error("You need to enter a valid integer for t that is greater than 0.\n");
+    if (atoi(argv[4])>1) print_error("You need to enter a 1 or 0 for p.\n");
+
+    nthreads = strtol(argv[3],NULL,10);
+    char line[LINE_MAX];
+    FILE *probedcomps = fopen(argv[1],"r");
+    if (!probedcomps){
+        fprintf(stderr, "error opening file!\n");
+        return 2;
+    }
+    // struct ting **city_array = malloc(sizeof(struct ting *)*MAX_ENTRIES);
+    long counter = 0; 
+    char ** city_array = malloc(MAX_ENTRIES * sizeof(char **));
+    char *location;
+    while(fgets(line,LINE_MAX, probedcomps)!=NULL){
+        if (!strtok(line,",")) continue;
+        strtok(NULL,",");
+        strtok(NULL,",");
+        if(!(location = strtok(NULL, "\n"))) continue;
+        // city_array[counter] = createting(location);
+        city_array[counter] = strdup(location);
+        // printf("%s\n",city_array[counter]);
+        counter++; //returns total amount lines that can be used by a later function to iterate through the array
+    }
+    
+    thread_array = malloc(nthreads * sizeof(pthread_t));
+    struct t_arg *thread_args = malloc(nthreads * sizeof(struct t_arg));
+    if (!thread_array || !thread_args) print_error("ERROR: malloc failed!");
+
+    
+    for (t = 0; t < nthreads; t++) {//fill thread array with parameterss
+        thread_args[t].id = t;
+        thread_args[t].numthreads = nthreads;
+        thread_args[t].place = city_array; //pointer to array
+        thread_args[t].length = counter;
+    }
+
+    ret = pthread_mutex_init(&mutex , NULL);
+    if (ret) print_error("ERROR: pthread_mutex_init failed");
+
+    for (t = 0; t < nthreads; t++) {
+        ret = pthread_create( &thread_array[t], NULL, probing, &thread_args[t]);
+        if (ret) print_error("ERROR: pthread_create failed");
+    }
+
+    for (t = 0; t < nthreads; t++) {
+        pthread_join(thread_array[t], NULL);
+        if (ret) print_error("ERROR: pthread_create failed");
+    }
+
+    pthread_mutex_destroy(&mutex); //destroy (free) the mutex
+    free(thread_array);
+    free(city_array);
+    hash_sort_by_amount();
+    if (atoi(argv[4])== 1) hash_print(n);
+    return 0;
+}

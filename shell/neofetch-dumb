@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+a=$(( RANDOM % 3 + 1 ))
+if [[ $a == 1 ]]; then
+  neofetch | lolcat
+elif [[ $a == 2 ]]; then
+  fortune | cowsay -f dragon | lolcat
+elif [[ $a == 3 ]]; then
+  figlet "biertje?" | lolcat
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+string=$'Hi\nhow are you doing\nJust saying hello\njohn@gmail.com'
+readarray -t myarray < <(printf %s "$string")
+echo "${myarray[0]}/${myarray[1]}/${myarray[2]}/${myarray[3]}"

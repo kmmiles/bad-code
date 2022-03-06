@@ -2,5 +2,4 @@
 #
 # Show lines that don't exist in *both* files
 
-
 comm -3 <(sort cmp1.txt) <(sort cmp2.txt)

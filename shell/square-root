@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -rp "enter a b and c: " a b c
+bsquare=$(echo "$b^2" | bc)
+echo "$bsquare"
+det=$(echo "$bsquare - 4 * $a * $c" | bc)
+echo "$det"
+case $det in
+  [-]*)
+    echo "imaginary roots"
+    ;;
+  *)
+    detsquare=$(echo "scale=2; sqrt($det)" | bc)
+    root1=$(echo "(-1*$b + $detsquare)/(2*$a)" | bc)
+    root2=$(echo "(-1*$b - $detsquare)/(2*$a)" | bc)
+    echo "$root1 $root2"
+    ;;
+esac

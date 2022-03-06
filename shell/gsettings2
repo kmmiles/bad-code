@@ -1,0 +1,19 @@
+#!/bin/sh
+
+nl_is_enabled() {
+  [ "$(gsettings get org.gnome.settings-daemon.plugins.color night-light-enabled)" = "true" ]
+}
+
+nl_enable() {
+  gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+}
+
+nl_disable() {
+  gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+}
+
+if nl_is_enabled; then
+  nl_disable
+else
+  nl_enable
+fi

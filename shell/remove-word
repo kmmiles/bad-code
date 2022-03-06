@@ -1,0 +1,12 @@
+#!/bin/bash
+
+string="hello world this is my script"
+printf "string: %s\n" "$string"
+
+# using parameter expansion
+newstring="${string#* }"
+printf "newstring: %s\n" "$newstring"
+
+# using cut
+newstring=$(echo "$string" | cut -d' ' -f2-)
+printf "newstring: %s\n" "$newstring"

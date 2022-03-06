@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+//    request->send(200, "text/html", "HTTP GET request sent to your ESP on input field (" 
+//                                     + inputParam + ") with value: " + inputMessage +
+//                                     "<br><a href=\"/\">Return to Home Page</a>");
+
+inputParam = "foo";
+inputMessage = "bar";
+
+const myString =
+  `HTTP GET request send to your ESP on input field (${inputParam}) ` +
+  `with value (${inputMessage}) <br><a href="/">Return to Home Page</a>`;
+
+console.log(myString);
+//request->send(200, "text/html", myString);
+//
+//
+
+request -> send(200, "text/html", `HTTP GET request send to your ESP on input field (${inputParam}) ` +
+  `with value (${inputMessage}) <br><a href="/">Return to Home Page</a>`);

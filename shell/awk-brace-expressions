@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#echo -e "cat\nbat\nwhat\ncherry" | awk '/.{1}at/'
+#echo -e "cat\nbat\nwhat\ncherry" | awk '/.t/{print}'
+#echo -e "cat\nbat\nwhat\ncherry" | grep -E '^.at'
+#echo -e "cat\nbat\nwhat\ncherry" | awk '/^.at/{print}'
+
+#echo -e "cat\nbat\nwhat\ncherry" | awk '/.{1}at/{print}'
+
+
+#echo -e "why\nwhhhy\nwhhhhy\n" | awk '/wh{3}y/'
+#echo -e "why\nwhhhy\nwhhhhy\n" | mawk '/wh{3}y/'
+
+#echo -e "cat\nbat\nwhat\ncherry" | mawk '/^.{1}at/'
+#echo -e "cat\nbat\nwhat\ncherry" | gawk '/^.{1}at/'
+#echo -e "cat\nbat\nwhat\ncherry" | busybox awk '/^.{1}at/'
+
+# the following don't support brace expressions
+#printf "cat\nbat\nwhat\ncherry\n" | mawk '/^.{1}at/'
+#printf "cat\nbat\nwhat\ncherry\n" | original-awk '/^.{1}at/'
+
+# the following *do* support brace expressions
+#printf "cat\nbat\nwhat\ncherry\n" | busybox awk '/^.{1}at/'
+#printf "cat\nbat\nwhat\ncherry\n" | ~/.local/bin/nawk '/^.{1}at/'
+
+#printf "cat\nbat\nwhat\ncherry\n" | POSIXLY_CORRECT=1 ~/.local/bin/mymawk '/^.?at/'
+#printf "cat\nbat\nwhat\ncherry\n" | gawk '/^.{1}at/'
+
+
+#printf "what\nwhaat\nwhaaat\n" | gawk '/^wha{2}t/'
+awks=("mawk" "gawk" "nawk" "busybox awk")
+for _awk in "${awks[@]}"; do
+  printf "Using %s: " "${_awk}"
+  val=$(printf "what\nwhaat\nwhaaat\n" | $_awk '/^wha{2}t/')
+  if [[ "$val" == "whaat" ]]; then
+    printf "Good\n"
+  else
+    printf "Bad\n"
+  fi
+done

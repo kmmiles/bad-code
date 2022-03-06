@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+lastupdated_file="./lastupdated"
+update_threshold=604800
+
+date_now=$(date +%s)
+date_lastupdated=0
+if [[ -f "$lastupdated_file" ]]; then
+  date_lastupdated=$(<"$lastupdated_file")
+fi
+
+if (( date_now - date_lastupdated >= update_threshold )); then
+  printf "doing update\n"
+  printf "%s\n" "$date_now" > "$lastupdated_file"
+else
+  printf "not doing update\n"
+fi

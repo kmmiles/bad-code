@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+# Sifchain shasum check (revised).
+#
+
+# $1
+
+set -ex
+
+hash_url=$( curl -R -s https://api.github.com/repos/Sifchain/sifnode/releases | jq '.[] | select(.name=="v0.10.0-rc.4")' | jq '.assets[]' | jq 'select(.name=="sifnoded-v0.10.0-rc.4-linux-amd64.zip.sha256")' | jq '.browser_download_url' | xargs $1 $2 )
+hash=$( curl -s -L $hash_url)
+
+
+file_name=$(curl -R -s https://api.github.com/repos/Sifchain/sifnode/releases | jq '.[] | .name')
+
+echo "file_name: $file_name"
+echo "hash: $hash"
+
+exit 1
+
+
+#
+#
+echo $hash | sha256sum
+echo $file_name | sha256sum #null why?
+echo "\n"
+## version of the release $1,     and the hash $2
+## sha256 <expected_sha_256_sum> <name_of_the_file>
+sha256() {
+  if echo "$1  $2" #| sha256sum -c --quiet
+  then
+    echo pass $1 $2
+    exit 0
+  else
+    echo FAIL $1 $2
+    exit 1
+  fi
+}
+
+# Invoke sha256
+sha256 $hash_url $file_name
+
+
+

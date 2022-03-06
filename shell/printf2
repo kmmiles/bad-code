@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#set -x
+lines=("line1" "line2" "line3")
+#printf '%s\n' "line1" "line2" "line3"
+printf -v foobar '%s\n' "${lines[@]}"

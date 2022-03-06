@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ "${CYPRESS_TEST_MODE:-}" == "development" ]]; then
+  echo "yes, it's enabled: $CYPRESS_TEST_MODE"
+fi
+

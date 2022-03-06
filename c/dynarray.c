@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void) {
-  int len = 312;
+  size_t len = 312;
   int *options = NULL;
 
   options = (int *)calloc(sizeof(int), len);

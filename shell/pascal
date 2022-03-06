@@ -1,0 +1,17 @@
+#!/bin/bash
+
+pascalsTriangle() {
+  local n=${1:-0}
+  local i lineno value
+
+  for ((lineno = 1; lineno <= n; lineno++ )); do
+    value=1;
+    for ((i = 1; i <= lineno; i++)); do
+      printf "%d " "$value"
+      value=$((value * (lineno - i) / i))
+    done
+    printf "\n"
+  done
+}
+
+pascalsTriangle 10

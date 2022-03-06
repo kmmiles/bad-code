@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  int p, q;
+
+  if (p)
+    if (q)
+      printf("p and q are true");
+    else  // 2nd line
+      printf("To which statement does this else apply?");
+  else  // 1st line
+    printf("and waht about this one?");
+}

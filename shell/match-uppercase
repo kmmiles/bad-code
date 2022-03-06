@@ -1,0 +1,14 @@
+#!/bin/bash
+
+match_uppercase() {
+  local data=("$@")
+  local count=0
+  for upper in "${data[@]}"; do
+    if [[ "$upper" =~ [A-Z] ]]; then
+      ((count++))
+    fi
+  done
+  printf "%d\n" "$count"
+}
+
+match_uppercase "$@"

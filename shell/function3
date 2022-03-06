@@ -1,0 +1,9 @@
+#!/bin/bash
+
+myfun() {
+  printf "Hello1 %s %s %s\n" "$1" "$2" "$3" 
+  printf "Hello2 %s\n" "$*"
+  printf "Hello3 %s\n" "$@"
+}
+
+myfun one two three

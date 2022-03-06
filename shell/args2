@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -x
+
+# bad
+args="\"this arg\" \"that arg\""
+ls "$args"
+
+# good
+args=("this arg" "that arg")
+printf '%s' "${args[@]}"
+#ls "${args[@]}"

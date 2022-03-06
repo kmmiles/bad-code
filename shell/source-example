@@ -1,0 +1,8 @@
+#!/bin/bash
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$script_dir"/vars.profile
+
+echo "myvar: $myvar"
+
+# what usually trips people it up, is finding the path to the profile, relative to the current script.

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# shellcheck source=/dev/null
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"/lib.sh
+
+set -e
+
+builddir="${__ROOT}/build"
+mkdir -p "$builddir"
+cd "$builddir"
+cmake ..
+make

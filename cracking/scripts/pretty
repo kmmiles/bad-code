@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# shellcheck source=/dev/null
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"/lib.sh
+
+find "$__ROOT/src" -type f -name '*.c' |
+  while read -r file; do
+    printf "formatting %s\n" "$(basename "$file")"
+    clang-format -i --style=Google "$file"
+  done
+

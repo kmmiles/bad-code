@@ -109,28 +109,28 @@ char* readline() {
     data = realloc(data, alloc_length);
 
     if (!data) {
-      data = '\0';
+      data = 0;
 
       break;
     }
   }
 
-  if (data[data_length - 1] == '\n') {
-    data[data_length - 1] = '\0';
+  if (data && data[data_length - 1] == '\n') {
+    data[data_length - 1] = 0;
 
     data = realloc(data, data_length);
 
     if (!data) {
-      data = '\0';
+      data = NULL;
     }
 
   } else {
     data = realloc(data, data_length + 1);
 
     if (!data) {
-      data = '\0';
+      data = 0;
     } else {
-      data[data_length] = '\0';
+      data[data_length] = 0;
     }
   }
 
@@ -139,7 +139,7 @@ char* readline() {
 
 char* ltrim(char* str) {
   if (!str) {
-    return '\0';
+    return 0;
   }
 
   if (!*str) {
@@ -155,7 +155,7 @@ char* ltrim(char* str) {
 
 char* rtrim(char* str) {
   if (!str) {
-    return '\0';
+    return 0;
   }
 
   if (!*str) {
@@ -168,7 +168,7 @@ char* rtrim(char* str) {
     end--;
   }
 
-  *(end + 1) = '\0';
+  *(end + 1) = 0;
 
   return str;
 }

@@ -1,0 +1,31 @@
+#!/bin/bash
+###############################################################################
+set -euo pipefail
+e() { 2>&1 printf "%s%s%s\n" "$(tput setaf 1)" "$@" "$(tput sgr0)"; }
+w() { 2>&1 printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
+i() { 2>&1 printf "%s%s%s\n" "$(tput setaf 7)" "$@" "$(tput sgr0)"; }
+t() { local s=$?; e "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
+trap t ERR
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/" && pwd)"
+root_dir="$(cd "$(dirname "$script_dir")/" && pwd)"
+################################################################################
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") <ONE> <TWO>
+
+Returns true if <ONE> is a foobar of <TWO>.
+EOF
+}
+
+one="${1:-}"
+two="${2:-}"
+
+e "this is an error"
+w "this is a warning"
+i "this is info"
+
+i "this is the script dir: $script_dir"
+i "this is the root dir: $root_dir"
+
+false

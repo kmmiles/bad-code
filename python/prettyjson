@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import json
+import requests
+
+#url = "https://bloomberg.com/markets/commodities"
+url = "https://raw.githubusercontent.com/ultrabis/db/master/cache/abilityList-master.json"
+
+response = requests.get(url)
+pretty_json = json.dumps(response.json(), indent=2)
+print(pretty_json)

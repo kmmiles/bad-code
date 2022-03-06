@@ -1,0 +1,15 @@
+#!/bin/bash
+
+words=(
+  'FirstWord'
+  'Word2'
+  'thirdword'
+)
+
+for word in "${words[@]}"; do
+  if [[ $word =~ [A-Z] ]]; then
+    printf '%s is capitalized\n' "$word"
+  else
+    printf '%s is not capitalized\n' "$word"
+  fi
+done

@@ -1,0 +1,5 @@
+
+_calc() { awk "BEGIN {print $*}" ; }
+
+reset_expansion(){ CMD="$1";shift;$CMD "$@";set +f;}
+alias calc='set -f;reset_expansion _calc'

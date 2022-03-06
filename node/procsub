@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#strace node <(echo 'console.log("hello");') 2>&1 | less
+
+#cat <(sleep 5; echo 'console.log("hello");')
+
+#readlink -f <(echo 'console.log("hello");')
+#file <(echo 'console.log("hello");')
+
+node --preserve-symlinks-main <(echo 'console.log("hello");') 
+#readlink -f <(echo 'console.log("hello");')

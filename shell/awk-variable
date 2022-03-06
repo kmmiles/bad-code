@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mycol=1
+printf "foo bar this that" | awk -v x=$mycol '{print $x}'

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -ex
+
+if (( "$(id -u)" == 0 )); then
+  printf "ERROR: Don't run this script as root"
+  exit 1
+fi
+
+# cron has a limited environment, so we won't have `DBUS_SESSION_BUS_ADDRESS` set.
+# grab the value from the users `gnome-session` process environment.
+if [[ -z "$DBUS_SESSION_BUS_ADDRESS" ]]; then
+  PID=$(pgrep --euid "$EUID" gnome-session | head -n1)
+  DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/"$PID"/environ|cut -d= -f2-)
+  export DBUS_SESSION_BUS_ADDRESS
+fi
+
+gsettings set org.gnome.desktop.background picture-uri 'file:///home/arjun/Wallpapers/LightDark/10-14-Day.jpg'

@@ -9,7 +9,8 @@
     "async": "ts-node -sT bin/async.ts",
     "diablo": "ts-node -sT bin/diablo.ts",
     "replace-backslash": "ts-node -sT bin/replace-backslash.ts",
-    "reverse-linked-list": "ts-node -sT bin/reverse-linked-list.ts"
+    "reverse-linked-list": "ts-node -sT bin/reverse-linked-list.ts",
+    "lowest-in-array": "ts-node -sT bin/lowest-in-array.ts"
   },
   "author": "",
   "license": "ISC",

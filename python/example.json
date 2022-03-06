@@ -1,0 +1,10944 @@
+[
+  {
+    "id": 10,
+    "name": "Blizzard",
+    "rank": 1,
+    "level": 20,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 17,
+    "name": "Power Word: Shield",
+    "rank": 1,
+    "level": 6,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 53,
+    "name": "Backstab",
+    "rank": 1,
+    "level": 4,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 71,
+    "name": "Defensive Stance",
+    "rank": 0,
+    "level": 10,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 72,
+    "name": "Shield Bash",
+    "rank": 1,
+    "level": 12,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 75,
+    "name": "Auto Shot",
+    "rank": 0,
+    "level": 1,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 78,
+    "name": "Heroic Strike",
+    "rank": 1,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 99,
+    "name": "Demoralizing Roar",
+    "rank": 1,
+    "level": 10,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 100,
+    "name": "Charge",
+    "rank": 1,
+    "level": 4,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 116,
+    "name": "Frostbolt",
+    "rank": 1,
+    "level": 4,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 118,
+    "name": "Polymorph",
+    "rank": 1,
+    "level": 8,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 120,
+    "name": "Cone of Cold",
+    "rank": 1,
+    "level": 26,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 122,
+    "name": "Frost Nova",
+    "rank": 1,
+    "level": 10,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 126,
+    "name": "Eye of Kilrogg",
+    "rank": null,
+    "level": 22,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 130,
+    "name": "Slow Fall",
+    "rank": 0,
+    "level": 12,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 131,
+    "name": "Water Breathing",
+    "rank": 0,
+    "level": 22,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 132,
+    "name": "Detect Lesser Invisibility",
+    "rank": 0,
+    "level": 26,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 133,
+    "name": "Fireball",
+    "rank": 1,
+    "level": 1,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 136,
+    "name": "Mend Pet",
+    "rank": 1,
+    "level": 12,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 139,
+    "name": "Renew",
+    "rank": 1,
+    "level": 8,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 143,
+    "name": "Fireball",
+    "rank": 2,
+    "level": 6,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 145,
+    "name": "Fireball",
+    "rank": 3,
+    "level": 12,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 168,
+    "name": "Frost Armor",
+    "rank": 1,
+    "level": 1,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 172,
+    "name": "Corruption",
+    "rank": 1,
+    "level": 4,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 205,
+    "name": "Frostbolt",
+    "rank": 2,
+    "level": 8,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 284,
+    "name": "Heroic Strike",
+    "rank": 2,
+    "level": 8,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 285,
+    "name": "Heroic Strike",
+    "rank": 3,
+    "level": 16,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 324,
+    "name": "Lightning Shield",
+    "rank": 1,
+    "level": 8,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 325,
+    "name": "Lightning Shield",
+    "rank": 2,
+    "level": 16,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 331,
+    "name": "Healing Wave",
+    "rank": 1,
+    "level": 1,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 332,
+    "name": "Healing Wave",
+    "rank": 2,
+    "level": 6,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 339,
+    "name": "Entangling Roots",
+    "rank": 1,
+    "level": 8,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 348,
+    "name": "Immolate",
+    "rank": 1,
+    "level": 1,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 355,
+    "name": "Taunt",
+    "rank": 0,
+    "level": 10,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 370,
+    "name": "Purge",
+    "rank": 1,
+    "level": 12,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 403,
+    "name": "Lightning Bolt",
+    "rank": 1,
+    "level": 1,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 408,
+    "name": "Kidney Shot",
+    "rank": 1,
+    "level": 30,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 421,
+    "name": "Chain Lightning",
+    "rank": 1,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 453,
+    "name": "Mind Soothe",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 465,
+    "name": "Devotion Aura",
+    "rank": 1,
+    "level": 1,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 467,
+    "name": "Thorns",
+    "rank": 1,
+    "level": 6,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 475,
+    "name": "Remove Lesser Curse",
+    "rank": 0,
+    "level": 18,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 498,
+    "name": "Divine Protection",
+    "rank": 1,
+    "level": 6,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 526,
+    "name": "Cure Poison",
+    "rank": 0,
+    "level": 16,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 527,
+    "name": "Dispel Magic",
+    "rank": 1,
+    "level": 18,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 528,
+    "name": "Cure Disease",
+    "rank": 0,
+    "level": 14,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 529,
+    "name": "Lightning Bolt",
+    "rank": 2,
+    "level": 8,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 543,
+    "name": "Fire Ward",
+    "rank": 1,
+    "level": 20,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 546,
+    "name": "Water Walking",
+    "rank": 0,
+    "level": 28,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 547,
+    "name": "Healing Wave",
+    "rank": 3,
+    "level": 12,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 548,
+    "name": "Lightning Bolt",
+    "rank": 3,
+    "level": 14,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 552,
+    "name": "Abolish Disease",
+    "rank": 0,
+    "level": 32,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 556,
+    "name": "Astral Recall",
+    "rank": 0,
+    "level": 30,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 585,
+    "name": "Smite",
+    "rank": 1,
+    "level": 1,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 586,
+    "name": "Fade",
+    "rank": 1,
+    "level": 8,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 587,
+    "name": "Conjure Food",
+    "rank": 1,
+    "level": 6,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 588,
+    "name": "Inner Fire",
+    "rank": 1,
+    "level": 12,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 589,
+    "name": "Shadow Word: Pain",
+    "rank": 1,
+    "level": 4,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 591,
+    "name": "Smite",
+    "rank": 2,
+    "level": 6,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 592,
+    "name": "Power Word: Shield",
+    "rank": 2,
+    "level": 12,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 594,
+    "name": "Shadow Word: Pain",
+    "rank": 2,
+    "level": 10,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 596,
+    "name": "Prayer of Healing",
+    "rank": 1,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 597,
+    "name": "Conjure Food",
+    "rank": 2,
+    "level": 12,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 598,
+    "name": "Smite",
+    "rank": 3,
+    "level": 14,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 600,
+    "name": "Power Word: Shield",
+    "rank": 3,
+    "level": 18,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 602,
+    "name": "Inner Fire",
+    "rank": 3,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 603,
+    "name": "Curse of Doom",
+    "rank": 0,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 604,
+    "name": "Dampen Magic",
+    "rank": 1,
+    "level": 12,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 605,
+    "name": "Mind Control",
+    "rank": 1,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 633,
+    "name": "Lay on Hands",
+    "rank": 1,
+    "level": 10,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 635,
+    "name": "Holy Light",
+    "rank": 1,
+    "level": 1,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 639,
+    "name": "Holy Light",
+    "rank": 2,
+    "level": 6,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 642,
+    "name": "Divine Shield",
+    "rank": 1,
+    "level": 34,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 643,
+    "name": "Devotion Aura",
+    "rank": 3,
+    "level": 20,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 647,
+    "name": "Holy Light",
+    "rank": 3,
+    "level": 14,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 676,
+    "name": "Disarm",
+    "rank": 0,
+    "level": 18,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 686,
+    "name": "Shadow Bolt",
+    "rank": 1,
+    "level": 1,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 687,
+    "name": "Demon Skin",
+    "rank": 1,
+    "level": 1,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 688,
+    "name": "Summon Imp",
+    "rank": null,
+    "level": 1,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 689,
+    "name": "Drain Life",
+    "rank": 1,
+    "level": 14,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 691,
+    "name": "Summon Felhunter",
+    "rank": null,
+    "level": 30,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 693,
+    "name": "Create Soulstone (Minor)",
+    "rank": 0,
+    "level": 18,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 694,
+    "name": "Mocking Blow",
+    "rank": 1,
+    "level": 16,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 695,
+    "name": "Shadow Bolt",
+    "rank": 2,
+    "level": 6,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 696,
+    "name": "Demon Skin",
+    "rank": 2,
+    "level": 10,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 697,
+    "name": "Summon Voidwalker",
+    "rank": null,
+    "level": 10,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 698,
+    "name": "Ritual of Summoning",
+    "rank": 0,
+    "level": 20,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 699,
+    "name": "Drain Life",
+    "rank": 2,
+    "level": 22,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 702,
+    "name": "Curse of Weakness",
+    "rank": 1,
+    "level": 4,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 703,
+    "name": "Garrote",
+    "rank": 1,
+    "level": 14,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 704,
+    "name": "Curse of Recklessness",
+    "rank": 1,
+    "level": 14,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 705,
+    "name": "Shadow Bolt",
+    "rank": 3,
+    "level": 12,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 706,
+    "name": "Demon Armor",
+    "rank": 1,
+    "level": 20,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 707,
+    "name": "Immolate",
+    "rank": 2,
+    "level": 10,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 709,
+    "name": "Drain Life",
+    "rank": 3,
+    "level": 30,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 710,
+    "name": "Banish",
+    "rank": 1,
+    "level": 28,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 712,
+    "name": "Summon Succubus",
+    "rank": null,
+    "level": 20,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 740,
+    "name": "Tranquility",
+    "rank": 1,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 755,
+    "name": "Health Funnel",
+    "rank": 1,
+    "level": 12,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 759,
+    "name": "Conjure Mana Agate",
+    "rank": 0,
+    "level": 28,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 768,
+    "name": "Cat Form",
+    "rank": null,
+    "level": 20,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 769,
+    "name": "Swipe",
+    "rank": 3,
+    "level": 34,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 770,
+    "name": "Faerie Fire",
+    "rank": 1,
+    "level": 18,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 772,
+    "name": "Rend",
+    "rank": 1,
+    "level": 4,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 774,
+    "name": "Rejuvenation",
+    "rank": 1,
+    "level": 4,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 778,
+    "name": "Faerie Fire",
+    "rank": 2,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 779,
+    "name": "Swipe",
+    "rank": 1,
+    "level": 16,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 780,
+    "name": "Swipe",
+    "rank": 2,
+    "level": 24,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 781,
+    "name": "Disengage",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 782,
+    "name": "Thorns",
+    "rank": 2,
+    "level": 14,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 783,
+    "name": "Travel Form",
+    "rank": null,
+    "level": 30,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 837,
+    "name": "Frostbolt",
+    "rank": 3,
+    "level": 14,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 845,
+    "name": "Cleave",
+    "rank": 1,
+    "level": 20,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 853,
+    "name": "Hammer of Justice",
+    "rank": 1,
+    "level": 8,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 865,
+    "name": "Frost Nova",
+    "rank": 2,
+    "level": 26,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 871,
+    "name": "Shield Wall",
+    "rank": 0,
+    "level": 28,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 879,
+    "name": "Exorcism",
+    "rank": 1,
+    "level": 20,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 883,
+    "name": "Call Pet",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 905,
+    "name": "Lightning Shield",
+    "rank": 3,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 913,
+    "name": "Healing Wave",
+    "rank": 4,
+    "level": 18,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 915,
+    "name": "Lightning Bolt",
+    "rank": 4,
+    "level": 20,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 921,
+    "name": "Pick Pocket",
+    "rank": 0,
+    "level": 4,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 930,
+    "name": "Chain Lightning",
+    "rank": 2,
+    "level": 40,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 939,
+    "name": "Healing Wave",
+    "rank": 5,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 943,
+    "name": "Lightning Bolt",
+    "rank": 5,
+    "level": 26,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 945,
+    "name": "Lightning Shield",
+    "rank": 4,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 959,
+    "name": "Healing Wave",
+    "rank": 6,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 970,
+    "name": "Shadow Word: Pain",
+    "rank": 3,
+    "level": 18,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 976,
+    "name": "Shadow Protection",
+    "rank": 1,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 980,
+    "name": "Curse of Agony",
+    "rank": 1,
+    "level": 8,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 982,
+    "name": "Revive Pet",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 984,
+    "name": "Smite",
+    "rank": 4,
+    "level": 22,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 988,
+    "name": "Dispel Magic",
+    "rank": 2,
+    "level": 36,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 990,
+    "name": "Conjure Food",
+    "rank": 3,
+    "level": 22,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 992,
+    "name": "Shadow Word: Pain",
+    "rank": 4,
+    "level": 26,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 996,
+    "name": "Prayer of Healing",
+    "rank": 2,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1002,
+    "name": "Eyes of the Beast",
+    "rank": 0,
+    "level": 14,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 1004,
+    "name": "Smite",
+    "rank": 5,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1006,
+    "name": "Inner Fire",
+    "rank": 4,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1008,
+    "name": "Amplify Magic",
+    "rank": 1,
+    "level": 18,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1014,
+    "name": "Curse of Agony",
+    "rank": 2,
+    "level": 18,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1020,
+    "name": "Divine Shield",
+    "rank": 2,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1022,
+    "name": "Blessing of Protection",
+    "rank": 1,
+    "level": 10,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1026,
+    "name": "Holy Light",
+    "rank": 4,
+    "level": 22,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1032,
+    "name": "Devotion Aura",
+    "rank": 5,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1038,
+    "name": "Blessing of Salvation",
+    "rank": 0,
+    "level": 26,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1042,
+    "name": "Holy Light",
+    "rank": 5,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1044,
+    "name": "Blessing of Freedom",
+    "rank": 0,
+    "level": 18,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1058,
+    "name": "Rejuvenation",
+    "rank": 2,
+    "level": 10,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 1062,
+    "name": "Entangling Roots",
+    "rank": 2,
+    "level": 18,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 1064,
+    "name": "Chain Heal",
+    "rank": 1,
+    "level": 40,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 1066,
+    "name": "Aquatic Form",
+    "rank": null,
+    "level": 16,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1075,
+    "name": "Thorns",
+    "rank": 3,
+    "level": 24,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 1079,
+    "name": "Rip",
+    "rank": 1,
+    "level": 20,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1082,
+    "name": "Claw",
+    "rank": 1,
+    "level": 20,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1086,
+    "name": "Demon Armor",
+    "rank": 2,
+    "level": 30,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1088,
+    "name": "Shadow Bolt",
+    "rank": 4,
+    "level": 20,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1094,
+    "name": "Immolate",
+    "rank": 3,
+    "level": 20,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 1098,
+    "name": "Enslave Demon",
+    "rank": 1,
+    "level": 30,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1106,
+    "name": "Shadow Bolt",
+    "rank": 5,
+    "level": 28,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1108,
+    "name": "Curse of Weakness",
+    "rank": 2,
+    "level": 12,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1120,
+    "name": "Drain Soul",
+    "rank": 1,
+    "level": 10,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1122,
+    "name": "Inferno",
+    "rank": null,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1126,
+    "name": "Mark of the Wild",
+    "rank": 1,
+    "level": 1,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 1130,
+    "name": "Hunter's Mark",
+    "rank": 1,
+    "level": 6,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 1152,
+    "name": "Purify",
+    "rank": 0,
+    "level": 8,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 1160,
+    "name": "Demoralizing Shout",
+    "rank": 1,
+    "level": 14,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1161,
+    "name": "Challenging Shout",
+    "rank": 0,
+    "level": 26,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1243,
+    "name": "Power Word: Fortitude",
+    "rank": 1,
+    "level": 1,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1244,
+    "name": "Power Word: Fortitude",
+    "rank": 2,
+    "level": 12,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1245,
+    "name": "Power Word: Fortitude",
+    "rank": 3,
+    "level": 24,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1430,
+    "name": "Rejuvenation",
+    "rank": 3,
+    "level": 16,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 1449,
+    "name": "Arcane Explosion",
+    "rank": 1,
+    "level": 14,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1454,
+    "name": "Life Tap",
+    "rank": 1,
+    "level": 6,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1455,
+    "name": "Life Tap",
+    "rank": 2,
+    "level": 16,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1456,
+    "name": "Life Tap",
+    "rank": 3,
+    "level": 26,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1459,
+    "name": "Arcane Intellect",
+    "rank": 1,
+    "level": 1,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1460,
+    "name": "Arcane Intellect",
+    "rank": 2,
+    "level": 14,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1461,
+    "name": "Arcane Intellect",
+    "rank": 3,
+    "level": 28,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1462,
+    "name": "Beast Lore",
+    "rank": 0,
+    "level": 24,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 1463,
+    "name": "Mana Shield",
+    "rank": 1,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1464,
+    "name": "Slam",
+    "rank": 1,
+    "level": 30,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1490,
+    "name": "Curse of the Elements",
+    "rank": 1,
+    "level": 32,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1494,
+    "name": "Track Beasts",
+    "rank": 0,
+    "level": 1,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 1495,
+    "name": "Mongoose Bite",
+    "rank": 1,
+    "level": 16,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 1499,
+    "name": "Freezing Trap",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 16
+  },
+  {
+    "id": 1510,
+    "name": "Volley",
+    "rank": 1,
+    "level": 40,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 1513,
+    "name": "Scare Beast",
+    "rank": 1,
+    "level": 14,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 1515,
+    "name": "Tame Beast",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 1535,
+    "name": "Fire Nova Totem",
+    "rank": 1,
+    "level": 12,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 1543,
+    "name": "Flare",
+    "rank": 0,
+    "level": 32,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 1608,
+    "name": "Heroic Strike",
+    "rank": 4,
+    "level": 24,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1671,
+    "name": "Shield Bash",
+    "rank": 2,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1672,
+    "name": "Shield Bash",
+    "rank": 3,
+    "level": 52,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1680,
+    "name": "Whirlwind",
+    "rank": 0,
+    "level": 36,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1706,
+    "name": "Levitate",
+    "rank": 0,
+    "level": 34,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 1714,
+    "name": "Curse of Tongues",
+    "rank": 1,
+    "level": 26,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 1715,
+    "name": "Hamstring",
+    "rank": 1,
+    "level": 8,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1719,
+    "name": "Recklessness",
+    "rank": 0,
+    "level": 50,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 1725,
+    "name": "Distract",
+    "rank": 0,
+    "level": 22,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1735,
+    "name": "Demoralizing Roar",
+    "rank": 2,
+    "level": 20,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1752,
+    "name": "Sinister Strike",
+    "rank": 1,
+    "level": 1,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1757,
+    "name": "Sinister Strike",
+    "rank": 2,
+    "level": 6,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1758,
+    "name": "Sinister Strike",
+    "rank": 3,
+    "level": 14,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1759,
+    "name": "Sinister Strike",
+    "rank": 4,
+    "level": 22,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1760,
+    "name": "Sinister Strike",
+    "rank": 5,
+    "level": 30,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1766,
+    "name": "Kick",
+    "rank": 1,
+    "level": 12,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1767,
+    "name": "Kick",
+    "rank": 2,
+    "level": 26,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1768,
+    "name": "Kick",
+    "rank": 3,
+    "level": 42,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1769,
+    "name": "Kick",
+    "rank": 4,
+    "level": 58,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1776,
+    "name": "Gouge",
+    "rank": 1,
+    "level": 6,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1777,
+    "name": "Gouge",
+    "rank": 2,
+    "level": 18,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1784,
+    "name": "Stealth",
+    "rank": 1,
+    "level": 1,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1785,
+    "name": "Stealth",
+    "rank": 2,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1786,
+    "name": "Stealth",
+    "rank": 3,
+    "level": 40,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1787,
+    "name": "Stealth",
+    "rank": 4,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1804,
+    "name": "Pick Lock",
+    "rank": 0,
+    "level": 1,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1822,
+    "name": "Rake",
+    "rank": 1,
+    "level": 24,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1823,
+    "name": "Rake",
+    "rank": 2,
+    "level": 34,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1824,
+    "name": "Rake",
+    "rank": 3,
+    "level": 44,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1833,
+    "name": "Cheap Shot",
+    "rank": 0,
+    "level": 26,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1842,
+    "name": "Disarm Trap",
+    "rank": 0,
+    "level": 30,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1850,
+    "name": "Dash",
+    "rank": 1,
+    "level": 26,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 1856,
+    "name": "Vanish",
+    "rank": 1,
+    "level": 22,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1857,
+    "name": "Vanish",
+    "rank": 2,
+    "level": 42,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1860,
+    "name": "Safe Fall",
+    "rank": null,
+    "level": 40,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1943,
+    "name": "Rupture",
+    "rank": 1,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1949,
+    "name": "Hellfire",
+    "rank": 1,
+    "level": 30,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 1953,
+    "name": "Blink",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 1966,
+    "name": "Feint",
+    "rank": 1,
+    "level": 16,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 1978,
+    "name": "Serpent Sting",
+    "rank": 1,
+    "level": 4,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 2006,
+    "name": "Resurrection",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2008,
+    "name": "Ancestral Spirit",
+    "rank": 1,
+    "level": 12,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 2010,
+    "name": "Resurrection",
+    "rank": 2,
+    "level": 22,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2050,
+    "name": "Lesser Heal",
+    "rank": 1,
+    "level": 1,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2052,
+    "name": "Lesser Heal",
+    "rank": 2,
+    "level": 4,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2053,
+    "name": "Lesser Heal",
+    "rank": 3,
+    "level": 10,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2054,
+    "name": "Heal",
+    "rank": 1,
+    "level": 16,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2055,
+    "name": "Heal",
+    "rank": 2,
+    "level": 22,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2060,
+    "name": "Greater Heal",
+    "rank": 1,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2061,
+    "name": "Flash Heal",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2070,
+    "name": "Sap",
+    "rank": 2,
+    "level": 28,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2090,
+    "name": "Rejuvenation",
+    "rank": 4,
+    "level": 22,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 2091,
+    "name": "Rejuvenation",
+    "rank": 5,
+    "level": 28,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 2094,
+    "name": "Blind",
+    "rank": 0,
+    "level": 34,
+    "class": 8,
+    "school": 8
+  },
+  {
+    "id": 2096,
+    "name": "Mind Vision",
+    "rank": 1,
+    "level": 22,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 2098,
+    "name": "Eviscerate",
+    "rank": 1,
+    "level": 1,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2120,
+    "name": "Flamestrike",
+    "rank": 1,
+    "level": 16,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2121,
+    "name": "Flamestrike",
+    "rank": 2,
+    "level": 24,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2136,
+    "name": "Fire Blast",
+    "rank": 1,
+    "level": 6,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2137,
+    "name": "Fire Blast",
+    "rank": 2,
+    "level": 14,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2138,
+    "name": "Fire Blast",
+    "rank": 3,
+    "level": 22,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2139,
+    "name": "Counterspell",
+    "rank": 0,
+    "level": 24,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 2362,
+    "name": "Create Spellstone",
+    "rank": 0,
+    "level": 36,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 2457,
+    "name": "Battle Stance",
+    "rank": 0,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 2458,
+    "name": "Berserker Stance",
+    "rank": 0,
+    "level": 30,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 2484,
+    "name": "Earthbind Totem",
+    "rank": 0,
+    "level": 6,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 2565,
+    "name": "Shield Block",
+    "rank": 0,
+    "level": 16,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 2589,
+    "name": "Backstab",
+    "rank": 2,
+    "level": 12,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2590,
+    "name": "Backstab",
+    "rank": 3,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2591,
+    "name": "Backstab",
+    "rank": 4,
+    "level": 28,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2637,
+    "name": "Hibernate",
+    "rank": 1,
+    "level": 18,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 2641,
+    "name": "Dismiss Pet",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 2643,
+    "name": "Multi-Shot",
+    "rank": 1,
+    "level": 18,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 2645,
+    "name": "Ghost Wolf",
+    "rank": 0,
+    "level": 20,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 2651,
+    "name": "Elune's Grace",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2652,
+    "name": "Touch of Weakness",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 2687,
+    "name": "Bloodrage",
+    "rank": 0,
+    "level": 10,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 2767,
+    "name": "Shadow Word: Pain",
+    "rank": 5,
+    "level": 34,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 2782,
+    "name": "Remove Curse",
+    "rank": 0,
+    "level": 24,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 2791,
+    "name": "Power Word: Fortitude",
+    "rank": 4,
+    "level": 36,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 2800,
+    "name": "Lay on Hands",
+    "rank": 2,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 2812,
+    "name": "Holy Wrath",
+    "rank": 1,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 2835,
+    "name": "Deadly Poison",
+    "rank": 1,
+    "level": 30,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2836,
+    "name": "Detect Traps",
+    "rank": null,
+    "level": 24,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2837,
+    "name": "Deadly Poison II",
+    "rank": 2,
+    "level": 38,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2842,
+    "name": "Poisons",
+    "rank": 0,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 2855,
+    "name": "Detect Magic",
+    "rank": 0,
+    "level": 16,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 2860,
+    "name": "Chain Lightning",
+    "rank": 3,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 2870,
+    "name": "Cure Disease",
+    "rank": 0,
+    "level": 22,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 2878,
+    "name": "Turn Undead",
+    "rank": 1,
+    "level": 24,
+    "class": 2,
+    "school": 8
+  },
+  {
+    "id": 2893,
+    "name": "Abolish Poison",
+    "rank": 0,
+    "level": 26,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 2908,
+    "name": "Soothe Animal",
+    "rank": 1,
+    "level": 22,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 2912,
+    "name": "Starfire",
+    "rank": 1,
+    "level": 20,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 2941,
+    "name": "Immolate",
+    "rank": 4,
+    "level": 30,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 2944,
+    "name": "Devouring Plague",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 2948,
+    "name": "Scorch",
+    "rank": 1,
+    "level": 22,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 2970,
+    "name": "Detect Invisibility",
+    "rank": 0,
+    "level": 38,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 2973,
+    "name": "Raptor Strike",
+    "rank": 1,
+    "level": 1,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 2974,
+    "name": "Wing Clip",
+    "rank": 1,
+    "level": 12,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 2983,
+    "name": "Sprint",
+    "rank": 1,
+    "level": 10,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 3029,
+    "name": "Claw",
+    "rank": 2,
+    "level": 28,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 3034,
+    "name": "Viper Sting",
+    "rank": 1,
+    "level": 36,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 3043,
+    "name": "Scorpid Sting",
+    "rank": 1,
+    "level": 22,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 3044,
+    "name": "Arcane Shot",
+    "rank": 1,
+    "level": 6,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 3045,
+    "name": "Rapid Fire",
+    "rank": 0,
+    "level": 26,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 3111,
+    "name": "Mend Pet",
+    "rank": 2,
+    "level": 20,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 3140,
+    "name": "Fireball",
+    "rank": 4,
+    "level": 18,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 3420,
+    "name": "Crippling Poison",
+    "rank": 1,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 3421,
+    "name": "Crippling Poison II",
+    "rank": 2,
+    "level": 50,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 3472,
+    "name": "Holy Light",
+    "rank": 6,
+    "level": 38,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 3552,
+    "name": "Conjure Mana Jade",
+    "rank": 0,
+    "level": 38,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3561,
+    "name": "Teleport: Stormwind",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3562,
+    "name": "Teleport: Ironforge",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3563,
+    "name": "Teleport: Undercity",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3565,
+    "name": "Teleport: Darnassus",
+    "rank": 0,
+    "level": 30,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3566,
+    "name": "Teleport: Thunder Bluff",
+    "rank": 0,
+    "level": 30,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3567,
+    "name": "Teleport: Orgrimmar",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 3599,
+    "name": "Searing Totem",
+    "rank": 1,
+    "level": 10,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 3627,
+    "name": "Rejuvenation",
+    "rank": 6,
+    "level": 34,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 3661,
+    "name": "Mend Pet",
+    "rank": 3,
+    "level": 28,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 3662,
+    "name": "Mend Pet",
+    "rank": 4,
+    "level": 36,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 3698,
+    "name": "Health Funnel",
+    "rank": 2,
+    "level": 20,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 3699,
+    "name": "Health Funnel",
+    "rank": 3,
+    "level": 28,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 3700,
+    "name": "Health Funnel",
+    "rank": 4,
+    "level": 36,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 3747,
+    "name": "Power Word: Shield",
+    "rank": 4,
+    "level": 24,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 4195,
+    "name": "Great Stamina",
+    "rank": 1,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4196,
+    "name": "Great Stamina",
+    "rank": 2,
+    "level": 12,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4197,
+    "name": "Great Stamina",
+    "rank": 3,
+    "level": 18,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4198,
+    "name": "Great Stamina",
+    "rank": 4,
+    "level": 24,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4199,
+    "name": "Great Stamina",
+    "rank": 5,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4200,
+    "name": "Great Stamina",
+    "rank": 6,
+    "level": 36,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4201,
+    "name": "Great Stamina",
+    "rank": 7,
+    "level": 42,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4202,
+    "name": "Great Stamina",
+    "rank": 8,
+    "level": 48,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 4987,
+    "name": "Cleanse",
+    "rank": 0,
+    "level": 42,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5048,
+    "name": "Great Stamina",
+    "rank": 9,
+    "level": 54,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 5049,
+    "name": "Great Stamina",
+    "rank": 10,
+    "level": 60,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 5116,
+    "name": "Concussive Shot",
+    "rank": 0,
+    "level": 8,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 5118,
+    "name": "Aspect of the Cheetah",
+    "rank": 0,
+    "level": 20,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 5138,
+    "name": "Drain Mana",
+    "rank": 1,
+    "level": 24,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5143,
+    "name": "Arcane Missiles",
+    "rank": 1,
+    "level": 8,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5144,
+    "name": "Arcane Missiles",
+    "rank": 2,
+    "level": 16,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5145,
+    "name": "Arcane Missiles",
+    "rank": 3,
+    "level": 24,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5171,
+    "name": "Slice and Dice",
+    "rank": 1,
+    "level": 10,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 5176,
+    "name": "Wrath",
+    "rank": 1,
+    "level": 1,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5177,
+    "name": "Wrath",
+    "rank": 2,
+    "level": 6,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5178,
+    "name": "Wrath",
+    "rank": 3,
+    "level": 14,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5179,
+    "name": "Wrath",
+    "rank": 4,
+    "level": 22,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5180,
+    "name": "Wrath",
+    "rank": 5,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5185,
+    "name": "Healing Touch",
+    "rank": 1,
+    "level": 1,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5186,
+    "name": "Healing Touch",
+    "rank": 2,
+    "level": 8,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5187,
+    "name": "Healing Touch",
+    "rank": 3,
+    "level": 14,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5188,
+    "name": "Healing Touch",
+    "rank": 4,
+    "level": 20,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5189,
+    "name": "Healing Touch",
+    "rank": 5,
+    "level": 26,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5195,
+    "name": "Entangling Roots",
+    "rank": 3,
+    "level": 28,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5196,
+    "name": "Entangling Roots",
+    "rank": 4,
+    "level": 38,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5201,
+    "name": "Claw",
+    "rank": 3,
+    "level": 38,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5209,
+    "name": "Challenging Roar",
+    "rank": 0,
+    "level": 28,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5211,
+    "name": "Bash",
+    "rank": 1,
+    "level": 14,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5215,
+    "name": "Prowl",
+    "rank": 1,
+    "level": 20,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5217,
+    "name": "Tiger's Fury",
+    "rank": 1,
+    "level": 24,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5221,
+    "name": "Shred",
+    "rank": 1,
+    "level": 22,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5225,
+    "name": "Track Humanoids",
+    "rank": 0,
+    "level": 32,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5229,
+    "name": "Enrage",
+    "rank": 0,
+    "level": 12,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5232,
+    "name": "Mark of the Wild",
+    "rank": 2,
+    "level": 10,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5234,
+    "name": "Mark of the Wild",
+    "rank": 4,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 5242,
+    "name": "Battle Shout",
+    "rank": 2,
+    "level": 12,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 5246,
+    "name": "Intimidating Shout",
+    "rank": 0,
+    "level": 22,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 5277,
+    "name": "Evasion",
+    "rank": 0,
+    "level": 8,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 5308,
+    "name": "Execute",
+    "rank": 1,
+    "level": 24,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 5384,
+    "name": "Feign Death",
+    "rank": 0,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 5394,
+    "name": "Healing Stream Totem",
+    "rank": 1,
+    "level": 20,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 5484,
+    "name": "Howl of Terror",
+    "rank": 1,
+    "level": 40,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5487,
+    "name": "Bear Form",
+    "rank": null,
+    "level": 10,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 5500,
+    "name": "Sense Demons",
+    "rank": 0,
+    "level": 24,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5502,
+    "name": "Sense Undead",
+    "rank": 0,
+    "level": 20,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5504,
+    "name": "Conjure Water",
+    "rank": 1,
+    "level": 4,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5505,
+    "name": "Conjure Water",
+    "rank": 2,
+    "level": 10,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5506,
+    "name": "Conjure Water",
+    "rank": 3,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 5573,
+    "name": "Divine Protection",
+    "rank": 2,
+    "level": 18,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5588,
+    "name": "Hammer of Justice",
+    "rank": 2,
+    "level": 24,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5589,
+    "name": "Hammer of Justice",
+    "rank": 3,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5599,
+    "name": "Blessing of Protection",
+    "rank": 2,
+    "level": 24,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5614,
+    "name": "Exorcism",
+    "rank": 2,
+    "level": 28,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5615,
+    "name": "Exorcism",
+    "rank": 3,
+    "level": 36,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 5627,
+    "name": "Turn Undead",
+    "rank": 2,
+    "level": 38,
+    "class": 2,
+    "school": 8
+  },
+  {
+    "id": 5675,
+    "name": "Mana Spring Totem",
+    "rank": 1,
+    "level": 26,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 5676,
+    "name": "Searing Pain",
+    "rank": 1,
+    "level": 18,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 5697,
+    "name": "Unending Breath",
+    "rank": 0,
+    "level": 16,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5699,
+    "name": "Create Healthstone",
+    "rank": 0,
+    "level": 34,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5730,
+    "name": "Stoneclaw Totem",
+    "rank": 1,
+    "level": 8,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 5740,
+    "name": "Rain of Fire",
+    "rank": 1,
+    "level": 20,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 5763,
+    "name": "Mind-numbing Poison",
+    "rank": 1,
+    "level": 24,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 5782,
+    "name": "Fear",
+    "rank": 1,
+    "level": 8,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 5784,
+    "name": "Summon Felsteed",
+    "rank": null,
+    "level": 40,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6041,
+    "name": "Lightning Bolt",
+    "rank": 6,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6060,
+    "name": "Smite",
+    "rank": 6,
+    "level": 38,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6063,
+    "name": "Heal",
+    "rank": 3,
+    "level": 28,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6064,
+    "name": "Heal",
+    "rank": 4,
+    "level": 34,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6065,
+    "name": "Power Word: Shield",
+    "rank": 5,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6066,
+    "name": "Power Word: Shield",
+    "rank": 6,
+    "level": 36,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6074,
+    "name": "Renew",
+    "rank": 2,
+    "level": 14,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6075,
+    "name": "Renew",
+    "rank": 3,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6076,
+    "name": "Renew",
+    "rank": 4,
+    "level": 26,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6077,
+    "name": "Renew",
+    "rank": 5,
+    "level": 32,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6078,
+    "name": "Renew",
+    "rank": 6,
+    "level": 38,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6117,
+    "name": "Mage Armor",
+    "rank": 1,
+    "level": 34,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 6127,
+    "name": "Conjure Water",
+    "rank": 4,
+    "level": 30,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 6129,
+    "name": "Conjure Food",
+    "rank": 4,
+    "level": 32,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 6131,
+    "name": "Frost Nova",
+    "rank": 3,
+    "level": 40,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 6141,
+    "name": "Blizzard",
+    "rank": 2,
+    "level": 28,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 6143,
+    "name": "Frost Ward",
+    "rank": 1,
+    "level": 22,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 6178,
+    "name": "Charge",
+    "rank": 2,
+    "level": 26,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6190,
+    "name": "Demoralizing Shout",
+    "rank": 2,
+    "level": 24,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6192,
+    "name": "Battle Shout",
+    "rank": 3,
+    "level": 22,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6196,
+    "name": "Far Sight",
+    "rank": 0,
+    "level": 26,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6197,
+    "name": "Eagle Eye",
+    "rank": 0,
+    "level": 14,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 6201,
+    "name": "Create Healthstone (Minor)",
+    "rank": 0,
+    "level": 10,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6202,
+    "name": "Create Healthstone (Lesser)",
+    "rank": 0,
+    "level": 22,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6205,
+    "name": "Curse of Weakness",
+    "rank": 3,
+    "level": 22,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6213,
+    "name": "Fear",
+    "rank": 2,
+    "level": 32,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6215,
+    "name": "Fear",
+    "rank": 3,
+    "level": 56,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6217,
+    "name": "Curse of Agony",
+    "rank": 3,
+    "level": 28,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6219,
+    "name": "Rain of Fire",
+    "rank": 2,
+    "level": 34,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 6222,
+    "name": "Corruption",
+    "rank": 2,
+    "level": 14,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6223,
+    "name": "Corruption",
+    "rank": 3,
+    "level": 24,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6226,
+    "name": "Drain Mana",
+    "rank": 2,
+    "level": 34,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6229,
+    "name": "Shadow Ward",
+    "rank": 1,
+    "level": 32,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6343,
+    "name": "Thunder Clap",
+    "rank": 1,
+    "level": 6,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6346,
+    "name": "Fear Ward",
+    "rank": 0,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 6353,
+    "name": "Soul Fire",
+    "rank": 1,
+    "level": 48,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 6363,
+    "name": "Searing Totem",
+    "rank": 2,
+    "level": 20,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 6364,
+    "name": "Searing Totem",
+    "rank": 3,
+    "level": 30,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 6365,
+    "name": "Searing Totem",
+    "rank": 4,
+    "level": 40,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 6366,
+    "name": "Create Firestone (Lesser)",
+    "rank": 0,
+    "level": 28,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 6375,
+    "name": "Healing Stream Totem",
+    "rank": 2,
+    "level": 30,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 6377,
+    "name": "Healing Stream Totem",
+    "rank": 3,
+    "level": 40,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 6390,
+    "name": "Stoneclaw Totem",
+    "rank": 2,
+    "level": 18,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6391,
+    "name": "Stoneclaw Totem",
+    "rank": 3,
+    "level": 28,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6392,
+    "name": "Stoneclaw Totem",
+    "rank": 4,
+    "level": 38,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6495,
+    "name": "Sentry Totem",
+    "rank": 0,
+    "level": 34,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 6510,
+    "name": "Blinding Powder",
+    "rank": 0,
+    "level": 34,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6546,
+    "name": "Rend",
+    "rank": 2,
+    "level": 10,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6547,
+    "name": "Rend",
+    "rank": 3,
+    "level": 20,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6548,
+    "name": "Rend",
+    "rank": 4,
+    "level": 30,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6552,
+    "name": "Pummel",
+    "rank": 1,
+    "level": 38,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6554,
+    "name": "Pummel",
+    "rank": 2,
+    "level": 58,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6572,
+    "name": "Revenge",
+    "rank": 1,
+    "level": 14,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6574,
+    "name": "Revenge",
+    "rank": 2,
+    "level": 24,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6673,
+    "name": "Battle Shout",
+    "rank": 1,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 6756,
+    "name": "Mark of the Wild",
+    "rank": 3,
+    "level": 20,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 6760,
+    "name": "Eviscerate",
+    "rank": 2,
+    "level": 8,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6761,
+    "name": "Eviscerate",
+    "rank": 3,
+    "level": 16,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6762,
+    "name": "Eviscerate",
+    "rank": 4,
+    "level": 24,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6768,
+    "name": "Feint",
+    "rank": 2,
+    "level": 28,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6770,
+    "name": "Sap",
+    "rank": 1,
+    "level": 10,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6774,
+    "name": "Slice and Dice",
+    "rank": 2,
+    "level": 42,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 6778,
+    "name": "Healing Touch",
+    "rank": 6,
+    "level": 32,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 6780,
+    "name": "Wrath",
+    "rank": 6,
+    "level": 38,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 6783,
+    "name": "Prowl",
+    "rank": 2,
+    "level": 40,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6785,
+    "name": "Ravage",
+    "rank": 1,
+    "level": 32,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6787,
+    "name": "Ravage",
+    "rank": 2,
+    "level": 42,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6789,
+    "name": "Death Coil",
+    "rank": 1,
+    "level": 42,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 6793,
+    "name": "Tiger's Fury",
+    "rank": 2,
+    "level": 36,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6795,
+    "name": "Growl",
+    "rank": 0,
+    "level": 10,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6798,
+    "name": "Bash",
+    "rank": 2,
+    "level": 30,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6800,
+    "name": "Shred",
+    "rank": 2,
+    "level": 30,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6807,
+    "name": "Maul",
+    "rank": 1,
+    "level": 10,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6808,
+    "name": "Maul",
+    "rank": 2,
+    "level": 18,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6809,
+    "name": "Maul",
+    "rank": 3,
+    "level": 26,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 6940,
+    "name": "Blessing of Sacrifice",
+    "rank": 1,
+    "level": 46,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 6991,
+    "name": "Feed Pet",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 7128,
+    "name": "Inner Fire",
+    "rank": 2,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 7294,
+    "name": "Retribution Aura",
+    "rank": 1,
+    "level": 16,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 7300,
+    "name": "Frost Armor",
+    "rank": 2,
+    "level": 10,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 7301,
+    "name": "Frost Armor",
+    "rank": 3,
+    "level": 20,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 7302,
+    "name": "Ice Armor",
+    "rank": 1,
+    "level": 30,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 7320,
+    "name": "Ice Armor",
+    "rank": 2,
+    "level": 40,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 7322,
+    "name": "Frostbolt",
+    "rank": 4,
+    "level": 20,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 7328,
+    "name": "Redemption",
+    "rank": 1,
+    "level": 12,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 7369,
+    "name": "Cleave",
+    "rank": 2,
+    "level": 30,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7372,
+    "name": "Hamstring",
+    "rank": 2,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7373,
+    "name": "Hamstring",
+    "rank": 3,
+    "level": 54,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7379,
+    "name": "Revenge",
+    "rank": 3,
+    "level": 34,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7384,
+    "name": "Overpower",
+    "rank": 1,
+    "level": 12,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7386,
+    "name": "Sunder Armor",
+    "rank": 1,
+    "level": 10,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7400,
+    "name": "Mocking Blow",
+    "rank": 2,
+    "level": 26,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7402,
+    "name": "Mocking Blow",
+    "rank": 3,
+    "level": 36,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7405,
+    "name": "Sunder Armor",
+    "rank": 2,
+    "level": 22,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 7641,
+    "name": "Shadow Bolt",
+    "rank": 6,
+    "level": 36,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7646,
+    "name": "Curse of Weakness",
+    "rank": 4,
+    "level": 32,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7648,
+    "name": "Corruption",
+    "rank": 4,
+    "level": 34,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7651,
+    "name": "Drain Life",
+    "rank": 4,
+    "level": 38,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7658,
+    "name": "Curse of Recklessness",
+    "rank": 2,
+    "level": 28,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7659,
+    "name": "Curse of Recklessness",
+    "rank": 3,
+    "level": 42,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 7887,
+    "name": "Overpower",
+    "rank": 2,
+    "level": 28,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8004,
+    "name": "Lesser Healing Wave",
+    "rank": 1,
+    "level": 20,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8005,
+    "name": "Healing Wave",
+    "rank": 7,
+    "level": 40,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8008,
+    "name": "Lesser Healing Wave",
+    "rank": 2,
+    "level": 28,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8010,
+    "name": "Lesser Healing Wave",
+    "rank": 3,
+    "level": 36,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8012,
+    "name": "Purge",
+    "rank": 2,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8017,
+    "name": "Rockbiter Weapon",
+    "rank": 1,
+    "level": 1,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8018,
+    "name": "Rockbiter Weapon",
+    "rank": 2,
+    "level": 8,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8019,
+    "name": "Rockbiter Weapon",
+    "rank": 3,
+    "level": 16,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8024,
+    "name": "Flametongue Weapon",
+    "rank": 1,
+    "level": 10,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8027,
+    "name": "Flametongue Weapon",
+    "rank": 2,
+    "level": 18,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8030,
+    "name": "Flametongue Weapon",
+    "rank": 3,
+    "level": 26,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8033,
+    "name": "Frostbrand Weapon",
+    "rank": 1,
+    "level": 20,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 8038,
+    "name": "Frostbrand Weapon",
+    "rank": 2,
+    "level": 28,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 8042,
+    "name": "Earth Shock",
+    "rank": 1,
+    "level": 4,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8044,
+    "name": "Earth Shock",
+    "rank": 2,
+    "level": 8,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8045,
+    "name": "Earth Shock",
+    "rank": 3,
+    "level": 14,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8046,
+    "name": "Earth Shock",
+    "rank": 4,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8050,
+    "name": "Flame Shock",
+    "rank": 1,
+    "level": 10,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8052,
+    "name": "Flame Shock",
+    "rank": 2,
+    "level": 18,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8053,
+    "name": "Flame Shock",
+    "rank": 3,
+    "level": 28,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8056,
+    "name": "Frost Shock",
+    "rank": 1,
+    "level": 20,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 8058,
+    "name": "Frost Shock",
+    "rank": 2,
+    "level": 34,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 8071,
+    "name": "Stoneskin Totem",
+    "rank": 1,
+    "level": 4,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8075,
+    "name": "Strength of Earth Totem",
+    "rank": 1,
+    "level": 10,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8092,
+    "name": "Mind Blast",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8102,
+    "name": "Mind Blast",
+    "rank": 2,
+    "level": 16,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8103,
+    "name": "Mind Blast",
+    "rank": 3,
+    "level": 22,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8104,
+    "name": "Mind Blast",
+    "rank": 4,
+    "level": 28,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8105,
+    "name": "Mind Blast",
+    "rank": 5,
+    "level": 34,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8106,
+    "name": "Mind Blast",
+    "rank": 6,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8122,
+    "name": "Psychic Scream",
+    "rank": 1,
+    "level": 14,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8124,
+    "name": "Psychic Scream",
+    "rank": 2,
+    "level": 28,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8129,
+    "name": "Mana Burn",
+    "rank": 1,
+    "level": 24,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8131,
+    "name": "Mana Burn",
+    "rank": 2,
+    "level": 32,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8134,
+    "name": "Lightning Shield",
+    "rank": 5,
+    "level": 40,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8143,
+    "name": "Tremor Totem",
+    "rank": 0,
+    "level": 18,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8154,
+    "name": "Stoneskin Totem",
+    "rank": 2,
+    "level": 14,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8155,
+    "name": "Stoneskin Totem",
+    "rank": 3,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8160,
+    "name": "Strength of Earth Totem",
+    "rank": 2,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8161,
+    "name": "Strength of Earth Totem",
+    "rank": 3,
+    "level": 38,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8166,
+    "name": "Poison Cleansing Totem",
+    "rank": 0,
+    "level": 22,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8170,
+    "name": "Disease Cleansing Totem",
+    "rank": 0,
+    "level": 38,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8177,
+    "name": "Grounding Totem",
+    "rank": 0,
+    "level": 30,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8181,
+    "name": "Frost Resistance Totem",
+    "rank": 1,
+    "level": 24,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8184,
+    "name": "Fire Resistance Totem",
+    "rank": 1,
+    "level": 28,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 8190,
+    "name": "Magma Totem",
+    "rank": 1,
+    "level": 26,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8192,
+    "name": "Mind Soothe",
+    "rank": 2,
+    "level": 36,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 8198,
+    "name": "Thunder Clap",
+    "rank": 2,
+    "level": 18,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8204,
+    "name": "Thunder Clap",
+    "rank": 3,
+    "level": 28,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8205,
+    "name": "Thunder Clap",
+    "rank": 4,
+    "level": 38,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8227,
+    "name": "Flametongue Totem",
+    "rank": 1,
+    "level": 28,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8232,
+    "name": "Windfury Weapon",
+    "rank": 1,
+    "level": 30,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8235,
+    "name": "Windfury Weapon",
+    "rank": 2,
+    "level": 40,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8249,
+    "name": "Flametongue Totem",
+    "rank": 2,
+    "level": 38,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8288,
+    "name": "Drain Soul",
+    "rank": 2,
+    "level": 24,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 8289,
+    "name": "Drain Soul",
+    "rank": 3,
+    "level": 38,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 8380,
+    "name": "Sunder Armor",
+    "rank": 3,
+    "level": 34,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8400,
+    "name": "Fireball",
+    "rank": 5,
+    "level": 24,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8401,
+    "name": "Fireball",
+    "rank": 6,
+    "level": 30,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8402,
+    "name": "Fireball",
+    "rank": 7,
+    "level": 36,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8406,
+    "name": "Frostbolt",
+    "rank": 5,
+    "level": 26,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8407,
+    "name": "Frostbolt",
+    "rank": 6,
+    "level": 32,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8408,
+    "name": "Frostbolt",
+    "rank": 7,
+    "level": 38,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8412,
+    "name": "Fire Blast",
+    "rank": 4,
+    "level": 30,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8413,
+    "name": "Fire Blast",
+    "rank": 5,
+    "level": 38,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8416,
+    "name": "Arcane Missiles",
+    "rank": 4,
+    "level": 32,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8417,
+    "name": "Arcane Missiles",
+    "rank": 5,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8422,
+    "name": "Flamestrike",
+    "rank": 3,
+    "level": 32,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8423,
+    "name": "Flamestrike",
+    "rank": 4,
+    "level": 40,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8427,
+    "name": "Blizzard",
+    "rank": 3,
+    "level": 36,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8437,
+    "name": "Arcane Explosion",
+    "rank": 2,
+    "level": 22,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8438,
+    "name": "Arcane Explosion",
+    "rank": 3,
+    "level": 30,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8439,
+    "name": "Arcane Explosion",
+    "rank": 4,
+    "level": 38,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8444,
+    "name": "Scorch",
+    "rank": 2,
+    "level": 28,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8445,
+    "name": "Scorch",
+    "rank": 3,
+    "level": 34,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8446,
+    "name": "Scorch",
+    "rank": 4,
+    "level": 40,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8450,
+    "name": "Dampen Magic",
+    "rank": 2,
+    "level": 24,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8451,
+    "name": "Dampen Magic",
+    "rank": 3,
+    "level": 36,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8455,
+    "name": "Amplify Magic",
+    "rank": 2,
+    "level": 30,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8457,
+    "name": "Fire Ward",
+    "rank": 2,
+    "level": 30,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8458,
+    "name": "Fire Ward",
+    "rank": 3,
+    "level": 40,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 8461,
+    "name": "Frost Ward",
+    "rank": 2,
+    "level": 32,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8462,
+    "name": "Frost Ward",
+    "rank": 3,
+    "level": 42,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8492,
+    "name": "Cone of Cold",
+    "rank": 2,
+    "level": 34,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 8494,
+    "name": "Mana Shield",
+    "rank": 2,
+    "level": 28,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8495,
+    "name": "Mana Shield",
+    "rank": 3,
+    "level": 36,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 8498,
+    "name": "Fire Nova Totem",
+    "rank": 2,
+    "level": 22,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8499,
+    "name": "Fire Nova Totem",
+    "rank": 3,
+    "level": 32,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 8512,
+    "name": "Windfury Totem",
+    "rank": 1,
+    "level": 32,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8621,
+    "name": "Sinister Strike",
+    "rank": 6,
+    "level": 38,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8623,
+    "name": "Eviscerate",
+    "rank": 5,
+    "level": 32,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8624,
+    "name": "Eviscerate",
+    "rank": 6,
+    "level": 40,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8629,
+    "name": "Gouge",
+    "rank": 3,
+    "level": 32,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8631,
+    "name": "Garrote",
+    "rank": 2,
+    "level": 22,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8632,
+    "name": "Garrote",
+    "rank": 3,
+    "level": 30,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8633,
+    "name": "Garrote",
+    "rank": 4,
+    "level": 38,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8637,
+    "name": "Feint",
+    "rank": 3,
+    "level": 40,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8639,
+    "name": "Rupture",
+    "rank": 2,
+    "level": 28,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8640,
+    "name": "Rupture",
+    "rank": 3,
+    "level": 36,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8643,
+    "name": "Kidney Shot",
+    "rank": 2,
+    "level": 50,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8647,
+    "name": "Expose Armor",
+    "rank": 1,
+    "level": 14,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8649,
+    "name": "Expose Armor",
+    "rank": 2,
+    "level": 26,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8650,
+    "name": "Expose Armor",
+    "rank": 3,
+    "level": 36,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8676,
+    "name": "Ambush",
+    "rank": 1,
+    "level": 18,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8681,
+    "name": "Instant Poison",
+    "rank": 1,
+    "level": 20,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8687,
+    "name": "Instant Poison II",
+    "rank": 2,
+    "level": 28,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8691,
+    "name": "Instant Poison III",
+    "rank": 3,
+    "level": 36,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8694,
+    "name": "Mind-numbing Poison II",
+    "rank": 2,
+    "level": 38,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8696,
+    "name": "Sprint",
+    "rank": 2,
+    "level": 34,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8721,
+    "name": "Backstab",
+    "rank": 5,
+    "level": 36,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8724,
+    "name": "Ambush",
+    "rank": 2,
+    "level": 26,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8725,
+    "name": "Ambush",
+    "rank": 3,
+    "level": 34,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 8820,
+    "name": "Slam",
+    "rank": 2,
+    "level": 38,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 8835,
+    "name": "Grace of Air Totem",
+    "rank": 1,
+    "level": 42,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 8903,
+    "name": "Healing Touch",
+    "rank": 7,
+    "level": 38,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8905,
+    "name": "Wrath",
+    "rank": 7,
+    "level": 46,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8907,
+    "name": "Mark of the Wild",
+    "rank": 5,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8910,
+    "name": "Rejuvenation",
+    "rank": 7,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8914,
+    "name": "Thorns",
+    "rank": 4,
+    "level": 34,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8918,
+    "name": "Tranquility",
+    "rank": 2,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8921,
+    "name": "Moonfire",
+    "rank": 1,
+    "level": 4,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8924,
+    "name": "Moonfire",
+    "rank": 2,
+    "level": 10,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8925,
+    "name": "Moonfire",
+    "rank": 3,
+    "level": 16,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8926,
+    "name": "Moonfire",
+    "rank": 4,
+    "level": 22,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8927,
+    "name": "Moonfire",
+    "rank": 5,
+    "level": 28,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8928,
+    "name": "Moonfire",
+    "rank": 6,
+    "level": 34,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8929,
+    "name": "Moonfire",
+    "rank": 7,
+    "level": 40,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8936,
+    "name": "Regrowth",
+    "rank": 1,
+    "level": 12,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8938,
+    "name": "Regrowth",
+    "rank": 2,
+    "level": 18,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8939,
+    "name": "Regrowth",
+    "rank": 3,
+    "level": 24,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8940,
+    "name": "Regrowth",
+    "rank": 4,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8941,
+    "name": "Regrowth",
+    "rank": 5,
+    "level": 36,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8946,
+    "name": "Cure Poison",
+    "rank": 0,
+    "level": 14,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8949,
+    "name": "Starfire",
+    "rank": 2,
+    "level": 26,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8950,
+    "name": "Starfire",
+    "rank": 3,
+    "level": 34,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8951,
+    "name": "Starfire",
+    "rank": 4,
+    "level": 42,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 8955,
+    "name": "Soothe Animal",
+    "rank": 2,
+    "level": 38,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 8972,
+    "name": "Maul",
+    "rank": 4,
+    "level": 34,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 8983,
+    "name": "Bash",
+    "rank": 3,
+    "level": 46,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 8992,
+    "name": "Shred",
+    "rank": 3,
+    "level": 38,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 8998,
+    "name": "Cower",
+    "rank": 1,
+    "level": 28,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9000,
+    "name": "Cower",
+    "rank": 2,
+    "level": 40,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9005,
+    "name": "Pounce",
+    "rank": 1,
+    "level": 36,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9035,
+    "name": "Hex of Weakness",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 9472,
+    "name": "Flash Heal",
+    "rank": 2,
+    "level": 26,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 9473,
+    "name": "Flash Heal",
+    "rank": 3,
+    "level": 32,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 9474,
+    "name": "Flash Heal",
+    "rank": 4,
+    "level": 38,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 9484,
+    "name": "Shackle Undead",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 9485,
+    "name": "Shackle Undead",
+    "rank": 2,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 9490,
+    "name": "Demoralizing Roar",
+    "rank": 3,
+    "level": 32,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9492,
+    "name": "Rip",
+    "rank": 2,
+    "level": 28,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9493,
+    "name": "Rip",
+    "rank": 3,
+    "level": 36,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9578,
+    "name": "Fade",
+    "rank": 2,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 9579,
+    "name": "Fade",
+    "rank": 3,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 9592,
+    "name": "Fade",
+    "rank": 4,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 9634,
+    "name": "Dire Bear Form",
+    "rank": null,
+    "level": 40,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9745,
+    "name": "Maul",
+    "rank": 5,
+    "level": 42,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9747,
+    "name": "Demoralizing Roar",
+    "rank": 4,
+    "level": 42,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9749,
+    "name": "Faerie Fire",
+    "rank": 3,
+    "level": 42,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9750,
+    "name": "Regrowth",
+    "rank": 6,
+    "level": 42,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9752,
+    "name": "Rip",
+    "rank": 4,
+    "level": 44,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9754,
+    "name": "Swipe",
+    "rank": 4,
+    "level": 44,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9756,
+    "name": "Thorns",
+    "rank": 5,
+    "level": 44,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9758,
+    "name": "Healing Touch",
+    "rank": 8,
+    "level": 44,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9821,
+    "name": "Dash",
+    "rank": 2,
+    "level": 46,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9823,
+    "name": "Pounce",
+    "rank": 2,
+    "level": 46,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9827,
+    "name": "Pounce",
+    "rank": 3,
+    "level": 56,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9829,
+    "name": "Shred",
+    "rank": 4,
+    "level": 46,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9830,
+    "name": "Shred",
+    "rank": 5,
+    "level": 54,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9833,
+    "name": "Moonfire",
+    "rank": 8,
+    "level": 46,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 9834,
+    "name": "Moonfire",
+    "rank": 9,
+    "level": 52,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 9835,
+    "name": "Moonfire",
+    "rank": 10,
+    "level": 58,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 9839,
+    "name": "Rejuvenation",
+    "rank": 8,
+    "level": 46,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9840,
+    "name": "Rejuvenation",
+    "rank": 9,
+    "level": 52,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9841,
+    "name": "Rejuvenation",
+    "rank": 10,
+    "level": 58,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9845,
+    "name": "Tiger's Fury",
+    "rank": 3,
+    "level": 48,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9846,
+    "name": "Tiger's Fury",
+    "rank": 4,
+    "level": 60,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9849,
+    "name": "Claw",
+    "rank": 4,
+    "level": 48,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9850,
+    "name": "Claw",
+    "rank": 5,
+    "level": 58,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9852,
+    "name": "Entangling Roots",
+    "rank": 5,
+    "level": 48,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9853,
+    "name": "Entangling Roots",
+    "rank": 6,
+    "level": 58,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9856,
+    "name": "Regrowth",
+    "rank": 7,
+    "level": 48,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9857,
+    "name": "Regrowth",
+    "rank": 8,
+    "level": 54,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9858,
+    "name": "Regrowth",
+    "rank": 9,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9862,
+    "name": "Tranquility",
+    "rank": 3,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9863,
+    "name": "Tranquility",
+    "rank": 4,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9866,
+    "name": "Ravage",
+    "rank": 3,
+    "level": 50,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9867,
+    "name": "Ravage",
+    "rank": 4,
+    "level": 58,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9875,
+    "name": "Starfire",
+    "rank": 5,
+    "level": 50,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 9876,
+    "name": "Starfire",
+    "rank": 6,
+    "level": 58,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 9880,
+    "name": "Maul",
+    "rank": 6,
+    "level": 50,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9881,
+    "name": "Maul",
+    "rank": 7,
+    "level": 58,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9884,
+    "name": "Mark of the Wild",
+    "rank": 6,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9885,
+    "name": "Mark of the Wild",
+    "rank": 7,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9888,
+    "name": "Healing Touch",
+    "rank": 9,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9889,
+    "name": "Healing Touch",
+    "rank": 10,
+    "level": 56,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9892,
+    "name": "Cower",
+    "rank": 3,
+    "level": 52,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9894,
+    "name": "Rip",
+    "rank": 5,
+    "level": 52,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9896,
+    "name": "Rip",
+    "rank": 6,
+    "level": 60,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9898,
+    "name": "Demoralizing Roar",
+    "rank": 5,
+    "level": 52,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9901,
+    "name": "Soothe Animal",
+    "rank": 3,
+    "level": 54,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9904,
+    "name": "Rake",
+    "rank": 4,
+    "level": 54,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9907,
+    "name": "Faerie Fire",
+    "rank": 4,
+    "level": 54,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9908,
+    "name": "Swipe",
+    "rank": 5,
+    "level": 54,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 9910,
+    "name": "Thorns",
+    "rank": 6,
+    "level": 54,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9912,
+    "name": "Wrath",
+    "rank": 8,
+    "level": 54,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 9913,
+    "name": "Prowl",
+    "rank": 3,
+    "level": 60,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 10053,
+    "name": "Conjure Mana Citrine",
+    "rank": 0,
+    "level": 48,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10054,
+    "name": "Conjure Mana Ruby",
+    "rank": 0,
+    "level": 58,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10059,
+    "name": "Portal: Stormwind",
+    "rank": 0,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10138,
+    "name": "Conjure Water",
+    "rank": 5,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10139,
+    "name": "Conjure Water",
+    "rank": 6,
+    "level": 50,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10140,
+    "name": "Conjure Water",
+    "rank": 7,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10144,
+    "name": "Conjure Food",
+    "rank": 5,
+    "level": 42,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10145,
+    "name": "Conjure Food",
+    "rank": 6,
+    "level": 52,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10148,
+    "name": "Fireball",
+    "rank": 8,
+    "level": 42,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10149,
+    "name": "Fireball",
+    "rank": 9,
+    "level": 48,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10150,
+    "name": "Fireball",
+    "rank": 10,
+    "level": 54,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10151,
+    "name": "Fireball",
+    "rank": 11,
+    "level": 60,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10156,
+    "name": "Arcane Intellect",
+    "rank": 4,
+    "level": 42,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10157,
+    "name": "Arcane Intellect",
+    "rank": 5,
+    "level": 56,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10159,
+    "name": "Cone of Cold",
+    "rank": 3,
+    "level": 42,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10160,
+    "name": "Cone of Cold",
+    "rank": 4,
+    "level": 50,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10161,
+    "name": "Cone of Cold",
+    "rank": 5,
+    "level": 58,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10169,
+    "name": "Amplify Magic",
+    "rank": 3,
+    "level": 42,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10170,
+    "name": "Amplify Magic",
+    "rank": 4,
+    "level": 54,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10173,
+    "name": "Dampen Magic",
+    "rank": 4,
+    "level": 48,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10174,
+    "name": "Dampen Magic",
+    "rank": 5,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10177,
+    "name": "Frost Ward",
+    "rank": 4,
+    "level": 52,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10179,
+    "name": "Frostbolt",
+    "rank": 8,
+    "level": 44,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10180,
+    "name": "Frostbolt",
+    "rank": 9,
+    "level": 50,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10181,
+    "name": "Frostbolt",
+    "rank": 10,
+    "level": 56,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10185,
+    "name": "Blizzard",
+    "rank": 4,
+    "level": 44,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10186,
+    "name": "Blizzard",
+    "rank": 5,
+    "level": 52,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10187,
+    "name": "Blizzard",
+    "rank": 6,
+    "level": 60,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10191,
+    "name": "Mana Shield",
+    "rank": 4,
+    "level": 44,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10192,
+    "name": "Mana Shield",
+    "rank": 5,
+    "level": 52,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10193,
+    "name": "Mana Shield",
+    "rank": 6,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10197,
+    "name": "Fire Blast",
+    "rank": 6,
+    "level": 46,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10199,
+    "name": "Fire Blast",
+    "rank": 7,
+    "level": 54,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10201,
+    "name": "Arcane Explosion",
+    "rank": 5,
+    "level": 46,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10202,
+    "name": "Arcane Explosion",
+    "rank": 6,
+    "level": 54,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10205,
+    "name": "Scorch",
+    "rank": 5,
+    "level": 46,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10206,
+    "name": "Scorch",
+    "rank": 6,
+    "level": 52,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10207,
+    "name": "Scorch",
+    "rank": 7,
+    "level": 58,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10211,
+    "name": "Arcane Missiles",
+    "rank": 6,
+    "level": 48,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10212,
+    "name": "Arcane Missiles",
+    "rank": 7,
+    "level": 56,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 10215,
+    "name": "Flamestrike",
+    "rank": 5,
+    "level": 48,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10216,
+    "name": "Flamestrike",
+    "rank": 6,
+    "level": 56,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10219,
+    "name": "Ice Armor",
+    "rank": 3,
+    "level": 50,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10220,
+    "name": "Ice Armor",
+    "rank": 4,
+    "level": 60,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10223,
+    "name": "Fire Ward",
+    "rank": 4,
+    "level": 50,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10225,
+    "name": "Fire Ward",
+    "rank": 5,
+    "level": 60,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 10230,
+    "name": "Frost Nova",
+    "rank": 4,
+    "level": 54,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 10278,
+    "name": "Blessing of Protection",
+    "rank": 3,
+    "level": 38,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10290,
+    "name": "Devotion Aura",
+    "rank": 2,
+    "level": 10,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10291,
+    "name": "Devotion Aura",
+    "rank": 4,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10292,
+    "name": "Devotion Aura",
+    "rank": 6,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10293,
+    "name": "Devotion Aura",
+    "rank": 7,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10298,
+    "name": "Retribution Aura",
+    "rank": 2,
+    "level": 26,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10299,
+    "name": "Retribution Aura",
+    "rank": 3,
+    "level": 36,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10300,
+    "name": "Retribution Aura",
+    "rank": 4,
+    "level": 46,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10301,
+    "name": "Retribution Aura",
+    "rank": 5,
+    "level": 56,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10308,
+    "name": "Hammer of Justice",
+    "rank": 4,
+    "level": 54,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10310,
+    "name": "Lay on Hands",
+    "rank": 3,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10312,
+    "name": "Exorcism",
+    "rank": 4,
+    "level": 44,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10313,
+    "name": "Exorcism",
+    "rank": 5,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10314,
+    "name": "Exorcism",
+    "rank": 6,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10318,
+    "name": "Holy Wrath",
+    "rank": 2,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10322,
+    "name": "Redemption",
+    "rank": 2,
+    "level": 24,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10324,
+    "name": "Redemption",
+    "rank": 3,
+    "level": 36,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10326,
+    "name": "Turn Undead",
+    "rank": 3,
+    "level": 52,
+    "class": 2,
+    "school": 8
+  },
+  {
+    "id": 10328,
+    "name": "Holy Light",
+    "rank": 7,
+    "level": 46,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10329,
+    "name": "Holy Light",
+    "rank": 8,
+    "level": 54,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 10391,
+    "name": "Lightning Bolt",
+    "rank": 7,
+    "level": 38,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10392,
+    "name": "Lightning Bolt",
+    "rank": 8,
+    "level": 44,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10395,
+    "name": "Healing Wave",
+    "rank": 8,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10396,
+    "name": "Healing Wave",
+    "rank": 9,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10399,
+    "name": "Rockbiter Weapon",
+    "rank": 4,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10406,
+    "name": "Stoneskin Totem",
+    "rank": 4,
+    "level": 34,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10407,
+    "name": "Stoneskin Totem",
+    "rank": 5,
+    "level": 44,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10408,
+    "name": "Stoneskin Totem",
+    "rank": 6,
+    "level": 54,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10412,
+    "name": "Earth Shock",
+    "rank": 5,
+    "level": 36,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10413,
+    "name": "Earth Shock",
+    "rank": 6,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10414,
+    "name": "Earth Shock",
+    "rank": 7,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10427,
+    "name": "Stoneclaw Totem",
+    "rank": 5,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10428,
+    "name": "Stoneclaw Totem",
+    "rank": 6,
+    "level": 58,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10431,
+    "name": "Lightning Shield",
+    "rank": 6,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10432,
+    "name": "Lightning Shield",
+    "rank": 7,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10437,
+    "name": "Searing Totem",
+    "rank": 5,
+    "level": 50,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10438,
+    "name": "Searing Totem",
+    "rank": 6,
+    "level": 60,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10442,
+    "name": "Strength of Earth Totem",
+    "rank": 4,
+    "level": 52,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10447,
+    "name": "Flame Shock",
+    "rank": 4,
+    "level": 40,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10448,
+    "name": "Flame Shock",
+    "rank": 5,
+    "level": 52,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10456,
+    "name": "Frostbrand Weapon",
+    "rank": 3,
+    "level": 38,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10462,
+    "name": "Healing Stream Totem",
+    "rank": 4,
+    "level": 50,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10463,
+    "name": "Healing Stream Totem",
+    "rank": 5,
+    "level": 60,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10466,
+    "name": "Lesser Healing Wave",
+    "rank": 4,
+    "level": 44,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10467,
+    "name": "Lesser Healing Wave",
+    "rank": 5,
+    "level": 52,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10468,
+    "name": "Lesser Healing Wave",
+    "rank": 6,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10472,
+    "name": "Frost Shock",
+    "rank": 3,
+    "level": 46,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10473,
+    "name": "Frost Shock",
+    "rank": 4,
+    "level": 58,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10478,
+    "name": "Frost Resistance Totem",
+    "rank": 2,
+    "level": 38,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10479,
+    "name": "Frost Resistance Totem",
+    "rank": 3,
+    "level": 54,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10486,
+    "name": "Windfury Weapon",
+    "rank": 3,
+    "level": 50,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10495,
+    "name": "Mana Spring Totem",
+    "rank": 2,
+    "level": 36,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10496,
+    "name": "Mana Spring Totem",
+    "rank": 3,
+    "level": 46,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10497,
+    "name": "Mana Spring Totem",
+    "rank": 4,
+    "level": 56,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10526,
+    "name": "Flametongue Totem",
+    "rank": 3,
+    "level": 48,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10537,
+    "name": "Fire Resistance Totem",
+    "rank": 2,
+    "level": 42,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10538,
+    "name": "Fire Resistance Totem",
+    "rank": 3,
+    "level": 58,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 10585,
+    "name": "Magma Totem",
+    "rank": 2,
+    "level": 36,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10586,
+    "name": "Magma Totem",
+    "rank": 3,
+    "level": 46,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10587,
+    "name": "Magma Totem",
+    "rank": 4,
+    "level": 56,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 10595,
+    "name": "Nature Resistance Totem",
+    "rank": 1,
+    "level": 30,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10600,
+    "name": "Nature Resistance Totem",
+    "rank": 2,
+    "level": 44,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10601,
+    "name": "Nature Resistance Totem",
+    "rank": 3,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10605,
+    "name": "Chain Lightning",
+    "rank": 4,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10613,
+    "name": "Windfury Totem",
+    "rank": 2,
+    "level": 42,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10614,
+    "name": "Windfury Totem",
+    "rank": 3,
+    "level": 52,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10622,
+    "name": "Chain Heal",
+    "rank": 2,
+    "level": 46,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10623,
+    "name": "Chain Heal",
+    "rank": 3,
+    "level": 54,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10627,
+    "name": "Grace of Air Totem",
+    "rank": 2,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 10797,
+    "name": "Starshards",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 10874,
+    "name": "Mana Burn",
+    "rank": 3,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10875,
+    "name": "Mana Burn",
+    "rank": 4,
+    "level": 48,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10876,
+    "name": "Mana Burn",
+    "rank": 5,
+    "level": 56,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10880,
+    "name": "Resurrection",
+    "rank": 3,
+    "level": 34,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10881,
+    "name": "Resurrection",
+    "rank": 4,
+    "level": 46,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10888,
+    "name": "Psychic Scream",
+    "rank": 3,
+    "level": 42,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10890,
+    "name": "Psychic Scream",
+    "rank": 4,
+    "level": 56,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10892,
+    "name": "Shadow Word: Pain",
+    "rank": 6,
+    "level": 42,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10893,
+    "name": "Shadow Word: Pain",
+    "rank": 7,
+    "level": 50,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10894,
+    "name": "Shadow Word: Pain",
+    "rank": 8,
+    "level": 58,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10898,
+    "name": "Power Word: Shield",
+    "rank": 7,
+    "level": 42,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10899,
+    "name": "Power Word: Shield",
+    "rank": 8,
+    "level": 48,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10900,
+    "name": "Power Word: Shield",
+    "rank": 9,
+    "level": 54,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10901,
+    "name": "Power Word: Shield",
+    "rank": 10,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10909,
+    "name": "Mind Vision",
+    "rank": 2,
+    "level": 44,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10911,
+    "name": "Mind Control",
+    "rank": 2,
+    "level": 44,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10912,
+    "name": "Mind Control",
+    "rank": 3,
+    "level": 58,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10915,
+    "name": "Flash Heal",
+    "rank": 5,
+    "level": 44,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10916,
+    "name": "Flash Heal",
+    "rank": 6,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10917,
+    "name": "Flash Heal",
+    "rank": 7,
+    "level": 56,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10927,
+    "name": "Renew",
+    "rank": 7,
+    "level": 44,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10928,
+    "name": "Renew",
+    "rank": 8,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10929,
+    "name": "Renew",
+    "rank": 9,
+    "level": 56,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10933,
+    "name": "Smite",
+    "rank": 7,
+    "level": 46,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10934,
+    "name": "Smite",
+    "rank": 8,
+    "level": 54,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10937,
+    "name": "Power Word: Fortitude",
+    "rank": 5,
+    "level": 48,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10938,
+    "name": "Power Word: Fortitude",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10941,
+    "name": "Fade",
+    "rank": 5,
+    "level": 50,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10942,
+    "name": "Fade",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10945,
+    "name": "Mind Blast",
+    "rank": 7,
+    "level": 46,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10946,
+    "name": "Mind Blast",
+    "rank": 8,
+    "level": 52,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10947,
+    "name": "Mind Blast",
+    "rank": 9,
+    "level": 58,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10951,
+    "name": "Inner Fire",
+    "rank": 5,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10952,
+    "name": "Inner Fire",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10953,
+    "name": "Mind Soothe",
+    "rank": 3,
+    "level": 52,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10955,
+    "name": "Shackle Undead",
+    "rank": 3,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10957,
+    "name": "Shadow Protection",
+    "rank": 2,
+    "level": 42,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10958,
+    "name": "Shadow Protection",
+    "rank": 3,
+    "level": 56,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 10960,
+    "name": "Prayer of Healing",
+    "rank": 3,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10961,
+    "name": "Prayer of Healing",
+    "rank": 4,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10963,
+    "name": "Greater Heal",
+    "rank": 2,
+    "level": 46,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10964,
+    "name": "Greater Heal",
+    "rank": 3,
+    "level": 52,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 10965,
+    "name": "Greater Heal",
+    "rank": 4,
+    "level": 58,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 11197,
+    "name": "Expose Armor",
+    "rank": 4,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11198,
+    "name": "Expose Armor",
+    "rank": 5,
+    "level": 56,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11267,
+    "name": "Ambush",
+    "rank": 4,
+    "level": 42,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11268,
+    "name": "Ambush",
+    "rank": 5,
+    "level": 50,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11269,
+    "name": "Ambush",
+    "rank": 6,
+    "level": 58,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11273,
+    "name": "Rupture",
+    "rank": 4,
+    "level": 44,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11274,
+    "name": "Rupture",
+    "rank": 5,
+    "level": 52,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11275,
+    "name": "Rupture",
+    "rank": 6,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11279,
+    "name": "Backstab",
+    "rank": 6,
+    "level": 44,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11280,
+    "name": "Backstab",
+    "rank": 7,
+    "level": 52,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11281,
+    "name": "Backstab",
+    "rank": 8,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11285,
+    "name": "Gouge",
+    "rank": 4,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11286,
+    "name": "Gouge",
+    "rank": 5,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11289,
+    "name": "Garrote",
+    "rank": 5,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11290,
+    "name": "Garrote",
+    "rank": 6,
+    "level": 54,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11293,
+    "name": "Sinister Strike",
+    "rank": 7,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11294,
+    "name": "Sinister Strike",
+    "rank": 8,
+    "level": 54,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11297,
+    "name": "Sap",
+    "rank": 3,
+    "level": 48,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11299,
+    "name": "Eviscerate",
+    "rank": 7,
+    "level": 48,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11300,
+    "name": "Eviscerate",
+    "rank": 8,
+    "level": 56,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11303,
+    "name": "Feint",
+    "rank": 4,
+    "level": 52,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11305,
+    "name": "Sprint",
+    "rank": 3,
+    "level": 58,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11314,
+    "name": "Fire Nova Totem",
+    "rank": 4,
+    "level": 42,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 11315,
+    "name": "Fire Nova Totem",
+    "rank": 5,
+    "level": 52,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 11341,
+    "name": "Instant Poison IV",
+    "rank": 4,
+    "level": 44,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11342,
+    "name": "Instant Poison V",
+    "rank": 5,
+    "level": 52,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11343,
+    "name": "Instant Poison VI",
+    "rank": 6,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11357,
+    "name": "Deadly Poison III",
+    "rank": 3,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11358,
+    "name": "Deadly Poison IV",
+    "rank": 4,
+    "level": 54,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11400,
+    "name": "Mind-numbing Poison III",
+    "rank": 3,
+    "level": 52,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 11416,
+    "name": "Portal: Ironforge",
+    "rank": 0,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 11417,
+    "name": "Portal: Orgrimmar",
+    "rank": 0,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 11418,
+    "name": "Portal: Undercity",
+    "rank": 0,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 11419,
+    "name": "Portal: Darnassus",
+    "rank": 0,
+    "level": 50,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 11420,
+    "name": "Portal: Thunder Bluff",
+    "rank": 0,
+    "level": 50,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 11549,
+    "name": "Battle Shout",
+    "rank": 4,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11550,
+    "name": "Battle Shout",
+    "rank": 5,
+    "level": 42,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11551,
+    "name": "Battle Shout",
+    "rank": 6,
+    "level": 52,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11554,
+    "name": "Demoralizing Shout",
+    "rank": 3,
+    "level": 34,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11555,
+    "name": "Demoralizing Shout",
+    "rank": 4,
+    "level": 44,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11556,
+    "name": "Demoralizing Shout",
+    "rank": 5,
+    "level": 54,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11564,
+    "name": "Heroic Strike",
+    "rank": 5,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11565,
+    "name": "Heroic Strike",
+    "rank": 6,
+    "level": 40,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11566,
+    "name": "Heroic Strike",
+    "rank": 7,
+    "level": 48,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11567,
+    "name": "Heroic Strike",
+    "rank": 8,
+    "level": 56,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11572,
+    "name": "Rend",
+    "rank": 5,
+    "level": 40,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11573,
+    "name": "Rend",
+    "rank": 6,
+    "level": 50,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11574,
+    "name": "Rend",
+    "rank": 7,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11578,
+    "name": "Charge",
+    "rank": 3,
+    "level": 46,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11580,
+    "name": "Thunder Clap",
+    "rank": 5,
+    "level": 48,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11581,
+    "name": "Thunder Clap",
+    "rank": 6,
+    "level": 58,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11584,
+    "name": "Overpower",
+    "rank": 3,
+    "level": 44,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11585,
+    "name": "Overpower",
+    "rank": 4,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11596,
+    "name": "Sunder Armor",
+    "rank": 4,
+    "level": 46,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11597,
+    "name": "Sunder Armor",
+    "rank": 5,
+    "level": 58,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11600,
+    "name": "Revenge",
+    "rank": 4,
+    "level": 44,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11601,
+    "name": "Revenge",
+    "rank": 5,
+    "level": 54,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11604,
+    "name": "Slam",
+    "rank": 3,
+    "level": 46,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11605,
+    "name": "Slam",
+    "rank": 4,
+    "level": 54,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11608,
+    "name": "Cleave",
+    "rank": 3,
+    "level": 40,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11609,
+    "name": "Cleave",
+    "rank": 4,
+    "level": 50,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 11659,
+    "name": "Shadow Bolt",
+    "rank": 7,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11660,
+    "name": "Shadow Bolt",
+    "rank": 8,
+    "level": 52,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11661,
+    "name": "Shadow Bolt",
+    "rank": 9,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11665,
+    "name": "Immolate",
+    "rank": 5,
+    "level": 40,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11667,
+    "name": "Immolate",
+    "rank": 6,
+    "level": 50,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11668,
+    "name": "Immolate",
+    "rank": 7,
+    "level": 60,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11671,
+    "name": "Corruption",
+    "rank": 5,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11672,
+    "name": "Corruption",
+    "rank": 6,
+    "level": 54,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11675,
+    "name": "Drain Soul",
+    "rank": 4,
+    "level": 52,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11677,
+    "name": "Rain of Fire",
+    "rank": 3,
+    "level": 46,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11678,
+    "name": "Rain of Fire",
+    "rank": 4,
+    "level": 58,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11683,
+    "name": "Hellfire",
+    "rank": 2,
+    "level": 42,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11684,
+    "name": "Hellfire",
+    "rank": 3,
+    "level": 54,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 11687,
+    "name": "Life Tap",
+    "rank": 4,
+    "level": 36,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11688,
+    "name": "Life Tap",
+    "rank": 5,
+    "level": 46,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11689,
+    "name": "Life Tap",
+    "rank": 6,
+    "level": 56,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11693,
+    "name": "Health Funnel",
+    "rank": 5,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11694,
+    "name": "Health Funnel",
+    "rank": 6,
+    "level": 52,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11695,
+    "name": "Health Funnel",
+    "rank": 7,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11699,
+    "name": "Drain Life",
+    "rank": 5,
+    "level": 46,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11700,
+    "name": "Drain Life",
+    "rank": 6,
+    "level": 54,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11703,
+    "name": "Drain Mana",
+    "rank": 3,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11704,
+    "name": "Drain Mana",
+    "rank": 4,
+    "level": 54,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11707,
+    "name": "Curse of Weakness",
+    "rank": 5,
+    "level": 42,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11708,
+    "name": "Curse of Weakness",
+    "rank": 6,
+    "level": 52,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11711,
+    "name": "Curse of Agony",
+    "rank": 4,
+    "level": 38,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11712,
+    "name": "Curse of Agony",
+    "rank": 5,
+    "level": 48,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11713,
+    "name": "Curse of Agony",
+    "rank": 6,
+    "level": 58,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11717,
+    "name": "Curse of Recklessness",
+    "rank": 4,
+    "level": 56,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11719,
+    "name": "Curse of Tongues",
+    "rank": 2,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11721,
+    "name": "Curse of the Elements",
+    "rank": 2,
+    "level": 46,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11722,
+    "name": "Curse of the Elements",
+    "rank": 3,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11725,
+    "name": "Enslave Demon",
+    "rank": 2,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11726,
+    "name": "Enslave Demon",
+    "rank": 3,
+    "level": 58,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11729,
+    "name": "Create Healthstone (Greater)",
+    "rank": 0,
+    "level": 46,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11730,
+    "name": "Create Healthstone (Major)",
+    "rank": 0,
+    "level": 58,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11733,
+    "name": "Demon Armor",
+    "rank": 3,
+    "level": 40,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11734,
+    "name": "Demon Armor",
+    "rank": 4,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11735,
+    "name": "Demon Armor",
+    "rank": 5,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11739,
+    "name": "Shadow Ward",
+    "rank": 2,
+    "level": 42,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11740,
+    "name": "Shadow Ward",
+    "rank": 3,
+    "level": 52,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 11743,
+    "name": "Detect Greater Invisibility",
+    "rank": 0,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 12051,
+    "name": "Evocation",
+    "rank": 0,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 12288,
+    "name": "Improved Pummel",
+    "rank": 1,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 12505,
+    "name": "Pyroblast",
+    "rank": 2,
+    "level": 24,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12522,
+    "name": "Pyroblast",
+    "rank": 3,
+    "level": 30,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12523,
+    "name": "Pyroblast",
+    "rank": 4,
+    "level": 36,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12524,
+    "name": "Pyroblast",
+    "rank": 5,
+    "level": 42,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12525,
+    "name": "Pyroblast",
+    "rank": 6,
+    "level": 48,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12526,
+    "name": "Pyroblast",
+    "rank": 7,
+    "level": 54,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 12707,
+    "name": "Improved Pummel",
+    "rank": 2,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 12708,
+    "name": "Improved Pummel",
+    "rank": 3,
+    "level": 1,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 12824,
+    "name": "Polymorph",
+    "rank": 2,
+    "level": 20,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 12825,
+    "name": "Polymorph",
+    "rank": 3,
+    "level": 40,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 12826,
+    "name": "Polymorph",
+    "rank": 4,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 13159,
+    "name": "Aspect of the Pack",
+    "rank": 0,
+    "level": 40,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13161,
+    "name": "Aspect of the Beast",
+    "rank": 0,
+    "level": 30,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13163,
+    "name": "Aspect of the Monkey",
+    "rank": 0,
+    "level": 4,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13165,
+    "name": "Aspect of the Hawk",
+    "rank": 1,
+    "level": 10,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13220,
+    "name": "Wound Poison",
+    "rank": 1,
+    "level": 32,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 13228,
+    "name": "Wound Poison II",
+    "rank": 2,
+    "level": 40,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 13229,
+    "name": "Wound Poison III",
+    "rank": 3,
+    "level": 48,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 13230,
+    "name": "Wound Poison IV",
+    "rank": 4,
+    "level": 56,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 13542,
+    "name": "Mend Pet",
+    "rank": 5,
+    "level": 44,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13543,
+    "name": "Mend Pet",
+    "rank": 6,
+    "level": 52,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13544,
+    "name": "Mend Pet",
+    "rank": 7,
+    "level": 60,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13549,
+    "name": "Serpent Sting",
+    "rank": 2,
+    "level": 10,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13550,
+    "name": "Serpent Sting",
+    "rank": 3,
+    "level": 18,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13551,
+    "name": "Serpent Sting",
+    "rank": 4,
+    "level": 26,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13552,
+    "name": "Serpent Sting",
+    "rank": 5,
+    "level": 34,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13553,
+    "name": "Serpent Sting",
+    "rank": 6,
+    "level": 42,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13554,
+    "name": "Serpent Sting",
+    "rank": 7,
+    "level": 50,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13555,
+    "name": "Serpent Sting",
+    "rank": 8,
+    "level": 58,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 13795,
+    "name": "Immolation Trap",
+    "rank": 1,
+    "level": 16,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 13809,
+    "name": "Frost Trap",
+    "rank": 0,
+    "level": 28,
+    "class": 4,
+    "school": 16
+  },
+  {
+    "id": 13813,
+    "name": "Explosive Trap",
+    "rank": 1,
+    "level": 34,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 13819,
+    "name": "Summon Warhorse",
+    "rank": null,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 13896,
+    "name": "Feedback",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 13908,
+    "name": "Desperate Prayer",
+    "rank": 1,
+    "level": 10,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 14260,
+    "name": "Raptor Strike",
+    "rank": 2,
+    "level": 8,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14261,
+    "name": "Raptor Strike",
+    "rank": 3,
+    "level": 16,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14262,
+    "name": "Raptor Strike",
+    "rank": 4,
+    "level": 24,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14263,
+    "name": "Raptor Strike",
+    "rank": 5,
+    "level": 32,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14264,
+    "name": "Raptor Strike",
+    "rank": 6,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14265,
+    "name": "Raptor Strike",
+    "rank": 7,
+    "level": 48,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14266,
+    "name": "Raptor Strike",
+    "rank": 8,
+    "level": 56,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14267,
+    "name": "Wing Clip",
+    "rank": 2,
+    "level": 38,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14268,
+    "name": "Wing Clip",
+    "rank": 3,
+    "level": 60,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14269,
+    "name": "Mongoose Bite",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14270,
+    "name": "Mongoose Bite",
+    "rank": 3,
+    "level": 44,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14271,
+    "name": "Mongoose Bite",
+    "rank": 4,
+    "level": 58,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14272,
+    "name": "Disengage",
+    "rank": 2,
+    "level": 34,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14273,
+    "name": "Disengage",
+    "rank": 3,
+    "level": 48,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14274,
+    "name": "Distracting Shot",
+    "rank": 2,
+    "level": 20,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14275,
+    "name": "Scorpid Sting",
+    "rank": 2,
+    "level": 32,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14276,
+    "name": "Scorpid Sting",
+    "rank": 3,
+    "level": 42,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14277,
+    "name": "Scorpid Sting",
+    "rank": 4,
+    "level": 52,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14279,
+    "name": "Viper Sting",
+    "rank": 2,
+    "level": 46,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14280,
+    "name": "Viper Sting",
+    "rank": 3,
+    "level": 56,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14281,
+    "name": "Arcane Shot",
+    "rank": 2,
+    "level": 12,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14282,
+    "name": "Arcane Shot",
+    "rank": 3,
+    "level": 20,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14283,
+    "name": "Arcane Shot",
+    "rank": 4,
+    "level": 28,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14284,
+    "name": "Arcane Shot",
+    "rank": 5,
+    "level": 36,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14285,
+    "name": "Arcane Shot",
+    "rank": 6,
+    "level": 44,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14286,
+    "name": "Arcane Shot",
+    "rank": 7,
+    "level": 52,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14287,
+    "name": "Arcane Shot",
+    "rank": 8,
+    "level": 60,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14288,
+    "name": "Multi-Shot",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14289,
+    "name": "Multi-Shot",
+    "rank": 3,
+    "level": 42,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14290,
+    "name": "Multi-Shot",
+    "rank": 4,
+    "level": 54,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14294,
+    "name": "Volley",
+    "rank": 2,
+    "level": 50,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14295,
+    "name": "Volley",
+    "rank": 3,
+    "level": 58,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14302,
+    "name": "Immolation Trap",
+    "rank": 2,
+    "level": 26,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14303,
+    "name": "Immolation Trap",
+    "rank": 3,
+    "level": 36,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14304,
+    "name": "Immolation Trap",
+    "rank": 4,
+    "level": 46,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14305,
+    "name": "Immolation Trap",
+    "rank": 5,
+    "level": 56,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14310,
+    "name": "Freezing Trap",
+    "rank": 2,
+    "level": 40,
+    "class": 4,
+    "school": 16
+  },
+  {
+    "id": 14311,
+    "name": "Freezing Trap",
+    "rank": 3,
+    "level": 60,
+    "class": 4,
+    "school": 16
+  },
+  {
+    "id": 14316,
+    "name": "Explosive Trap",
+    "rank": 2,
+    "level": 44,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14317,
+    "name": "Explosive Trap",
+    "rank": 3,
+    "level": 54,
+    "class": 4,
+    "school": 4
+  },
+  {
+    "id": 14318,
+    "name": "Aspect of the Hawk",
+    "rank": 2,
+    "level": 18,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14319,
+    "name": "Aspect of the Hawk",
+    "rank": 3,
+    "level": 28,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14320,
+    "name": "Aspect of the Hawk",
+    "rank": 4,
+    "level": 38,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14321,
+    "name": "Aspect of the Hawk",
+    "rank": 5,
+    "level": 48,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14322,
+    "name": "Aspect of the Hawk",
+    "rank": 6,
+    "level": 58,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14323,
+    "name": "Hunter's Mark",
+    "rank": 2,
+    "level": 22,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14324,
+    "name": "Hunter's Mark",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14325,
+    "name": "Hunter's Mark",
+    "rank": 4,
+    "level": 58,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 14326,
+    "name": "Scare Beast",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14327,
+    "name": "Scare Beast",
+    "rank": 3,
+    "level": 46,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 14818,
+    "name": "Divine Spirit",
+    "rank": 2,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 14819,
+    "name": "Divine Spirit",
+    "rank": 3,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 14914,
+    "name": "Holy Fire",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 14923,
+    "name": "Growl",
+    "rank": 3,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14924,
+    "name": "Growl",
+    "rank": 4,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14925,
+    "name": "Growl",
+    "rank": 5,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14926,
+    "name": "Growl",
+    "rank": 6,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 14927,
+    "name": "Growl",
+    "rank": 7,
+    "level": 60,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 15019,
+    "name": "Improved Prayer of Healing",
+    "rank": 3,
+    "level": 0,
+    "class": 16,
+    "school": 1
+  },
+  {
+    "id": 15107,
+    "name": "Windwall Totem",
+    "rank": 1,
+    "level": 36,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 15111,
+    "name": "Windwall Totem",
+    "rank": 2,
+    "level": 46,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 15112,
+    "name": "Windwall Totem",
+    "rank": 3,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 15207,
+    "name": "Lightning Bolt",
+    "rank": 9,
+    "level": 50,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 15208,
+    "name": "Lightning Bolt",
+    "rank": 10,
+    "level": 56,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 15261,
+    "name": "Holy Fire",
+    "rank": 8,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15262,
+    "name": "Holy Fire",
+    "rank": 2,
+    "level": 24,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15263,
+    "name": "Holy Fire",
+    "rank": 3,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15264,
+    "name": "Holy Fire",
+    "rank": 4,
+    "level": 36,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15265,
+    "name": "Holy Fire",
+    "rank": 5,
+    "level": 42,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15266,
+    "name": "Holy Fire",
+    "rank": 6,
+    "level": 48,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15267,
+    "name": "Holy Fire",
+    "rank": 7,
+    "level": 54,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 15629,
+    "name": "Distracting Shot",
+    "rank": 3,
+    "level": 30,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 15630,
+    "name": "Distracting Shot",
+    "rank": 4,
+    "level": 40,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 15631,
+    "name": "Distracting Shot",
+    "rank": 5,
+    "level": 50,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 15632,
+    "name": "Distracting Shot",
+    "rank": 6,
+    "level": 60,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 16314,
+    "name": "Rockbiter Weapon",
+    "rank": 5,
+    "level": 34,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 16315,
+    "name": "Rockbiter Weapon",
+    "rank": 6,
+    "level": 44,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 16316,
+    "name": "Rockbiter Weapon",
+    "rank": 7,
+    "level": 54,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 16339,
+    "name": "Flametongue Weapon",
+    "rank": 4,
+    "level": 36,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 16341,
+    "name": "Flametongue Weapon",
+    "rank": 5,
+    "level": 46,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 16342,
+    "name": "Flametongue Weapon",
+    "rank": 6,
+    "level": 56,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 16355,
+    "name": "Frostbrand Weapon",
+    "rank": 4,
+    "level": 48,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 16356,
+    "name": "Frostbrand Weapon",
+    "rank": 5,
+    "level": 58,
+    "class": 64,
+    "school": 16
+  },
+  {
+    "id": 16362,
+    "name": "Windfury Weapon",
+    "rank": 4,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 16387,
+    "name": "Flametongue Totem",
+    "rank": 4,
+    "level": 58,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 16914,
+    "name": "Hurricane",
+    "rank": 1,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 17311,
+    "name": "Mind Flay",
+    "rank": 2,
+    "level": 28,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 17312,
+    "name": "Mind Flay",
+    "rank": 3,
+    "level": 36,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 17313,
+    "name": "Mind Flay",
+    "rank": 4,
+    "level": 44,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 17314,
+    "name": "Mind Flay",
+    "rank": 5,
+    "level": 52,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 17347,
+    "name": "Hemorrhage",
+    "rank": 2,
+    "level": 46,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 17348,
+    "name": "Hemorrhage",
+    "rank": 3,
+    "level": 58,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 17401,
+    "name": "Hurricane",
+    "rank": 2,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 17402,
+    "name": "Hurricane",
+    "rank": 3,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 17727,
+    "name": "Create Spellstone (Greater)",
+    "rank": 0,
+    "level": 48,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17728,
+    "name": "Create Spellstone (Major)",
+    "rank": 0,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17862,
+    "name": "Curse of Shadow",
+    "rank": 1,
+    "level": 44,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17919,
+    "name": "Searing Pain",
+    "rank": 2,
+    "level": 26,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17920,
+    "name": "Searing Pain",
+    "rank": 3,
+    "level": 34,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17921,
+    "name": "Searing Pain",
+    "rank": 4,
+    "level": 42,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17922,
+    "name": "Searing Pain",
+    "rank": 5,
+    "level": 50,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17923,
+    "name": "Searing Pain",
+    "rank": 6,
+    "level": 58,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17924,
+    "name": "Soul Fire",
+    "rank": 2,
+    "level": 56,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17925,
+    "name": "Death Coil",
+    "rank": 2,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17926,
+    "name": "Death Coil",
+    "rank": 3,
+    "level": 58,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17928,
+    "name": "Howl of Terror",
+    "rank": 2,
+    "level": 54,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17937,
+    "name": "Curse of Shadow",
+    "rank": 2,
+    "level": 56,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 17951,
+    "name": "Create Firestone",
+    "rank": 0,
+    "level": 36,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17952,
+    "name": "Create Firestone (Greater)",
+    "rank": 0,
+    "level": 46,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 17953,
+    "name": "Create Firestone (Major)",
+    "rank": 0,
+    "level": 56,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 18137,
+    "name": "Shadowguard",
+    "rank": 1,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 18499,
+    "name": "Berserker Rage",
+    "rank": 0,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 18540,
+    "name": "Ritual of Doom",
+    "rank": 0,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18647,
+    "name": "Banish",
+    "rank": 2,
+    "level": 48,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18657,
+    "name": "Hibernate",
+    "rank": 2,
+    "level": 38,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 18658,
+    "name": "Hibernate",
+    "rank": 3,
+    "level": 58,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 18807,
+    "name": "Mind Flay",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 18809,
+    "name": "Pyroblast",
+    "rank": 8,
+    "level": 60,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 18879,
+    "name": "Siphon Life",
+    "rank": 2,
+    "level": 38,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18880,
+    "name": "Siphon Life",
+    "rank": 3,
+    "level": 48,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18881,
+    "name": "Siphon Life",
+    "rank": 4,
+    "level": 58,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18937,
+    "name": "Dark Pact",
+    "rank": 2,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18938,
+    "name": "Dark Pact",
+    "rank": 3,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 18960,
+    "name": "Teleport: Moonglade",
+    "rank": 0,
+    "level": 10,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 19236,
+    "name": "Desperate Prayer",
+    "rank": 2,
+    "level": 18,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19238,
+    "name": "Desperate Prayer",
+    "rank": 3,
+    "level": 26,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19240,
+    "name": "Desperate Prayer",
+    "rank": 4,
+    "level": 34,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19241,
+    "name": "Desperate Prayer",
+    "rank": 5,
+    "level": 42,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19242,
+    "name": "Desperate Prayer",
+    "rank": 6,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19243,
+    "name": "Desperate Prayer",
+    "rank": 7,
+    "level": 58,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19261,
+    "name": "Touch of Weakness",
+    "rank": 2,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19262,
+    "name": "Touch of Weakness",
+    "rank": 3,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19264,
+    "name": "Touch of Weakness",
+    "rank": 4,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19265,
+    "name": "Touch of Weakness",
+    "rank": 5,
+    "level": 50,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19266,
+    "name": "Touch of Weakness",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19271,
+    "name": "Feedback",
+    "rank": 2,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19273,
+    "name": "Feedback",
+    "rank": 3,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19274,
+    "name": "Feedback",
+    "rank": 4,
+    "level": 50,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19275,
+    "name": "Feedback",
+    "rank": 5,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19276,
+    "name": "Devouring Plague",
+    "rank": 2,
+    "level": 28,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19277,
+    "name": "Devouring Plague",
+    "rank": 3,
+    "level": 36,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19278,
+    "name": "Devouring Plague",
+    "rank": 4,
+    "level": 44,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19279,
+    "name": "Devouring Plague",
+    "rank": 5,
+    "level": 52,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19280,
+    "name": "Devouring Plague",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19281,
+    "name": "Hex of Weakness",
+    "rank": 2,
+    "level": 20,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19282,
+    "name": "Hex of Weakness",
+    "rank": 3,
+    "level": 30,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19283,
+    "name": "Hex of Weakness",
+    "rank": 4,
+    "level": 40,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19284,
+    "name": "Hex of Weakness",
+    "rank": 5,
+    "level": 50,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19285,
+    "name": "Hex of Weakness",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19289,
+    "name": "Elune's Grace",
+    "rank": 2,
+    "level": 30,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19291,
+    "name": "Elune's Grace",
+    "rank": 3,
+    "level": 40,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19292,
+    "name": "Elune's Grace",
+    "rank": 4,
+    "level": 50,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19293,
+    "name": "Elune's Grace",
+    "rank": 5,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 19296,
+    "name": "Starshards",
+    "rank": 2,
+    "level": 18,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19299,
+    "name": "Starshards",
+    "rank": 3,
+    "level": 26,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19302,
+    "name": "Starshards",
+    "rank": 4,
+    "level": 34,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19303,
+    "name": "Starshards",
+    "rank": 5,
+    "level": 42,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19304,
+    "name": "Starshards",
+    "rank": 6,
+    "level": 50,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19305,
+    "name": "Starshards",
+    "rank": 7,
+    "level": 58,
+    "class": 16,
+    "school": 64
+  },
+  {
+    "id": 19308,
+    "name": "Shadowguard",
+    "rank": 2,
+    "level": 28,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19309,
+    "name": "Shadowguard",
+    "rank": 3,
+    "level": 36,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19310,
+    "name": "Shadowguard",
+    "rank": 4,
+    "level": 44,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19311,
+    "name": "Shadowguard",
+    "rank": 5,
+    "level": 52,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19312,
+    "name": "Shadowguard",
+    "rank": 6,
+    "level": 60,
+    "class": 16,
+    "school": 32
+  },
+  {
+    "id": 19740,
+    "name": "Blessing of Might",
+    "rank": 1,
+    "level": 4,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19742,
+    "name": "Blessing of Wisdom",
+    "rank": 1,
+    "level": 14,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19746,
+    "name": "Concentration Aura",
+    "rank": 0,
+    "level": 22,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19750,
+    "name": "Flash of Light",
+    "rank": 1,
+    "level": 20,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19752,
+    "name": "Divine Intervention",
+    "rank": 0,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19801,
+    "name": "Tranquilizing Shot",
+    "rank": 0,
+    "level": 60,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 19834,
+    "name": "Blessing of Might",
+    "rank": 2,
+    "level": 12,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19835,
+    "name": "Blessing of Might",
+    "rank": 3,
+    "level": 22,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19836,
+    "name": "Blessing of Might",
+    "rank": 4,
+    "level": 32,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19837,
+    "name": "Blessing of Might",
+    "rank": 5,
+    "level": 42,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19838,
+    "name": "Blessing of Might",
+    "rank": 6,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19850,
+    "name": "Blessing of Wisdom",
+    "rank": 2,
+    "level": 24,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19852,
+    "name": "Blessing of Wisdom",
+    "rank": 3,
+    "level": 34,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19853,
+    "name": "Blessing of Wisdom",
+    "rank": 4,
+    "level": 44,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19854,
+    "name": "Blessing of Wisdom",
+    "rank": 5,
+    "level": 54,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19876,
+    "name": "Shadow Resistance Aura",
+    "rank": 1,
+    "level": 28,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19878,
+    "name": "Track Demons",
+    "rank": 0,
+    "level": 32,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19879,
+    "name": "Track Dragonkin",
+    "rank": 0,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19880,
+    "name": "Track Elementals",
+    "rank": 0,
+    "level": 26,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19882,
+    "name": "Track Giants",
+    "rank": 0,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19883,
+    "name": "Track Humanoids",
+    "rank": 0,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19884,
+    "name": "Track Undead",
+    "rank": 0,
+    "level": 18,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19885,
+    "name": "Track Hidden",
+    "rank": 0,
+    "level": 24,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 19888,
+    "name": "Frost Resistance Aura",
+    "rank": 1,
+    "level": 32,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19891,
+    "name": "Fire Resistance Aura",
+    "rank": 1,
+    "level": 36,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19895,
+    "name": "Shadow Resistance Aura",
+    "rank": 2,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19896,
+    "name": "Shadow Resistance Aura",
+    "rank": 3,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19897,
+    "name": "Frost Resistance Aura",
+    "rank": 2,
+    "level": 44,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19898,
+    "name": "Frost Resistance Aura",
+    "rank": 3,
+    "level": 56,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19899,
+    "name": "Fire Resistance Aura",
+    "rank": 2,
+    "level": 48,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19900,
+    "name": "Fire Resistance Aura",
+    "rank": 3,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19939,
+    "name": "Flash of Light",
+    "rank": 2,
+    "level": 26,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19940,
+    "name": "Flash of Light",
+    "rank": 3,
+    "level": 34,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19941,
+    "name": "Flash of Light",
+    "rank": 4,
+    "level": 42,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19942,
+    "name": "Flash of Light",
+    "rank": 5,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19943,
+    "name": "Flash of Light",
+    "rank": 6,
+    "level": 58,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19977,
+    "name": "Blessing of Light",
+    "rank": 1,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19978,
+    "name": "Blessing of Light",
+    "rank": 2,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 19979,
+    "name": "Blessing of Light",
+    "rank": 3,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20043,
+    "name": "Aspect of the Wild",
+    "rank": 1,
+    "level": 46,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 20154,
+    "name": "Seal of Righteousness",
+    "rank": 1,
+    "level": 1,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20162,
+    "name": "Seal of the Crusader",
+    "rank": 2,
+    "level": 12,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20164,
+    "name": "Seal of Justice",
+    "rank": 0,
+    "level": 22,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20165,
+    "name": "Seal of Light",
+    "rank": 1,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20166,
+    "name": "Seal of Wisdom",
+    "rank": 1,
+    "level": 38,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20190,
+    "name": "Aspect of the Wild",
+    "rank": 2,
+    "level": 56,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 20230,
+    "name": "Retaliation",
+    "rank": 0,
+    "level": 20,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20252,
+    "name": "Intercept",
+    "rank": 1,
+    "level": 30,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20271,
+    "name": "Judgement",
+    "rank": 0,
+    "level": 4,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20287,
+    "name": "Seal of Righteousness",
+    "rank": 2,
+    "level": 10,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20288,
+    "name": "Seal of Righteousness",
+    "rank": 3,
+    "level": 18,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20289,
+    "name": "Seal of Righteousness",
+    "rank": 4,
+    "level": 26,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20290,
+    "name": "Seal of Righteousness",
+    "rank": 5,
+    "level": 34,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20291,
+    "name": "Seal of Righteousness",
+    "rank": 6,
+    "level": 42,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20292,
+    "name": "Seal of Righteousness",
+    "rank": 7,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20293,
+    "name": "Seal of Righteousness",
+    "rank": 8,
+    "level": 58,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20305,
+    "name": "Seal of the Crusader",
+    "rank": 3,
+    "level": 22,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20306,
+    "name": "Seal of the Crusader",
+    "rank": 4,
+    "level": 32,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20307,
+    "name": "Seal of the Crusader",
+    "rank": 5,
+    "level": 42,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20308,
+    "name": "Seal of the Crusader",
+    "rank": 6,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20347,
+    "name": "Seal of Light",
+    "rank": 2,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20348,
+    "name": "Seal of Light",
+    "rank": 3,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20349,
+    "name": "Seal of Light",
+    "rank": 4,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20356,
+    "name": "Seal of Wisdom",
+    "rank": 2,
+    "level": 48,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20357,
+    "name": "Seal of Wisdom",
+    "rank": 3,
+    "level": 58,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20484,
+    "name": "Rebirth",
+    "rank": 1,
+    "level": 20,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 20559,
+    "name": "Mocking Blow",
+    "rank": 4,
+    "level": 46,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20560,
+    "name": "Mocking Blow",
+    "rank": 5,
+    "level": 56,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20569,
+    "name": "Cleave",
+    "rank": 5,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20608,
+    "name": "Reincarnation",
+    "rank": null,
+    "level": 30,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 20609,
+    "name": "Ancestral Spirit",
+    "rank": 2,
+    "level": 24,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 20610,
+    "name": "Ancestral Spirit",
+    "rank": 3,
+    "level": 36,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 20616,
+    "name": "Intercept",
+    "rank": 2,
+    "level": 42,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20617,
+    "name": "Intercept",
+    "rank": 3,
+    "level": 52,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20658,
+    "name": "Execute",
+    "rank": 2,
+    "level": 32,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20660,
+    "name": "Execute",
+    "rank": 3,
+    "level": 40,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20661,
+    "name": "Execute",
+    "rank": 4,
+    "level": 48,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20662,
+    "name": "Execute",
+    "rank": 5,
+    "level": 56,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 20719,
+    "name": "Feline Grace",
+    "rank": null,
+    "level": 40,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 20729,
+    "name": "Blessing of Sacrifice",
+    "rank": 2,
+    "level": 54,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20736,
+    "name": "Distracting Shot",
+    "rank": 1,
+    "level": 12,
+    "class": 4,
+    "school": 64
+  },
+  {
+    "id": 20739,
+    "name": "Rebirth",
+    "rank": 2,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 20742,
+    "name": "Rebirth",
+    "rank": 3,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 20747,
+    "name": "Rebirth",
+    "rank": 4,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 20748,
+    "name": "Rebirth",
+    "rank": 5,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 20752,
+    "name": "Create Soulstone (Lesser)",
+    "rank": 0,
+    "level": 30,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 20755,
+    "name": "Create Soulstone",
+    "rank": 0,
+    "level": 40,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 20756,
+    "name": "Create Soulstone (Greater)",
+    "rank": 0,
+    "level": 50,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 20757,
+    "name": "Create Soulstone (Major)",
+    "rank": 0,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 20770,
+    "name": "Resurrection",
+    "rank": 5,
+    "level": 58,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 20772,
+    "name": "Redemption",
+    "rank": 4,
+    "level": 48,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20773,
+    "name": "Redemption",
+    "rank": 5,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20776,
+    "name": "Ancestral Spirit",
+    "rank": 4,
+    "level": 48,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 20777,
+    "name": "Ancestral Spirit",
+    "rank": 5,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 20905,
+    "name": "Trueshot Aura",
+    "rank": 2,
+    "level": 50,
+    "school": 64
+  },
+  {
+    "id": 20906,
+    "name": "Trueshot Aura",
+    "rank": 3,
+    "level": 60,
+    "school": 64
+  },
+  {
+    "id": 20912,
+    "name": "Blessing of Sanctuary",
+    "rank": 2,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20913,
+    "name": "Blessing of Sanctuary",
+    "rank": 3,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20914,
+    "name": "Blessing of Sanctuary",
+    "rank": 4,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20915,
+    "name": "Seal of Command",
+    "rank": 2,
+    "level": 30,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20918,
+    "name": "Seal of Command",
+    "rank": 3,
+    "level": 40,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20919,
+    "name": "Seal of Command",
+    "rank": 4,
+    "level": 50,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 20920,
+    "name": "Seal of Command",
+    "rank": 5,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 21082,
+    "name": "Seal of the Crusader",
+    "rank": 1,
+    "level": 6,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 21084,
+    "name": "Seal of Righteousness",
+    "rank": 1,
+    "level": 1,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 21562,
+    "name": "Prayer of Fortitude",
+    "rank": 1,
+    "level": 48,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 21564,
+    "name": "Prayer of Fortitude",
+    "rank": 2,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 21849,
+    "name": "Gift of the Wild",
+    "rank": 1,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 21850,
+    "name": "Gift of the Wild",
+    "rank": 2,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 22568,
+    "name": "Ferocious Bite",
+    "rank": 1,
+    "level": 32,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22782,
+    "name": "Mage Armor",
+    "rank": 2,
+    "level": 46,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 22783,
+    "name": "Mage Armor",
+    "rank": 3,
+    "level": 58,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 22812,
+    "name": "Barkskin",
+    "rank": 0,
+    "level": 44,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 22827,
+    "name": "Ferocious Bite",
+    "rank": 2,
+    "level": 40,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22828,
+    "name": "Ferocious Bite",
+    "rank": 3,
+    "level": 48,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22829,
+    "name": "Ferocious Bite",
+    "rank": 4,
+    "level": 56,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22839,
+    "name": "Barkskin Effect (DND)",
+    "rank": 0,
+    "level": 44,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 22842,
+    "name": "Frenzied Regeneration",
+    "rank": 1,
+    "level": 36,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22895,
+    "name": "Frenzied Regeneration",
+    "rank": 2,
+    "level": 46,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 22896,
+    "name": "Frenzied Regeneration",
+    "rank": 3,
+    "level": 56,
+    "class": 1024,
+    "school": 1
+  },
+  {
+    "id": 23028,
+    "name": "Arcane Brilliance",
+    "rank": 1,
+    "level": 56,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 23161,
+    "name": "Summon Dreadsteed",
+    "rank": null,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 23214,
+    "name": "Summon Charger",
+    "rank": null,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 23989,
+    "name": "Readiness",
+    "rank": 0,
+    "level": 0,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24239,
+    "name": "Hammer of Wrath",
+    "rank": 3,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 24274,
+    "name": "Hammer of Wrath",
+    "rank": 2,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 24275,
+    "name": "Hammer of Wrath",
+    "rank": 1,
+    "level": 44,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 24440,
+    "name": "Fire Resistance",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24441,
+    "name": "Fire Resistance",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24463,
+    "name": "Fire Resistance",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24464,
+    "name": "Fire Resistance",
+    "rank": 4,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24475,
+    "name": "Frost Resistance",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24476,
+    "name": "Frost Resistance",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24477,
+    "name": "Frost Resistance",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24478,
+    "name": "Frost Resistance",
+    "rank": 4,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24490,
+    "name": "Shadow Resistance",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24494,
+    "name": "Nature Resistance",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24495,
+    "name": "Arcane Resistance",
+    "rank": 1,
+    "level": 20,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24508,
+    "name": "Arcane Resistance",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24509,
+    "name": "Arcane Resistance",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24510,
+    "name": "Arcane Resistance",
+    "rank": 4,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24511,
+    "name": "Nature Resistance",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24512,
+    "name": "Nature Resistance",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24513,
+    "name": "Nature Resistance",
+    "rank": 4,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24514,
+    "name": "Shadow Resistance",
+    "rank": 2,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24515,
+    "name": "Shadow Resistance",
+    "rank": 3,
+    "level": 40,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24516,
+    "name": "Shadow Resistance",
+    "rank": 4,
+    "level": 50,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24547,
+    "name": "Natural Armor",
+    "rank": 1,
+    "level": 10,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24556,
+    "name": "Natural Armor",
+    "rank": 2,
+    "level": 12,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24557,
+    "name": "Natural Armor",
+    "rank": 3,
+    "level": 18,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24558,
+    "name": "Natural Armor",
+    "rank": 4,
+    "level": 24,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24559,
+    "name": "Natural Armor",
+    "rank": 5,
+    "level": 30,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24560,
+    "name": "Natural Armor",
+    "rank": 6,
+    "level": 36,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24561,
+    "name": "Natural Armor",
+    "rank": 7,
+    "level": 42,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24562,
+    "name": "Natural Armor",
+    "rank": 8,
+    "level": 48,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24631,
+    "name": "Natural Armor",
+    "rank": 9,
+    "level": 54,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24632,
+    "name": "Natural Armor",
+    "rank": 10,
+    "level": 60,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 24974,
+    "name": "Insect Swarm",
+    "rank": 2,
+    "level": 30,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 24975,
+    "name": "Insect Swarm",
+    "rank": 3,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 24976,
+    "name": "Insect Swarm",
+    "rank": 4,
+    "level": 50,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 24977,
+    "name": "Insect Swarm",
+    "rank": 5,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 25286,
+    "name": "Heroic Strike",
+    "rank": 9,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 25288,
+    "name": "Revenge",
+    "rank": 6,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 25289,
+    "name": "Battle Shout",
+    "rank": 7,
+    "level": 60,
+    "class": 1,
+    "school": 1
+  },
+  {
+    "id": 25290,
+    "name": "Blessing of Wisdom",
+    "rank": 6,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25291,
+    "name": "Blessing of Might",
+    "rank": 7,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25292,
+    "name": "Holy Light",
+    "rank": 9,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25294,
+    "name": "Multi-Shot",
+    "rank": 5,
+    "level": 60,
+    "class": 4,
+    "school": 1
+  },
+  {
+    "id": 25295,
+    "name": "Serpent Sting",
+    "rank": 9,
+    "level": 60,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 25296,
+    "name": "Aspect of the Hawk",
+    "rank": 7,
+    "level": 60,
+    "class": 4,
+    "school": 8
+  },
+  {
+    "id": 25297,
+    "name": "Healing Touch",
+    "rank": 11,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 25298,
+    "name": "Starfire",
+    "rank": 7,
+    "level": 60,
+    "class": 1024,
+    "school": 64
+  },
+  {
+    "id": 25299,
+    "name": "Rejuvenation",
+    "rank": 11,
+    "level": 60,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 25300,
+    "name": "Backstab",
+    "rank": 9,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 25302,
+    "name": "Feint",
+    "rank": 5,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 25304,
+    "name": "Frostbolt",
+    "rank": 11,
+    "level": 60,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 25306,
+    "name": "Fireball",
+    "rank": 12,
+    "level": 60,
+    "class": 128,
+    "school": 4
+  },
+  {
+    "id": 25307,
+    "name": "Shadow Bolt",
+    "rank": 10,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 25309,
+    "name": "Immolate",
+    "rank": 8,
+    "level": 60,
+    "class": 256,
+    "school": 4
+  },
+  {
+    "id": 25311,
+    "name": "Corruption",
+    "rank": 7,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 25314,
+    "name": "Greater Heal",
+    "rank": 5,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 25315,
+    "name": "Renew",
+    "rank": 10,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 25316,
+    "name": "Prayer of Healing",
+    "rank": 5,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 25345,
+    "name": "Arcane Missiles",
+    "rank": 8,
+    "level": 56,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 25347,
+    "name": "Deadly Poison V",
+    "rank": 5,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 25357,
+    "name": "Healing Wave",
+    "rank": 10,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 25359,
+    "name": "Grace of Air Totem",
+    "rank": 3,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 25361,
+    "name": "Strength of Earth Totem",
+    "rank": 5,
+    "level": 60,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 25780,
+    "name": "Righteous Fury",
+    "rank": 0,
+    "level": 16,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25782,
+    "name": "Greater Blessing of Might",
+    "rank": 1,
+    "level": 52,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25890,
+    "name": "Greater Blessing of Light",
+    "rank": 1,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25894,
+    "name": "Greater Blessing of Wisdom",
+    "rank": 1,
+    "level": 54,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25895,
+    "name": "Greater Blessing of Salvation",
+    "rank": 0,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25898,
+    "name": "Greater Blessing of Kings",
+    "rank": 0,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25899,
+    "name": "Greater Blessing of Sanctuary",
+    "rank": 1,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25908,
+    "name": "Tranquil Air Totem",
+    "rank": 0,
+    "level": 50,
+    "class": 64,
+    "school": 8
+  },
+  {
+    "id": 25916,
+    "name": "Greater Blessing of Might",
+    "rank": 2,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 25918,
+    "name": "Greater Blessing of Wisdom",
+    "rank": 2,
+    "level": 60,
+    "class": 2,
+    "school": 2
+  },
+  {
+    "id": 27681,
+    "name": "Prayer of Spirit",
+    "rank": 1,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 27683,
+    "name": "Prayer of Shadow Protection",
+    "rank": 1,
+    "level": 56,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 27841,
+    "name": "Divine Spirit",
+    "rank": 4,
+    "level": 60,
+    "class": 16,
+    "school": 2
+  },
+  {
+    "id": 28270,
+    "name": "Polymorph: Cow",
+    "rank": 0,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 28271,
+    "name": "Polymorph",
+    "rank": null,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 28272,
+    "name": "Polymorph",
+    "rank": null,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 28609,
+    "name": "Frost Ward",
+    "rank": 5,
+    "level": 60,
+    "class": 128,
+    "school": 16
+  },
+  {
+    "id": 28610,
+    "name": "Shadow Ward",
+    "rank": 4,
+    "level": 60,
+    "class": 256,
+    "school": 32
+  },
+  {
+    "id": 28612,
+    "name": "Conjure Food",
+    "rank": 7,
+    "level": 60,
+    "class": 128,
+    "school": 64
+  },
+  {
+    "id": 29166,
+    "name": "Innervate",
+    "rank": 0,
+    "level": 40,
+    "class": 1024,
+    "school": 8
+  },
+  {
+    "id": 29228,
+    "name": "Flame Shock",
+    "rank": 6,
+    "level": 60,
+    "class": 64,
+    "school": 4
+  },
+  {
+    "id": 31016,
+    "name": "Eviscerate",
+    "rank": 9,
+    "level": 60,
+    "class": 8,
+    "school": 1
+  },
+  {
+    "id": 31018,
+    "name": "Ferocious Bite",
+    "rank": 5,
+    "level": 60,
+    "class": 1024,
+    "school": 1
+  }
+]

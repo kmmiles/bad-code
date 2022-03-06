@@ -1,0 +1,16 @@
+#!/bin/bash
+
+do_obscure_thing() {
+  local a b c d
+  b=${1:-10}
+  read -rsdR -p $'\E[6n' a
+  c=$(echo "${a#*[}" | cut -d';' -f 1)
+  d=$((c - (b + 2)))
+  if ((d > 0)); then
+    tput cup $d 0 && tput ed
+  else
+    clear -x
+  fi
+}
+
+do_obscure_thing "$1"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+printf "Editing a file using shell script \n"
+filename='test.txt'
+
+cat << EOF > "$filename"
+This file was created automatically from a shell script
+Isn't that cool
+EOF

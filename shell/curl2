@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl www.google.com/foo?bar=true

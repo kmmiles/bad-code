@@ -1,0 +1,7 @@
+#!/bin/bash
+
+inotifywait -cmqr -e modify -e move -e create -e delete ./pictures 
+
+#| while read -r file; do
+#  echo "file: $file"
+#done

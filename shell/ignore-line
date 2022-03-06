@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#wine cmd /c launcher.bat 2>&1 | grep -v "01c4:err:unwind:RtlCaptureStackBackTrace invalid frame 0000000000120178 (0000000000022000-0000000000120000)"
+wine cmd /c launcher.bat 2>&1 | grep -v "01c4:err:unwind:RtlCaptureStackBackTrace invalid frame"

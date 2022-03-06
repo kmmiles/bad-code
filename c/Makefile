@@ -1,7 +1,15 @@
+#CC=gcc
 CC=clang
-#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g -Wstringop-overflow
-CFLAGS=-Wall -g
-#CFLAGS=-Weverything
+
+###############################################################################
+# from coding cave
+CFLAGS=-g -Wall -Wpedantic -Werror -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
+CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
+###############################################################################
+#CFLAGS=-Weverything -Wall -Wpedantic -Werror -Wextra -std=c11
+#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g 
+#CFLAGS=-g -Wall -Wpedantic -Werror -std=c11
+#CFLAGS=-Wall -Wpedantic -Wextra -Wunused-parameter -std=c11
 LIBS=-lm 
 #-lcriterion
 DIRS=obj bin

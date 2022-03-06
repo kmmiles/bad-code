@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -euo pipefail
+
+usage() {
+  cat << EOF >&2
+Usage: $(basename "$0") <DIR>
+
+Concat all mp3's in <DIR> and write to a m4a file in <DIR>.
+EOF
+}
+
+mp3dir="${1:-}"
+if [[ -z "$mp3dir" ]]; then
+  usage
+  exit 1
+fi
+
+if [[ ! -d "$mp3dir" ]]; then
+  printf "No such directory: %s\n" "$mp3dir"
+  exit 1
+fi
+
+mp3dir=$(realpath -e "$mp3dir")
+destfile="$mp3dir/$(basename "$mp3dir").m4a"
+
+ffmpeg \
+  -y \
+  -f concat \
+  -safe 0 \
+  -i <(for f in "$mp3dir"/*.mp3; do printf "file %q\n" "$f"; done) \
+  -c copy output.mp3
+
+ffmpeg \
+  -i output.mp3 \
+  "$destfile"
+
+rm -f output.mp3

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -rp "variable 1: " var1
+read -rp "variable 2: " var2
+read -rp "variable 3: " var3
+read -rp "variable 4: " var4
+read -rp "variable 5: " var5
+
+printf "\n\n"
+
+printf "variable1: %s\n" "$var1"
+printf "variable2: %s\n" "$var2"
+printf "variable3: %s\n" "$var3"
+printf "variable4: %s\n" "$var4"
+printf "variable5: %s\n" "$var5"
+
+

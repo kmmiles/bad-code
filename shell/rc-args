@@ -1,0 +1,4 @@
+#!/bin/rc
+
+args=('this arg' 'that arg')
+printf '%s\n' $"args

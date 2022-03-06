@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#is-world-writable() {
+#  find "$1" -perm -o+w > /dev/null
+#}
+
+
+
+#true:  2367
+#false: 0145
+
+is-world-writable2() {
+  [[ "$(stat -c '%A' "$1" | cut -b9)" == 'w' ]]
+}
+
+is-world-writable() {
+  (( "$(stat -c '0%a' "$1")" & 002))
+}
+
+
+for file in "$@"; do
+  if is-world-writable "$file"; then
+    echo "$file: yes, it's world writable"
+  else
+    echo "$file: no, it's not world writable"
+  fi
+done

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/string-is-permutation.dir/src/string-is-permutation.c.o -o string-is-permutation 
