@@ -1,0 +1,8 @@
+flatpak
+go
+jasper
+linux
+mbedtls
+nodejs
+sudo
+wavpack

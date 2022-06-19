@@ -1,0 +1,108 @@
+[
+
+  {
+    "directory": ".",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "./hello-world.x.c",
+     "-o",
+     "hello-world.x.o"
+    ],
+    "file": "hello-world.x.c"
+  },
+
+  {
+    "directory": ".",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "./.hello.c",
+     "-o",
+     ".hello.o"
+    ],
+    "file": ".hello.c"
+  },
+
+  {
+    "directory": ".",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "./hello2.c",
+     "-o",
+     "hello2.o"
+    ],
+    "file": "hello2.c"
+  },
+
+  {
+    "directory": ".",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "./hello world.c",
+     "-o",
+     "hello world.o"
+    ],
+    "file": "hello world.c"
+  },
+
+  {
+    "directory": ".",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "./hello.c",
+     "-o",
+     "hello.o"
+    ],
+    "file": "hello.c"
+  }
+
+]

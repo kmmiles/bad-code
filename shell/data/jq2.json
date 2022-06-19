@@ -1,0 +1,29 @@
+{
+  "Username": "qqqqqqqqqqq",
+  "Attributes": [
+    {
+      "Name": "sub",
+      "Value": "1028076e-36a5-474e-b291-b7c63a200bf2"
+    },
+    {
+      "Name": "email_verified",
+      "Value": "true"
+    },
+    {
+      "Name": "name",
+      "Value": "qqqqqqqq"
+    },
+    {
+      "Name": "phone_number_verified",
+      "Value": "true"
+    },
+    {
+      "Name": "phone_number",
+      "Value": "+15555555555"
+    },
+    {
+      "Name": "email",
+      "Value": "foo@bar.com"
+    }
+  ]
+}

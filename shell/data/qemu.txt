@@ -1,0 +1,24 @@
+- you don't need to the `&& \` here:
+
+`sed -i 's/#?unix_sock_group.*/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf && \`
+
+- the trap will echo the LINENO where the trap is, not the error. try:
+
+```bash
+handle_trap() {
+  local s=$?
+  echo "$0: line ${BASH_LINENO[0]}: $BASH_COMMAND"
+  exit $s
+}
+```
+
+- `$USER` will always be "root", since the script requires root access. 
+you can grab the original user with `$SUDO_USER`. alteratively, the script
+itself can exit if root, and use `sudo` where necessary.
+
+- with `sed` if you to use variables like `$USER`, the command will need to be
+wrapped in doublequote instead of single - then the doublequotes inside the regex
+can be escaped with backslash e.g. `\"root\ = \"$USER\"`
+
+- it might make more sense to start the server *after* modifying the config files
+and adding the correct group.

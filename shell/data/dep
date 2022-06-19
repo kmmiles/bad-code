@@ -1,0 +1,19 @@
+# given the relationships:
+# - A depends on B and C
+# - B depends on D and E
+# - C depends on E
+
+# answer : D, E, C, B. A
+
+A: B, C
+B: D, E
+C: E
+D:
+E:
+  A B C D E
+===========
+A   X X
+B       X X
+C         X
+D
+E

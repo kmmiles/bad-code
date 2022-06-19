@@ -1,0 +1,28 @@
+{
+  "Attributes": [
+    {
+      "Name": "sub",
+      "Value": "03522b9c-e928-4349-b5f8-34c7f5001ae3"
+    },
+    {
+      "Name": "email_verified",
+      "Value": "true"
+    },
+    {
+      "Name": "name",
+      "Value": "Joe Doe"
+    },
+    {
+      "Name": "phone_number_verified",
+      "Value": "true"
+    },
+    {
+      "Name": "phone_number",
+      "Value": "+15555555555"
+    },
+    {
+      "Name": "email",
+      "Value": "John doe"
+    }
+  ]
+}

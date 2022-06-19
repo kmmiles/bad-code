@@ -1,0 +1,7 @@
+PNR No ; Date Of Travel ; No Of Passengers ; Total Amount ; Destination
+1;10-mar-21;2;4000;Mumbai
+2;12-May-21;1;3000;Bangalore
+3;13-May-21;3;6500;Srinagar
+4;11-feb-21;1;18500;Andaman
+5;27-Oct-21;2;10000; Mumbai
+6;30-Oct-21;4;8750;Ahmedabad

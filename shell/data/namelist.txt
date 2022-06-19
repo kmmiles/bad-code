@@ -1,0 +1,8 @@
+foo
+bar
+hello
+world
+this
+that
+the
+other
