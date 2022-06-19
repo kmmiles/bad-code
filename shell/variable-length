@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ARTIFACTORY_IPV4=""
+while (( ${#ARTIFACTORY_IPV4} < 1 )); do
+  echo "it's less then 1"
+  ARTIFACTORY_IPV4="hello"
+  sleep 1
+done
+
+ARTIFACTORY_IPV4=""
+while [[ -z "$ARTIFACTORY_IPV4" ]]; do
+  echo "it's blank"
+  ARTIFACTORY_IPV4="hello"
+  sleep 1
+done
+
+ARTIFACTORY_IPV4=$(kubectl get svc --namespace "${ARTIFACTORY_NAMESPACE}" artifactory-artifactory-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}')

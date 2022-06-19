@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file="filename.txt"
+read -rp "Enter a string: " mystring
+
+if ! grep -q "$mystring" "$file"; then
+  printf "%s not found in %s\n" "$mystring" "$file"
+  exit 1
+fi

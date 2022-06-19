@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function lso  () {
+ls -l "$@" | awk '{
+        i=0;
+        for(j=0;j<=8;j++) {
+            p=substr($1,j+2,1);
+            i+=((p~/[rwxst]/)*2^(8-j));    
+            if(j==2&&p~/[sS]/) i+=04000;    
+            if(j==5&&p~/[sS]/) i+=02000;
+            if(j==8&&p~/[tT]/) i+=01000;
+        }
+        if(i)printf("%04o ",i);
+    }'
+}
+
+lso "$@"

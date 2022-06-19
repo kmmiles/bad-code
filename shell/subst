@@ -1,5 +1,4 @@
 #!/bin/bash
 
 myfile=${1:--}
-
 cat "$myfile"

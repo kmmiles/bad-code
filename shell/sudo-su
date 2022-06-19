@@ -1,0 +1,5 @@
+#!/bin/bash
+
+printf "id: %s\n" "$(id -u)"
+sudo su
+printf "id: %s\n" "$(id -u)"

@@ -1,4 +1,0 @@
-arrayPtr = (int *)malloc(10 * sizeof(int));
-
-dhcp_packet.options = (int8_t *)malloc(len * sizeof(int8_t));
-

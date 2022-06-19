@@ -1,0 +1,10 @@
+#!/bin/bash
+snapInt=0;
+declare -i snapInt;
+while [ $snapInt -ne 100 ]; do
+  #snapInt=$((snapInt+1))
+  ((snapInt++))
+  echo sudo snap forget $snapInt
+done
+
+

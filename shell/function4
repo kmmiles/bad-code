@@ -1,0 +1,7 @@
+#!/bin/bash
+
+log::info() {
+  printf "%s%s%s\n" "$(tput setaf 7)" "$@" "$(tput sgr0)"
+}
+
+log::info "hello world"

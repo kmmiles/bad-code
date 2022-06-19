@@ -1,0 +1,14 @@
+#!/bin/bash
+
+random() {
+  local min max range
+
+  min=${1:-foo}
+  max="${2:-0}"
+  range=$((max - min + 1))
+
+  echo $((min + (RANDOM % range)))
+}
+
+random 1 10
+random 0 10

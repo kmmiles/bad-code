@@ -1,0 +1,7 @@
+#!/bin/bash
+
+whiptail --checklist "Which animals have four legs?" 12 25 4 \
+  "Monkey" "" off \
+  "Lion" "" off \
+  "Zebra" "" off \
+  "Ostrich" "" off

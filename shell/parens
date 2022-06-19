@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "enter choice"
+read -r choix
+if [[ "$choix" == "o" ]]
+then 
+    echo "choix is o"
+else 
+    echo "choix is not o"
+fi

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+awk '
+BEGIN {
+  FS="[;-]"
+  c=0
+}
+
+NR>1 {
+  a[tolower($3)]+=$6
+}
+
+END {
+  asort(a)
+  for(i in a) 
+    print(i, a[i])
+}
+' awk-sort.txt

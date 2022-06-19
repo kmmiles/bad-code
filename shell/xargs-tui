@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sed 's/.#.*//;/^$/d' ~/Scripting/aptlist | while read -r pkg; do
+  sudo apt-get install -y "$pkg"
+done
+
+#sed 's/.#.*//;/^$/d' ~/Scripting/aptlist | xargs sudo apt-get install -y
+
+# sed 's/.#.*//;/^$/d' ~/Scripting/aptlist | while read -r pkg; do sudo apt-get install -y "$pkg"; done

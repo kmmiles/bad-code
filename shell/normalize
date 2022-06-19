@@ -1,0 +1,50 @@
+#!/bin/bash
+
+normalize() {
+  local path
+  path="$1"
+
+  while [[ $path =~ ([^/][^/]*/\.\./) ]]; do
+    path=${path/${BASH_REMATCH[0]}/}
+  done
+
+  while [[ $path =~ ([^/][^/]*/\./) ]]; do
+    path=${path//\/.\//\/}
+  done
+
+  echo "$path"
+}
+
+unit_test() {
+  local tests p n
+  tests=(
+    '/etc/passwd'
+    'a/b/././././c/d'
+    '/a/b/../c'
+    '/usr/../etc/'
+  )
+
+  for p in "${tests[@]}"; do
+    n="$(normalize "$p")"
+    printf "%s -> %s\n" "$p" "$n"
+  done
+}
+
+main() {
+  local path
+  path="${1:-}"
+  if [[ -z "$path" ]]; then
+    printf "Usage: %s <path>\n" "$(basename "$0")"
+    exit 1
+  fi
+
+  if [[ "$path" == "-t" ]]; then
+    unit_test
+    exit 0
+  fi
+
+  normalize "$path"
+}
+
+main "$@"
+

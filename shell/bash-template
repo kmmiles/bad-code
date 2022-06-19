@@ -11,7 +11,7 @@ root_dir="$(cd "$(dirname "$script_dir")/" && pwd)"
 ################################################################################
 
 usage() {
-  cat << EOF >&2
+  cat << EOF
 Usage: $(basename "$0") <ONE> <TWO>
 
 Returns true if <ONE> is a foobar of <TWO>.

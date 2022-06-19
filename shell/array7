@@ -1,0 +1,14 @@
+#!/bin/bash
+
+a="[3] 38383"
+
+echo "$a" | awk '{print $2}'
+#b=(${a})
+#c="${b[1]}"
+
+#readarray -t b <<< "$a"
+#echo "c: $c"
+
+#for b in $a; do
+#  echo "hello: $b"
+#done

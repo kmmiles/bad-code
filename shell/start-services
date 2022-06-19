@@ -1,0 +1,17 @@
+#!/bin/bash
+
+arrayHas() {
+  local element match
+  match="${1:-}"; shift
+  for element; do [[ "$element" == "$match" ]] && return 0; done
+  return 1
+}
+
+services=("service1" "service2" "service3")
+services_blacklist=("$@")
+
+for service in "${services[@]}"; do
+  if ! arrayHas "$service" "${services_blacklist[@]}"; then
+    echo "starting service: $service"
+  fi
+done

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jq '.Attributes[-1].Value' < jq-sort.json

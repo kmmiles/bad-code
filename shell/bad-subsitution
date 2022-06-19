@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VARIANT_ID="this is a capitalized word"
+
+
+echo "VARIANT_PRETTY: $VARIANT_PRETTY"
+
+#[ "${BASH_VERSION:-}" != "" ] && VARIANT_PRETTY=
+#[ "${ZSH_VERSION:-}" != "" ] && VARIANT_PRETTY=$(printf "\033[35m⬢\033[0m%s" "[%n@%m]%~%# ")
+
+
+#echo "${VARIANT_ID^}"
+
+# an equivalent in `zsh`:
+#```zsh
+#echo "${VARIANT_ID:0:1:u}${VARIANT_ID:1}"
+#```

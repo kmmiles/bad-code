@@ -1,5 +1,0 @@
-TSFILE: /media/scriptychris/Data/Projects/Fake-PEV-Shopping/src/types.js
-TSFILE: /media/scriptychris/Data/Projects/Fake-PEV-Shopping/src/frontend/components/pages/_routes.js
-TSFILE: /media/scriptychris/Data/Projects/Fake-PEV-Shopping/src/middleware/helpers/middleware-response-wrapper.js
-TSFILE: /media/scriptychris/Data/Projects/Fake-PEV-Shopping/src/middleware/features/auth.js
-TSFILE: /media/scriptychris/Data/Projects/Fake-PEV-Shopping/src/database/models/_user.js

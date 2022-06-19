@@ -1,0 +1,3 @@
+#!/bin/bash
+
+free -m | awk '/Swap:/ { total=$2 ; used=$3 ; print (used/total) * 100"%" }'

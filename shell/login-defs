@@ -1,0 +1,13 @@
+#!/bin/bash
+
+generate() {
+  sed -r '/\bSYS_(UID|GID)_(MIN|MAX)\b/d' /etc/login.defs                         
+  cat << EOF 
+SYS_UID_MIN 20000000
+SYS_UID_MAX 20001000
+SYS_GID_MIN 20000000
+SYS_GID_MAX 20001000
+EOF
+}
+
+generate "$@"

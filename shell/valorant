@@ -1,0 +1,15 @@
+#!/bin/bash
+
+NO_TASK="INFO: No tasks are running which match the specified criteria."
+PROC_NAME="VALORANT-Win64-Shipping.exe"
+
+while true; do
+  if [[ "$(tasklist.exe -fi "IMAGENAME eq $PROC_NAME" | tr -d '\r')" != "$NO_TASK" ]]; then
+    echo "process is running, breaking"
+    break
+  fi
+  sleep 1
+done
+
+echo "exiting"
+exit 0

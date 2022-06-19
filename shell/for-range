@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for value in {0..50}
+do
+  echo "value: $value"
+    #git add .
+    #git commit --allow-empty -m "."
+    #git remote add origin https://github.com/BrandonDoesDev/commits.git
+    #git branch -M main
+    #git push -u origin main
+done

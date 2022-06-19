@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -rp "enter your thing: " thing
+
+printf "thing: %s\n" "$thing"
+

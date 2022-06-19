@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -exuo pipefail
+
+group="www-data"
+dir="/var/www"
+
+if ! getent group "$group" > /dev/null 2>&1; then
+  sudo groupadd "$group"
+fi
+
+if ! groups "$(id -un)" | grep -q "$group"; then
+  sudo /usr/sbin/usermod -a -G "$group" "$(id -un)"
+fi
+
+sudo chown -R "root:www-data" "$dir"
+sudo chmod -R 775 "/var/www" "$dir"

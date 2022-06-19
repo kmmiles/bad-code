@@ -1,0 +1,4 @@
+#!/bin/bash
+
+myvar="$(find .)"
+echo "$myvar"

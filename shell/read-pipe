@@ -1,0 +1,8 @@
+#!/bin/bash
+
+data="H | 1 | nonmetal | 1.008 | -259.1 | -252.9"
+read -r NAME BAR SYMBOL BAR TYPE BAR MASS BAR MELTING BAR BOILING <<< "$data"
+echo "NAME: $NAME"
+echo "BAR: $BAR"
+echo "SYMBOL: $SYMBOL"
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo $(($(docker images | wc -l) - 1))
+
+image_count=$(docker images | wc -l)
+echo $((image_count - 1))
+
+#echo $(((images) - 1 ))

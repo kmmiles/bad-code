@@ -1,0 +1,4 @@
+#!/bin/bash
+
+printf 'c3cc3bb82a5c682c525075d7e0033c307d189577f8075dcff162dff98325f2f8c7195d65d131f89038df6c0816d6cf259ac965da55e8d0aef33fe47896f15b2f\n' | \
+  xxd -r -p - | xxd -

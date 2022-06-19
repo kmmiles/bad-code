@@ -1,0 +1,11 @@
+#!/bin/bash
+
+URL=http://someURL/docs/
+seq -f "0-HC%.0f-0" 1 1 50 |
+  xargs -n 1 -P 8 -I@ {{ [         
+    $(curl -s -L -I http://alsaedy.online/v/@ |
+    gawk -v IGNORECASE=1 '/^Content-Length/ { print $2 }') -gt 20480 
+  ] && wget $URL@; } || wget -L -O @.pdf -P ~/SavedPDFs/ $URL@}
+
+#seq -f "0-HC%.0f-0" 1 1 50 | \
+#  xargs -n 1 -P 8 -I@ echo

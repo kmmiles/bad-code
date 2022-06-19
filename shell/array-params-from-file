@@ -1,0 +1,61 @@
+#!/bin/bash
+
+test1() {
+  params=()
+  while read -r line; do
+    read p <<< "$line"
+    params+=("$p")
+  done < params.txt
+  #printf "%s\n" "${params[@]}"
+
+  for param in "${params[@]}"; do
+    printf "param: %s\n" "$param"
+  done
+
+  #readarray -t params < params.txt
+  set -x
+  ls "${params[@]}"
+}
+
+test2() {
+  params=(
+    '-l'
+    '-a'
+    'file with space'
+  )
+
+  set -x 
+  ls "${params[@]}"
+}
+
+test3() {
+  set -fx
+  ls "$(cat params.txt 2>/dev/null)"
+}
+
+test4() {
+  readarray -t params < params.txt
+
+  new=()
+  for param in "${params[@]}"; do
+    read p <<< "$param"
+    printf "param: %s\n" "$param"
+    printf "p: %s\n" "$p"
+    printf "pq: %s\n" "$p"
+    printf "x: %s\n" "$(echo "$p" | tr -d \')"
+
+    x="$(echo "$p" | tr -d \')"
+    new+=("$x")
+  done
+
+  set -x
+  ls "${new[@]}"
+}
+
+test5() {
+  eval "ls $(cat params.txt 2> /dev/null)"
+}
+
+test5
+#test4
+

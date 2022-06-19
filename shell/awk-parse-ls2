@@ -1,0 +1,26 @@
+#!/usr/bin/awk -f
+{
+  if($1~/[-][rwx-][rwx-][rwx-][rwx-][rwx-][rwx-][rwx-][rwx-][rwx-]/) {
+    # user
+    user_read=(substr($1, 2, 1)~/[rwx]/) * 400;
+    user_write=(substr($1, 3, 1)~/[rwx]/) * 200;
+    user_execute=(substr($1, 4, 1)~/[rwx]/) * 100;
+    user=user_read+user_write+user_execute;
+
+    # group
+    group_read=(substr($1, 5, 1)~/[rwx]/) * 40;
+    group_write=(substr($1, 6, 1)~/[rwx]/) * 20;
+    group_execute=(substr($1, 7, 1)~/[rwx]/) * 10;
+    group=group_read+group_write+group_execute;
+
+    # other
+    other_read=(substr($1, 8, 1)~/[rwx]/) * 4;
+    other_write=(substr($1, 9, 1)~/[rwx]/) * 2;
+    other_execute=(substr($1, 10, 1)~/[rwx]/) * 1;
+    other=other_read+other_write+other_execute;
+
+    print user+group+other
+  }
+}
+
+

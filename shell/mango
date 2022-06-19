@@ -1,0 +1,26 @@
+#!/bin/bash
+
+get_config_value() {
+  local filename="${1:-}"
+  local configname="${2:-}"
+  grep "$configname" "$filename" | awk -F= '{ gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2}'
+}
+
+main() {
+  #config_file=/home/zany130/.config/MangoHud/MangoHud.conf
+  config_file="MangoHud.conf"
+  no_disp="$(get_config_value "$config_file" "no_disp")"
+
+  if (( no_disp == 0 )); then
+    sed -i 's/no_display = 0/no_display = 1/' "$config_file"
+    echo "MangoHud was turned Off"
+  elif (( no_disp == 1 )); then
+    sed -i 's/no_display = 1/no_display = 0/' "$config_file"
+    echo "MangoHud was turned On"
+  else
+    echo "ERROR value not found"
+  fi
+}
+
+main "$@"
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#diff_sym() { printf "%s\n" "${@}" | sort | uniq -u ; }
+diff_asym() { printf "%s\n" "${@}" | sort | uniq -D | uniq ; }
+
+main() {
+  local squeue_paths=("./test/test1" "./test/test2" "./test/test3")
+  local ondisk_paths=("./test/test1" "./test/test2" "./test/dirty")
+  readarray -t rm_paths < <(diff_asym "${squeue_paths[@]}" "${ondisk_paths[@]}")
+  for path in "${rm_paths[@]}"; do
+    echo "removing $path..."
+  done
+}
+
+main "$@"

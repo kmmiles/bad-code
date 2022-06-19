@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# return random element from array
+random_element() {
+  arr=("${@}")
+  printf "%s" "${arr["$((RANDOM % ${#arr[@]}))"]}"
+}
+
+# find all images in directory
+find_images() {
+  find "$1" -type f -exec file --mime-type {} \+ | \
+    awk -F: '{if ($2 ~/image\//) print $1}'
+}
+
+# turn file `namelist.txt` into an array.
+readarray -t namelist < namelist.txt
+
+# iterate all images in `./pictures`
+find_images "./pictures" | while read -r image_path; do
+  # get the base image name and file extension
+  image_name="$(basename "$image_path")"
+  image_ext="${image_name#*.}"
+
+  # keep trying to generate a new filename, ensuring that it doesn't already exist.
+  while true; do
+    random_name="$(random_element "${namelist[@]}")"
+    random_name2="$(random_element "${namelist[@]}")"
+    new_image_path="$(dirname "$image_path")/$random_name-$random_name2.$image_ext"
+    if [[ ! -f "$new_image_path" ]]; then
+      break
+    else
+      printf "File already exists (%s), choosing another name..\n" "$new_image_path"
+    fi
+  done
+
+  # now move the file
+  mv -vf "$image_path" "$new_image_path"
+done

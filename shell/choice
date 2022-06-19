@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -rp "Do the thing (Y/n)? " answer
+if [[ "${answer,,}" == y ]]; then
+  printf "Hello\n"
+elif [[ "${answer,,}" == n ]]; then
+  printf "World\n"
+fi

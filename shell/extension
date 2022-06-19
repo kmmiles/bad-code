@@ -9,5 +9,3 @@ fi
 
 #file="$HOME/foo/bar/howdy"
 #echo "${file#*.}"
-
-

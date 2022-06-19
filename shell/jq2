@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cat jq2.json |  \
+  #jq -r '.Attributes[]'
+  #jq -r '.Attributes[] | select(.Name=="email")'
+  jq -r '.Attributes[] | select(.Name=="email").Value'
+
+#jq '.Attributes[].Name = email'
+
+#select(.location=="Stockholm")
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FILE='test.cfg'
+
+qwerty='qwertyuiop[]\asdfghjkl;'\''zxcvbnm,./'
+dvorak=''\'',.pyfgcrl/=\aoeuidhtns-;qjkxbmwvz'
+colemak='qwfpgjluy;[]/arstdhneio'\''zxcvbkm,./'
+
+awk '{print $2}' $FILE | tr -d '"' | tr $qwerty $dvorak

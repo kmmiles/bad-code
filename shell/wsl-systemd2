@@ -1,0 +1,8 @@
+#!/bin/bash
+set -eu
+mkdir -p /run/tmpfiles.d
+ln -s /dev/null /run/tmpfiles.d/tmp.conf
+umount /proc/sys/fs/binfmt_misc
+env -i /usr/bin/unshare --fork --mount-proc --pid --propagation unchanged -- sh -c "
+exec /lib/systemd/systemd --unit=multi-user.target
+" &

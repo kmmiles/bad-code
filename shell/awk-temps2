@@ -1,0 +1,11 @@
+#!/usr/bin/awk -f
+{
+  gsub(/[[:alpha:]]/, "");
+  for(i=1; i<=NF;i++) {
+    sum+=$i
+  }
+}
+
+END {
+  print(sum)
+}

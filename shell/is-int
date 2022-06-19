@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# test-int.sh
+# A script that tests whether its first argument is an integer
+
+if [ "$1" -eq 0 -o "$1" -ne 0 ]; then
+    printf "integer: %s\n" "$1"
+else
+    printf "not an integer\n"
+fi

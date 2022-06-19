@@ -1,0 +1,4 @@
+#!/bin/bash
+
+(exec -a MyEvilBasename basename --help)
+

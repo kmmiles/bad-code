@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if screen -list | grep -q "AutoUpload"; then
-  echo "existing screen found"
-else
-  echo "existing screen not found"
-fi

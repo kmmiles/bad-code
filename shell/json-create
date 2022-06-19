@@ -1,0 +1,36 @@
+#!/bin/bash
+
+printf "[\n" >| "$1"
+readarray -t source_files < <(find . -type f -regex '.*/.*\.\(c\|cpp\)$')
+source_files_count=${#source_files[@]}
+for ((i = 0; i < source_files_count; i++)); do
+  source_file="${source_files[$i]}"
+  if ((i == source_files_count - 1)); then
+    json_obj_sep=""
+  else
+    json_obj_sep=","
+  fi
+  # shellcheck disable=SC2016
+  echo '
+  {
+    "directory": "'$(dirname "$1")'",
+    "arguments": [
+     "aarch64-elf-g++",
+     "-Wall",
+     "-fpic",
+     "-ffreestanding",
+     "-fno-stack-protector",
+     "-fno-exceptions",
+     "-fno-rtti",
+     "-nostdinc",
+     "-nostdlib",
+     "-I./stdlib/",
+     "-c",
+     "'"$source_file"'",
+     "-o",
+     "'"$(basename "$source_file" | sed "s/^\(.*\)\..*$/\1/")"'.o"
+    ],
+    "file": "'$(basename "$source_file")'"
+  }'$json_obj_sep'' >> "$1"
+done
+printf "\n]" >> "$1"

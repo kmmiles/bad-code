@@ -1,0 +1,4 @@
+```bash
+nohup /opt/action_runners/tomoe/run.sh > /var/log/github-runners/tomoe.log 2>&1 &
+tail -f /var/log/github-runners/tomoe.log
+```

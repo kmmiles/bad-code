@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gnome-terminal -- '/bin/bash -c "npm run dumbthing"' &
+gnome-terminal -- '/bin/bash -c "npm run moredumbstuff"' &
+

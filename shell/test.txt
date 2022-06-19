@@ -1,2 +1,0 @@
-This file was created automatically from a shell script
-Isn't that cool

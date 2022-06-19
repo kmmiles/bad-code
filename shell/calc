@@ -1,3 +1,4 @@
+#!/bin/bash
 
 _calc() { awk "BEGIN {print $*}" ; }
 

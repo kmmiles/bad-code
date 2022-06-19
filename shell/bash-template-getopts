@@ -1,38 +1,64 @@
 #!/bin/bash
 ###############################################################################
-set -euo pipefail
-
 usage() {
-  cat << EOF >&2
+  cat << EOF
 Usage: $(basename "$0") <HAYSTACK> <NEEDLE>
 
 Returns true if <NEEDLE> is a subdirectory of <HAYSTACK>.
 
 OPTIONS
-  -e  Canonicalize paths. All paths must exist and symlinks are followed.
+  -e          Canonicalize paths. All paths must exist and symlinks are followed.
+  -v          Enable verbose output.
+  -n  <name>  Name of thing
 EOF
 }
 
-err()   { 2>&1 printf "%s%s%s\n" "$(tput setaf 1)" "$@" "$(tput sgr0)"; }
-warn()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
-info()  { 2>&1 printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
+err()   { printf "%s%s%s\n" "$(tput setaf 1)" "$@" "$(tput sgr0)"; }
+warn()  { printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
+info()  { printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
 onerr() { local s=$?; err "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
+trap onerr ERR
 
-canon=false
-while getopts 'e' flag; do
-  case "${flag}" in
-    e)
-      canon=true
-      ;;
-    *) usage ; exit 1 ;; 
-  esac
-done
+main() {
+  local canon haystack needle verbose name
 
-shift $((OPTIND-1))
-if (( $# != 2 )); then
-  usage
-  exit 1
-fi
+  # set option defaults
+  canon=false
+  verbose=false
+  name=
 
-haystack="${1:-}"
-needle="${2-}"
+  # parse options
+  while getopts 'n:ev' flag; do
+    case "${flag}" in
+      n)
+        name="${OPTARG}"
+        ;;
+      e)
+        canon=true
+        ;;
+      v)
+        verbose=true
+        ;;
+      *) usage ; exit 1 ;; 
+    esac
+  done
+
+  # check arguments
+  shift $((OPTIND-1))
+  if (( $# != 2 )); then
+    usage
+    exit 1
+  fi
+
+  # assign arguments
+  haystack="${1:-}"
+  needle="${2-}"
+
+  printf "canon: %s\n" "$canon"
+  printf "verbose: %s\n" "$verbose"
+  printf "haystack: %s\n" "$haystack"
+  printf "needle: %s\n" "$needle"
+  printf "name: %s\n" "$name"
+}
+
+main "$@"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+foo=5
+if (( foo == 5 )); then
+  printf "It is 5\n"
+fi

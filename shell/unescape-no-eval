@@ -1,0 +1,9 @@
+#!/bin/bash
+
+filename="big dumb filename"
+printf -v filename_escaped %q "$filename"
+read filename_unescaped <<< "$filename_escaped" 
+
+printf 'filename: %s\n' "$filename"
+printf 'filename_escaped: %s\n' "$filename_escaped"
+printf 'filename_unescaped: %s\n' "$filename_unescaped"

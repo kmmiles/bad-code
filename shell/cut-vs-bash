@@ -1,0 +1,11 @@
+#!/bin/bash
+
+i=15
+# extract substring of line: characters 13 through $i
+#echo $line | cut -c13-$i
+# extract substring of line: $i characters, starting at character 13.
+#echo ${line:13:i}
+
+line="abcdefghijklmnopqrstuvwxyz"
+echo $line | cut -c13-15
+echo ${line:13:15}

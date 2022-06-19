@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+
+case "$1" in
+  "file1")
+    echo "file1 is awesome."
+    ;;
+  "file2")
+    echo "file2 isgreat."
+    ;;
+  "Sucka")
+    echo "haha Sucka now you starting to know"
+    ;;
+  *)
+    echo "Please use File1 or File2 for output"
+    ;;
+esac

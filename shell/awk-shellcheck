@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PROG='{sub(/-..-..$/, "foo", $2)} END {print $2}'
+printf 'hey\t%s\n' "-..-.." | awk "$PROG"

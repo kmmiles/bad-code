@@ -1,0 +1,27 @@
+#!/bin/bash
+
+jq . -  <<STDIN
+{
+  "id": "$targetFilter",
+  "paused": false,
+  "description": "Update Firewall Socket",
+  "expression": "(ip.geoip.country eq \"AL\")"
+}
+STDIN
+
+
+exit 1
+
+curl -X PUT \
+     -H "X-Auth-Email: $mail" \
+     -H "X-Auth-Key: $cfKey" \
+     -H "Content-Type: application/json" \
+     -d @- \
+<<STDIN
+{
+  "id": "$targetFilter",
+  "paused": false,
+  "description": "Update Firewall Socket",
+  "expression": "(ip.geoip.country eq \"AL\")"
+}
+STDIN

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+is_int() { [[ "$1" =~ ^[0-9]+$ ]]; }
+
+if is_int "$1"; then
+  printf "is an integer: %s\n" "$1"
+else
+  printf "is *not* an integer: %s\n" "$1"
+fi

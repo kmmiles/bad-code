@@ -1,0 +1,9 @@
+#!/usr/bin/awk -f
+{
+  i=0;
+  for(j=0;j<=8;j++) {
+    p=substr($1,j+2,1);
+    i+=((p~/[rwxst]/)*2^(8-j));
+  }
+  printf("%s\t%s\t%04o\n",$8,$1,i);
+}

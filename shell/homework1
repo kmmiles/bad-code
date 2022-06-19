@@ -1,0 +1,20 @@
+#!/bin/bash
+
+target_dir="$HOME/week7Assn1"
+
+if [ -d "$target_dir" ]; then
+  echo -n "Deleting existing directory $target_dir and all contents..."
+  rm -rf "$target_dir"
+  echo "done."
+fi
+
+echo -n "Creating directory: $target_dir"
+mkdir -p "$target_dir"
+echo "done."
+
+for ((i=1; i <= 10; i++)); do
+  file="$target_dir/File-$i"
+  echo -n "creating file: $file..."
+  touch "$file"
+  echo "done."
+done

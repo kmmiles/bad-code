@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# is there a way I can achieve rm -fd foo but ignore the error in the case that foo is not empty
+# I want to delete the directory foo if it is empty, do nothing if foo does not exist, and do nothing if foo is not empty
+
+#rm -rf testdir
+#mkdir -p testdir
+#mkdir -p testdir/foo
+
+#rm -fd testdir
+#if [[ -d "foo" ]]; then rmdir --ignore-fail-on-non-empty foo; fi
+
+find -type d -name foo -empty -delete

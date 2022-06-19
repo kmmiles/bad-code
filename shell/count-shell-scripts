@@ -1,0 +1,12 @@
+#!/bin/bash
+
+list_shell_scripts() {
+  for f in *; do
+    if [[ "$(file "${f}")" = @(*script*executable*) ]]; then
+      echo "$f"
+    fi
+  done
+}
+
+list_shell_scripts | wc -l
+

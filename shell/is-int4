@@ -1,0 +1,43 @@
+#!/bin/bash
+
+print_test_number() {
+  # googol
+  for (( i = 0; i < 100; i++ )); do
+    printf "9"
+  done
+  printf "\n"
+}
+
+
+# never overflows (never say never?)
+is_number() {
+  local number="${1:-}"
+  if [[ -z "$number" ]]; then
+    printf "Usage: %s <number>\n" "${FUNCNAME[0]}" > /dev/stderr
+    return 1
+  fi
+
+  if (( "$number" == "$number" )) 2> /dev/null; then
+    printf "\"%s\" is a number\n" "$number"
+  else
+    printf "\"%s\" is not a number\n" "$number"
+  fi
+}
+
+is_int() {
+  local number="${1:-}"
+  if [[ -z "$number" ]]; then
+    printf "Usage: %s <number>\n" "${FUNCNAME[0]}" > /dev/stderr
+    return 1
+  fi
+
+  if [[ "$number" -eq "$number" ]] 2> /dev/null; then
+    printf "\"%s\" is a number\n" "$number"
+  else
+    printf "\"%s\" is not a number\n" "$number"
+  fi
+}
+
+#is_number "$1" || exit 1
+
+is_number "$(print_test_number)"

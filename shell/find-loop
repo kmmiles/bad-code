@@ -1,0 +1,39 @@
+#!/bin/bash
+
+test1() {
+  printf "hello line 1\n"
+  printf "hello line 2\n"
+  printf "hello line 3\n"
+  printf "hello line 4\n"
+  sleep 1
+}
+
+basels () {
+  while read -r line; do
+    echo "${line#$1}"
+  done < <(find "$1" -type f | sort)
+}
+
+basels2() {
+  find "$1" -type f | sort | while read -r line; do
+    echo "${line#$1}"
+  done
+}
+
+#time basels . > /dev/null
+#time basels2 . > /dev/null
+
+for line in $(test1); do
+  echo "yline: $line"
+done
+
+exit 1
+
+while read -r line; do
+  echo "line: $line"
+done < <(test1)
+
+test1 | while read -r line; do
+  echo "xline: $line"
+done
+

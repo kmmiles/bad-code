@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#stat --printf="%n|%A|%a\n" -- * | column -t -s '|'
+#| column
+stat --printf="%n\t%A\t%a\n" * 

@@ -10,7 +10,7 @@ prompt_question() {
     answer=${answer,,}
   done
 
-  [[ ${answer} == y ]] && return 0 || return 1
+  [[ ${answer} == y ]]
 }
 
 if prompt_question "Continue"; then

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+#if ! command -v java > /dev/null; then
+#  printf "Ouch, no java!\n"
+#fi
+
+NOM="heyo"
+
+if ! id "$NOM" &> /dev/null; then
+  printf "user %s does not exist" "$NOM"
+  exit 1
+fi
+

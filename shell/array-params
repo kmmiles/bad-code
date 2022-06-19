@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# store program parameters in an array and pass it to program.
+# it will magically handle spaces and other escaping issues.
+
+params=(
+  '-l'
+  '-a'
+  'file with space'
+)
+
+set -x
+ls "${params[@]}"

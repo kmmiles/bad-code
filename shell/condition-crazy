@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+Some general trivia: Chaining commands with `&&` and `||` doesn't actually work the way people expect.
+You cannot in fact replicate a ternary or `if/else` by chaining these operators.
+```bash
+[[ -f foo.txt ]] && do_thing || do_other_thing
+```
+At first glance the logic appears to be: "if `foo.txt` exists, run `do_thing`, otherwise run `do_other_thing`.
+But in fact `do_other_thing` will run if `foo.txt` does not exist *OR* `do_thing` returns a non-zero value.
+
+
+
+# if user theme exists, write "@theme $name.rasi"
+# else if global theme exists, write "@theme $themes_path/$name.rasi"
+if [[ -f "$user_themes_path/$name.rasi" ]]; then
+  replace_last_line "$rofi_theme_path" "@theme \"$name.rasi\""
+elif [[ -f "$themes_path/$name.rasi" ]]; then
+  replace_last_line "$rofi_theme_path" "@theme \"$themes_path/$name.rasi\""
+else 
+  not_found "rasi"
+fi

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+readelf -W -p .rodata /bin/ls

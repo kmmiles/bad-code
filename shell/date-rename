@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# create test data
+#touch valid_certificates_05_06_2022.csv
+#touch valid_certificates_06_10_2022.csv
+#touch valid_certificates_07_02_2022.csv
+
+for csv in *.csv; do
+  if [[ $csv =~ [0-9]{2}_[0-9]{2}_[0-9]{4}.csv ]]; then
+    IFS=_ read -r _ _ month date year <<< "${csv%%.*}"
+    mv "$csv" "valid_certificates_${year}_${month}_${date}.csv"
+  fi
+done

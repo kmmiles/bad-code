@@ -1,0 +1,37 @@
+#!/bin/bash
+# Hello. I got a directory from which I would like to remove folders that are not present in the array of folders, yielded by specific command.
+# How could I do script that in bash?
+
+arrayHas() {
+  local element match
+  match="${1:-}"; shift
+  for element; do [[ "$element" == "$match" ]] && return 0; done
+  return 1
+}
+
+# iterate directory, deleting subdirectories not found in whitelist
+prune_with_whitelist() {
+  root_dir="dir_test"
+  whitelist=('foo' 'bar' 'this' 'that')
+
+  find "$root_dir" -mindepth 1 -maxdepth 1 -type d | while read -r pathname; do
+    dir="$(basename "$pathname")"
+    if arrayHas "$dir" "${whitelist[@]}"; then
+      printf "removing %s...\n" "$dir"
+      rm -rf "$pathname"
+    fi
+  done
+}
+
+main() {
+  # make some dirs for testing
+  mkdir -p \
+    dir_test/foo \
+    dir_test/bar \
+    dir_test/hey \
+    dir_test/deleteme \
+
+  prune_with_whitelist
+}
+
+main "$@"

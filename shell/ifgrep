@@ -1,7 +1,15 @@
 #!/bin/bash
 
-if ps aux | grep bash; then
-  echo "Yes, it matched."
+#if ps aux | grep bash; then
+#  echo "Yes, it matched."
+#else
+#  echo "No, it didn't match."
+#fi
+
+#mango_cfg=/home/zany130.config/MangoHud/MangoHud.conf
+mango_cfg=./MangoHud.conf
+if grep -q "no_display = 0" "$mango_cfg"; then
+  echo "yes it's enabled"
 else
-  echo "No, it didn't match."
+  echo "no, it's not enabled"
 fi

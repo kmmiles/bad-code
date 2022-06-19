@@ -30,4 +30,8 @@ fix_home_perms() {
   done
 }
 
+fix_home_perms_one_liner() {
+  find "$HOME" -type d,f | while read -r dirent; do sudo chown -cR "$(id -un)":"$(id -un)" "$dirent"; done
+}
+
 fix_home_perms

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+echo "This is your current path: $PWD";
+read -r -p $'Type in the path you would like to search for phone numbers,\n(or press enter to search the current working directory): ' path1;
+
+
+find "${path1:-.}" -type f | while read -r file; do
+  if grep -EHar "^(\+[0-9]\.|\()?[0-9]{3}[).-][0-9]{3}[-.][0-9]{4}$" "$file"; then
+    printf "%s: found a phone number!\n" "$file"
+  fi
+done
+
+exit 0
+
+
+cd "${path1:-.}" 2>/dev/null || { echo "Could not change the working directory to: $path1"; exit 1; };
+file -z *.* | egrep -Ha "archive"
+echo "---------------------------------------------------------------------"
+egrep -Har "^(\+[0-9]\.|\()?[0-9]{3}[).-][0-9]{3}[-.][0-9]{4}$" *
+if [ $? -eq 0 ] ; then echo "---Phone numbers found---" ; else echo "---No phone numbers found---" ; fi
+
+
+
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export COLORTERM=truecolor
+
+python -m rich

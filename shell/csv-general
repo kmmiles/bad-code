@@ -1,0 +1,12 @@
+#!/bin/bash
+
+readarray -t rows < <(tail -n +2 "csv-example.txt")
+for row in "${rows[@]}"; do
+  col_id="$(awk -F',' '{print $1}' <<< "$row")"
+  col_date="$(awk -F',' '{print $2}' <<< "$row")"
+  col_vek="$(awk -F',' '{print $3}' <<< "$row")"
+
+  echo "col_id: $col_id"
+  echo "col_date: $col_date"
+  echo "col_vek: $col_vek"
+done

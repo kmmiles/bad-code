@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function handler(){
+  if [ "$1" != 'R' ]; then
+    echo "Not a valid input"
+  fi
+}
+
+handler 'hello'

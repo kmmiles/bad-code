@@ -1,0 +1,13 @@
+#!/usr/bin/awk -f
+BEGIN {OFS="\t"}
+{
+  i=0;
+  for(j=0;j<=8;j++) {
+    p=substr($1,j+2,1);
+    i+=((p~/[rwxst]/)*2^(8-j));
+  }
+  $2=$1
+  $1=$8
+  $3=i
+  NF=3  
+}1

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#pandoc "c:/long/path/name/blahhhhhhhhhhhhhhh/testing/index.md" -f markdown \
+#-t html5 -H "c:/long/path/name/blahhhhhhhhhhhhhhh/testing/header.html" \
+#-B "c:/long/path/name/blahhhhhhhhhhhhhhh/testing/nav.html" \
+#--template="c:/long/path/name/blahhhhhhhhhhhhhhh/testing/default.html" \
+#-o test2.html
+
+#pandoc "c:/Users/moogtron 4k/Desktop/freakylamps website/httpdocs/testing/index.md" -f markdown \
+#-t html5 -H "c:/Users/moogtron 4k/Desktop/freakylamps website/httpdocs/prototypes/header.html" \
+#-B "c:/Users/moogtron 4k/Desktop/freakylamps website/httpdocs/prototypes/nav.html" \
+#--template="c:/Users/moogtron 4k/Desktop/freakylamps website/httpdocs/prototypes/default.html" \
+#-o test2.html
+
+markdown_file="$1"
+if [[ -z "$markdown_file" ]]; then
+  printf "Usage: %s <markdown_file>\n" "$0"
+  exit 1
+fi
+output_dir="$(dirname "$markdown_file")"
+output_file="$output_dir/${markdown_file%%.*}.html"
+
+printf "markdown_file: %s\n" "$markdown_file"
+printf "output_file: %s\n" "$output_file"

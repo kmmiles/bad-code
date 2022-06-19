@@ -1,0 +1,8 @@
+#!/bin/bash
+
+find . -type f | while read -r file; do
+  filetype=$(file "$file" | awk '{print $2}')
+  if [[ "$filetype" == "HTML" ]]; then
+    printf "Found HTML: %s\n" "$file"
+  fi
+done

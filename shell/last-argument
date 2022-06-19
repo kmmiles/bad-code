@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#for arg in "$@"; do arg_last="$arg"; done
+#echo "$arg_last"
+
+#params=("$@")
+#echo "${params[-1]}"
+
+
+#a=("$@"); echo "${a[${#a[@]}-1]}"
+
+
+#params=("$@")
+#last_idx=$(($#-1))
+#echo "${params[$last_idx]}"
+
+params=("$@")
+echo "last_param: ${params[-1]}"

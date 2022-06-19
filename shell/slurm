@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#readarray -t ids < <(squeue --nohead -u USERNAME --format %F)
+diff_asym() { printf "%s\n" "${@}" | sort | uniq -D | uniq ; }
+
+main() {
+  readarray -t squeue_ids < <(cat ./slurm.txt)
+
+  printf "%s\n" "${squeue_ids[@]}"
+
+  exit 1
+  local squeue_paths=("./test/test1" "./test/test2" "./test/test3")
+  local ondisk_paths=("./test/test1" "./test/test2" "./test/dirty")
+  readarray -t rm_paths < <(diff_asym "${squeue_paths[@]}" "${ondisk_paths[@]}")
+  for path in "${rm_paths[@]}"; do
+    echo "removing $path..."
+  done
+}
+
+main "$@"
+
+
+ 
+
+

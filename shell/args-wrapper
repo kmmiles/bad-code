@@ -1,0 +1,38 @@
+#!/bin/bash
+
+repeat() {
+  if [[ "$#" -lt 1 ]]; then
+    printf "Usage: %s repeat <word>\n" "$0"
+    exit 1
+  fi
+
+  printf "repeat: %s\n" "$@"
+}
+
+say() {
+  if [[ "$#" -lt 1 ]]; then
+    printf "Usage: %s say <word>\n" "$0"
+    exit 1
+  fi
+
+  printf "say: %s\n" "$@"
+}
+
+main() {
+  case "$1" in
+    repeat)
+      shift
+      repeat "$@"
+      ;;
+    say)
+      shift
+      say "$@"
+      ;;
+    *)
+      printf "Usage: %s <repeat|say>\n" "$0"
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"

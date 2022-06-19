@@ -1,0 +1,12 @@
+#!/bin/sh
+
+number=$(expr "$1" : "\([0-9]*\)")
+if [ "$number" = "$1" ]; then
+  printf "integer: %s\n" "$1"
+else
+  printf "not an integer\n"
+fi
+
+if [ "$1" -eq 0 ]; then
+  echo "meow"
+fi
