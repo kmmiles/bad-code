@@ -1,0 +1,206 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% DO NOT MAKE EDITS TO THIS FILE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{2021abstract}[2020/09/29 SASabstract Package]
+
+
+\RequirePackage[english]{babel}
+\RequirePackage{blindtext}
+\RequirePackage{lipsum}
+
+%%% Images and table
+
+% img
+\RequirePackage{graphicx}
+\RequirePackage{float}
+% table
+\RequirePackage{multirow}
+\RequirePackage{multicol}
+\RequirePackage{makecell}
+\RequirePackage{booktabs}
+
+% Bold facing captions
+\RequirePackage{caption}
+\captionsetup{labelfont={bf, small, sf}, textfont={bf, small, sf}}
+
+
+%%% Document Specifications
+\RequirePackage{multicol}
+\RequirePackage{geometry}
+
+
+% page set up
+\geometry{
+ margin = 2cm}
+ 
+\geometry{
+    paperheight=11in,
+    paperwidth=8.25in
+}
+
+% line spaces
+
+\parskip=0pt
+\parindent=8pt
+
+% no page number
+\pagenumbering{gobble}
+
+%%%%%%%%%%% Section spacing and counting %%%%%%%%%%%%%
+
+\RequirePackage{titlesec}
+
+\titlespacing\section{0pt}{8pt plus 2pt minus 2pt}{3pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{8pt plus 2pt minus 2pt}{2pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{8pt plus 2pt minus 2pt}{2pt plus 2pt minus 2pt}
+
+%% remove section counting - doesn't work with the line below
+\setcounter{secnumdepth}{0}
+
+
+%%% section header at same line as text
+\titleformat{\section}[runin]{\normalfont\large\bfseries\sffamily}{\thesection}{1em}{}
+\titleformat{\subsection}[runin]{\normalfont\sffamily\fontsize{10}{10}\bfseries}{\thesubsection}{1em}{}
+
+%%%%% FONT SPECIFICATION %%%%%%%%%
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{palatino}
+
+
+%%%%%%%% TITLE, AUTHOR and DATE %%%%%%%%%%%%%
+\RequirePackage{titling}
+\RequirePackage{authblk}
+\RequirePackage{hyperref}
+\RequirePackage{censor}
+\RequirePackage{marvosym}
+
+
+\setlength{\droptitle}{-6em}
+\pretitle{% add some rules
+  \begin{center}
+    \Large\bfseries\sffamily % sans serif, big, and bold
+}%, make the fonts bigger, make the title (only) bold
+\posttitle{%
+\end{center}%
+}
+\preauthor{
+\vspace{-1em} % move stuff closer together
+    \begin{center}
+    \sffamily % sans serif
+    }
+\postauthor{
+\end{center}
+\vspace{-2em}
+    
+}
+\date{\vspace{-5ex}} % remove date
+
+
+%% corresponding author
+\newcommand{\corauthor}[2]{\Letter \ #1: #2}
+\newcommand{\corauthoranon}[2]{\Letter \ \anonymize{#1}: \anonymize{#2}}
+%% keywords
+\newcommand{\Keywords}[5]{\textbf{\textsf{Keywords}} $\cdot$ #1 $\cdot$ #2 $\cdot$ #3 $\cdot$ #4 $\cdot$ #5}
+
+
+%%% Anonymize author
+\RequirePackage{soul}
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+
+\makeatletter
+\newif\if@anonymize
+
+\@anonymizetrue
+
+
+\if@anonymize
+  \newcommand{\highlight@DoHighlight}{
+    \fill [outer sep = -15pt, inner sep = 0pt, color=black]
+          ($(begin highlight)+(0,8pt)$) rectangle ($(end highlight)+(0,-3pt)$) ;
+  }
+
+  \newcommand{\highlight@BeginHighlight}{
+    \coordinate (begin highlight) at (0,0) ;
+  }
+
+  \newcommand{\highlight@EndHighlight}{
+    \coordinate (end highlight) at (0,0) ;
+  }
+
+  \newdimen\highlight@previous
+  \newdimen\highlight@current
+  \newlength{\item@width}
+
+  \DeclareRobustCommand*\anonymize{%
+    \SOUL@setup
+    \def\SOUL@preamble{%
+      \begin{tikzpicture}[overlay, remember picture]
+        \highlight@BeginHighlight
+        \highlight@EndHighlight
+      \end{tikzpicture}%
+    }%
+    %
+    \def\SOUL@postamble{%
+      \begin{tikzpicture}[overlay, remember picture]
+        \highlight@EndHighlight
+        \highlight@DoHighlight
+      \end{tikzpicture}%
+    }%
+    %
+    \def\SOUL@everyhyphen{%
+      \discretionary{%
+        \SOUL@setkern\SOUL@hyphkern
+        \SOUL@sethyphenchar
+        \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+      }{%
+      }{%
+        \SOUL@setkern\SOUL@charkern
+      }%
+    }%
+    %
+    \def\SOUL@everyexhyphen##1{%
+      \SOUL@setkern\SOUL@hyphkern
+      \settowidth{\item@width}{##1}%
+      \makebox[\item@width]{}%
+      \discretionary{%
+        \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+      }{%
+      }{%
+        \SOUL@setkern\SOUL@charkern
+      }%
+    }%
+    %
+    \def\SOUL@everysyllable{%
+      \begin{tikzpicture}[overlay, remember picture]
+        \path let \p0 = (begin highlight), \p1 = (0,0) in \pgfextra
+          \global\highlight@previous=\y0
+          \global\highlight@current =\y1
+        \endpgfextra (0,0) ;
+        \ifdim\highlight@current < \highlight@previous
+          \highlight@DoHighlight
+          \highlight@BeginHighlight
+        \fi
+      \end{tikzpicture}%
+      \settowidth{\item@width}{\the\SOUL@syllable}%
+      \makebox[\item@width]{}%
+      \tikz[overlay, remember picture] \highlight@EndHighlight ;%
+    }%
+    \SOUL@
+  }
+\else
+  \newcommand{\anonymize}[1]{#1}
+\fi
+
+%%% References
+\RequirePackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\def\bibfont{\footnotesize}
+\setlength\bibhang{8pt}

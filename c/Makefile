@@ -4,7 +4,7 @@ CC=clang
 ###############################################################################
 # from coding cave
 CFLAGS=-g -Wall -Wpedantic -Werror -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
-CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
+#CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
 ###############################################################################
 #CFLAGS=-Weverything -Wall -Wpedantic -Werror -Wextra -std=c11
 #CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g 
@@ -38,6 +38,12 @@ $(BINDIR)/%: $(OBJDIR)/%.o
 
 $(BINDIR)/mouse-events: $(OBJDIR)/mouse-events.o
 	  $(CC) -o $@ $< $(LIBS) -lX11
+
+$(BINDIR)/clear: $(OBJDIR)/clear.o
+	  $(CC) -o $@ $< $(LIBS) -lncurses
+
+$(BINDIR)/hello-curses: $(OBJDIR)/hello-curses.o
+	  $(CC) -o $@ $< $(LIBS) -lncurses
 
 $(OBJDIR)/%.o: %.c
 	  $(CC) -c -o $@ $< $(CFLAGS)

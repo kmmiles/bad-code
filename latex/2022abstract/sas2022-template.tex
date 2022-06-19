@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage{2022abstract}
+
+
+\title{SAS2022 Abstract template} % Use this space for your title
+
+%%%% Here you can enter all authors names and affiliations. For more or less authors you can simply copy-paste and delete the lines.
+
+\author[1]{Rachael Jack}
+\author[2]{Jonas N{\"o}lle}
+\author[1,2]{Tobias Thejll\textendash{Madsen}}
+\affil[1]{Department of Psychology, University of Glasgow, UK}
+\affil[2]{Department of Computing Science, University of Glasgow, UK}
+
+%%%%%%% Do not change the following 3 lines
+\begin{document} 
+\maketitle
+\begin{multicols}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary} %% Do not change any section header
+In this section, please use 4--5 sentences to describe the gist of the study (no more than 400 characters). This will be included in the conference program should your submission be accepted. We will use Latin to fill space in this example: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in sollicitudin urna, ac laoreet ante. Sed ut metus quis arcu porttitor quis arcu porttitor quis arcu porttitor volutpat. Donec vitae ornare nulla. Mauris volutpat sem metus, vitae rhoncus nulla hendrerit non.
+
+%%% Enter no more than five keywords - Enter each keyword into a {}
+\noindent\Keywords{one}{two}{three}{four}{five}\\
+
+%%% For the corresponding author, enter the name and email
+\noindent \corauthor{Rachael Jack}{email@domain.com} \\
+
+\section{Introduction}
+In this section, please use 4--5 sentences to introduce the theoretical background of your study. For in-text citations, both single references \citep{fiskeLexicalFallacyEmotion2020} or multiple references \citep{davidsonAffectiveStyleAffective1998,jackFacialExpressionsEmotion2012} are possible. You can cite as many references as you are able to fit on the single page with the reference list included. A single figure can be placed in the document at a suitable position within a single column. 
+
+
+%%% Use up to one figure in the document.  Note the the only thing you should change below is the file path currently 'figures/example_fig.png'. Make sure it matched your file name and location.
+%%% The picture will be shown in your final document at the same location that you have written the command below.  Therefore move the command around in your text until it places the image where you want it.
+\begin{figure}[H] 
+\includegraphics[width=\linewidth]{figures/example_fig.png}
+\caption{An example figure, which you can move to where you see it fit}
+\label{fig:follow_half}
+\end{figure}
+
+\section{Aims}
+In this section, please use 3-4 sentences to articulate the research question(s), hypothesis, and predictions (if applicable). Proin vitae fermentum enim. Proin sed dignissim neque, vel volutpat justo. In finibus mi mi, sed semper arcu mattis non. Quisque facilisis lectus at augue pretium, ut hendrerit quam porta. Aliquam congue, odio quis luctus imperdiet, tellus turpis consectetur enim, vitae finibus velit. Ut ultricies nunc sit amet dui consequat porttitor quis.
+
+\section{Methods}
+In this section, please provide sufficient details about the participants, materials, procedure and measurements of the study. We recommend 6 sentences for this section. Proin rhoncus dignissim finibus. Mauris enim ante, dictum at orci at, venenatis finibus mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare odio quis faucibus vulputate. In mollis lacus non tellus lacinia pellentesque. Vestibulum porta massa euismod suscipit scelerisque. Aenean dictum convallis ultricies. Cras id sodales orci, in egestas justo. Nam sodales justo at lectus lacinia, non porttitor nisl scelerisque. Phasellus tincidunt tellus libero, quis rhoncus dolor feugiat at. 
+
+%%% delete the section title as appropriate for your submission type
+\section{Results OR Proposed Analysis/Predicted Results}
+In this section, please use about 6 sentences to describe the analysis and results (for New Results submission) or the analysis plan and predicted results. The unused alternative titles for this section can be deleted. Formulas can be included as follows:
+
+% Use the command below to make equations on a new line.  You can do inline math as well if you want.
+\begin{equation}
+        \label{eq:bayes}
+        P(\theta|\textbf{D}) = P(\theta ) \frac{P(\textbf{D} |\theta)}{P(\textbf{D})}
+\end{equation}
+
+In-line math is accomplished by wrapping text in "\$", so \$4 + 4  = 8\$ would become $4+4 = 8$.
+Praesent felis ligula, vehicula eu venenatis sed, fringilla eu ipsum. Phasellus at nunc luctus, sagittis arcu maximus, tincidunt leo. Vestibulum venenatis luctus velit, ac dictum ipsum ullamcorper eu. Ut ultricies nunc sit amet dui consequat porttitor quis a magna.
+
+\section{Conclusions}
+In this section, please use about 3 sentences to articulate the conclusion of this study. Etiam vitae molestie ex. Cras in ligula vulputate, semper urna eu, vehicula sapien. Nulla in dui tempus, porta mi in, dapibus sapien. Sed viverra luctus orci, eu ornare nisl varius vel. Suspendisse molestie vel nisi et interdum.
+
+
+\subsection{Acknowledgements}
+\footnotesize
+Here you can acknowledge sources of funding and contributions from non-authors.
+
+%%% make sure that the .bib is called references.bib or the correct filename is called below
+\bibliography{references}
+
+\end{multicols}
+
+\end{document}
+

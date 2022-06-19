@@ -1,0 +1,25 @@
+if ((fp = fopen("test.txt", "r")) != NULL) {
+  if ((fp2 = fopen("another.txt", "r")) != NULL) {
+    if ((fp3 = fopen("again.txt", "r")) != NULL) {
+      printf("This is stupid, but valid\n");
+    }
+  }
+}
+
+fp = fopen("test.txt", "r");
+if(!fp) {
+  perror("test.txt");
+  exit(1);
+}
+
+fp2 = fopen("another.txt", "r");
+if(!fp2) {
+  perror("another.txt");
+  exit(1);
+}
+
+fp3 = fopen("again.txt", "r");
+if(!fp3) {
+  perror("again.txt");
+  exit(1);
+}

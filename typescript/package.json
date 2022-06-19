@@ -10,7 +10,8 @@
     "diablo": "ts-node -sT bin/diablo.ts",
     "replace-backslash": "ts-node -sT bin/replace-backslash.ts",
     "reverse-linked-list": "ts-node -sT bin/reverse-linked-list.ts",
-    "lowest-in-array": "ts-node -sT bin/lowest-in-array.ts"
+    "lowest-in-array": "ts-node -sT bin/lowest-in-array.ts",
+    "matrix-walk": "ts-node -sT bin/matrix-walk.ts"
   },
   "author": "",
   "license": "ISC",

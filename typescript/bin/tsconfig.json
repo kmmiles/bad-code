@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "es2017"]
+    "lib": ["dom", "es2017"],
+    "allowSyntheticDefaultImports": true
   }
 }

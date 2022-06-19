@@ -19,13 +19,13 @@ char *fgets_backwards(char *str, int size, FILE *fp) {
   return str;
 }
 
-int main(void) {
+int main(int argc, char *argv[]) {
   FILE *fp = NULL;
   int bufLen = 1024;
   char line[bufLen];
   int lineCount = 5;
 
-  fp = fopen("file.txt", "r");
+  fp = fopen(argv[1], "r");
   fseek(fp, 0, SEEK_END);
 
   for (int i = 0; i < lineCount && fgets_backwards(line, bufLen, fp) != NULL;

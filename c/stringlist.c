@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,6 +7,13 @@
 #define INITIAL_THRESHOLD 1
 
 char *strdup(const char *s);
+
+/*
+typedef struct sstring {
+  char *string;
+  bool
+}
+*/
 
 typedef struct slist {
   char **list;
@@ -21,18 +29,18 @@ StringList stringListNew(void) {
   return sl;
 }
 
-int stringListAppend(StringList sl, const char *string) {
+int _stringListAppend(StringList sl, char *string, bool copy) {
   if (!string) {
     return (-1);
   }
 
   if ((sl->count + 1) == sl->threshold) {
     sl->threshold *= 2;
-    printf("sl->threshold: %lu\n", sl->threshold);
+    // printf("sl->threshold: %lu\n", sl->threshold);
     sl->list = realloc(sl->list, sl->threshold * sizeof(char *));
   }
 
-  sl->list[sl->count] = strdup(string);
+  sl->list[sl->count] = copy ? strdup(string) : string;
   if (sl->list[sl->count] == NULL) {
     return (-2);
   }
@@ -41,10 +49,23 @@ int stringListAppend(StringList sl, const char *string) {
   return (0);
 }
 
+int stringListAppend(StringList sl, char *string) {
+  return _stringListAppend(sl, string, false);
+}
+
+int stringListAppendCopy(StringList sl, char *string) {
+  return _stringListAppend(sl, string, true);
+}
+
 void stringListDestroy(StringList sl) {
+  if (!sl) {
+    /* we can't do anything here. */
+    return;
+  }
+
   /* free the strings */
-  for (int i = 0; i <= (sl->count - 1); i++) {
-    if (sl->list[i]) {
+  for (int i = 0; i < sl->count; i++) {
+    if (sl->list && sl->list[i]) {
       free(sl->list[i]);
     }
   }
@@ -55,9 +76,7 @@ void stringListDestroy(StringList sl) {
   }
 
   /* free the string list */
-  if (sl) {
-    free(sl);
-  }
+  free(sl);
 }
 
 void stringListPrint(StringList sl) {
@@ -67,13 +86,36 @@ void stringListPrint(StringList sl) {
   }
 }
 
+const char *stringListGet(StringList sl, int index) {
+  if (index > sl->count) {
+    return (NULL);
+  }
+  return sl->list[index];
+}
+
+size_t stringListCount(StringList sl) { return (sl->count); }
+
 int main(void) {
+  printf("Feeling bad...\n");
+  free("hello");
+
   StringList myStringList = stringListNew();
+  stringListAppendCopy(myStringList, "hello");
+  stringListAppendCopy(myStringList, "world");
+  stringListAppendCopy(myStringList, "this");
+  stringListAppendCopy(myStringList, "is");
+  stringListAppendCopy(myStringList, "my");
+  stringListAppendCopy(myStringList, "reality");
+  /*
   for (int i = 1; i <= 1000; i++) {
     stringListAppend(myStringList, "world");
   }
+  */
 
-  stringListPrint(myStringList);
+  printf("count: %lu\n", stringListCount(myStringList));
+  printf("%s\n", stringListGet(myStringList, 5));
+
+  // stringListPrint(myStringList);
   stringListDestroy(myStringList);
 
   return (0);
