@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nl -ba -n'ln' -w1 -s'. ' "$@"

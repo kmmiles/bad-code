@@ -1,0 +1,2 @@
+Like it makes sense that early on you'd get the cursory "a pointer is a variable that points to another, and this thing is called the address-of operator". 
+But the devil is in the details; When I think of *covering* pointers, I'm thinking about the relationship of pointers and arrays, typecasting, deferencing, pointer arithmetic, multidimensional arrays, function pointers, etc.

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+calc() { awk "BEGIN {print $*}" ; }
+
+main() {
+  local cunning="${1:-0}"
+  if (( cunning <= 10 )); then
+    printf "Cunning must be greater then 10\n"
+    return
+  fi
+
+  ((cunning -= 10))
+  printf "+armorPen: %s\n" "$(calc "$cunning / 7")"
+  printf "+mentalResist: %s\n" "$(calc "0.5 * $cunning")"
+  printf "song of courage +attack: %s\n" "$(calc "3 + 0.1 * $cunning")"
+  printf "song of courage +damage: %s\n" "$(calc "2 + 0.05 * $cunning")"
+  printf "song of courage +critChance: %s\n" "$(calc "3 + 0.1 * $cunning")"
+  printf "song of valor +regen: %s per tick\n" "$(calc "0.5 + (0.01 * $cunning)")"
+  printf "tainted blade +damage: %s\n" "$(calc "0.2 * $cunning")"
+  printf "exploit weakness +backstab damage: %s\n" "$(calc "0.173 * $cunning")"
+}
+
+main "$@"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dirname() {
+  printf "Hello\n"
+}
+
+dirname="/tmp"
+echo "$dirname"
+dirname "$dirname"

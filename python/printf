@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import sys
+def printf(format, *args):
+    sys.stdout.write(format % args)
+
+i = 7
+pi = 3.14159265359
+printf("hi there, i=%d, pi=%.2f\n", i, pi)
+# hi there, i=7, pi=3.14

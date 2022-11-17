@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for (( i = 1; ; i++ )); do
+  printf "test #%s at %s\n" "$i" "$(TZ='America/New_York' date +"%H:%M")"
+  echo zpool list
+  sleep 15
+done

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read -r user; do
+  #aws cognito-idp admin-delete-user --user-pool-id abc123 --username $i
+  echo "username: $user"
+done < data/users.txt

@@ -1,4 +1,10 @@
 #!/bin/bash
 
-sql="insert into foobar SELECT * from foobar;"
-echo "sql: $sql"
+#sql="insert into foobar SELECT * from foobar;"
+#echo "sql: $sql"
+
+find ./data -type f | while read -r file; do
+  printf -v file_escaped %q "$file"
+  echo "file: $file"
+  echo "file_escaped: $file_escaped"
+done

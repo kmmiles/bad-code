@@ -1,0 +1,17 @@
+#!/bin/bash
+
+lowercase_dir() {
+  local dir="${1:-}"
+
+  if [[ -d "$dir" ]]; then
+    find "$dir" -not -path '*/.*' -type f | while read -r file; do
+      newfile=$(echo "$file" | tr '[:upper:]' '[:lower:]')
+      if [[ "$file" != "$newfile" ]]; then
+        printf "moving %s to %s\n" "$file" "$newfile"
+        mv -v "$file" "$newfile"
+      fi
+    done
+  fi
+}
+
+lowercase_dir "$@"

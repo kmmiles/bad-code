@@ -1,0 +1,8 @@
+#!/bin/bash
+
+OldDirectory="./data/find-music-test"
+while IFS= read -r -d $'\0' filename; do
+  if ! file "$filename" > /dev/null; then
+    printf "Ouch...something bad with %s\n" "$filename"
+  fi
+done < <(find -P "${OldDirectory}" -xdev -type f -name '*.flac' -print0)

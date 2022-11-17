@@ -1,4 +1,7 @@
 #!/bin/bash
 
-mycol=1
-printf "foo bar this that" | awk -v x=$mycol '{print $x}'
+#mycol=2
+#printf "foo bar this that" | awk -v x=$mycol '{print x}'
+
+somevar=world
+awk -v hello=$somevar 'BEGIN {print hello}'

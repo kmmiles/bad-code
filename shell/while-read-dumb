@@ -1,0 +1,11 @@
+#!/bin/bash
+
+latest_builds() {
+  release_dir=/home/ubuntu/public_html/releases-build_id-commit_id
+  find "$release_dir" -mindepth 1 -maxdepth 1 -name "build-*" \
+    -type d -printf "%T@ %p\n" | sort -n | head -n -5 
+}
+
+latest_builds | while read -r build; do
+  echo "rm -rf $build"
+done

@@ -1,0 +1,89 @@
+#!/bin/bash
+
+output="data/deleteme.txt"
+things=('F+1' 'F+2' 'F+3')
+things_reverse=('F-1' 'F-2' 'F-3')
+foos=('tga' 'taa' 'tag')
+header=()
+data=()
+data_reverse=()
+
+
+
+exit 1
+for (( i = 0; i < ${#things}; i++ )); do
+  for foo in "${foos[@]}"; do
+    header+=("FF$((i+1))${foo^^}")
+  done
+done
+
+printf '%s\t' "${header[@]}"
+
+exit 1
+
+for (( i = 0; i < ${#things}; i++ )); do
+  for foo in "${foos[@]}"; do
+    name="FF$((i+1))${foo^^}"
+    printf '%s\t' "$name" >> "$output" 
+    #val=$(grep -o "$foo" "${thing}stops.txt" | wc -l) 
+
+echo -e $FF1TGA"\t"$FF1TAA"\t"$FF1TAG"\t"$FF2TGA"\t"$FF2TAA"\t"$FF2TAG"\t"$FF3TGA"\t"$FF3TAA"\t"$FF3TAG >> $STOPres
+
+  done
+done
+
+exit 1
+
+for thing in "${things[@]}"; do
+  tga=$(grep -o "tga" "${thing}stops.txt" | wc -l) 
+  taa=$(grep -o "taa" "${thing}stops.txt" | wc -l) 
+  tag=$(grep -o "tag" "${thing}stops.txt" | wc -l) 
+
+  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' \
+    "FF1TGA" "FF1TAA" "FF1TAG" \
+    "FF2TGA" "FF2TAA" "FF2TAG" \
+    "FF3TGA" "FF3TAA" "FF3TAG"
+
+  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' \
+    "$FF1TGA" "$FF1TAA" "$FF1TAG" \
+    "$FF2TGA" "$FF2TAA" "$FF2TAG" \
+    "$FF3TGA" "$FF3TAA" "$FF3TAG"
+
+echo -e FF1TGA"\t"FF1TAA"\t"FF1TAG"\t"FF2TGA"\t"FF2TAA"\t"FF2TAG"\t"FF3TGA"\t"FF3TAA"\t"FF3TAG > $STOPres
+echo -e $FF1TGA"\t"$FF1TAA"\t"$FF1TAG"\t"$FF2TGA"\t"$FF2TAA"\t"$FF2TAG"\t"$FF3TGA"\t"$FF3TAA"\t"$FF3TAG >> $STOPres
+echo -e RF1TGA"\t"RF1TAA"\t"RF1TAG"\t"RF2TGA"\t"RF2TAA"\t"RF2TAG"\t"RF3TGA"\t"RF3TAA"\t"RF3TAG >> $STOPres
+echo -e $RF1TGA"\t"$RF1TAA"\t"$RF1TAG"\t"$RF2TGA"\t"$RF2TAA"\t"$RF2TAG"\t"$RF3TGA"\t"$RF3TAA"\t"$RF3TAG >> $STOPres
+done
+
+FF1TGA=$(cat F+1stops.txt | grep -o "tga" | wc -l) 
+FF1TAA=$(cat F+1stops.txt | grep -o "taa" | wc -l)
+FF1TAG=$(cat F+1stops.txt | grep -o "tag" | wc -l)
+
+FF2TGA=$(cat F+2stops.txt | grep -o "tga" | wc -l) 
+FF2TAA=$(cat F+2stops.txt | grep -o "taa" | wc -l)
+FF2TAG=$(cat F+2stops.txt | grep -o "tag" | wc -l)
+
+FF3TGA=$(cat F+3stops.txt | grep -o "tga" | wc -l) 
+FF3TAA=$(cat F+3stops.txt | grep -o "taa" | wc -l)
+FF3TAG=$(cat F+3stops.txt | grep -o "tag" | wc -l)
+
+#Reverse STOP codon stats
+
+RF1TGA=$(cat F-1stops.txt | grep -o "tga" | wc -l) 
+RF1TAA=$(cat F-1stops.txt | grep -o "taa" | wc -l)
+RF1TAG=$(cat F-1stops.txt | grep -o "tag" | wc -l)
+
+RF2TGA=$(cat F-2stops.txt | grep -o "tga" | wc -l) 
+RF2TAA=$(cat F-2stops.txt | grep -o "taa" | wc -l)
+RF2TAG=$(cat F-2stops.txt | grep -o "tag" | wc -l)
+
+RF3TGA=$(cat F-3stops.txt | grep -o "tga" | wc -l) 
+RF3TAA=$(cat F-3stops.txt | grep -o "taa" | wc -l)
+RF3TAG=$(cat F-3stops.txt | grep -o "tag" | wc -l)
+
+#OUTPUT stats results of each stop codon per frame 
+echo -e FF1TGA"\t"FF1TAA"\t"FF1TAG"\t"FF2TGA"\t"FF2TAA"\t"FF2TAG"\t"FF3TGA"\t"FF3TAA"\t"FF3TAG > $STOPres
+echo -e $FF1TGA"\t"$FF1TAA"\t"$FF1TAG"\t"$FF2TGA"\t"$FF2TAA"\t"$FF2TAG"\t"$FF3TGA"\t"$FF3TAA"\t"$FF3TAG >> $STOPres
+echo -e "-----------------------------"
+echo -e RF1TGA"\t"RF1TAA"\t"RF1TAG"\t"RF2TGA"\t"RF2TAA"\t"RF2TAG"\t"RF3TGA"\t"RF3TAA"\t"RF3TAG >> $STOPres
+echo -e $RF1TGA"\t"$RF1TAA"\t"$RF1TAG"\t"$RF2TGA"\t"$RF2TAA"\t"$RF2TAG"\t"$RF3TGA"\t"$RF3TAA"\t"$RF3TAG >> $STOPres

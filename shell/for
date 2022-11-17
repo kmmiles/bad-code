@@ -1,10 +1,41 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-one="one.txt"
-two="two.txt"
-three="three.txt"
-four="four.txt"
-
-for source in $one $two $three $four; do
-  cp "$one" /tmp || echo "Failed to copy $source to /tmp, skipping"
+printf "simple: for i in one two three\n"
+for i in one two three; do
+  printf "i: %s\n" "$i"
 done
+
+printf "\nsimple from var: for i in \$myvar\n"
+myvar="one two three"
+for i in $myvar; do
+  printf "i: %s\n" "$i"
+done
+
+printf "\nbrace expansion: for i in {0..5}\n"
+for i in {0..5}; do
+  printf "i: %s\n" "$i"
+done
+
+printf "\nc style: for (( i = 0; i <= 5; i++))\n"
+for (( i = 0; i <= 5 ; i++ )); do
+  printf "i: %s\n" "$i"
+done
+
+printf "\niterate array: for i in \"\${myarray[@]}\"\n"
+myarray=(one two three)
+for i in "${myarray[@]}"; do
+  printf "i: %s\n" "$i"
+done
+
+touch /tmp/foobar /tmp/foobaz
+printf "\nglob (files exist): for i in /tmp/foo*\n"
+for i in /tmp/foo*; do
+  printf "i: %s\n" "$i"
+done
+
+rm -f /tmp/foobar /tmp/foobaz
+printf "\nglob (files don't exist): for i in /tmp/foo*\n"
+for i in /tmp/foo*; do
+  printf "i: %s\n" "$i"
+done
+

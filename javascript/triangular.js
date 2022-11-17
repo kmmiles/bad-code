@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+hello
+
 const triangularNumber = (n) => {
   return (n * (n + 1)) / 2
 }

@@ -2,7 +2,8 @@
 
 int main(void) {
   for (int i = 0; i <= 256; i++) {
-    printf("%c", i);
+    char letter = (char)i;
+    printf("%c", letter);
   }
   printf("\n");
 }

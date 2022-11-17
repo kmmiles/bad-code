@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+#find ./data/find-test -mindepth 2 -maxdepth 2 -type f -executable
+cd ./data/find-test
+
+#$(find ./out -type f -executable | head -n 1)
+find ./out -type f -executable -exec {} \; -quit
+#find ./out -type f -executable -ok {} myarg1 myarg2 \;

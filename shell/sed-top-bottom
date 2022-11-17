@@ -1,0 +1,1 @@
+sed '/STARTTAG/r "file to insert"' < "tagfile" >"tagfile.mod"

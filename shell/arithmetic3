@@ -1,0 +1,5 @@
+#!/bin/bash
+
+new_num=$(($(printf '4') - 1))
+
+printf "new_num: %d\n" "$new_num"

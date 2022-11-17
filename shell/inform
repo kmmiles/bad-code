@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clear
+echo "Hello"
+whoami
+echo 

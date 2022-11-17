@@ -1,0 +1,51 @@
+#!/bin/bash
+ 
+url="${*}"
+#args=( "${@:2}" )
+regex='^(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]\.[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]$'
+ 
+if [[ -z "${url}" ]]; then
+        query="None"
+elif [[ "${url}" =~ ${regex} ]]; then
+        query="Full URL"
+        query2="${url}"
+        query3="${url}"
+elif [[ "${url}" =~ [[:upper:]] && "${url}" =~ [[:lower:]] && "${url}" =~ [[:digit:]] && "${#url}" == 11 && ! ("${url}" =~ [[:space:]]+) ]]; then
+        query="ID"
+        query2="https://www.youtube.com/watch?v=${url}"
+        query3="https://www.youtube.com/watch?v=${url}"
+elif [[ "${url}" == /* || "${url}" == .* || "${url}" == \\* || "${url}" == -* ]]; then
+        query="File"
+        query2="${url}"
+        query3="${url}"
+elif [[ "${url}" == @* ]]; then
+        query="File"
+        query2="ytdl://gvsearch:${url}"
+        query3="ytdl://gvsearch:${url}"
+elif (( "${#url}" >= 3 && "${#url}" <= 7 )) && [[ "${url}" =~ ^[0-9]+$ && ! ("${url}" =~ [[:space:]]+) ]]; then
+        query="Vlive"
+        query2="https://www.vlive.tv/video/${url}"
+        query3="https://www.vlive.tv/video/${url}"
+else
+        query="Search"
+        query2="ytdl://ytsearch:${url}"
+        query3="ytdl://ytsearch:${url}"
+fi
+ 
+echo "Mpv ${query} ${query3} ${args[*]}"
+
+mpv_args=(
+  "--slang=en,en_US,en-US,en_GB,English,eng"
+  "--ytdl-raw-options="yes-playlist=""
+  "--load-unsafe-playlists"
+  "--sub-font=Arial"
+  "--sub-font-size=50"
+  "--sub-pos=96"
+  "--sub-file-paths="/home/pi/Videos""
+  "--sub-auto=fuzzy"
+  "--volume=64"
+)
+
+set -x
+#time mpv "${args[@]}" --slang=en,en_US,en-US,en_GB,English,eng --ytdl-raw-options="yes-playlist=" --load-unsafe-playlists --sub-font="Arial" --sub-font-size="50" --sub-pos=96 --sub-file-paths="/home/pi/Videos" --sub-auto=fuzzy "${query3}" --volume=64 
+time mpv "${mpv_args[@]}" "${query3}"

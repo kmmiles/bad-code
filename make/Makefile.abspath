@@ -1,0 +1,2 @@
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+all: $(info mkfile_path: [$(mkfile_path)])

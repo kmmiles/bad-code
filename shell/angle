@@ -1,0 +1,10 @@
+#!/bin/bash
+
+solve() {
+  local angle=360
+  if (( $1 + $2 + $3 == angle )); then
+    echo "Yes"
+  fi
+}
+
+solve "$@"

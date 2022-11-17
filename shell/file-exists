@@ -1,0 +1,15 @@
+#!/bin/bash
+
+filename="$1"
+
+if [[ -z "$filename" ]]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+if [[ ! -f "$filename" ]]; then
+  echo "No such file: $filename"
+  exit 1
+fi
+
+echo "Starting data conversion."

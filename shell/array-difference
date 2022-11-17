@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# How can I figure out which snapshots no longer exist on the master pool
+# and delete those on the backup pool?
+################################################################################
+
+# function to print an array, sorted
+sort_array() { printf '%s\n' "$@" | LC_ALL=C sort; }
+
+# read output of master pool to array
+# master=("snap1" "snap3" "snap4" "snap20")
+#readarray -t master < <(zfs list -rt snap -H -o name "main/backup_chris" | cut -d'@' -f 2)
+readarray -t master < <(cat data/zfs-master.txt | cut -d'/' -f 2)
+
+# read output of backup pool to array (fake data)
+# backup=("snap1" "snap10" "snap6" "snap4" "snap3")
+#readarray -t backup < <(zfs list -rt snap -H -o name "backup/backup_chris" | cut -d'@' -f 2)
+readarray -t backup < <(cat data/zfs-backup.txt | cut -d'/' -f 2)
+
+# create `todelete` array with elements that exist in backup, but not master i.e. snap10, snap6
+readarray -t todelete < \
+  <(comm -13 <(sort_array "${master[@]}") <(sort_array "${backup[@]}"))
+
+# iterate todelete array and do stuff
+for snap in "${todelete[@]}"; do
+  echo "deleting $snap..."
+done

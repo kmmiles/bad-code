@@ -1,9 +1,8 @@
 #!/bin/bash
 
-printf "Editing a file using shell script \n"
-filename='test.txt'
-
-cat << EOF > "$filename"
+myvar="hello world"
+xclip << EOF 
 This file was created automatically from a shell script
-Isn't that cool
+Isn't that cool?
+The contents of \$myvar is [$myvar]
 EOF

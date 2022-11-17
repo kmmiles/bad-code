@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#declare -r OldDirectory='/mnt/g/Media/Music'
+declare -r OldDirectory='/mnt/c/Users/kenne/Music/test'
+
+#declare -r NewDirectory='/mnt/g/Media/Music-transcoded'
+declare -r NewDirectory='/mnt/c/Users/kenne/Music/test-transcoded'
+
+diagnostic() {
+    printf 'DIAGNOSTIC: %s\n' "$*" >&2
+}
+
+
+if ! mkdir -p "${NewDirectory}"
+then
+    printf 'Failed to create "%s". Aborting\n' "${NewDirectory}"
+    exit 1
+fi
+
+
+# Create the directory tree
+while IFS= read -r -d $'\0' directory_name
+do
+   diagnostic "directory_name: ${directory_name}"
+
+    NewName="${NewDirectory}${directory_name#"${OldDirectory}"}"
+    diagnostic "NewName: ${NewName}"
+    if ! mkdir -p "${NewName}"
+    then
+        printf "Error creating directory '%s'. Aborting\n" "${NewName}"
+        exit 2
+    fi
+done < <(find -P "${OldDirectory}" -xdev -type d -print0)
+
+
+# Transcode
+while IFS= read -r -d $'\0' filename
+do
+    diagnostic "filename ${filename}"
+    
+    NewName="${NewDirectory}${filename#"${OldDirectory}"}"
+    diagnostic "NewName(a): ${NewName}"
+    
+    NewName="${NewName%flac}m4a"
+    diagnostic "NewName(b): ${NewName}"
+    #if ! ffmpeg -i "${filename}" -c copy -acodec alac "${NewName}"
+    #then
+    #    printf "Error processing '%s' -> '%s'. Aborting\n" "${filename}" "${NewName}"
+    #    exit 3
+    #fi
+done < <(find -P "${OldDirectory}" -xdev -type f -name '*.flac' -print0)

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+random_digits() {
+  for (( i = 0; i < ${1:-0}; i++)); do
+    printf '%s' "$((RANDOM % 10))"
+  done
+  printf '\n'
+}
+
+random_digits "$@"

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+input_file="${1:-/dev/stdin}"
+
+
+# read line by line
+#while read -r line; do
+#  printf "%s\n" "$line"
+#done < "$input_file"
+
+# or read into variable
+myinput="$(< "$input_file")"
+printf "%s\n" "$myinput"

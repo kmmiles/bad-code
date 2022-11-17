@@ -1,0 +1,55 @@
+#!/bin/bash
+
+set -xeuo pipefail
+
+IMAGE_NAME=rhel85
+IMAGE_FILE="$IMAGE_NAME-gpt"
+ORIGIN_IMAGE=rhel-8.5-x86_64-kvm.qcow2
+OVF_VERSION=7
+OVF_NAME=iac_linux_rhel_7.9_x86_64
+OVF_DESCRIPTION="Red Hat Enterprise Linux $OVF_VERSION (64-bit)"
+export DIB_DEBUG_TRACE=0
+export DIB_CLOUD_INIT_DATASOURCES="ConfigDrive, OpenStack"
+export DIB_BLOCK_DEVICE=gpt
+export BASE_ELEMENTS=(
+  rhel7
+  vm
+  cloud-init
+  baremetal
+  block-device-$DIB_BLOCK_DEVICE
+  dracut-regenerate
+  #chronyc
+  openssh-server
+  disable-selinux
+  #linuxadm-customize
+  #local-build
+)
+
+if [[ $DIB_BLOCK_DEVICE != mbr ]]; then
+  BASE_ELEMENTS+=(growroot)
+fi
+
+#export ELEMENTS_PATH="$HOME/rhel/rhel8/env/lib/python3.6/site-packages/diskimage_builder/elements"
+export ELEMENTS_PATH=$HOME/.local/lib/python3.9/site-packages/diskimage_builder
+
+export DIB_DEV_USER_USERNAME="deploy"
+export DIB_DEV_USER_PASSWORD="r00tme1!"
+export DIB_OPENSSH_SERVER_HARDENING=1
+export DISTRO_NAME=rhel
+export DIB_LOCAL_IMAGE=/home/jenkins/rhel/rhel8/source_images/$ORIGIN_IMAGE
+export DIB_YUM_REPO_CONF="$HOME/rhel/mirror_$IMAGE_NAME.repo"
+export DIB_RELEASE=8
+export ARCH=amd64
+export DIB_IPA_ENABLE_RESCUE=false
+export DIB_DEFAULT_INSTALLTYPE=binary
+export DIB_DEV_USER_SHELL=/bin/bash
+export DIB_BOOTLOADER_DEFAULT_CMDLINE='nofb nomodeset gfxpayload=text net.ifnames=1 ipv6.disable=1 crashkernel=auto'
+export DIB_DEV_USER_PWDLESS_SUDO=yes
+export IMAGE_SIZE=30
+export DIB_GRUB_TIMEOUT=1
+export DIB_DHCP_TIMEOUT=30
+export IMAGE_PATH="$HOME/rhel/rhel8/images/$IMAGE_FILE"
+
+#find -type f -name disk-image-create | xargs sed -i 's/^DIB_ROOT_LABEL=/#DIB_ROOT_LABEL=/'
+
+disk-image-create "${BASE_ELEMENTS[@]}" -o $IMAGE_PATH -a amd64 -t qcow2 --image-size $IMAGE_SIZE -u

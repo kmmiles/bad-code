@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat /tmp/foo | grep hello
+grep hello /tmp/foo
+for in x do;

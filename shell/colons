@@ -1,0 +1,5 @@
+#!/bin/bash
+
+: "${CM_DIR:="${XDG_RUNTIME_DIR-"${TMPDIR-/tmp}"}"}"
+
+printf "CM_DIR: %s\n" "$CM_DIR"

@@ -11,5 +11,7 @@ int main(void) {
 
   std::cout << "mylog(10) = " << mylog(256, 10) << std::endl;
   std::cout << "log10 = " << log10(256) << std::endl;
+
+  char appleInput;
 }
 

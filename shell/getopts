@@ -8,7 +8,7 @@ while getopts 'abf:' flag; do
     a) aflag=true ;;
     b) bflag=true ;;
     f) file="${OPTARG}" ;;
-    *) error "Unexpected option ${flag}" ;;
+    *) echo "Unexpected option ${flag}" ;;
   esac
 done
 

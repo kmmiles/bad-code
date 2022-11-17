@@ -1,0 +1,31 @@
+#!/bin/bash
+
+parse_columns() {
+  readarray -d ',' -t columns <<< "$@"
+  for col in "${columns[@]}"; do
+    printf "%s\n" "$col"
+  done
+}
+
+readarray -t rows < <(tail -n +2 "data/csv-replace-complex.csv")
+for row in "${rows[@]}"; do
+
+  for col in $(parse_columns "$row"); do
+    echo "col: $col"
+  done
+
+
+  #dbi_id="$(awk -F',' '{print $1}' <<< "$row")"
+  #instance_id="$(awk -F',' '{print $2}' <<< "$row")"
+  #reservation_id="$(awk -F',' '{print $3}' <<< "$row")"
+  #state="$(awk -F',' '{print $3}' <<< "$row")"
+
+  #if [[ -n "$dbi_id" && -z "$instance_id" ]]; then
+  #  printf "%s\n" "$row"
+  #fi
+
+  #echo "dbi_id: $dbi_id"
+  #echo "instance_id: $instance_id"
+  #echo "reservation_id: $reservation_id"
+  #echo "state: $state"
+done

@@ -1,0 +1,8 @@
+dn: uid=user01,ou=users,dc=example,dc=com
+userPassword: foo
+
+dn: uid=user02,ou=users,dc=example,dc=com
+userPassword: bar
+
+dn: uid=user03,ou=users,dc=example,dc=com
+userPassword: baz

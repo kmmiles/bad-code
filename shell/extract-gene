@@ -1,0 +1,4 @@
+#!/bin/bash
+
+grep -E miRNA data/genes.txt | sed -E 's/.+ID=rna-([^-]+)-.+/\1/'
+

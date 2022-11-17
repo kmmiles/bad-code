@@ -1,0 +1,11 @@
+#!/bin/bash
+
+find ./ -type f -exec 
+mkdir -p test-find-exec
+touch test-find-exec/foo test-find-exec/bar
+
+echo "-exec with ;"
+find ./test-find-exec -type f -exec echo {} \;
+
+echo "-exec with +"
+find ./test-find-exec -type f -exec echo {} +

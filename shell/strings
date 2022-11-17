@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# hello_world.txt -> world.txt
+# hello_world.txt -> hello.txt
+
+f="hello_world.tar.gz"
+
+echo "${f%_*}"
+echo "${f#*_}"
+#echo "new.${f##*.}"
+#echo "extension: ${f#*.}"
+echo "new.${f#*.}"

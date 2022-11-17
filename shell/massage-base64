@@ -1,0 +1,9 @@
+#!/bin/bash
+
+input_file="./data/base64.txt"
+cp "$input_file" "$input_file.new"
+readarray -t encoded_values < <(awk '{if(/userPassword:/) print $2}' $input_file)
+for encoded_value in "${encoded_values[@]}"; do
+  decoded_value="$(printf '%s\n' "$encoded_value" | base64 -d)"
+  sed -i "s/$encoded_value/$decoded_value/" "$input_file.new"
+done

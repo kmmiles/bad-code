@@ -1,0 +1,13 @@
+DB Instance Identifier,Reservation ID,State
+alpha-db-dev,alpha-db-dev-26aug2022,active
+alpha-db-prod,alpha-db-prod-26aug2022,active
+alpha-db-staging,alpha-db-staging-26aug2022,active
+beta-db-dev-primary,beta-db-dev-8dec2021,active
+beta-db-prod-primary,charlie-db-dev-8dec2021,active
+beta-db-prod-replica,charlie-db-staging-loadtest-8dec2021,active
+beta-db-staging-primary,,
+charlie-db-dev,,
+charlie-db-prod-dms,,
+charlie-db-prod-dms-replica,,
+charlie-db-staging,,
+charlie-db-staging-loadtest,,

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# gitRootDir [source_path]
+#
+# Print git root dir of [source_path].
+# Defaults to current working dir if [source_path] not supplied 
+#
+# Returns: 
+#   0 git root dir found
+#   1 git root dir not found
+gitRootDir() {
+  local source_path
+
+  source_path="$(realpath -sm "${*:-.}")" || return 1
+  while [[ "${source_path}" != "/" ]]; do
+    if [[ -d "${source_path}/.git" ]]; then
+      printf '%s\n' "$source_path"
+      return 0
+    fi
+    source_path="$(dirname "$source_path")"
+  done
+  return 1
+}
+
+gitRootDir "$@"

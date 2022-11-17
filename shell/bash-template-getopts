@@ -2,7 +2,7 @@
 ###############################################################################
 usage() {
   cat << EOF
-Usage: $(basename "$0") <HAYSTACK> <NEEDLE>
+Usage: $(basename "$0") [OPTIONS] <HAYSTACK> <NEEDLE>
 
 Returns true if <NEEDLE> is a subdirectory of <HAYSTACK>.
 
@@ -12,12 +12,6 @@ OPTIONS
   -n  <name>  Name of thing
 EOF
 }
-
-err()   { printf "%s%s%s\n" "$(tput setaf 1)" "$@" "$(tput sgr0)"; }
-warn()  { printf "%s%s%s\n" "$(tput setaf 3)" "$@" "$(tput sgr0)"; }
-info()  { printf "%s%s%s\n" "$(tput setaf 4)" "$@" "$(tput sgr0)"; }
-onerr() { local s=$?; err "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
-trap onerr ERR
 
 main() {
   local canon haystack needle verbose name

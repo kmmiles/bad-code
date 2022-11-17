@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# within_range(number,start,end)
+#
+# return true if number is between start and end (inclusive)
+within_range() { (( ${1:-0} >= ${2:-0} && ${1:-0} <= ${3:-0} )); }
+
+within_range "$@"

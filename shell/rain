@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -x
+
+vtt_file="afile.vtt"
+vtt_url="https://acme.org/foo.m3u8" 
+url="$(curl -sL "$vtt_url" | sed '/\/tt/!d ; s|^.*https|https| ; s|m3u8.*$|m3u8|')"
+vtt_url="$(echo "$url" | sed 's/\/media.*//')"
+
+for vtt in $(curl -sL "$url" | sed '/hls-webvtt\//!d' | sed "s|..|$vtt_url|"); do
+  wget "$vtt" &>/dev/null
+done
+
+while read -r vtt; do
+  sed '/^X-TIMESTAMP-.*/d' "$vtt" >> "$vtt_file" 
+done < <(ls -1 *[[:digit:]]*.vtt) 
+rm [[:digit:]]*.vtt

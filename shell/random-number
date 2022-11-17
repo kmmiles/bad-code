@@ -1,14 +1,23 @@
 #!/bin/bash
 
-random() {
-  local min max range
-
-  min=${1:-foo}
-  max="${2:-0}"
-  range=$((max - min + 1))
-
-  echo $((min + (RANDOM % range)))
+random_range() {
+  local range=$((${2:-0} - ${1:-0} + 1))
+  printf '%s' "$((${1:-0} + (RANDOM % range)))"
 }
 
-random 1 10
-random 0 10
+random_digits() {
+  for (( i = 0; i <= ${1:-0}; i++)); do
+    printf '%s' "$((RANDOM % 10))"
+
+    #printf '%s' "$(random_range 0 9)"
+  done
+  printf '\n'
+}
+
+random_digits 5
+
+#random_range 1 10
+#random_range 0 10
+#random_range 1000 9999
+#random_range 0 9
+

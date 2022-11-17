@@ -1,0 +1,8 @@
+dn: uid=user01,ou=users,dc=example,dc=com
+userPassword: Zm9vCg==
+
+dn: uid=user02,ou=users,dc=example,dc=com
+userPassword: YmFyCg==
+
+dn: uid=user03,ou=users,dc=example,dc=com
+userPassword: YmF6Cg==

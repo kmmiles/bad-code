@@ -1,0 +1,12 @@
+#!/bin/bash
+
+tput clear
+
+echo
+echo "  +---------------------+"
+echo "  |                     |"
+echo "  +---------------------+"
+echo
+
+tput cup 2 7
+printf "hello, world\n\n"

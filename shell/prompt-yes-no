@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-prompt_question() {
+confirm() {
   local question answer
   question="$1"
 
@@ -13,7 +13,7 @@ prompt_question() {
   [[ ${answer} == y ]]
 }
 
-if prompt_question "Continue"; then
+if confirm "Continue"; then
   echo "Yes indeed"
 else
   echo "No."

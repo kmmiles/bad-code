@@ -1,0 +1,9 @@
+#!/bin/bash
+
+args=( "${@:2}" )
+
+echo "with doublequotes"
+file "${args[*]}"
+
+echo "without doublequotes"
+file ${args[*]}

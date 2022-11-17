@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sort_array() { printf '%s\n' "$@" | LC_ALL=C sort; }
+
+readarray -t master < <(zfs list -rt snap -H -o name "main/backup_chris" | cut -d'/' -f 2)
+readarray -t backup < <(zfs list -rt snap -H -o name "backup/backup_chris" | cut -d'/' -f 2)
+readarray -t todelete < <(comm -13 <(sort_array "${master[@]}") <(sort_array "${backup[@]}"))
+
+for snap in "${todelete[@]}"; do
+  echo "deleting $snap..."
+done

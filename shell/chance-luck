@@ -1,0 +1,33 @@
+#!/bin/bash
+
+################################################################################
+# rand(from,to)
+#
+# print random number between from and to
+################################################################################
+rand() { printf "%s\n" "$((${1:-0} + (RANDOM % (${2:-0} - ${1:-0} + 1))))"; }
+
+chance_luck() {
+  local percentage_from percentage_to chance result
+
+  percentage_from="${1:-0}"
+  percentage_to="${2:-0}"
+
+
+  if ((percentage <= 0)); then
+    return 1
+  elif ((percentage >= 100)); then
+    return 0
+  fi
+
+  chance="$(random 1 100)"
+  range="$((100 - percentage))"
+
+  printf "chance=%s\nrange=%s\n" "$chance" "$range"
+}
+
+#chance_luck "$@"
+
+rand "$@"
+
+

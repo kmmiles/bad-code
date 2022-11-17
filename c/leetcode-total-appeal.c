@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 #if 0
 Input: s = "code"
@@ -13,18 +13,17 @@ Explanation: The following are the substrings of "code":
 The total sum is 4 + 6 + 6 + 4 = 20.
 #endif
 
-
-long long appealSum(char * s){
+long long appealSum(char *s) {
   size_t len = strlen(s ? s : "");
-  if(!len) {
-    return(0);
-  } else if(len == 1) {
-    return(1);
+  if (!len) {
+    return (0);
+  } else if (len == 1) {
+    return (1);
   }
 
   printf("len = %lu\n", len);
 
-  return(0);
+  return (0);
 }
 
 int main(int argc, char *argv[]) {

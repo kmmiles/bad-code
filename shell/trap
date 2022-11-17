@@ -1,26 +1,17 @@
 #!/bin/bash
 
-set -euo pipefail
-#handle_trap() {
-#  local s
-#  #s=$?
-#  echo "$0: Error on line $LINENO: $BASH_COMMAND"
-#  #exit $s
-#}
-
-#trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
-#IFS=$'\n\t'
-#false
-
-handle_term() {
-  echo "Ouch, caught SIGTERM!"
+handle_usr1() {
+  echo "I caught a SIGUSR1"
 }
 
-handle_int() {
-  echo "Ouch, caught SIGINT!"
+main() {
+  trap handle_usr1 SIGUSR1
+
+  while true; do
+    echo "Waiting..."
+    sleep 1
+  done
 }
 
-trap handle_term TERM
-trap handle_int INT
+main "$@"
 
-sleep 100

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+usage() {
+  cat << EOF
+Usage: $(basename "$0") <PLATFORM> 
+
+Does a thing for <PLATFORM> ("desktop" or "laptop")
+EOF
+}
+
+main() {
+  local platform
+
+  # parse options
+  while getopts 'h' flag; do
+    case "${flag}" in
+      *) usage ; exit 1 ;; 
+    esac
+  done
+  shift $((OPTIND-1))
+
+  if (( $# != 1 )); then
+    usage
+    exit 1
+  fi
+
+  platform="${1,,}"
+  if [[ "$platform" != "desktop" && "$platform" != "laptop" ]]; then
+    printf "Invalid platform: %s\n" "$platform"
+    exit 1
+  fi
+
+  printf "platform: %s\n" "$platform"
+}
+
+main "$@"

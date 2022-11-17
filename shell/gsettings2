@@ -12,6 +12,9 @@ nl_disable() {
   gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
 }
 
+PID=$(pgrep gnome-session)  # instead of 'gnome-session' it can be also used 'noutilus' or 'compiz' or the name of a process of a graphical program about that you are sure that is running after you log in the X session
+export DBUS_SESSION_BUS_ADDRESS="$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)"
+
 if nl_is_enabled; then
   nl_disable
 else

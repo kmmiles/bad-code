@@ -4,4 +4,3 @@ function cd() {
   echo "sorta like chpwd"
   builtin cd "$@"
 }
-

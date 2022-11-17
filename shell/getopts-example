@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source .env
+
+while getopts 'u' flag; do
+  case "${flag}" in
+    u) UPLOAD=true ;;
+    *) exit 1 ;;
+  esac
+done
+
+if [[ "$UPLOAD" == true ]]; then
+  printf "Do the upload!\n"
+fi

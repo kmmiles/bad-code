@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir -p data
+touch data/old.txt data/old.pdf data/old.ini
+
+for f in data/old*; do
+  mv -v "$f" "new.${f#*.}"
+done

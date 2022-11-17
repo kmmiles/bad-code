@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while read -r -a line; do
+  echo "${line[2]}"
+done < data/file.txt

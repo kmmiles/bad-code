@@ -1,0 +1,11 @@
+#!/bin/bash
+
+output="./find-music-test"
+
+while read -r path; do
+  dir_hier=${path%/*}
+  mkdir -p "$output/$dir_hier"
+  touch "$output/$path"
+  #echo "path: $path"
+  #echo "dir_hier: $dir_hier"
+done < "./bad-find-filenames-trimmed.txt"

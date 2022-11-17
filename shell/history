@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#start ; foobar ; history -d 1 ; history -s "foobar" ; stop ; history
+
+command_not_found_handle() {    
+  if [[ "$1" == "foobaz" ]]; then
+    history -d 1
+    history -s "foobar"
+    history -w
+  fi
+}

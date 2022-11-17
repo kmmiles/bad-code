@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#users="$(echo "$users" | cut -f1 -d '@' | cut -f1,5 -d ',')"
+#comments="$(echo "$users" | cut -f1 -d ',')"
+#paste -d ',' <(echo "$(echo "$users" | cut -f2 -d ',')") <(echo "$comments")
+
+
+#printf 'FullName,ID\nFoobar,1000\n' | awk 'BEGIN { FS=","; OFS=FS } { print $2,$1}'
+
+print_data() { printf 'FullName,ID\nFoobar,1000\n'; }
+
+#print_data | awk 'BEGIN { FS=","; OFS=FS } { print $2,$1}'
+
+printf 'FullName,ID\nFoobar,1000\n' | while IFS=',' read -ra cols; do
+  printf '%s,%s\n' "${cols[1]}" "${cols[0]}"
+done

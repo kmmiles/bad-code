@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find /usr -xdev -user root \( -perm -4000 -o -perm -2000 \)

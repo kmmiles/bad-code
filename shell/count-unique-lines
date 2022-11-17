@@ -1,0 +1,56 @@
+#!/bin/bash
+
+counter-bad() {
+  declare -A dict
+  while read -r line; do
+    if [[ -n "${dict[$line]}" ]]; then
+      ((${dict[$line]}++))
+    else
+      dict["$line"]=0
+    fi
+  done < "$HOME"/.bash_history
+  printf "%s\n" "${!dict[@]}"
+}
+
+counter-mat() {
+  declare -gA dict;
+  while read -r line; do
+    dict["$line"]+=1
+  done < ~/.bash_history
+  return 0
+}
+
+counter-me() {
+  readarray -t hist < "$HOME"/.bash_history
+  printf "count: %d\n" "${#hist[@]}"
+  #printf "%s\n" "${hist[@]}"
+}
+
+unique_lines() { sort "$1" | uniq | wc -l ; }
+#printf "count: %s\n" "$(unique_lines "$HOME/.bash_history")"
+
+count_silly() {
+  declare -A dict;
+  while read -r line; do
+    encoded="$(echo "$line" | base64)"
+    ((dict["$encoded"]++))
+  done < "$HOME"/.bash_history
+
+  #printf "%s\n" "${!dict[@]}"
+
+  for i in "${!dict[@]}"; do
+  #for key in $(for x in "${!dict[@]}"; do echo "$x"; done | sort); do
+    printf "%s, was used %d times\n" \
+      "$(echo "$i" | base64 -d)" \
+       "${dict[$i]}"
+  done
+
+  #for x in "${
+}
+
+count_silly
+
+
+#counter-bad
+#counter-mat
+#counter-me

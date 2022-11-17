@@ -1,0 +1,27 @@
+#!/bin/bash
+
+print_fake_log() {
+  name="$1"
+
+  for ((i = 0; i < 10; i++)); do
+    printf "%s - This is a fake log here.\n" "$name"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    printf "More fakeness\n"
+    sleep 1
+  done
+}
+
+for service in service1 service2 service3; do
+  print_fake_log "$service" &
+done
+
+wait

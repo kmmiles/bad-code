@@ -1,0 +1,8 @@
+#!/bin/bash
+
+printf "foo OR bar\n"
+grep -e 'foo' -e 'bar' data/grep.txt
+
+printf "foo AND bar\n"
+grep 'foo' data/grep.txt | grep 'bar'
+

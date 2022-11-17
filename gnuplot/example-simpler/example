@@ -1,0 +1,13 @@
+#!/usr/bin/gnuplot
+
+set title "vi learning curve"
+set ylabel "difficulty"
+set xlabel "hours of use"
+
+set style line 1 lw 3 lt rgb "#f62aa0" 
+set xtics rotate 
+set key right center 
+
+set terminal pngcairo size 800,600 enhanced font 'Segoe UI,10'
+set output 'vi-learning-curve.png'
+plot "vi.data" title "" with lines ls 1

@@ -1,0 +1,1281 @@
+require('impatient')
+
+require('packer').startup({
+  function(use)
+    use('ckipp01/stylua-nvim')
+    use('ethanholz/nvim-lastplace')
+    use('folke/lsp-colors.nvim')
+    use({
+      'folke/todo-comments.nvim',
+      requires = {
+        'nvim-lua/plenary.nvim',
+      },
+    })
+    use('folke/trouble.nvim')
+    use('gbprod/stay-in-place.nvim')
+    use('haringsrob/nvim_context_vt')
+    use({
+      'hrsh7th/nvim-cmp',
+      requires = {
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-path',
+        'L3MON4D3/LuaSnip',
+        'lukas-reineke/cmp-under-comparator',
+        'saadparwaiz1/cmp_luasnip',
+      },
+    })
+    use('Iron-E/nvim-cartographer')
+    use('jghauser/mkdir.nvim')
+    use('karb94/neoscroll.nvim')
+    use('kevinhwang91/nvim-hlslens')
+    use('L3MON4D3/LuaSnip')
+    use('lewis6991/gitsigns.nvim')
+    use('lewis6991/impatient.nvim')
+    use('lukas-reineke/indent-blankline.nvim')
+    use('max397574/better-escape.nvim')
+    use('mbbill/undotree')
+    use('monaqa/dial.nvim')
+    use('nacro90/numb.nvim')
+    use('nathom/filetype.nvim')
+    use('neovim/nvim-lspconfig')
+    use('numToStr/Comment.nvim')
+    use('nvim-lualine/lualine.nvim')
+    use({
+      'nvim-telescope/telescope.nvim',
+      requires = {
+        'crispgm/telescope-heading.nvim',
+        'nvim-lua/plenary.nvim',
+        {
+          'nvim-telescope/telescope-fzf-native.nvim',
+          run = 'make',
+        },
+        'stevearc/aerial.nvim',
+      },
+    })
+    use({
+      'nvim-treesitter/nvim-treesitter',
+      requires = {
+        'JoosepAlviste/nvim-ts-context-commentstring',
+      },
+      run = ':TSUpdateSync',
+    })
+    use({
+      'phaazon/hop.nvim',
+      branch = 'v2',
+    })
+    use('rebelot/kanagawa.nvim')
+    use({
+      'stevearc/aerial.nvim',
+      requires = {
+        'neovim/nvim-lspconfig',
+        'nvim-treesitter/nvim-treesitter',
+      },
+    })
+    use({
+      'TimUntersberger/neogit',
+      requires = {
+        'nvim-lua/plenary.nvim',
+      },
+    })
+    use({
+      'glts/vim-radical',
+      requires = {
+        'glts/vim-magnum',
+        'tpope/vim-repeat',
+      },
+    })
+    use('tpope/vim-capslock')
+    use('tpope/vim-endwise')
+    use('tpope/vim-repeat')
+    use('tpope/vim-surround')
+    use('wbthomason/packer.nvim')
+  end,
+  config = {
+    compile_on_sync = true,
+    display = {
+      show_all_info = true,
+      header_sym = ',
+      working_sym = 'W',
+      done_sym = 'D',
+      removed_sym = 'R',
+      moved_sym = 'M',
+      error_sym = 'X',
+      open_fn = function()
+        return require('packer.util').float({
+          border = 'single',
+        })
+      end,
+    },
+  },
+})
+
+-- ckipp01/stylua-nvim
+require('stylua-nvim').setup({
+  config_file = 'stylua.toml',
+})
+
+-- ethanholz/nvim-lastplace
+require('nvim-lastplace').setup({
+  lastplace_ignore_buftype = {
+    'help',
+    'nofile',
+    'quickfix',
+  },
+  lastplace_ignore_filetype = {
+    'gitcommit',
+    'gitrebase',
+  },
+  lastplace_open_folds = true,
+})
+
+-- folke/lsp-colors.nvim
+
+-- folke/todo-comments.nvim
+require('todo-comments').setup({
+  signs = false,
+  keywords = {
+    FIX = {
+      icon = '',
+    },
+    TODO = {
+      icon = '',
+    },
+    HACK = {
+      icon = '',
+    },
+    WARN = {
+      icon = '',
+    },
+    PERF = {
+      icon = '',
+    },
+    NOTE = {
+      icon = '',
+    },
+  },
+})
+
+-- folke/trouble.nvim
+require('trouble').setup({
+  auto_preview = true,
+  fold_open = '-',
+  fold_closed = '+',
+  icons = false,
+  indent_lines = false,
+  mode = 'workspace_diagnostics',
+  padding = false,
+  position = 'top',
+  signs = {
+    error = 'E',
+    hint = 'H',
+    information = 'I',
+    other = 'X',
+    warning = 'W',
+  },
+})
+
+-- gbprod/stay-in-place.nvim
+require('stay-in-place').setup({
+  set_keymaps = true,
+  preserve_visual_selection = true,
+})
+
+-- haringsrob/nvim_context_vt
+require('nvim_context_vt').setup({
+  disable_virtual_lines_ft = {
+    'python',
+    'yaml',
+  },
+})
+
+-- hrsh7th/nvim-cmp
+local has_words_before = function()
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0
+    and vim.api
+        .nvim_buf_get_lines(0, line - 1, line, true)[1]
+        :sub(col, col)
+        :match('%s')
+      == nil
+end
+local cmp = require('cmp')
+local luasnip = require('luasnip')
+local label_length_max = 40
+local label_length_min = label_length_max
+cmp.setup({
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
+    keyword_length = 3,
+  },
+  formatting = {
+    format = function(_, item)
+      local label = item.abbr
+      local label_short = string.sub(label, 0, label_length_max)
+      if label_short ~= label then
+        item.abbr = label_short .. '&'
+      elseif string.len(label) < label_length_min then
+        item.abbr = label
+          .. string.rep(' ', label_length_min - string.len(label))
+      end
+      return item
+    end,
+  },
+  mapping = {
+    ['<Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      elseif has_words_before() then
+        cmp.complete()
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
+    ['<S-Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      elseif luasnip.jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
+    ['<C-Space>'] = cmp.mapping.confirm({
+      select = true,
+    }),
+    ['<C-E>'] = cmp.mapping.abort(),
+    ['<C-K>'] = cmp.mapping.scroll_docs(-3),
+    ['<C-J>'] = cmp.mapping.scroll_docs(3),
+  },
+  sorting = {
+    comparators = {
+      cmp.config.compare.offset,
+      cmp.config.compare.exact,
+      cmp.config.compare.score,
+      require('cmp-under-comparator').under,
+      cmp.config.compare.kind,
+      cmp.config.compare.sort_text,
+      cmp.config.compare.length,
+      cmp.config.compare.order,
+    },
+  },
+  sources = cmp.config.sources({
+    {
+      name = 'luasnip',
+      options = {
+        use_show_condition = false,
+      },
+    },
+  }, {
+    {
+      name = 'nvim_lsp',
+    },
+    {
+      name = 'buffer',
+    },
+    {
+      name = 'path',
+    },
+  }),
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  window = {
+    completion = cmp.config.window.bordered({
+      border = 'single',
+    }),
+    documentation = cmp.config.window.bordered({
+      border = 'single',
+    }),
+  },
+})
+
+-- Iron-E/nvim-cartographer
+local cartographer = require('cartographer')
+
+-- jghauser/mkdir.nvim
+
+-- karb94/neoscroll.nvim
+require('neoscroll').setup({
+  hide_cursor = true,
+  mappings = {
+    '<C-H>',
+    '<C-J>',
+    '<C-K>',
+    '<C-L>',
+    'zb',
+    'zt',
+    'zz',
+  },
+  performance_mode = false,
+  stop_eof = true,
+})
+require('neoscroll.config').set_mappings({
+  ['<C-H>'] = {
+    'scroll',
+    {
+      '-5',
+      'false',
+      '200',
+    },
+  },
+  ['<C-J>'] = {
+    'scroll',
+    {
+      'vim.wo.scroll',
+      'true',
+      '200',
+    },
+  },
+  ['<C-K>'] = {
+    'scroll',
+    {
+      '-vim.wo.scroll',
+      'true',
+      '200',
+    },
+  },
+  ['<C-L>'] = {
+    'scroll',
+    {
+      '5',
+      'false',
+      '200',
+    },
+  },
+  ['zb'] = {
+    'zb',
+    {
+      '200',
+    },
+  },
+  ['zt'] = {
+    'zt',
+    {
+      '200',
+    },
+  },
+  ['zz'] = {
+    'zz',
+    {
+      '200',
+    },
+  },
+})
+
+-- kevinhwang91/nvim-hlslens
+require('hlslens').setup({
+  calm_down = true,
+  float_shadow_blend = 25,
+  nearest_only = false,
+  nearest_float_when = 'always',
+  override_lens = function(render, plist, nearest, idx, r_idx)
+    local sfw = vim.v.searchforward == 1
+    local indicator, text, chunks
+    local abs_r_idx = math.abs(r_idx)
+    if abs_r_idx > 1 then
+      indicator = ('%d%s'):format(abs_r_idx, sfw ~= (r_idx > 1) and '-' or '+')
+    elseif abs_r_idx == 1 then
+      indicator = sfw ~= (r_idx == 1) and '-' or '+'
+    else
+      indicator = ''
+    end
+    local lnum, col = unpack(plist[idx])
+    if nearest then
+      local cnt = #plist
+      if indicator ~= '' then
+        text = (' %s %d/%d '):format(indicator, idx, cnt)
+      else
+        text = (' %d/%d '):format(idx, cnt)
+      end
+      chunks = {
+        {
+          ' ',
+          'Ignore',
+        },
+        {
+          text,
+          'HlSearchLensNear',
+        },
+      }
+    else
+      text = (' %s '):format(indicator)
+      chunks = {
+        {
+          ' ',
+          'Ignore',
+        },
+        {
+          text,
+          'HlSearchLens',
+        },
+      }
+    end
+    render.set_virt(0, lnum - 1, col - 1, chunks, nearest)
+  end,
+})
+
+-- L3MON4D3/LuaSnip
+local s = luasnip.snippet
+local t = luasnip.text_node
+local i = luasnip.insert_node
+local r = require('luasnip.extras').rep
+luasnip.add_snippets('cpp', {
+  s('main', {
+    t({
+      'int',
+      'main([[maybe_unused]] int argc, [[maybe_unused]] char** argv)',
+      '{',
+      '\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\treturn 0;',
+      '}',
+    }),
+  }),
+  s('if', {
+    t('if ('),
+    i(1),
+    t({
+      ') {',
+      '\t',
+    }),
+    i(2),
+    t({
+      '',
+      '}',
+    }),
+    i(0),
+  }),
+  s('for', {
+    t('for ('),
+    i(1),
+    t('; '),
+    i(2),
+    t('; '),
+    i(3),
+    t({
+      ') {',
+      '\t',
+    }),
+    i(4),
+    t({
+      '',
+      '}',
+    }),
+    i(0),
+  }),
+})
+luasnip.add_snippets('tex', {
+  s('beg', {
+    t('\\begin{'),
+    i(1),
+    t({
+      '}',
+      '\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\\end{',
+    }),
+    r(1),
+    t('}'),
+  }),
+  s('enum', {
+    t('\\begin{enumerate}'),
+    t({
+      '',
+      '\t\\item ',
+    }),
+    i(0),
+    t({
+      '',
+      '\\end{enumerate}',
+    }),
+  }),
+  s('eqn', {
+    t({
+      '\\begin{equation}',
+      '\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\\end{equation}',
+    }),
+  }),
+  s('eqns', {
+    t({
+      '\\begin{subequations}',
+      '\t\\begin{align}',
+      '\t\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\t\\end{align}',
+      '\\end{subequations}',
+    }),
+  }),
+  s('ali', {
+    t({
+      '\\begin{aligned}',
+      '\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\\end{aligned}',
+    }),
+  }),
+  s('bmat', {
+    t({
+      '\\begin{bNiceMatrix}',
+      '\t',
+    }),
+    i(0),
+    t({
+      '',
+      '\\end{bNiceMatrix}',
+    }),
+  }),
+  s('$', {
+    t('\\( '),
+    i(1),
+    t(' \\)'),
+    i(0),
+  }),
+  s('frac', {
+    t('{\\frac{'),
+    i(1),
+    t('}{'),
+    i(2),
+    t('}}'),
+    i(0),
+  }),
+  s('lr(', {
+    t('{\\left( '),
+    i(1),
+    t(' \\right)}'),
+    i(0),
+  }),
+  s('lr[', {
+    t('{\\left[ '),
+    i(1),
+    t(' \\right]}'),
+    i(0),
+  }),
+  s('lr|', {
+    t('{\\left| '),
+    i(1),
+    t(' \\right|}'),
+    i(0),
+  }),
+  s('lr\\|', {
+    t('{\\left\\| '),
+    i(1),
+    t(' \\right\\|}'),
+    i(0),
+  }),
+  s('lr{', {
+    t('{\\left\\{ '),
+    i(1),
+    t(' \\right\\}}'),
+    i(0),
+  }),
+  s('l{r.', {
+    t('{\\left{ '),
+    i(1),
+    t(' \\right.}'),
+    i(0),
+  }),
+})
+
+-- lewis6991/gitsigns.nvim
+require('gitsigns').setup({
+  linehl = false,
+  numhl = false,
+  signcolumn = true,
+  signs = {
+    add = {
+      text = '+',
+    },
+    change = {
+      text = '~',
+    },
+    delete = {
+      text = '-',
+    },
+    topdelete = {
+      text = '-',
+    },
+    changedelete = {
+      text = '-',
+    },
+  },
+  word_diff = false,
+})
+
+-- lewis6991/impatient.nvim
+
+-- lukas-reineke/indent-blankline.nvim
+require('indent_blankline').setup({
+  filetype = {
+    'cpp',
+    'lua',
+    'matlab',
+    'python',
+  },
+  show_current_context = true,
+  show_current_context_start = false,
+  show_first_indent_level = false,
+  space_char_blankline = ' ',
+  use_treesitter = false,
+})
+
+-- max397574/better-escape.nvim
+require('better_escape').setup({
+  clear_empty_lines = true,
+  mapping = {
+    'jk',
+    'kj',
+  },
+  timeout = 100,
+})
+
+-- mbbill/undotree
+vim.g.undotree_WindowLayout = 4
+vim.g.undotree_SetFocusWhenToggle = 1
+vim.g.undotree_ShortIndicators = 1
+vim.g.undotree_HelpLine = 0
+vim.g.undotree_CursorLine = 1
+
+-- monaqa/dial.nvim
+local augend = require('dial.augend')
+require('dial.config').augends:register_group({
+  default = {
+    augend.constant.alias.Alpha,
+    augend.constant.alias.alpha,
+    augend.constant.alias.bool,
+    augend.constant.new({
+      elements = {
+        'and',
+        'or',
+      },
+      word = true,
+      cyclic = true,
+    }),
+    augend.constant.new({
+      elements = {
+        '&&',
+        '||',
+      },
+      word = false,
+      cyclic = true,
+    }),
+    augend.constant.new({
+      elements = {
+        '+',
+        '-',
+      },
+      word = false,
+      cyclic = true,
+    }),
+    augend.constant.new({
+      elements = {
+        '*',
+        '/',
+      },
+      word = false,
+      cyclic = true,
+    }),
+    augend.integer.alias.binary,
+    augend.integer.alias.decimal_int,
+    augend.integer.alias.hex,
+    augend.integer.alias.octal,
+  },
+  visual = {},
+})
+
+-- nacro90/numb.nvim
+require('numb').setup({
+  number_only = true,
+})
+
+-- nathom/filetype.nvim
+local filetype_command = function(ft, tab_size, spell)
+  vim.bo.filetype = ft
+  vim.bo.tabstop = tab_size
+  vim.bo.shiftwidth = tab_size
+  vim.wo.spell = spell
+  if spell then
+    vim.bo.spelllang = 'en_us'
+  end
+end
+require('filetype').setup({
+  overrides = {
+    function_extensions = {
+      ['bib'] = function()
+        filetype_command('bib', 2, true)
+      end,
+      ['cpp'] = function()
+        filetype_command('cpp', 2, false)
+      end,
+      ['hpp'] = function()
+        filetype_command('cpp', 2, false)
+      end,
+      ['html'] = function()
+        filetype_command('html', 2, true)
+      end,
+      ['lua'] = function()
+        filetype_command('lua', 2, false)
+      end,
+      ['m'] = function()
+        filetype_command('matlab', 2, false)
+      end,
+      ['rst'] = function()
+        filetype_command('rst', 2, true)
+      end,
+      ['tex'] = function()
+        filetype_command('tex', 2, true)
+      end,
+    },
+    function_literal = {
+      ['Brewfile'] = function()
+        filetype_command('ruby', 2, false)
+      end,
+      ['gitconfig'] = function()
+        filetype_command('gitconfig', 2, false)
+      end,
+      ['tmux.conf'] = function()
+        filetype_command('tmux', 2, false)
+      end,
+    },
+  },
+})
+
+-- neovim/nvim-lspconfig
+vim.diagnostic.config({
+  signs = true,
+  underline = false,
+  update_in_insert = false,
+  virtual_text = false,
+})
+local cmp_nvim_lsp = require('cmp_nvim_lsp').update_capabilities(
+  vim.lsp.protocol.make_client_capabilities()
+)
+local function lsp_on_attach(client, buffer)
+  require('aerial').on_attach(client, buffer)
+end
+local lspconfig = require('lspconfig')
+lspconfig.clangd.setup({
+  capabilities = cmp_nvim_lsp,
+  cmd = {
+    '/usr/local/opt/llvm/bin/clangd',
+    '--header-insertion-decorators',
+  },
+  filetypes = {
+    'c',
+    'cpp',
+  },
+  on_attach = lsp_on_attach,
+})
+lspconfig.cmake.setup({
+  capabilities = cmp_nvim_lsp,
+  cmd = {
+    'cmake-language-server',
+  },
+  filetypes = {
+    'cmake',
+  },
+  init_options = {
+    buildDirectory = 'build',
+  },
+  on_attach = lsp_on_attach,
+})
+lspconfig.esbonio.setup({
+  init_options = {
+    server = {
+      logLevel = 'debug',
+    },
+  },
+})
+lspconfig.pyright.setup({
+  capabilities = cmp_nvim_lsp,
+  cmd = {
+    'pyright-langserver',
+    '--stdio',
+  },
+  filetypes = {
+    'python',
+  },
+  on_attach = lsp_on_attach,
+  settings = {
+    python = {
+      analysis = {
+        autoImportCompletions = true,
+        autoSearchPaths = true,
+        diagnosticMode = 'workspace',
+        typeCheckingMode = 'basic',
+        useLibraryCodeForTypes = true,
+        pythonPath = 'python',
+      },
+    },
+  },
+})
+lspconfig.sumneko_lua.setup({
+  capabilities = cmp_nvim_lsp,
+  cmd = {
+    'lua-language-server',
+  },
+  on_attach = lsp_on_attach,
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {
+          'vim',
+        },
+      },
+      runtime = {
+        version = 'LuaJIT',
+      },
+      telemetry = {
+        enable = false,
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file('', true),
+      },
+    },
+  },
+})
+lspconfig.texlab.setup({
+  capabilities = cmp_nvim_lsp,
+  settings = {
+    texlab = {
+      chktex = {
+        onOpenAndSave = false,
+      },
+    },
+  },
+})
+
+-- numToStr/Comment.nvim
+require('Comment').setup({
+  pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+})
+
+-- nvim-lualine/lualine.nvim
+require('lualine').setup({
+  inactive_sections = {},
+  options = {
+    component_separators = {
+      '',
+      '',
+    },
+    disabled_filetypes = {},
+    globalstatus = true,
+    icons_enabled = false,
+    section_separators = {
+      '',
+      '',
+    },
+    theme = 'kanagawa',
+  },
+  sections = {
+    lualine_a = {
+      {
+        'mode',
+      },
+    },
+    lualine_b = {},
+    lualine_c = {
+      {
+        'filename',
+        path = 1,
+        symbols = {
+          modified = ' [+]',
+          readonly = ' [-]',
+          unnamed = '[No Name]',
+        },
+      },
+    },
+    lualine_x = {
+      {
+        'diagnostics',
+        always_visible = true,
+        colored = false,
+        sources = {
+          'nvim_diagnostic',
+        },
+      },
+    },
+    lualine_y = {},
+    lualine_z = {
+      {
+        'branch',
+      },
+    },
+  },
+  tabline = {},
+})
+
+-- nvim-telescope/telescope.nvim
+local telescope = require('telescope')
+telescope.setup({
+  defaults = {
+    borderchars = {
+      '',
+      ',
+      ',
+      ',
+      '',
+      ',
+      ',
+      ',
+    },
+    layout_config = {
+      vertical = {
+        height = {
+          padding = 0,
+        },
+        mirror = true,
+        preview_cutoff = 999999,
+        prompt_position = 'bottom',
+        width = {
+          padding = 0,
+        },
+      },
+    },
+    layout_strategy = 'vertical',
+    scroll_strategy = 'limit',
+    sorting_strategy = 'ascending',
+    wrap_results = true,
+  },
+  extensions = {
+    fzf = {
+      fuzzy = true,
+      override_file_sorter = true,
+      override_generic_sorter = true,
+      case_mode = 'ignore_case',
+    },
+    heading = {
+      treesitter = true,
+    },
+  },
+  file_previewer = require('telescope.previewers').cat.new,
+  grep_previewer = require('telescope.previewers').vimgrep.new,
+  pickers = {
+    find_files = {
+      find_command = {
+        'fd',
+        '-t',
+        'f',
+        '-i',
+        '-H',
+        '-L',
+        '-E',
+        '.git',
+        '-c',
+        'never',
+        '--strip-cwd-prefix',
+      },
+    },
+  },
+  preview = {
+    treesitter = true,
+  },
+})
+require('telescope').load_extension('aerial')
+require('telescope').load_extension('fzf')
+require('telescope').load_extension('heading')
+
+-- nvim-treesitter/nvim-treesitter
+require('nvim-treesitter.configs').setup({
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
+  ensure_installed = {
+    'bash',
+    'bibtex',
+    'c',
+    'cmake',
+    'cpp',
+    'css',
+    'cuda',
+    'fortran',
+    'html',
+    'latex',
+    'lua',
+    'make',
+    'markdown',
+    'ninja',
+    'python',
+    'rst',
+    'ruby',
+    'toml',
+    'vim',
+    'yaml',
+  },
+  highlight = {
+    disable = {},
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  indent = {
+    enable = false,
+  },
+  sync_install = true,
+})
+
+-- phaazon/hop.nvim
+require('hop').setup({
+  case_insensitive = true,
+  current_line_only = false,
+  direction = nil,
+  jump_on_sole_occurrence = true,
+  keys = 'hjkldayuioptrewqbnmvcxz',
+  multi_windows = false,
+  perm_method = require('hop.perm').TrieBacktrackFilling,
+  quit_key = '`',
+  teasing = false,
+  uppercase_labels = true,
+})
+
+-- rebelot/kanagawa.nvim
+local default_colors = require('kanagawa.colors').setup()
+require('kanagawa').setup({
+  globalStatus = true,
+  overrides = {
+    CursorLine = {
+      fg = 'NONE',
+      bg = default_colors.sumiInk3,
+    },
+    HlSearchLens = {
+      link = 'Search',
+    },
+    TabLine = {
+      fg = default_colors.fujiGray,
+      bg = default_colors.sumiInk2,
+    },
+    TabLineFill = {
+      link = 'TabLine',
+    },
+    TabLineSel = {
+      fg = default_colors.fujiWhite,
+      bg = default_colors.sumiInk2,
+    },
+    VertSplit = {
+      fg = default_colors.sumiInk2,
+      bg = 'NONE',
+    },
+  },
+  statementStyle = {},
+  undercurl = false,
+})
+vim.api.nvim_command('colorscheme kanagawa')
+
+-- stevearc/aerial.nvim
+require('aerial').setup({
+  backends = {
+    'lsp',
+    'treesitter',
+  },
+  default_bindings = true,
+  default_direction = 'left',
+})
+
+-- TimUntersberger/neogit
+require('neogit').setup({
+  disable_builtin_notifications = true,
+  disable_context_highlighting = true,
+  disable_hint = true,
+  signs = {
+    hunk = {
+      '+',
+      '-',
+    },
+    item = {
+      '+',
+      '-',
+    },
+    section = {
+      '+',
+      '-',
+    },
+  },
+  sections = {
+    recent = false,
+    staged = {
+      folded = true,
+    },
+    stashes = {
+      folded = false,
+    },
+    unpulled = {
+      folded = false,
+    },
+    unstaged = {
+      folded = false,
+    },
+    untracked = {
+      folded = false,
+    },
+    unmerged = {
+      folded = false,
+    },
+  },
+})
+
+-- glts/vim-radical
+
+-- tpope/vim-capslock
+
+-- tpope/vim-endwise
+
+-- tpope/vim-repeat
+
+-- tpope/vim-surround
+
+-- key mapping
+cartographer['<Space>'] = '<Leader>'
+cartographer.nore['*'] = '*<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore['#'] = '#<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore['g*'] = 'g*<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore['g#'] = 'g#<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore.silent['n'] = '<Cmd>execute("normal! " . v:count1 . "n")<CR>'
+  .. '<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore.silent['N'] = '<Cmd>execute("normal! " . v:count1 . "N")<CR>'
+  .. '<Cmd>lua require("hlslens").start()<CR>'
+cartographer.nore.silent['<Leader><Space>'] = ':nohlsearch<CR>'
+cartographer.n.nore['f'] = '<Cmd>lua require("hop").hint_char1({'
+  .. '  direction = require("hop.hint").HintDirection.AFTER_CURSOR,'
+  .. '  current_line_only = true,'
+  .. '})<CR>'
+cartographer.n.nore['F'] = '<Cmd>lua require("hop").hint_char1({'
+  .. '  direction = require("hop.hint").HintDirection.BEFORE_CURSOR,'
+  .. '  current_line_only = true,'
+  .. '})<CR>'
+cartographer.n.nore['gs'] = '<Cmd>lua require("hop").hint_char2({'
+  .. '  multi_windows = true,'
+  .. '})<CR>'
+cartographer.n.nore['j'] = 'gj'
+cartographer.n.nore['k'] = 'gk'
+cartographer.n.nore['s'] = '<Cmd>lua require("hop").hint_char2({'
+  .. '  direction = require("hop.hint").HintDirection.AFTER_CURSOR,'
+  .. '})<CR>'
+cartographer.n.nore['S'] = '<Cmd>lua require("hop").hint_char2({'
+  .. '  direction = require("hop.hint").HintDirection.BEFORE_CURSOR,'
+  .. '})<CR>'
+cartographer.n.nore['<Up>'] = '<Nop>'
+cartographer.n.nore['<Down>'] = '<Nop>'
+cartographer.n.nore['<Left>'] = '<Nop>'
+cartographer.n.nore['<Right>'] = '<Nop>'
+cartographer.n.nore['<C-a>'] = '<Plug>(dial-increment)'
+cartographer.n.nore['<C-b>'] = '<Nop>'
+cartographer.n.nore['<C-d>'] =
+  '<Cmd>lua require("telescope.builtin").current_buffer_fuzzy_find()<CR>'
+cartographer.n.nore['<C-e>'] = '<Nop>'
+cartographer.n.nore['<C-f>'] =
+  '<Cmd>lua require("telescope.builtin").find_files()<CR>'
+cartographer.n.nore['<C-u>'] = '<Nop>'
+cartographer.n.nore['<C-x>'] = '<Plug>(dial-decrement)'
+cartographer.n.nore['<C-y>'] = '<Nop>'
+cartographer.n.nore['z+'] = '<Nop>'
+cartographer.n.nore['z-'] = '<Nop>'
+cartographer.n.nore['z.'] = '<Nop>'
+cartographer.n.nore['z^'] = '<Nop>'
+cartographer.n.nore['[c'] = '<Cmd>Gitsigns prev_hunk<CR>zz'
+cartographer.n.nore[']c'] = '<Cmd>Gitsigns next_hunk<CR>zz'
+cartographer.n.nore['<Leader>q'] = '<Cmd>quit<CR>'
+cartographer.n.nore['<Leader>w'] = '<Cmd>write!<CR>'
+cartographer.n.nore['<Leader>aa'] = '<Cmd>AerialToggle<CR>'
+cartographer.n.nore['<Leader>cs'] =
+  '<Cmd>write<CR><Cmd>ClangdSwitchSourceHeader<CR>'
+cartographer.n.nore['<Leader>fa'] =
+  '<Cmd>lua require("telescope").extensions.aerial.aerial()<CR>'
+cartographer.n.nore['<Leader>fb'] =
+  '<Cmd>lua require("telescope.builtin").buffers()<CR>'
+cartographer.n.nore['<Leader>fc'] = '<Cmd>TodoTelescope<CR>'
+cartographer.n.nore['<Leader>fd'] =
+  '<Cmd>lua require("telescope.builtin").current_buffer_fuzzy_find()<CR>'
+cartographer.n.nore['<Leader>ff'] =
+  '<Cmd>lua require("telescope.builtin").find_files()<CR>'
+cartographer.n.nore['<Leader>fg'] =
+  '<Cmd>lua require("telescope.builtin").live_grep()<CR>'
+cartographer.n.nore['<Leader>fh'] =
+  '<Cmd>lua require("telescope").extensions.heading.heading()<CR>'
+cartographer.n.nore['<Leader>ft'] =
+  '<Cmd>lua require("telescope.builtin").help_tags()<CR>'
+cartographer.n.nore['<Leader>gg'] = '<Cmd>Neogit<CR>'
+cartographer.n.nore['<Leader>uu'] = '<Cmd>UndotreeToggle<CR>'
+cartographer.n.nore['<Leader>xd'] =
+  '<Cmd>TroubleToggle document_diagnostics<CR>'
+cartographer.n.nore['<Leader>xw'] =
+  '<Cmd>TroubleToggle workspace_diagnostics<CR>'
+cartographer.n.nore['<Leader>xx'] = '<Cmd>TroubleToggle<CR>'
+
+-- option
+vim.opt.completeopt = {
+  'menu',
+  'menuone',
+  'noinsert',
+}
+vim.opt.cursorcolumn = false
+vim.opt.cursorline = false
+vim.opt.expandtab = true
+vim.opt.exrc = true
+vim.opt.ignorecase = true
+vim.opt.fileignorecase = true
+vim.opt.fillchars = {
+  horiz = ',
+  horizup = 4',
+  horizdown = ,',
+  vert = '',
+  vertleft = $',
+  vertright = ',
+  verthoriz = '<',
+}
+vim.opt.foldenable = false
+vim.opt.guicursor = 'a:block'
+vim.opt.laststatus = 3
+vim.opt.linebreak = true
+vim.opt.list = true
+vim.opt.listchars = {
+  nbsp = '^',
+  tab = '>-',
+  trail = '^',
+}
+vim.opt.number = true
+vim.opt.pumheight = 7
+vim.opt.relativenumber = true
+vim.opt.secure = true
+vim.opt.shiftwidth = 2
+vim.opt.shortmess = 'acIFoOStT'
+vim.opt.showcmd = false
+vim.opt.showmode = false
+vim.opt.showtabline = 0
+vim.opt.spellcapcheck = ''
+vim.opt.tabstop = 2
+vim.opt.undofile = true
+vim.opt.viewoptions = {
+  'cursor',
+  'folds',
+  'slash',
+  'unix',
+}
+vim.opt.wildignore = {
+  '*.o',
+  '*.swp',
+  '*.DS_Store',
+  '*.git',
+}
+vim.opt.wildignorecase = true
+vim.opt.wrap = true

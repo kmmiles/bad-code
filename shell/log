@@ -1,7 +1,17 @@
 #!/bin/bash
-
-error() {
-  printf "%sError%s: %s%s" "${RED}" "${RESET}" "${1}" "${2:-$'\n'}"
+#
+################################################################################
+log_error() {
+  printf "%s" "$(tput setaf 1)"
+  # shellcheck disable=SC2059
+  printf "$@"
+  printf "%s" "$(tput sgr0)";
 }
 
-error "test" "this"
+log_error '%s\n' "foo" "bar" "this" "that"
+
+#error() {
+#  printf "%sError%s: %s%s" "${RED}" "${RESET}" "${1}" "${2:-$'\n'}"
+#}
+
+#error "test" "this"

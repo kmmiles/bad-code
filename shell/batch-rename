@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for name in *; do
+        new_name=sed 's/$name/hello/'
+        echo $new_name
+done

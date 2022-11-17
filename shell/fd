@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find /proc/$$/fd
+file /proc/$$/fd/255

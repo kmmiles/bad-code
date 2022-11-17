@@ -1,0 +1,8 @@
+#!/bin/bash
+
+list_scripts_in() {
+   find "$1" -type f -exec file --mime-type {} \+ | \
+    awk -F: '{if ($2 ~/x-shellscript/) print $1}'
+}
+
+list_scripts_in "./" 

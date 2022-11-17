@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "hello big world" | awk '{ $3="place"; print }'
+
+mynewvar="planet"
+echo "hello big world" | awk -v myvar=$mynewvar '{ $3=myvar; print }'
+
+echo "hello,big,world" | awk 'BEGIN { FS=","; OFS=FS } { $3="place"; print }'
+
+echo "hello,big,world" | awk -v myvar=$mynewvar 'BEGIN { FS=","; OFS=FS} { $3=myvar}1'

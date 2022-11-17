@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#function minmaxvalue
+#{
+#    for i in {$1..$2}
+#    do
+#        echo "Number: $i"
+#    done
+#}
+
+#minmaxvalue() {
+#  for ((i=$1;i<=$2;i++)); do
+#    echo "Number: $i"
+#  done
+#}
+
+#minmaxvalue2() {
+#  for i in $(seq "$1" "$2"); do
+#    echo "Number: $i"
+#  done
+#}
+
+#minmaxvalue2 1 10
+
+minvalue() { for i in "$@"; do echo "$i"; done | sort -n | head -n 1; }
+maxvalue() { for i in "$@"; do echo "$i"; done | sort -n | tail -n 1; }
+
+minvalue 2 3 100 4 5
+maxvalue 2 3 100 413 5

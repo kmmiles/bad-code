@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+#hello=$(< data/config.txt)
+#printf "%s\n" "$hello"
+
+printf '%s\n' "$(< data/config.txt)"

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+LINES=$(tput lines)
+COLS=$(tput cols)
+
+email-response() {
+  responses=(
+    "Delays" "Apologize for any delays."
+    "Authentication" "Request auth from customer."
+    "Initial response" "For live interaction tickets or tickets listed as New."
+    "Follow-up" "Provide customer with findings."
+    "Picking up" "Picking up case."
+    "Resolve" "Original issue fixed."
+    "Thanks" "Thank for additional info."
+  )
+
+  email=$(whiptail \
+    --title "Email Responses" \
+    --menu "Which email response do you wish to provide?" \
+    "$((LINES))" "$((COLS))" "$((LINES-8))" "${responses[@]}" 3>&1 1>&2 2>&3)
+
+  case "${email}" in
+    'Delays')
+      echo "hello I picked delays"
+      ;;
+    'Authentication')
+      echo "hello I picked authentication"
+      ;;
+  esac
+}
+
+email-response

@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Trap function for error handling
+handle_err() {
+
+  local s=$?
+  echo "$0:${BASH_LINENO[0]} $BASH_COMMAND"
+  exit "$s"
+
+}
+
+trap handle_err ERR
+
+# Email functions
+
+# Authorization
+
+authorization() {
+  xclip -selection clipboard << EOF
+Hello,
+
+I will be happy to assist you with this request but before I do so, can you please authenticate this ticket by clicking on the link below and logging in with your current account credentials:
+
+[link to auth]
+
+We require all requests to be authenticated for your protection so only authorized individuals may make changes to or obtain information about your account. In the future, you can avoid taking this extra step by submitting a ticket via our customer portal located here:
+
+https://my.liquidweb.com"
+EOF
+}
+
+# Initial response
+initial_response() {
+  read -rep "Customer name or use team: " NAME
+  read -rep "Support: Nexcess, MWPv2, Cloud Sites, Premium Business Email: " SUPPORT
+  read -rep "Domain: " DOMAIN
+
+  xclip -selection clipboard << EOF 
+Hello, ${NAME},
+Thank you for contacting ${SUPPORT}
+My name is Chloe and I will be helping you with your inquiry for ${DOMAIN}. I will check back within 2 hours.
+If I have any additional quetions, I will reach out as needed.
+Warm regards,
+Chloe Carpenter
+Nexcess, A Liquid Web Brand
+21700 Melrose Ave
+Southfield, MI 48075
+Phone: +1.866.639.2377
+EOF
+}
+
+PS3='
+Which email response do you wish to provide? '
+options=("Authentication" "Initial response")
+select _ in "${options[@]}"; do
+  case $REPLY in
+    1) authorization ; exit;;
+    2) initial_response; exit ;;
+  esac
+done

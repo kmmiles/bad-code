@@ -30,7 +30,7 @@ void sort_int_array(int *nums, size_t size) {
 }
 
 void print_int_array(int *nums, size_t size) {
-  for(int i=0; i < size; i++) {
+  for (int i = 0; i < size; i++) {
     printf("%d ", nums[i]);
   }
   printf("\n");
@@ -65,7 +65,8 @@ int main() {
 
     for (int j = 0; j < NUM_COUNT; j++) {
       if (players[i - 1][j] != players[i][j]) {
-        printf("They are not the same! (player %d and %d do not match)\n", i, i + 1);
+        printf("They are not the same! (player %d and %d do not match)\n", i,
+               i + 1);
         return (EXIT_FAILURE);
       }
     }

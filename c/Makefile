@@ -2,14 +2,24 @@
 CC=clang
 
 ###############################################################################
-# from coding cave
-CFLAGS=-g -Wall -Wpedantic -Werror -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
-#CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
+# from greyfade
 ###############################################################################
-#CFLAGS=-Weverything -Wall -Wpedantic -Werror -Wextra -std=c11
-#CFLAGS=-Wall -Werror -Wextra -Wpedantic -MMD -std=gnu99 -g 
-#CFLAGS=-g -Wall -Wpedantic -Werror -std=c11
-#CFLAGS=-Wall -Wpedantic -Wextra -Wunused-parameter -std=c11
+# -Wall -Wextra -Werror -pedantic-errors
+###############################################################################
+# from DWD
+# -Wno-unused-argument -Wno-unused-variable
+###############################################################################
+# from coding cave
+###############################################################################
+#CFLAGS=-Wall -Wpedantic -Werror -Wshadow -Wformat=2 -Wconversion -Wunused-parameter -fsanitize=address,undefined
+# without -Werror
+#CFLAGS=-Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter -fsanitize=address,undefined
+###############################################################################
+# -std=c11
+# -std=gnu99
+###############################################################################
+#CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter -Wextra -fsanitize=address,undefined
+CFLAGS=-g -Wall -Wpedantic -Wshadow -Wformat=2 -Wconversion -Wunused-parameter
 LIBS=-lm 
 #-lcriterion
 DIRS=obj bin

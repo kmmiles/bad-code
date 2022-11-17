@@ -1,0 +1,4 @@
+0 3 * * *      daily-backup
+15 4 * * sun   weekly-backup
+0 10 22 7 mon  deep-thought
+59 16 16 8 *   submit-project

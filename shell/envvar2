@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ "${UPLOAD}" == true ]]; then
+  echo "doing the thing"
+  #python3 upload_files.py
+fi
+

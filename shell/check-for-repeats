@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# ./this 34 45 43 34
+#if [[ {arr[0]} == {arr[1]} ]] || [[ {arr[0]} == {arr[2]} ]] || [[ {arr[0]} == {arr[3]} ]] || [[ {arr[1]} == {arr[2]} ]] || [[ {arr[1]} == {arr[3]} ]] || [[ {arr[2]} == {arr[3]} ]]
+#then 
+#echo "YES"
+#else
+#echo "NO"
+#fi
+
+arr=("$@")
+readarray -t dupes < <(printf '%s\n' "${arr[@]}" | sort | uniq -d)
+if (( ${#dupes[@]} >= 1 )); then
+  echo "YES"
+else
+  echo "NO"
+fi

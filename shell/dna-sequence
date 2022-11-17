@@ -1,0 +1,111 @@
+#!/bin/bash
+
+#GID = 100226.110
+
+parse_fna() {
+  tr "\n" "@" < 100226.110.fna | sed 's/>/\n>/g' | grep -v "^$" |  head -n 1 | cut -d "@" -f 2- | tr -d "@"
+}
+
+#ONE LINE ONE SEQUENCE FORMAT
+tr "\n" "@" < 100226.110.fna | sed 's/>/\n>/g' | grep -v "^$" |  head -n 1 | cut -d "@" -f 2- | tr -d "@" > ORFtemp.txt 
+
+#NA seq total = 31318
+#ADD A SPACE FOR EVERY 3 NUCLEOTIDES
+#sed 's/.\{3\}/& /g'  ORFtemp.txt 
+
+#Create 3 OPR on Forward strand
+
+#F+1
+sed 's/.\{3\}/& /g'  ORFtemp.txt > F+1.txt #continue creating triplets 
+
+#F+2
+tail -c +2 F+1.txt | tr -d " " | sed 's/.\{3\}/& /g' > F+2.txt
+
+#F+3 
+tail -c +3 F+1.txt | tr -d " " | sed 's/.\{3\}/& /g' > F+3.txt
+
+#Create Reverse Compliment
+tr 'a' 'x' < ORFtemp.txt | tr 't' 'a' | tr 'x' 't' | tr 'c' 'y' | tr 'g' 'c' | tr 'y' 'g'  > ORFRevComp.txt 
+
+#translations processed in sequential order
+#rev to read in reverse 
+
+#F-1
+rev ORFRevComp.txt | sed 's/.\{3\}/& /g' > F-1.txt
+
+#F-2
+rev ORFRevComp.txt | tail -c +2 F-1.txt | tr -d " " | sed 's/.\{3\}/& /g' > F-2.txt
+
+#F-3
+rev ORFRevComp.txt | tail -c +3 F-1.txt | tr -d " " | sed 's/.\{3\}/& /g' > F-3.txt
+
+#spot STOPs (TGA, TAA, TAG) in the same frame
+
+#Create new line after each stop codon hit; 
+#F+1 STOPs
+sed 's/tga/tga\n/g' < F+1.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F+1stops.txt
+
+#F+2 STOPs
+sed 's/tga/tga\n/g' < F+2.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F+2stops.txt
+
+#F+3 STOPs
+sed 's/tga/tga\n/g' < F+3.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F+3stops.txt
+
+#F-1 STOPs
+sed 's/tga/tga\n/g' < F-1.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F-1stops.txt
+
+#F-2 STOPs
+sed 's/tga/tga\n/g' < F-2.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F-2stops.txt
+
+#F-3 STOPs
+sed 's/tga/tga\n/g' < F-3.txt | sed 's/taa/taa\n/g' | sed 's/tag/tag\n/g' > F-3stops.txt
+
+#Forward STOP codon stats
+
+echo Stop codon stats result will be saved in\:
+read STOPres
+
+FF1TGA=$(cat F+1stops.txt | grep -o "tga" | wc -l) 
+FF1TAA=$(cat F+1stops.txt | grep -o "taa" | wc -l)
+FF1TAG=$(cat F+1stops.txt | grep -o "tag" | wc -l)
+
+FF2TGA=$(cat F+2stops.txt | grep -o "tga" | wc -l) 
+FF2TAA=$(cat F+2stops.txt | grep -o "taa" | wc -l)
+FF2TAG=$(cat F+2stops.txt | grep -o "tag" | wc -l)
+
+FF3TGA=$(cat F+3stops.txt | grep -o "tga" | wc -l) 
+FF3TAA=$(cat F+3stops.txt | grep -o "taa" | wc -l)
+FF3TAG=$(cat F+3stops.txt | grep -o "tag" | wc -l)
+
+#Reverse STOP codon stats
+
+RF1TGA=$(cat F-1stops.txt | grep -o "tga" | wc -l) 
+RF1TAA=$(cat F-1stops.txt | grep -o "taa" | wc -l)
+RF1TAG=$(cat F-1stops.txt | grep -o "tag" | wc -l)
+
+RF2TGA=$(cat F-2stops.txt | grep -o "tga" | wc -l) 
+RF2TAA=$(cat F-2stops.txt | grep -o "taa" | wc -l)
+RF2TAG=$(cat F-2stops.txt | grep -o "tag" | wc -l)
+
+RF3TGA=$(cat F-3stops.txt | grep -o "tga" | wc -l) 
+RF3TAA=$(cat F-3stops.txt | grep -o "taa" | wc -l)
+RF3TAG=$(cat F-3stops.txt | grep -o "tag" | wc -l)
+
+#OUTPUT stats results of each stop codon per frame 
+echo -e FF1TGA"\t"FF1TAA"\t"FF1TAG"\t"FF2TGA"\t"FF2TAA"\t"FF2TAG"\t"FF3TGA"\t"FF3TAA"\t"FF3TAG > $STOPres
+echo -e $FF1TGA"\t"$FF1TAA"\t"$FF1TAG"\t"$FF2TGA"\t"$FF2TAA"\t"$FF2TAG"\t"$FF3TGA"\t"$FF3TAA"\t"$FF3TAG >> $STOPres
+echo -e "-----------------------------"
+echo -e RF1TGA"\t"RF1TAA"\t"RF1TAG"\t"RF2TGA"\t"RF2TAA"\t"RF2TAG"\t"RF3TGA"\t"RF3TAA"\t"RF3TAG >> $STOPres
+echo -e $RF1TGA"\t"$RF1TAA"\t"$RF1TAG"\t"$RF2TGA"\t"$RF2TAA"\t"$RF2TAG"\t"$RF3TGA"\t"$RF3TAA"\t"$RF3TAG >> $STOPres
+
+#ID MOST UPSTREAM START CODON (ATG) by replacing only first match with >atg with sed, then grep, and finally cut until ">"
+sed 's/atg/>atg/1' F+1stops.txt | grep ">atg" | cut -d ">" -f2-> F+1final.txt
+sed 's/atg/>atg/1' F+2stops.txt | grep ">atg" | cut -d ">" -f2-> F+2final.txt
+sed 's/atg/>atg/1' F+3stops.txt | grep ">atg" | cut -d ">" -f2-> F+3final.txt
+
+sed 's/atg/>atg/1' F-1stops.txt | grep ">atg" | cut -d ">" -f2-> F-1final.txt
+sed 's/atg/>atg/1' F-2stops.txt | grep ">atg" | cut -d ">" -f2-> F-2final.txt
+sed 's/atg/>atg/1' F-3stops.txt | grep ">atg" | cut -d ">" -f2-> F-3final.txt
+
+#remove temporary files
+rm F+1stops.txt F+2stops.txt F+3stops.txt F-1stops.txt F-2stops.txt F-3stops.txt ORFtemp.txt ORFRevComp.txt F+1.txt F+2.txt F+3.txt F-1.txt F-2.txt F-3.txt

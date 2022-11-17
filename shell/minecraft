@@ -1,0 +1,23 @@
+#!/bin/bash
+
+usage() {
+  cat << EOF
+Usage: $(basename "$0") <PORT> <MIN GB RAM> <MAX GB RAM>
+EOF
+}
+
+
+if (( $# != 3 )); then
+  usage
+  exit 1
+fi
+
+minecraft_path="/home/minecraft"
+port="${1:-}"
+min_gb_ram="${2:-}"
+max_gb_ram="${3:-}"
+
+cd "$1" ;
+
+set -ex
+screen -S "MineCraft_${port}" java -Xms"${min_gb_ram}G" -Xmx"${max_gb_ram}G" -jar "${minecraft_path}/spigot.jar" nogui

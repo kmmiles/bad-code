@@ -7,13 +7,9 @@
 
 void clear_escape(void) { printf("\033c"); }
 
-void clear_escape2(void) {
-  printf("\033[2J\033[3J\033[H");
-}
+void clear_escape2(void) { printf("\033[2J\033[3J\033[H"); }
 
-void cls(void) {
-  printf("\033[2J\033[3J\033[H");
-}
+void cls(void) { printf("\033[2J\033[3J\033[H"); }
 
 void clear_ncurses(void) {
   WINDOW *win = initscr();

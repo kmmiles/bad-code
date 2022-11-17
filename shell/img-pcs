@@ -1,0 +1,17 @@
+#!/bin/bash
+
+img_pcs=$(gcloud compute images list --project ${project} | grep '${_IMG_PCS_REGEX}' | cut -d' ' -f1| sed "s/.*: '//g")  || true
+
+handle_error() {
+  img_pcs_version=$(gcloud compute images describe --project ${project} ${img_pcs} 1> /dev/null 2> test.txt| grep "version" | cut -d: -f2 )
+  if grep -q "ERROR" test.txt; then 
+    echo "No CUSTOM version available"      
+    img_pcs_version=""           
+  else
+    echo "CUSTOM version available"
+    img_pcs_version=$(gcloud compute images describe --project ${project} ${img_pcs}| grep "version" | cut -d: -f2| sed -e 's/^[ \t]*//' )     
+  fi
+}
+
+handle_error
+rm test.txt

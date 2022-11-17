@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILE="example.csv";
+PLOTTITLE=$(grep -i -e header -e footer $(echo $FILE) | sed s/\"\//g | sed s/\#//g);
+gnuplot -e "title='${PLOTTITLE}'; filename='${FILE}';" example.gnuplot

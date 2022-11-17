@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# keep reading until input is not a number between 0 and 9 (inclusive)
+while [[ "${num:-0}" =~ ^[0-9]$ ]]; do
+  read -rp "Enter a number: " num
+done
+
+# same as above, but exit on no input
+num=0
+while [[ "$num" =~ ^[0-9]$ ]]; do
+  read -rp "Enter a number again: " num
+done

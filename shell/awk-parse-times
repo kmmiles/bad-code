@@ -1,0 +1,9 @@
+#!/usr/bin/awk -f
+{
+  sub("\\(",""); sub("\\)","")
+  split($3, a_time, ":", seps)
+  a_mins[$1$2] += a_time[2] + (a_time[1] * 60)
+} END { 
+  for (i in a_mins)
+    printf("%s\t%s:%s\n", i, int(a_mins[i] / 60), int(a_mins[i] % 60))
+}

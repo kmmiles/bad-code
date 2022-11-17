@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SUDO="sudo"
+
+has_root() { (( "$(id -u)" == 0 )); }
+has_cmd()  { command -v "$SUDO" > /dev/null; }
+
+if ! has_root; then
+  if ! has_cmd "$SUDO"; then
+    printf "ERROR: %s is not run as root and '%s' is not available\n" "$0" "$SUDO"
+    exit 1
+  fi
+else
+  SUDO="" 
+fi
+
+$SUDO whoami

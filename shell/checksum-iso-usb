@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#iso="$HOME/Downloads/debian-11.0.0-amd64-netinst.iso"
+
+
+
+s udo head -c "$(stat -c "%s" disk.iso)" /dev/sda | sha256sum; sha256sum disk.iso

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+lower() {
+  for i in "$@"; do
+    echo "arg: $i"
+  done
+
+}
+
+lower 2 3 100 4 5 1
+

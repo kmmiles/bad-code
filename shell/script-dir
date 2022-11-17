@@ -1,0 +1,11 @@
+#!/bin/bash
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/" && pwd)"
+desktop_dir="$script_dir/Desktop Specific"
+
+printf "script_dir: %s\n" "$script_dir"
+printf "desktop_dir: %s\n" "$desktop_dir"
+
+mkdir -p "$desktop_dir"
+touch "$desktop_dir/hello"
+

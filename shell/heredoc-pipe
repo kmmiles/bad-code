@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+# shellcheck disable=SC2034
+unused="shellcheck won't like this!"
+
+myvar="hello world"
+xclip -selection clipboard << EOF 
+This text is being piped into xclip.
+Isn't that cool?
+Btw, the contents of \$myvar is [$myvar]
+EOF

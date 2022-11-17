@@ -1,0 +1,64 @@
+#!/bin/bash
+
+####################################
+# Author: Chloe Carpenter
+# Creation date: 2022-06-11
+# Purpose: Firewall port management
+####################################
+
+########################
+# Handle err function
+# for error handling
+########################
+
+handle_err() { local s=$?; echo "$0:${BASH_LINENO[0]} $BASH_COMMAND"; exit $s; }
+trap handle_err ERR
+
+############
+# Functions
+############
+
+# Add fireawll port(s)
+fw-add-ports () {
+
+  read -rep "Port number(s): " PNUM
+  firewall-cmd --permanent --zone=public --add-port="${PNUM}"
+
+}
+
+# Remove firewall port(s)
+fw-remove-ports () {
+
+  read -rep "Port number(s): " PNUM
+  firewall-cmd --permanent --zone=public --remove-port="${PNUM}"
+
+}
+
+# Reload firewall
+fw-reload () {
+
+  firewall-cmd --reload
+
+}
+
+# List ports
+fw-list-ports () {
+
+  firewall-cmd --list-ports
+
+}
+
+# Choose which fw command to run
+PS3='
+Which firewall command do you wish to run? '
+options=("Add port" "Remove port" "Reload firewall" "List ports" "exit")
+select _ in "${options[@]}"
+do
+  case "${REPLY}" in
+  1) fw-add-ports ;;
+  2) fw-remove-ports ;;
+  3) fw-reload ;;
+  4) fw-list-ports ;;
+  *) exit ;;
+  esac
+done

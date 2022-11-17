@@ -1,0 +1,24 @@
+#!/bin/bash
+
+snipe() {
+  read -r args_unescaped <<< "$@"
+  for arg in $args_unescaped; do 
+    echo "arg: $arg"
+  done
+}
+
+args='foo bar "baz qux"'
+
+printf -v args_escaped %q "$args"
+read args_unescaped <<< "$args_escaped" 
+
+printf 'args: %s\n' "$args"
+printf 'args_escaped: %s\n' "$args_escaped"
+printf 'args_unescaped: %s\n' "$args_unescaped"
+
+snipe "$args_escaped"
+
+#IFS=$'\n'
+#snipe $(sed -E 's/ ("[^"]+"|[^" ]+)/\n\1/g;' <<< "$args")
+#snipe "$args"
+#snipe "$(printf "%q" "$args")"

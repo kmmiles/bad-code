@@ -1,0 +1,1 @@
+NT_187693.1    BestRefSeq    miRNA    627884    627904    .    +    .    ID=rna-MIR8061-5;Parent=rna-NR_107028.1-5;Dbxref=GeneID:102466251,miRBase:MIMAT0030988,HGNC:HGNC:50077,miRBase:MI0025897;gbkey=ncRNA;gene=MIR8061;product=hsa-miR-8061
