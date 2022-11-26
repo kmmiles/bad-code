@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# "If set, shell error messages are written in the standard GNU error message format."
+# 
+# default:  ./gnu_errfmt: line 10: conditional binary operator expected
+# gnu:      ./gnu_errfmt:10: conditional binary operator expected
+shopt -s gnu_errfmt
+
+if [[ "$foo == "bar" ]]; then
+  echo "foo is bar"
+fi
+
+
+
+
